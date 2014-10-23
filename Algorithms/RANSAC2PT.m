@@ -1,4 +1,4 @@
-function [HRNS,CRNS,DRNS,TRNS,Inliers] = RANSAC2(Xe, eta, rho)
+function [HRNS,CRNS,DRNS,TRNS,Inliers] = RANSAC2PT(Xe, eta, rho)
 % RANSAC function
 % INPUT
 % Xe : segmented image

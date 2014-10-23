@@ -1,6 +1,6 @@
 close all
 
-filename = 'Result_video/RANSAC_only_1call_evry1frame.mp4';
+filename = 'Result_video/tmp.avi';
 
 x = 120;
 y = 1;
@@ -8,7 +8,7 @@ w = 80;
 h = 640;
 
 frame_treated = 1;
-aviobj=VideoWriter(filename,'MPEG-4');
+aviobj=VideoWriter(filename);
 open(aviobj);
 hFig=figure('Visible','Off');
 
@@ -29,7 +29,7 @@ for i=1:str.header.nframes
     
     plot(y_axis,x_axis,'red','LineWidth',2);  
     
-    if(mod(i,frame_treated)==0 || i==1)
+    if((mod(i,frame_treated)==0 || i==1) && size(Inliers)=/=[0,0])
         scatter(Inliers(2,:),x+Inliers(1,:),...
           'MarkerEdgeColor',[0 .5 .5],...
           'MarkerFaceColor',[0 .7 .7],...

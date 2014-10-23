@@ -1,0 +1,9 @@
+#Flocus
+
+Flocus stands for Full needle LOCalization in Ultrasound images.
+
+The repository contains various algorithm for image processing based on data acquired by a [SonixTouch](http://www.ultrasonix.com/wikisonix/index.php/SonixTOUCH) ultrasound machine.
+
+Neccessary data can be provided by [Kilian](kilian.d@hotmail.fr).
+
+This project is comprised by the CAMI labex.

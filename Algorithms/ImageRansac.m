@@ -52,8 +52,8 @@ best_CRNS = Inf;
 for i=1:maxRANSAC
     CRNS = Inf;
     while CRNS == Inf
-    eta = exp(Jinit*log(1-0.5^2));
-    [HRNS_tmp,CRNS,DRNS_tmp,TRNS_tmp,Inliers_tmp] = RANSAC2( bool_map,eta,1);
+        eta = exp(Jinit*log(1-0.5^2));
+        [HRNS_tmp,CRNS,DRNS_tmp,TRNS_tmp,Inliers_tmp] = RANSAC2PT(bool_map,eta,1);
     end
     if(CRNS < best_CRNS)
         best_CRNS = CRNS;
