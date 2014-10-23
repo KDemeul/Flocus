@@ -15,7 +15,6 @@ im = squeeze(str.all_pic(:,:,n));
 whole_im = im;
 
 
-
 % Crop frame
 x = 120;
 y = 1;
@@ -55,10 +54,10 @@ bool_map = (im >= threshold);
 
 
 best_CRNS = Inf;
-for i=1:20
+for i=1:1
     CRNS = Inf;
     while CRNS == Inf
-    [HRNS_tmp,CRNS,DRNS_tmp,TRNS_tmp,Inliers_tmp] = RANSAC2( bool_map,0.001,1);
+    [HRNS_tmp,CRNS,DRNS_tmp,TRNS_tmp,Inliers_tmp] = RANSAC4PT(bool_map,0.5,1,10);
     end
     if(CRNS < best_CRNS)
         CRNS = best_CRNS;

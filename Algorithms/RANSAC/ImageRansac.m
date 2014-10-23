@@ -6,6 +6,7 @@ function [HRNS,CRNS,DRNS,TRNS,Inliers] = ImageRansac(im,rect,Jinit,maxRANSAC)
 normalize = 1;
 hist_equa = 0;
 percent_th = 10;
+use_4_points = 1;
 
 %% Image amelioration
 
@@ -53,7 +54,10 @@ for i=1:maxRANSAC
     CRNS = Inf;
     while CRNS == Inf
         eta = exp(Jinit*log(1-0.5^2));
-        [HRNS_tmp,CRNS,DRNS_tmp,TRNS_tmp,Inliers_tmp] = RANSAC2PT(bool_map,eta,1);
+        if(use_4_points == 1)
+            [HRNS_tmp,CRNS,DRNS_tmp,TRNS_tmp,Inliers_tmp] = RANSAC4PT(bool_map,eta,1);
+        else
+            [HRNS_tmp,CRNS,DRNS_tmp,TRNS_tmp,Inliers_tmp] = RANSAC2PT(bool_map,eta,1);   
     end
     if(CRNS < best_CRNS)
         best_CRNS = CRNS;
