@@ -1,0 +1,123 @@
+#include "mainwindow.h"
+#include <QtWidgets>
+
+MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
+{
+    /*--------------
+     * Menu
+     *--------------*/
+
+    //---> Main menu
+    QMenu *menuFile = menuBar()->addMenu("&File");
+    QMenu *menuAlgorithm = menuBar()->addMenu("&Algorithm");
+    QMenu *menuHelp = menuBar()->addMenu("&Help");
+
+    //---> Sub menu file
+    QAction *actionOpen = new QAction("&Open",this);
+    menuFile->addAction(actionOpen);
+    actionOpen->setIcon(QIcon("../../icons/glyphicons_144_folder_open.png"));
+
+    QMenu *menuSave = new QMenu("&Save",this);
+    menuFile->addMenu(menuSave);
+    menuSave->setIcon(QIcon("../../icons/glyphicons_443_floppy_disk.png"));
+    QAction *actionSaveImage = new QAction("Save &Image",this);
+    QAction *actionSaveMovie = new QAction("Save &Movie",this);
+    menuSave->addAction(actionSaveImage);
+    menuSave->addAction(actionSaveMovie);
+
+    menuFile->addSeparator();
+
+    QAction *actionClose = new QAction("&Close", this);
+    menuFile->addAction(actionClose);
+    actionClose->setIcon(QIcon("../../icons/glyphicons_063_power.png"));
+
+    //---> Sub menu algorithm
+    QAction *actionRANSAC = new QAction("&RANSAC",this);
+    menuAlgorithm->addAction(actionRANSAC);
+    actionRANSAC->setCheckable(true);
+
+    QAction *actionKalman = new QAction("&KALMAN",this);
+    menuAlgorithm->addAction(actionKalman);
+    actionKalman->setCheckable(true);
+
+    //---> Sub menu help
+    QAction *actionAbout = new QAction("&About",this);
+    menuHelp->addAction(actionAbout);
+    actionAbout->setIcon(QIcon("../../icons/glyphicons_082_roundabout.png"));
+
+    //---> Toolbar
+    //QToolBar *toolBarFile = addToolBar("File");
+    //toolBarFile->addAction(actionOpen);
+    //toolBarFile->addAction(actionSave);
+
+    //QComboBox *comboBoxAlgorithm = new QComboBox();
+    //comboBoxAlgorithm->addItem("RANSAC");
+    //comboBoxAlgorithm->addItem("KALMAN");
+
+    //QToolBar *toolBarAlgorithm = addToolBar("Algorithm");
+    //toolBarAlgorithm->addWidget(comboBoxAlgorithm);
+
+    //---> Slot connections
+
+    // Quit
+    connect(actionClose, SIGNAL(triggered()), qApp, SLOT(quit()));
+
+    // Open
+    connect(actionOpen,SIGNAL(triggered()),this,SLOT(openFileDialogue()));
+
+    // Save
+
+    // About
+    connect(actionAbout, SIGNAL(triggered()), this, SLOT(openAboutDialogue()));
+
+    // RANSAC
+    connect(actionRANSAC,SIGNAL(toggled(bool)),actionKalman,SLOT(setEnabled(bool)));
+    connect(actionRANSAC,SIGNAL(toggled(bool)),actionKalman,SLOT(setChecked(bool)));
+
+    /*--------------
+     * Central area
+     *--------------*/
+    centralArea = new QWidget;
+    setCentralWidget(centralArea);
+}
+
+
+void MainWindow::openAboutDialogue()
+{
+    QString message = "<b>Flocus 0.1.0 (opensource)</b><br><br>"
+            "Flocus stands for <b>F</b>ull needle <b>LOC</b>alization in <b>U</b>ltra<b>S</b>ound images.<br><br>"
+            "Flocus applies various image processing algorithms <br>to data acquired by a SonixTouch ultrasound machine.<br><br>"
+            "This project is included in the CAMI labex.";
+
+    QString title = "About Flocus";
+    QDialog *msg = new QDialog(this);
+    msg->setWindowTitle(title);
+    QVBoxLayout *layoutMsg = new QVBoxLayout;
+
+    QLabel *iconLabel = new QLabel;
+    QImage icon("../../fig/flocus_icon.png");
+    iconLabel->setPixmap(QPixmap::fromImage(icon));
+    iconLabel->setAlignment(Qt::AlignCenter);
+    layoutMsg->addWidget(iconLabel);
+
+    QLabel *text = new QLabel;
+    text->setText(message);
+    text->setAlignment(Qt::AlignCenter);
+    layoutMsg->addWidget(text);
+
+    QPushButton *buttonOK = new QPushButton("OK");
+    buttonOK->setMaximumWidth(50);
+    layoutMsg->addWidget(buttonOK,0,Qt::AlignCenter);
+
+    msg->setLayout(layoutMsg);
+
+    connect(buttonOK,SIGNAL(clicked()),msg,SLOT(accept()));
+
+    msg->exec();
+}
+
+void MainWindow::openFileDialogue()
+{
+    filename = QFileDialog::getOpenFileName(this, "Open file","/home/kiki/Documents/","US Data (*.b32 *.b8)");
+    QMessageBox::information(this, "File", "File selected:\n" + filename);
+}
