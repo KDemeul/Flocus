@@ -1,5 +1,3 @@
-#Flocus
-
 ![Banner](Fig/Banner.png)
 
 Flocus stands for __Full needle LOCalization in UltraSound images__.
