@@ -112,5 +112,5 @@ void MainWindow::openAboutDialogue()
 void MainWindow::openFileDialogue()
 {
     filename = QFileDialog::getOpenFileName(this, "Open file","/home/kiki/Documents/Prog/LIRMM/Flocus","US Data (*.b32 *.b8)");
-    QMessageBox::information(this, "File", "File selected:\n" + filename);
+    flDataHandler = new FlDataHandler(filename,this);
 }

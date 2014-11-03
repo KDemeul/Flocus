@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QtWidgets>
 #include "centralarea.h"
+#include "fldatahandler.h"
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
@@ -18,6 +19,8 @@ private slots:
 private:
     CentralArea *centralArea;
     QString filename;
+    FlDataHandler *flDataHandler;
+
 };
 
 #endif // MAINWINDOW_H

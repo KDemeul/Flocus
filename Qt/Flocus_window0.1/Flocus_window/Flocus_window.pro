@@ -14,9 +14,11 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     centralarea.cpp \
-    datavisualizer.cpp
+    datavisualizer.cpp \
+    fldatahandler.cpp
 
 HEADERS  += mainwindow.h \
     centralarea.h \
-    datavisualizer.h
+    datavisualizer.h \
+    fldatahandler.h
 
