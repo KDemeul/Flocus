@@ -12,7 +12,11 @@ TARGET = Flocus_window
 TEMPLATE = app
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    centralarea.cpp \
+    datavisualizer.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    centralarea.h \
+    datavisualizer.h
 

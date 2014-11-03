@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QtWidgets>
+#include "centralarea.h"
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
@@ -14,7 +16,7 @@ private slots:
     void openFileDialogue();
 
 private:
-    QWidget *centralArea;
+    CentralArea *centralArea;
     QString filename;
 };
 

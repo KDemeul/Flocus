@@ -1,8 +1,14 @@
 #include "mainwindow.h"
-#include <QtWidgets>
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {
+    /*--------------
+     * Central area
+     *--------------*/
+
+    centralArea = new CentralArea(this);
+    setCentralWidget(centralArea);
+
     /*--------------
      * Menu
      *--------------*/
@@ -45,18 +51,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     menuHelp->addAction(actionAbout);
     actionAbout->setIcon(QIcon("../../icons/glyphicons_082_roundabout.png"));
 
-    //---> Toolbar
-    //QToolBar *toolBarFile = addToolBar("File");
-    //toolBarFile->addAction(actionOpen);
-    //toolBarFile->addAction(actionSave);
-
-    //QComboBox *comboBoxAlgorithm = new QComboBox();
-    //comboBoxAlgorithm->addItem("RANSAC");
-    //comboBoxAlgorithm->addItem("KALMAN");
-
-    //QToolBar *toolBarAlgorithm = addToolBar("Algorithm");
-    //toolBarAlgorithm->addWidget(comboBoxAlgorithm);
-
     //---> Slot connections
 
     // Quit
@@ -66,19 +60,18 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     connect(actionOpen,SIGNAL(triggered()),this,SLOT(openFileDialogue()));
 
     // Save
+    // TODO
 
     // About
     connect(actionAbout, SIGNAL(triggered()), this, SLOT(openAboutDialogue()));
 
-    // RANSAC
+    // RANSAC & KALMAN
     connect(actionRANSAC,SIGNAL(toggled(bool)),actionKalman,SLOT(setEnabled(bool)));
     connect(actionRANSAC,SIGNAL(toggled(bool)),actionKalman,SLOT(setChecked(bool)));
-
-    /*--------------
-     * Central area
-     *--------------*/
-    centralArea = new QWidget;
-    setCentralWidget(centralArea);
+    connect(actionRANSAC,SIGNAL(toggled(bool)),centralArea->getButtonRANSAC(),SLOT(setChecked(bool)));
+    connect(actionKalman,SIGNAL(toggled(bool)),centralArea->getButtonKALMAN(),SLOT(setChecked(bool)));
+    connect(centralArea->getButtonRANSAC(),SIGNAL(toggled(bool)),actionRANSAC,SLOT(setChecked(bool)));
+    connect(centralArea->getButtonKALMAN(),SIGNAL(toggled(bool)),actionKalman,SLOT(setChecked(bool)));
 }
 
 
@@ -118,6 +111,6 @@ void MainWindow::openAboutDialogue()
 
 void MainWindow::openFileDialogue()
 {
-    filename = QFileDialog::getOpenFileName(this, "Open file","/home/kiki/Documents/","US Data (*.b32 *.b8)");
+    filename = QFileDialog::getOpenFileName(this, "Open file","/home/kiki/Documents/Prog/LIRMM/Flocus","US Data (*.b32 *.b8)");
     QMessageBox::information(this, "File", "File selected:\n" + filename);
 }
