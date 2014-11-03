@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "centralarea.h"
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {
@@ -54,7 +55,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     //---> Slot connections
 
     // Quit
-    connect(actionClose, SIGNAL(triggered()), this, SLOT(quit()));
+    // TODO FIX THIS
+//    connect(actionClose, SIGNAL(triggered()),this, SLOT(quit()));
 
     // Open
     connect(actionOpen,SIGNAL(triggered()),this,SLOT(openFileDialogue()));
@@ -112,5 +114,8 @@ void MainWindow::openAboutDialogue()
 void MainWindow::openFileDialogue()
 {
     filename = QFileDialog::getOpenFileName(this, "Open file","/home/kiki/Documents/Prog/LIRMM/Flocus/data/10-21-2014-Generic/","US Data (*.b32 *.b8)");
-    flDataHandler = new FlDataHandler(filename,this);
+}
+
+QString MainWindow::getFilename(){
+    return this->filename;
 }

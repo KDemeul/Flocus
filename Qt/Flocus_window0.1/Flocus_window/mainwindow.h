@@ -5,24 +5,25 @@
 #include <QMenu>
 #include <QMenuBar>
 #include <QFileDialog>
-//#include <QtWidgets>
-#include "centralarea.h"
+
 #include "fldatahandler.h"
+
+class CentralArea;
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
 
 public:
     MainWindow(QWidget *parent = 0);
+    QString getFilename();
 
 private slots:
     void openAboutDialogue();
     void openFileDialogue();
 
 private:
-    CentralArea *centralArea;
+    CentralArea* centralArea;
     QString filename;
-    FlDataHandler *flDataHandler;
 
 };
 

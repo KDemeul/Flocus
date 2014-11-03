@@ -1,16 +1,16 @@
 #include "centralarea.h"
+#include "mainwindow.h"
 
 CentralArea::CentralArea(QWidget *parent) : QWidget(parent)
 {
     // Create main layout
     QHBoxLayout *mainLayout = new QHBoxLayout;
 
-    dataVisualizer = new DataVisualizer;
+    dataVisualizer = new DataVisualizer(this);
     mainLayout->addWidget(dataVisualizer);
 
-
     // Create right layout
-    QVBoxLayout *rightLayout                = new QVBoxLayout;
+    QVBoxLayout *rightLayout   = new QVBoxLayout;
 
     // Algorithm layout
     labelAlgorithmPart         = new QLabel("<b>Algorithm</b>");
@@ -51,6 +51,8 @@ CentralArea::CentralArea(QWidget *parent) : QWidget(parent)
     mainLayout->addStretch(2000);
 
     this->setLayout(mainLayout);
+
+    connect(buttonPlay,SIGNAL(clicked()),this,SLOT(updateImage()));
 }
 
 QCheckBox* CentralArea::getButtonRANSAC()
@@ -61,4 +63,15 @@ QCheckBox* CentralArea::getButtonRANSAC()
 QCheckBox* CentralArea::getButtonKALMAN()
 {
     return buttonKALMAN;
+}
+
+void CentralArea::updateImage()
+{
+    flDataHandler = new FlDataHandler(((MainWindow*)this->parentWidget())->getFilename(),this);
+    if(flDataHandler->fileLoaded)
+    {
+        dataVisualizer->setSize(flDataHandler->w,flDataHandler->h);
+        dataVisualizer->cImage = flDataHandler->allPictures[0];
+        dataVisualizer->updateImage();
+    }
 }

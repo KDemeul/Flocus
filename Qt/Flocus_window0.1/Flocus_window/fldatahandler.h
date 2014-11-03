@@ -3,7 +3,6 @@
 
 #include <iostream>
 #include <fstream>
-//#include <QtWidgets>
 #include <string>
 #include <QMessageBox>
 
@@ -12,10 +11,7 @@ class FlDataHandler
 {
 public:
     FlDataHandler(QString filename, QWidget *parent);
-
-private:
-    int nbField = 19;
-
+    int nbField;
     int filetype;
     int nframes;
     int w;
@@ -32,7 +28,12 @@ private:
     int ld;
     int extra;
 
-    int*** allPictures;
+    char** allPictures;
+
+    bool fileLoaded = false;
+
+
+private:
 
 };
 

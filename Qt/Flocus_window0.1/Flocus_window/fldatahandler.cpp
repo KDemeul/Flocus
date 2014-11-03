@@ -28,22 +28,17 @@ FlDataHandler::FlDataHandler(QString filename,QWidget* parent)
         rawData.read((char*)&extra,sizeof(filetype));
 
         // Load the datas
-        allPictures = (int***)malloc(sizeof(int**)*nframes);
+        allPictures = (char**)malloc(sizeof(char*)*nframes);
         for (int frameCount = 0; frameCount < nframes; ++frameCount) {
-            allPictures[frameCount] = (int**) malloc(w * sizeof(int*));
-            for (int x = 0; x < w; ++x) {
-                allPictures[frameCount][x] = (int*) malloc(h*sizeof(int));
-                for (int y = 0; y < h; ++y) {
-                   int val=0;
-                   rawData.read((char*)&val,sizeof(val));
-                   allPictures[frameCount][x][y] = val;
-                }
-            }
+            allPictures[frameCount] = (char*) malloc(w*h*sizeof(int));
+            rawData.read(allPictures[frameCount],w*h*sizeof(int));
         }
         QMessageBox::information(parent,"Success","File " + filename + " successfully open.");
+        fileLoaded = true;
     }
     else
     {
         QMessageBox::critical(parent, "Error while opening", "File " + filename + " can not be load.");
     }
 }
+

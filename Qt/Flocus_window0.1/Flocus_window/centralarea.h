@@ -6,8 +6,9 @@
 #include <QLabel>
 #include <QLayout>
 #include <QPushButton>
-//#include <QtWidgets>
+
 #include "datavisualizer.h"
+#include "fldatahandler.h"
 
 class CentralArea : public QWidget
 {
@@ -21,6 +22,7 @@ public:
 signals:
 
 public slots:
+    void updateImage();
 
 private:
     // Left
@@ -33,13 +35,16 @@ private:
 
     // Vizualization
     QLabel      *labelVisualizationPart     ;
-    QGridLayout  *layoutVisualizationPart    ;
+    QGridLayout *layoutVisualizationPart    ;
     QPushButton *buttonBackward             ;
     QPushButton *buttonStepBackward         ;
     QPushButton *buttonPlay                 ;
     QPushButton *buttonPause                ;
     QPushButton *buttonStepForward          ;
     QPushButton *buttonForward              ;
+
+    // Data Handler
+    FlDataHandler *flDataHandler;
 };
 
 #endif // CENTRALAREA_H
