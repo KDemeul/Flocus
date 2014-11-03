@@ -1,7 +1,7 @@
 #include "datavisualizer.h"
 
 DataVisualizer::DataVisualizer(QWidget *parent) :
-    QWidget(parent)
+    QVTKWidget(parent)
 {
     this->setMinimumSize(800,800);
     this->setStyleSheet("background-color:white");

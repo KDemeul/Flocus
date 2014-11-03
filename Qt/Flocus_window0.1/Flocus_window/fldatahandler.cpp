@@ -28,12 +28,19 @@ FlDataHandler::FlDataHandler(QString filename,QWidget* parent)
         rawData.read((char*)&extra,sizeof(filetype));
 
         // Load the datas
+        allPictures = (int***)malloc(sizeof(int**)*nframes);
         for (int frameCount = 0; frameCount < nframes; ++frameCount) {
-
+            allPictures[frameCount] = (int**) malloc(w * sizeof(int*));
+            for (int x = 0; x < w; ++x) {
+                allPictures[frameCount][x] = (int*) malloc(h*sizeof(int));
+                for (int y = 0; y < h; ++y) {
+                   int val=0;
+                   rawData.read((char*)&val,sizeof(val));
+                   allPictures[frameCount][x][y] = val;
+                }
+            }
         }
-
-
-
+        QMessageBox::information(parent,"Success","File " + filename + " successfully open.");
     }
     else
     {

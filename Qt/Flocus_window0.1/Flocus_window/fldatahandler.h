@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <fstream>
-#include <QtWidgets>
+//#include <QtWidgets>
 #include <string>
 #include <QMessageBox>
 
@@ -31,6 +31,8 @@ private:
     int dr;
     int ld;
     int extra;
+
+    int*** allPictures;
 
 };
 

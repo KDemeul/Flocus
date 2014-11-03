@@ -2,9 +2,11 @@
 #define DATAVISUALIZER_H
 
 #include <QWidget>
-#include <QtWidgets>
+#include <QLabel>
+#include <QVTKWidget.h>
+//#include <QtWidgets>
 
-class DataVisualizer : public QWidget
+class DataVisualizer : public QVTKWidget
 {
     Q_OBJECT
 public:

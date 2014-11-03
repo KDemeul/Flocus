@@ -2,7 +2,11 @@
 #define CENTRALAREA_H
 
 #include <QWidget>
-#include <QtWidgets>
+#include <QCheckBox>
+#include <QLabel>
+#include <QLayout>
+#include <QPushButton>
+//#include <QtWidgets>
 #include "datavisualizer.h"
 
 class CentralArea : public QWidget

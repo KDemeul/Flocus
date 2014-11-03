@@ -54,7 +54,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     //---> Slot connections
 
     // Quit
-    connect(actionClose, SIGNAL(triggered()), qApp, SLOT(quit()));
+    connect(actionClose, SIGNAL(triggered()), this, SLOT(quit()));
 
     // Open
     connect(actionOpen,SIGNAL(triggered()),this,SLOT(openFileDialogue()));
@@ -111,6 +111,6 @@ void MainWindow::openAboutDialogue()
 
 void MainWindow::openFileDialogue()
 {
-    filename = QFileDialog::getOpenFileName(this, "Open file","/home/kiki/Documents/Prog/LIRMM/Flocus","US Data (*.b32 *.b8)");
+    filename = QFileDialog::getOpenFileName(this, "Open file","/home/kiki/Documents/Prog/LIRMM/Flocus/data/10-21-2014-Generic/","US Data (*.b32 *.b8)");
     flDataHandler = new FlDataHandler(filename,this);
 }

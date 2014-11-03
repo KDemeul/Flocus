@@ -2,7 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QtWidgets>
+#include <QMenu>
+#include <QMenuBar>
+#include <QFileDialog>
+//#include <QtWidgets>
 #include "centralarea.h"
 #include "fldatahandler.h"
 
