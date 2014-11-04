@@ -2,8 +2,8 @@
 
 DataVisualizer::DataVisualizer(QWidget *parent)
     : QWidget(parent)
-    , width(500)
-    , height(500)
+    , width(640)
+    , height(480)
 {
     widget = new QVTKWidget(this);
     this->setMinimumSize(width,height);
@@ -63,6 +63,33 @@ void DataVisualizer::setSize(int width, int height)
 void DataVisualizer::updateImage()
 {
     this->setSize(width,height);
+
+    int index = 0;
+    char tmp[sizeof(int)];
+    for (int i = 0; i < width; ++i) {
+        for (int j = 0; j < height; ++j) {
+           for(int k=0;k<sizeof(int);k++)
+           {
+                tmp[k] = cImage[index+k];
+           }
+           if(atoi(tmp) != 0)
+                std::cout << atoi(tmp) << ", ";
+           index += sizeof(int);
+        }
+        std::cout << std::endl;
+    }
+
+
+    //    while (index < width*height*sizeof(int))
+    //    {
+    //        char tmp[sizeof(int)];
+    //        for(int i=0;i<sizeof(int);i++)
+    //        {
+    //            tmp[i] = cImage[index+i];
+    //        }
+    //        std::cout << atoi(tmp) << std::endl;
+    //        index += sizeof(int);
+    //    }
 
     imageImport->SetDataSpacing(1, 1, 1);
     imageImport->SetDataOrigin(0, 0, 0);
