@@ -6,14 +6,14 @@
 #include <QLayout>
 #include <QSlider>
 
-#include <QVTKWidget.h>
-#include <vtkImageData.h>
-#include <vtkSmartPointer.h>
-#include <vtkImageImport.h>
-#include <vtkRenderWindow.h>
-#include <vtkRenderWindowInteractor.h>
-#include <vtkRenderer.h>
-#include <vtkImageActor.h>
+//#include <QVTKWidget.h>
+//#include <vtkImageData.h>
+//#include <vtkSmartPointer.h>
+//#include <vtkImageImport.h>
+//#include <vtkRenderWindow.h>
+//#include <vtkRenderWindowInteractor.h>
+//#include <vtkRenderer.h>
+//#include <vtkImageActor.h>
 
 
 #include "fldatahandler.h"
@@ -32,10 +32,10 @@ public slots:
     void updateImage();
 
 private:
-    QVTKWidget *widget;
+//    QVTKWidget *widget;
     int width;
     int height;
-    vtkSmartPointer<vtkImageImport> imageImport;
+//    vtkSmartPointer<vtkImageImport> imageImport;
 
 };
 
