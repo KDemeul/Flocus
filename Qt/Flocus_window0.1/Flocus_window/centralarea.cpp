@@ -70,8 +70,15 @@ void CentralArea::updateImage()
     flDataHandler = new FlDataHandler(((MainWindow*)this->parentWidget())->getFilename(),this);
     if(flDataHandler->fileLoaded)
     {
-        dataVisualizer->setSize(flDataHandler->w,flDataHandler->h);
-        dataVisualizer->cImage = flDataHandler->allPictures[0];
+        QMessageBox::information(this,"Success","File successfully open.");
+
+        int** img = flDataHandler->allPictures[0];
+
+        dataVisualizer->imgQt = new QImage((uchar*)img, flDataHandler->w, flDataHandler->h,QImage::Format_RGB32);
         dataVisualizer->updateImage();
+    }
+    else
+    {
+        QMessageBox::critical(this, "Error while opening", "File can not be load.");
     }
 }

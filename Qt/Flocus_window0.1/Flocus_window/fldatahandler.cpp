@@ -4,8 +4,11 @@ using namespace std;
 FlDataHandler::FlDataHandler(QString filename,QWidget* parent)
 {
     ifstream rawData(filename.toStdString().c_str(),ios::binary);
+//    ifstream rawData(filename.toStdString().c_str(),ios::binary);
     if(rawData)
     {
+        fileLoaded = true;
+
         // Header
         rawData.read((char*)&filetype,sizeof(filetype));
         rawData.read((char*)&nframes,sizeof(filetype));
@@ -28,17 +31,37 @@ FlDataHandler::FlDataHandler(QString filename,QWidget* parent)
         rawData.read((char*)&extra,sizeof(filetype));
 
         // Load the datas
-        allPictures = (char**)malloc(sizeof(char*)*nframes);
+        int max = -1;
+
+        allPictures = (int***)malloc(sizeof(int**)*nframes);
         for (int frameCount = 0; frameCount < nframes; ++frameCount) {
-            allPictures[frameCount] = (char*) malloc(w*h*sizeof(int));
-            rawData.read(allPictures[frameCount],w*h*sizeof(int));
+            allPictures[frameCount] = (int**) malloc(h*sizeof(int*));
+            for (int x = 0; x < h; ++x) {
+                allPictures[frameCount][x] = (int*) malloc(w*sizeof(int));
+            }
         }
-        QMessageBox::information(parent,"Success","File " + filename + " successfully open.");
-        fileLoaded = true;
-    }
-    else
-    {
-        QMessageBox::critical(parent, "Error while opening", "File " + filename + " can not be load.");
+
+        for (int frameCount = 0; frameCount < nframes; ++frameCount) {
+            for (int x = 0; x < h; ++x) {
+                for (int y = 0; y < w; ++y) {
+                    int tmp = 0;
+                    rawData.read((char*)&tmp,sizeof(tmp));
+                    if(tmp > max)
+                        max = tmp;
+                    allPictures[frameCount][x][y] = tmp;
+                }
+            }
+        }
+
+        // NORMALIZE DATA
+        for (int frameCount = 0; frameCount < nframes; ++frameCount) {
+            for (int x = 0; x < h; ++x) {
+                for (int y = 0; y < w; ++y) {
+                    allPictures[frameCount][x][y] *= 255;
+                    allPictures[frameCount][x][y] /= max;
+                }
+            }
+        }
     }
 }
 

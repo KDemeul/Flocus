@@ -7,8 +7,14 @@
 #include <QLayout>
 #include <QPushButton>
 
+
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include "opencv/cv.h"
+
 #include "datavisualizer.h"
 #include "fldatahandler.h"
+
 
 class CentralArea : public QWidget
 {

@@ -6,14 +6,10 @@
 #include <QLayout>
 #include <QSlider>
 
-//#include <QVTKWidget.h>
-//#include <vtkImageData.h>
-//#include <vtkSmartPointer.h>
-//#include <vtkImageImport.h>
-//#include <vtkRenderWindow.h>
-//#include <vtkRenderWindowInteractor.h>
-//#include <vtkRenderer.h>
-//#include <vtkImageActor.h>
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include "opencv/cv.h"
+#include <iostream>
 
 
 #include "fldatahandler.h"
@@ -23,19 +19,17 @@ class DataVisualizer : public QWidget
     Q_OBJECT
 public:
     explicit DataVisualizer(QWidget *parent = 0);
-    void setSize(int width,int height);
-    char* cImage;
+    cv::Mat img;
 
-signals:
-
-public slots:
+    QImage* imgQt;
     void updateImage();
 
 private:
-//    QVTKWidget *widget;
     int width;
     int height;
-//    vtkSmartPointer<vtkImageImport> imageImport;
+
+
+    QLabel* labelImage;
 
 };
 

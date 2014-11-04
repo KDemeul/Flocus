@@ -28,7 +28,7 @@ public:
     int ld;
     int extra;
 
-    char** allPictures;
+    int*** allPictures;
 
     bool fileLoaded = false;
 
