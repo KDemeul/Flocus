@@ -7,7 +7,7 @@
 #include <QLayout>
 #include <QPushButton>
 
-
+#include <stdlib.h>
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include "opencv/cv.h"
@@ -48,6 +48,9 @@ private:
     QPushButton *buttonPause                ;
     QPushButton *buttonStepForward          ;
     QPushButton *buttonForward              ;
+    QPushButton *buttonFastForward          ;
+    QPushButton *buttonFastBackward         ;
+    QPushButton **buttonArray               ;
 
     // Data Handler
     FlDataHandler *flDataHandler;

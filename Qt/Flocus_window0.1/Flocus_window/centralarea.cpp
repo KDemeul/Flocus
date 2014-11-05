@@ -6,8 +6,15 @@ CentralArea::CentralArea(QWidget *parent) : QWidget(parent)
     // Create main layout
     QHBoxLayout *mainLayout = new QHBoxLayout;
 
+    // Create dataVisualizer layout
+    QVBoxLayout *dataVizualizerLayout = new QVBoxLayout;
+
     dataVisualizer = new DataVisualizer(this);
-    mainLayout->addWidget(dataVisualizer);
+    dataVizualizerLayout->addWidget(dataVisualizer);
+    dataVizualizerLayout->addStretch(2000);
+
+    mainLayout->addStretch(2000);
+    mainLayout->addLayout(dataVizualizerLayout);
 
     // Create right layout
     QVBoxLayout *rightLayout   = new QVBoxLayout;
@@ -31,12 +38,24 @@ CentralArea::CentralArea(QWidget *parent) : QWidget(parent)
     buttonPause                = new QPushButton(QIcon("../../icons/glyphicons_174_pause.png"),QString());
     buttonStepForward          = new QPushButton(QIcon("../../icons/glyphicons_178_step_forward.png"),QString());
     buttonForward              = new QPushButton(QIcon("../../icons/glyphicons_177_fast_forward.png"),QString());
-    layoutVisualizationPart->addWidget(buttonBackward,1,0);
-    layoutVisualizationPart->addWidget(buttonStepBackward,1,1);
-    layoutVisualizationPart->addWidget(buttonPlay,0,1);
-    layoutVisualizationPart->addWidget(buttonPause,0,2);
-    layoutVisualizationPart->addWidget(buttonStepForward,1,2);
-    layoutVisualizationPart->addWidget(buttonForward,1,3);
+    buttonFastForward          = new QPushButton(QIcon("../../icons/glyphicons_176_forward.png"),QString());
+    buttonFastBackward         = new QPushButton(QIcon("../../icons/glyphicons_172_rewind.png"),QString());
+
+    buttonArray = (QPushButton**) malloc(sizeof(QPushButton*) * 8);
+    buttonArray[0] = buttonFastBackward;
+    buttonArray[1] = buttonPlay;
+    buttonArray[2] = buttonPause;
+    buttonArray[3] = buttonFastForward;
+    buttonArray[4] = buttonBackward;
+    buttonArray[5] = buttonStepBackward;
+    buttonArray[6] = buttonStepForward ;
+    buttonArray[7] = buttonForward;
+
+    for (int i = 0; i < 2; ++i) {
+        for (int j = 0; j < 4; ++j) {
+            layoutVisualizationPart->addWidget(buttonArray[i*4+j],i,j);
+        }
+    }
 
     rightLayout->addWidget(labelAlgorithmPart);
     rightLayout->addWidget(buttonRANSAC);
@@ -53,16 +72,19 @@ CentralArea::CentralArea(QWidget *parent) : QWidget(parent)
     this->setLayout(mainLayout);
 
     // CONNECTION
+    connect(buttonFastBackward,SIGNAL(clicked()),dataVisualizer,SLOT(fastPreviousFrame()));
+    connect(buttonFastForward,SIGNAL(clicked()),dataVisualizer,SLOT(fastNextFrame()));
     connect(buttonBackward,SIGNAL(clicked()),dataVisualizer,SLOT(firstFrame()));
     connect(buttonForward,SIGNAL(clicked()),dataVisualizer,SLOT(lastFrame()));
     connect(buttonStepBackward,SIGNAL(clicked()),dataVisualizer,SLOT(previousFrame()));
     connect(buttonStepForward,SIGNAL(clicked()),dataVisualizer,SLOT(nextFrame()));
-    connect(buttonBackward,SIGNAL(clicked()),dataVisualizer,SLOT(pause()));
-    connect(buttonForward,SIGNAL(clicked()),dataVisualizer,SLOT(pause()));
-    connect(buttonStepBackward,SIGNAL(clicked()),dataVisualizer,SLOT(pause()));
-    connect(buttonStepForward,SIGNAL(clicked()),dataVisualizer,SLOT(pause()));
     connect(buttonPlay,SIGNAL(clicked()),dataVisualizer,SLOT(play()));
-    connect(buttonPause,SIGNAL(clicked()),dataVisualizer,SLOT(pause()));
+
+    //Any button (except play) throw the pause even
+    for (int i = 0; i < 8; ++i) {
+        if(i!=1)
+            connect(buttonArray[i],SIGNAL(clicked()),dataVisualizer,SLOT(pause()));
+    }
 }
 
 QCheckBox* CentralArea::getButtonRANSAC()

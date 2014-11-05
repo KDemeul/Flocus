@@ -6,6 +6,7 @@
 #include <QLayout>
 #include <QSlider>
 #include <QThread>
+#include <QGLWidget>
 
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
@@ -17,19 +18,19 @@
 
 #include <time.h>
 
-class DataVisualizer : public QWidget
+class DataVisualizer : public QGLWidget
 {
     Q_OBJECT
 public:
     explicit DataVisualizer(QWidget *parent = 0);
-    cv::Mat img;
 
-    QImage imgQt;
     void updateImage();
     void setDataHandler(FlDataHandler* a_flDataHandler);
 
 
 public slots:
+    void fastPreviousFrame();
+    void fastNextFrame();
     void nextFrame();
     void previousFrame();
     void firstFrame();
@@ -37,19 +38,32 @@ public slots:
     void play();
     void pause();
 
+protected:
+    void initializeGL(); // OpenGL initialization
+    void paintGL(); // OpenGL Rendering
+
+    void updateScene();
+    void renderImage();
+
 private:
-    int width;
-    int height;
+    int mWidth;
+    int mHeight;
+    bool mSceneChanged;          // Indicates when OpenGL view is to be redrawn
+    float mImgRatio;             // height/width ratio
+    int mOutH;
+    int mOutW;
 
-    FlDataHandler* flDataHandler;
+    int mPosX;                  // Top left X position to render image in the center of widget
+    int mPosY;                  // Top left Y position to render image in the center of widget
 
-    QLabel* labelImage;
+    cv::Mat mImgCV; // original OpenCV image to be shown
+    QImage mImgQt; // Qt image to be rendered
+
+    FlDataHandler* mFlDataHandler;
 
     void setFrame(int a_indexFrame);
-    bool isPlaying;
-    int indexCurrentFrame;
-
-    void sleep(unsigned int mseconds);
+    bool mIsPlaying;
+    int mIndexCurrentFrame;
 };
 
 #endif // DATAVISUALIZER_H

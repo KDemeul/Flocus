@@ -1,65 +1,119 @@
 #include "datavisualizer.h"
 
 DataVisualizer::DataVisualizer(QWidget *parent)
-    : QWidget(parent)
-    , width(640)
-    , height(480)
-    , indexCurrentFrame(0)
+    : QGLWidget(parent)
+    , mWidth(640)
+    , mHeight(480)
+    , mIndexCurrentFrame(0)
+    , mPosX(0)
+    , mPosY(0)
+    , mOutH(0)
+    , mOutW(0)
+    , mSceneChanged(false)
 {
-    flDataHandler = new FlDataHandler();
+    this->setMinimumSize(mWidth,mHeight);
+    mImgRatio = mWidth/mHeight;
+    mFlDataHandler = new FlDataHandler();
+}
 
-    this->setMinimumSize(width,height);
+void DataVisualizer::initializeGL()
+{
+    makeCurrent();
+}
 
-    labelImage = new QLabel(this);
-    labelImage->setAlignment(Qt::AlignCenter);
+void DataVisualizer::updateScene()
+{
+    if( mSceneChanged && this->isVisible() )
+        updateGL();
+}
+
+void DataVisualizer::paintGL()
+{
+    makeCurrent();
+
+    if( !mSceneChanged )
+        return;
+
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+    renderImage();
+
+    mSceneChanged = false;
+}
+
+void DataVisualizer::renderImage()
+{
+    makeCurrent();
+    glClear(GL_COLOR_BUFFER_BIT);
+    if (!mImgQt.isNull())
+    {
+        glLoadIdentity();
+        glPushMatrix();
+
+        int imW = mImgQt.width();
+        int imH = mImgQt.height();
+
+        glDrawPixels( imW, imH, GL_RGBA, GL_UNSIGNED_BYTE, mImgQt.bits());
+        glPopMatrix();
+        glFlush();
+    }
 }
 
 void DataVisualizer::updateImage(){
-    width = flDataHandler->w;
-    height = flDataHandler->h;
+    // Create cv image
+    cv::Mat image = cv::Mat::zeros(mHeight,mWidth, CV_32FC1);
 
-    img = cv::Mat::zeros(height,width, CV_32FC1);
-
-    for (int x = 0; x < height; ++x) {
-        for (int y = 0; y < width; ++y) {
-            img.at<float>(x,y) = flDataHandler->allPictures[indexCurrentFrame][x][width-y];
+    for (int x = 0; x < mHeight; ++x) {
+        for (int y = 0; y < mWidth; ++y) {
+            image.at<float>(x,y) = mFlDataHandler->allPictures[mIndexCurrentFrame][x][mWidth-y];
         }
     }
+    image.convertTo(mImgCV, CV_8UC1, 255, 0);
 
-    cv::Mat matScaled;
-    img.convertTo(matScaled, CV_8UC1, 255, 0);
+    mImgRatio = (float)image.cols/(float)image.rows;
 
-    imgQt = QImage((uchar*) matScaled.data, matScaled.cols, matScaled.rows, matScaled.step, QImage::Format_Indexed8);
+    // Convert cv image to qimage
+    if( mImgCV.channels() == 3)
+        mImgQt = QImage((const unsigned char*)(mImgCV.data),
+                        mImgCV.cols, mImgCV.rows,
+                        mImgCV.step, QImage::Format_RGB888).rgbSwapped();
+    else if( mImgCV.channels() == 1)
+        mImgQt = QImage((const unsigned char*)(mImgCV.data),
+                        mImgCV.cols, mImgCV.rows,
+                        mImgCV.step, QImage::Format_Indexed8);
 
-    labelImage->setPixmap(QPixmap::fromImage(imgQt));
-    labelImage->setAlignment(Qt::AlignCenter);
-    labelImage->setMinimumSize(width,height);
+    mImgQt = QGLWidget::convertToGLFormat(mImgQt);
+
+    mSceneChanged = true;
+    updateScene();
 }
 
-void DataVisualizer::setDataHandler(FlDataHandler* a_flDataHandler)
+void DataVisualizer::setDataHandler(FlDataHandler* a_FlDataHandler)
 {
-    flDataHandler = a_flDataHandler;
+    mFlDataHandler = a_FlDataHandler;
 }
 
 void DataVisualizer::setFrame(int a_indexFrame)
 {
-    if(flDataHandler->fileLoaded)
+    if(mFlDataHandler->fileLoaded)
     {
-        if(a_indexFrame < flDataHandler->nframes && a_indexFrame > -1)
-            indexCurrentFrame = a_indexFrame;
+        if(a_indexFrame < mFlDataHandler->nframes && a_indexFrame > -1)
+            mIndexCurrentFrame = a_indexFrame;
+        else
+            mIndexCurrentFrame = a_indexFrame < 0 ? 0 : mFlDataHandler->nframes-1;
         updateImage();
     }
 }
 
 void DataVisualizer::nextFrame()
 {
-    int desiredIndex = indexCurrentFrame + 1;
+    int desiredIndex = mIndexCurrentFrame + 1;
     setFrame(desiredIndex);
 }
 
 void DataVisualizer::previousFrame()
 {
-    int desiredIndex = indexCurrentFrame - 1;
+    int desiredIndex = mIndexCurrentFrame - 1;
     setFrame(desiredIndex);
 }
 
@@ -71,35 +125,35 @@ void DataVisualizer::firstFrame()
 
 void DataVisualizer::lastFrame()
 {
-    setFrame(flDataHandler->nframes-1);
+    setFrame(mFlDataHandler->nframes-1);
+}
+
+void DataVisualizer::fastNextFrame()
+{
+    setFrame(mIndexCurrentFrame+10);
+}
+
+void DataVisualizer::fastPreviousFrame()
+{
+    setFrame(mIndexCurrentFrame-10);
 }
 
 void DataVisualizer::play()
 {
-    if(flDataHandler->fileLoaded)
+    if(mFlDataHandler->fileLoaded)
     {
-        isPlaying = !isPlaying;
+        mIsPlaying = !mIsPlaying;
 
-        cv::namedWindow("pouet");
-        cv::resizeWindow("pouet",0,0);
-        while(isPlaying && indexCurrentFrame < flDataHandler->nframes-1)
+        while(mIsPlaying && mIndexCurrentFrame < mFlDataHandler->nframes-1)
         {
             nextFrame();
-            cv::waitKey(1000/flDataHandler->ss);
+            cv::waitKey(1000/mFlDataHandler->ss);
         }
-        cv::destroyAllWindows();
     }
 }
 
 void DataVisualizer::pause()
 {
-    isPlaying = false;
-}
-
-
-void DataVisualizer::sleep(unsigned int mseconds)
-{
-    clock_t goal = mseconds + clock();
-    while (goal > clock());
+    mIsPlaying = false;
 }
 
