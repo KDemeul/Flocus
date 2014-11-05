@@ -88,6 +88,23 @@ void DataVisualizer::updateImage(){
     updateScene();
 }
 
+void DataVisualizer::addDrawing(){
+    // Convert cv image to qimage
+    if( mImgCV.channels() == 3)
+        mImgQt = QImage((const unsigned char*)(mImgCV.data),
+                        mImgCV.cols, mImgCV.rows,
+                        mImgCV.step, QImage::Format_RGB888).rgbSwapped();
+    else if( mImgCV.channels() == 1)
+        mImgQt = QImage((const unsigned char*)(mImgCV.data),
+                        mImgCV.cols, mImgCV.rows,
+                        mImgCV.step, QImage::Format_Indexed8);
+
+    mImgQt = QGLWidget::convertToGLFormat(mImgQt);
+
+    mSceneChanged = true;
+    updateScene();
+}
+
 void DataVisualizer::setDataHandler(FlDataHandler* a_FlDataHandler)
 {
     mFlDataHandler = a_FlDataHandler;
@@ -146,8 +163,11 @@ void DataVisualizer::play()
 
         while(mIsPlaying && mIndexCurrentFrame < mFlDataHandler->nframes-1)
         {
+            clock_t previous_t = clock();
             nextFrame();
-            cv::waitKey(1000/mFlDataHandler->ss);
+            clock_t elapsed = clock() - previous_t;
+            clock_t tWait = 1000/mFlDataHandler->ss - 1000 * ((float)elapsed/CLOCKS_PER_SEC);
+            cv::waitKey((tWait > 1) ? tWait : 1);
         }
     }
 }
@@ -155,5 +175,15 @@ void DataVisualizer::play()
 void DataVisualizer::pause()
 {
     mIsPlaying = false;
+}
+
+void DataVisualizer::drawLine(cv::Point start, cv::Point end)
+{
+    if (!mFlDataHandler->fileLoaded)
+        return;
+
+    line(mImgCV,start,end,cv::Scalar(255, 0, 0 ),2,8);
+
+    addDrawing();
 }
 

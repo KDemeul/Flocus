@@ -11,19 +11,16 @@
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include "opencv/cv.h"
-#include <iostream>
-#include <qapplication.h>
 
 #include "fldatahandler.h"
-
 #include <time.h>
-
 class DataVisualizer : public QGLWidget
 {
     Q_OBJECT
 public:
     explicit DataVisualizer(QWidget *parent = 0);
 
+    void addDrawing();
     void updateImage();
     void setDataHandler(FlDataHandler* a_flDataHandler);
 
@@ -64,6 +61,9 @@ private:
     void setFrame(int a_indexFrame);
     bool mIsPlaying;
     int mIndexCurrentFrame;
+
+    // Drawing function
+    void drawLine(cv::Point start, cv::Point end);
 };
 
 #endif // DATAVISUALIZER_H
