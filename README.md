@@ -10,4 +10,4 @@ This project is included in the CAMI labex.
 
 ## Environment
 
-The project recquire qt4 and vtk5.8 (see [this](https://www.comp.nus.edu.sg/~leowwk/install-vtk.html#vtkwithqt) for 'how to install')
+The project recquire qt and opencv. (It has been tested with qt5 and opencv2.4.) 
