@@ -114,6 +114,7 @@ void MainWindow::openAboutDialogue()
 void MainWindow::openFileDialogue()
 {
     filename = QFileDialog::getOpenFileName(this, "Open file","/home/kiki/Documents/Prog/LIRMM/Flocus/data/10-21-2014-Generic/","US Data (*.b32 *.b8)");
+    centralArea->updateImage();
 }
 
 QString MainWindow::getFilename(){

@@ -52,7 +52,17 @@ CentralArea::CentralArea(QWidget *parent) : QWidget(parent)
 
     this->setLayout(mainLayout);
 
-    connect(buttonPlay,SIGNAL(clicked()),this,SLOT(updateImage()));
+    // CONNECTION
+    connect(buttonBackward,SIGNAL(clicked()),dataVisualizer,SLOT(firstFrame()));
+    connect(buttonForward,SIGNAL(clicked()),dataVisualizer,SLOT(lastFrame()));
+    connect(buttonStepBackward,SIGNAL(clicked()),dataVisualizer,SLOT(previousFrame()));
+    connect(buttonStepForward,SIGNAL(clicked()),dataVisualizer,SLOT(nextFrame()));
+    connect(buttonBackward,SIGNAL(clicked()),dataVisualizer,SLOT(pause()));
+    connect(buttonForward,SIGNAL(clicked()),dataVisualizer,SLOT(pause()));
+    connect(buttonStepBackward,SIGNAL(clicked()),dataVisualizer,SLOT(pause()));
+    connect(buttonStepForward,SIGNAL(clicked()),dataVisualizer,SLOT(pause()));
+    connect(buttonPlay,SIGNAL(clicked()),dataVisualizer,SLOT(play()));
+    connect(buttonPause,SIGNAL(clicked()),dataVisualizer,SLOT(pause()));
 }
 
 QCheckBox* CentralArea::getButtonRANSAC()
@@ -70,11 +80,7 @@ void CentralArea::updateImage()
     flDataHandler = new FlDataHandler(((MainWindow*)this->parentWidget())->getFilename(),this);
     if(flDataHandler->fileLoaded)
     {
-        QMessageBox::information(this,"Success","File successfully open.");
-
-        int** img = flDataHandler->allPictures[0];
-
-        dataVisualizer->imgQt = new QImage((uchar*)img, flDataHandler->w, flDataHandler->h,QImage::Format_RGB32);
+        dataVisualizer->setDataHandler(flDataHandler);
         dataVisualizer->updateImage();
     }
     else

@@ -31,3 +31,4 @@ LIBS+= -L/usr/include/vtk-5.8/ -lvtkCommon -lvtksys -lQVTK -lvtkQtChart -lvtkVie
 INCLUDEPATH += /usr/include/opencv2
 
 LIBS+= -lopencv_core -lopencv_highgui
+

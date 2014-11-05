@@ -1,6 +1,11 @@
 #include "fldatahandler.h"
 using namespace std;
 
+FlDataHandler::FlDataHandler()
+{
+    fileLoaded = false;
+}
+
 FlDataHandler::FlDataHandler(QString filename,QWidget* parent)
 {
     ifstream rawData(filename.toStdString().c_str(),ios::binary);
@@ -31,24 +36,25 @@ FlDataHandler::FlDataHandler(QString filename,QWidget* parent)
         rawData.read((char*)&extra,sizeof(filetype));
 
         // Load the datas
-        int max = -1;
 
-        allPictures = (int***)malloc(sizeof(int**)*nframes);
+        allPictures = (float***)malloc(sizeof(float**)*nframes);
         for (int frameCount = 0; frameCount < nframes; ++frameCount) {
-            allPictures[frameCount] = (int**) malloc(h*sizeof(int*));
+            allPictures[frameCount] = (float**) malloc(h*sizeof(float*));
             for (int x = 0; x < h; ++x) {
-                allPictures[frameCount][x] = (int*) malloc(w*sizeof(int));
+                allPictures[frameCount][x] = (float*) malloc(w*sizeof(float));
             }
         }
 
+
+        float max = -1.0;
         for (int frameCount = 0; frameCount < nframes; ++frameCount) {
             for (int x = 0; x < h; ++x) {
                 for (int y = 0; y < w; ++y) {
                     int tmp = 0;
                     rawData.read((char*)&tmp,sizeof(tmp));
                     if(tmp > max)
-                        max = tmp;
-                    allPictures[frameCount][x][y] = tmp;
+                        max = (float)tmp;
+                    allPictures[frameCount][x][y] = (float)tmp;
                 }
             }
         }
@@ -57,11 +63,30 @@ FlDataHandler::FlDataHandler(QString filename,QWidget* parent)
         for (int frameCount = 0; frameCount < nframes; ++frameCount) {
             for (int x = 0; x < h; ++x) {
                 for (int y = 0; y < w; ++y) {
-                    allPictures[frameCount][x][y] *= 255;
-                    allPictures[frameCount][x][y] /= max;
+                    int tmp = allPictures[frameCount][x][y];
+                    allPictures[frameCount][x][y] = (tmp / max);
                 }
             }
         }
+
+//        //DEBUG -> print first pic into matlab script
+//        ofstream outfile("tmp.m",ios::binary);
+//        outfile << "pouet=[\n";
+
+//        for (int x = 0; x < h; ++x) {
+//            outfile << "[";
+//            for (int y = 0; y < w; ++y) {
+//                outfile << allPictures[0][x][y];
+//                if(y<w-1)
+//                    outfile << ",";
+//            }
+//            if (x < h - 1)
+//                outfile << "];\n";
+//        }
+//        outfile << "]\n];";
+//        outfile.close();
+
+
     }
 }
 

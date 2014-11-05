@@ -10,6 +10,7 @@
 class FlDataHandler
 {
 public:
+    FlDataHandler();
     FlDataHandler(QString filename, QWidget *parent);
     int nbField;
     int filetype;
@@ -28,7 +29,7 @@ public:
     int ld;
     int extra;
 
-    int*** allPictures;
+    float*** allPictures;
 
     bool fileLoaded = false;
 
