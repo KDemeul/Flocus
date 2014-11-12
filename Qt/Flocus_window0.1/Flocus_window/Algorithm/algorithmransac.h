@@ -10,6 +10,7 @@
 #include <vector>
 #include <stdlib.h>     /* srand, rand */
 #include <limits>       // std::numeric_limits
+#include <math.h>       /* log */
 
 #include "common.h"
 
@@ -45,10 +46,10 @@ private:
     double mJ; // current nb of iteration
 
     //-----> Result
-    double** HRNS; // coefficient of the curve approximating the electrode axis
-    double   CRNS; // cost of the model
-    double** DRNS; // set of control points
-    double** TRNS; // value of parameters t for control points
+    double CRNS;  // cost of the model
+    cv::Mat HRNS; // coefficient of the curve approximating the electrode axis
+    cv::Mat DRNS; // set of control points
+    cv::Mat TRNS; // value of parameters t for control points
     std::vector<cv::Point> mInliers;
 
     //-----> Methods
@@ -56,6 +57,8 @@ private:
     void createIndexThresh();
     SetPoint getRandPoints();
     bool isAPotentialCurve(SetPoint a_potentialSet);
+    void fillMatricesHjTj(cv::Mat *Hj,cv::Mat *Tj, SetPoint *Dj);
+    double DistToCurve(cv::Mat *Hj,SetPoint *Dj,cv::Mat *Tj,cv::Point *randPoint);
 
 };
 

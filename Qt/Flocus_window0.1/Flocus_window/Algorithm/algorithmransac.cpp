@@ -8,25 +8,11 @@ AlgorithmRansac::AlgorithmRansac(int a_ransacNbPoint)
 {
     // INITIALIZATION
     CRNS = std::numeric_limits<double>::max();
-    HRNS = (double**) malloc(sizeof(double*) * mRansacNbPoint);
-    DRNS = (double**) malloc(sizeof(double*) * mRansacNbPoint);
-    TRNS = (double**) malloc(sizeof(double*) * mRansacNbPoint);
-    for(int i = 0; i < mRansacNbPoint ; i++)
-    {
-        HRNS[i] = (double*) malloc(sizeof(double) * mRansacNbPoint);
-        DRNS[i] = (double*) malloc(sizeof(double) * mRansacNbPoint);
-        TRNS[i] = (double*) malloc(sizeof(double) * mRansacNbPoint);
-        for(int j=0 ; j < mRansacNbPoint ; j++)
-        {
-            HRNS[i][j] = std::numeric_limits<double>::max();
-            DRNS[i][j] = std::numeric_limits<double>::max();
-            TRNS[i][j] = std::numeric_limits<double>::max();
-        }
-    }
 
     // Compute the initial number of iterations J:
     double ksi = 0.5;
-    mJ = log(mEta) / log(1 - ksi^2);
+    mJ = log(mEta) / log(1 - pow(ksi,2));
+
 }
 
 void AlgorithmRansac::applyAlgorithm(cv::Mat a_pic, cv::Rect a_regionOfInterest)
@@ -54,18 +40,42 @@ void AlgorithmRansac::applyAlgorithm(cv::Mat a_pic, cv::Rect a_regionOfInterest)
 
     int j=0; // nb iter inside loop
 
-    while(j < mJ)
+    while(j < 1)
     {
     //  Select randomly a subset Sj ⊂ Xe, |Sj| = mRansacNbPoint
     SetPoint Sj = getRandPoints();
 
     bool acceptedPoint = isAPotentialCurve(Sj);
 
+    if(!acceptedPoint)
+        continue;
 
+    // Find Dj by ordering points in Sj
+       // TODO
+
+    SetPoint Dj = Sj;
+
+    // Compute coefficient matrix Hj from the set Dj
+    cv::Mat Hj;
+    cv::Mat Tj;
+    fillMatricesHjTj(&Hj,&Tj,&Dj);
+
+    // Check consistency of a randomly selected point x from Xe with the model c(t; Hj)
+    // If x passes, then continue; otherwise increment j and loop
+
+    int indexRand = rand() % mIndexThresh.size();
+    cv::Point randPoint = mIndexThresh.at(indexRand);
+
+    double d = DistToCurve(&Hj,&Dj,&Tj,&randPoint);
+
+    if (d > mRho)
+    {
+        j = j + 1 ;
+        continue;
     }
 
-
-
+    j++;
+    }
 
     // DEBUG DISPLAY
 //    cv::imshow("Pic Extracted", mPicResized);
@@ -156,7 +166,50 @@ SetPoint AlgorithmRansac::getRandPoints()
 
 bool AlgorithmRansac::isAPotentialCurve(SetPoint a_potentialSet) // STUPID FUNCTION
 {
-    if(a_potentialSet == mRansacNbPoint)
+    if(a_potentialSet.size() == mRansacNbPoint)
         return true;
     return true;
+}
+
+void AlgorithmRansac::fillMatricesHjTj(cv::Mat *Hj, cv::Mat *Tj, SetPoint *Dj)
+{
+    if(mRansacNbPoint == 2)
+    {
+        // Get point
+        SetPoint::iterator it = Dj->begin();
+        cv::Point D1 = *it;
+        std::advance(it,1);
+        cv::Point D2 = *it;
+        cv::Mat DjMat = (cv::Mat_<double>(2,2) << D1.x, D2.x, D1.y, D2.y);
+
+
+        // Set Tj
+        double t1 = 0;
+        double t2 = cv::norm(D1-D2);
+        *Tj = (cv::Mat_<double>(2, 2) << 1,1,t1,t2);
+
+        // Set Hj
+        *Hj = DjMat * Tj->inv();
+    }
+    else
+        DEBUG_MSG("WRONG PARAMETER IN RANSAC FITTING : mRansacNbPoint != 2 (mRansacNbPoint = " << mRansacNbPoint << ")");
+}
+
+double AlgorithmRansac::DistToCurve(cv::Mat *Hj,SetPoint *Dj,cv::Mat *Tj,cv::Point *randPoint)
+{
+    if(mRansacNbPoint == 2)
+    {
+        // Set points
+        SetPoint::iterator it = Dj->begin();
+        cv::Point D1 = *it;
+        std::advance(it,1);
+        cv::Point D2 = *it;
+
+        cv::Point vL = D2 - D1;
+        cv::Point w = *randPoint-D1;
+
+        return abs(vL.x*w.y - vL.y * w.x) / cv::norm(vL);
+    }
+    else
+        return std::numeric_limits<double>::max();
 }

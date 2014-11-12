@@ -14,7 +14,7 @@
 
 struct comparePoints {
     bool operator()(const cv::Point & a, const cv::Point & b) {
-        return ( a.x<b.x && a.y<b.y );
+        return ( a.x<b.x || (a.x == b.x && b.x < b.y) );
     }
 };
 
