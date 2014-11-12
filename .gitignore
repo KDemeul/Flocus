@@ -1,0 +1,9 @@
+#Exclude the following file
+*.o
+data/
+Qt/icons
+*.user
+Makefile
+moc*.cpp
+Qt/Flocus_window0.1/Flocus_window/Flocus_window
+Qt/fig/fig
