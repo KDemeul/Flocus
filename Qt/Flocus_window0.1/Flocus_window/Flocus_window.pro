@@ -17,18 +17,22 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     centralarea.cpp \
     datavisualizer.cpp \
-    fldatahandler.cpp
+    fldatahandler.cpp \
+    Algorithm/algorithm.cpp \
+    Algorithm/algorithmransac.cpp
 
 HEADERS  += mainwindow.h \
     centralarea.h \
     datavisualizer.h \
-    fldatahandler.h
+    fldatahandler.h \
+    Algorithm/algorithm.h \
+    Algorithm/algorithmransac.h
 
-INCLUDEPATH += /usr/include/vtk-5.8
+#INCLUDEPATH += /usr/include/vtk-5.8
 
-LIBS+= -L/usr/include/vtk-5.8/ -lvtkCommon -lvtksys -lQVTK -lvtkQtChart -lvtkViews -lvtkWidgets -lvtkInfovis -lvtkRendering -lvtkGraphics -lvtkImaging -lvtkIO -lvtkFiltering -lvtkDICOMParser  -lvtkalglib -lvtkverdict -lvtkmetaio -lvtkexoIIc -lvtkftgl -lvtkHybrid
+#LIBS+= -L/usr/include/vtk-5.8/ -lvtkCommon -lvtksys -lQVTK -lvtkQtChart -lvtkViews -lvtkWidgets -lvtkInfovis -lvtkRendering -lvtkGraphics -lvtkImaging -lvtkIO -lvtkFiltering -lvtkDICOMParser  -lvtkalglib -lvtkverdict -lvtkmetaio -lvtkexoIIc -lvtkftgl -lvtkHybrid
 
 INCLUDEPATH += /usr/include/opencv2
 
-LIBS+= -lopencv_core -lopencv_highgui
+LIBS+= -lopencv_core -lopencv_highgui -lopencv_imgproc
 

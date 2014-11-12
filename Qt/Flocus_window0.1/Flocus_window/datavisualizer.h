@@ -12,6 +12,9 @@
 #include <opencv2/highgui/highgui.hpp>
 #include "opencv/cv.h"
 
+// TO REMOVE
+#include "Algorithm/algorithmransac.h"
+
 #include "fldatahandler.h"
 #include <time.h>
 class DataVisualizer : public QGLWidget

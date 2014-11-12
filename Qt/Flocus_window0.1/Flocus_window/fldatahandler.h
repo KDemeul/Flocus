@@ -31,7 +31,7 @@ public:
 
     float*** allPictures;
 
-    bool fileLoaded = false;
+    bool fileLoaded;
 
 
 private:

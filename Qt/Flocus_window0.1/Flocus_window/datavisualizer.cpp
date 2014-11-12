@@ -16,6 +16,7 @@ DataVisualizer::DataVisualizer(QWidget *parent)
     mFlDataHandler = new FlDataHandler();
 }
 
+// PAN INITIALIZATION, DEFINITION AND UPDATE
 void DataVisualizer::initializeGL()
 {
     makeCurrent();
@@ -110,6 +111,7 @@ void DataVisualizer::setDataHandler(FlDataHandler* a_FlDataHandler)
     mFlDataHandler = a_FlDataHandler;
 }
 
+// VIDEO CONTROL
 void DataVisualizer::setFrame(int a_indexFrame)
 {
     if(mFlDataHandler->fileLoaded)
@@ -159,6 +161,10 @@ void DataVisualizer::play()
 {
     if(mFlDataHandler->fileLoaded)
     {
+        // TO REMOVE
+        AlgorithmRansac *algorithmRansac = new AlgorithmRansac();
+        algorithmRansac->applyAlgorithm(mImgCV, cv::Rect(0,0,400,400), 2);
+
         mIsPlaying = !mIsPlaying;
 
         while(mIsPlaying && mIndexCurrentFrame < mFlDataHandler->nframes-1)
@@ -170,6 +176,8 @@ void DataVisualizer::play()
             cv::waitKey((tWait > 1) ? tWait : 1);
         }
     }
+
+
 }
 
 void DataVisualizer::pause()
@@ -177,6 +185,8 @@ void DataVisualizer::pause()
     mIsPlaying = false;
 }
 
+
+// DRAWING FUNCTION
 void DataVisualizer::drawLine(cv::Point start, cv::Point end)
 {
     if (!mFlDataHandler->fileLoaded)
