@@ -19,14 +19,16 @@ SOURCES += main.cpp\
     datavisualizer.cpp \
     fldatahandler.cpp \
     Algorithm/algorithm.cpp \
-    Algorithm/algorithmransac.cpp
+    Algorithm/algorithmransac.cpp \
+    common.cpp
 
 HEADERS  += mainwindow.h \
     centralarea.h \
     datavisualizer.h \
     fldatahandler.h \
     Algorithm/algorithm.h \
-    Algorithm/algorithmransac.h
+    Algorithm/algorithmransac.h \
+    common.h
 
 #INCLUDEPATH += /usr/include/vtk-5.8
 

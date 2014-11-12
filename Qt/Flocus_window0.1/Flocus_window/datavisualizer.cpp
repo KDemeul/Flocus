@@ -161,14 +161,16 @@ void DataVisualizer::play()
 {
     if(mFlDataHandler->fileLoaded)
     {
-        // TO REMOVE
-        AlgorithmRansac *algorithmRansac = new AlgorithmRansac();
-        algorithmRansac->applyAlgorithm(mImgCV, cv::Rect(0,0,400,400), 2);
 
         mIsPlaying = !mIsPlaying;
 
         while(mIsPlaying && mIndexCurrentFrame < mFlDataHandler->nframes-1)
         {
+            // TO REMOVE
+            AlgorithmRansac *algorithmRansac = new AlgorithmRansac(2);
+            algorithmRansac->applyAlgorithm(mImgCV, cv::Rect(0,120,640,80));
+            // TO REMOVE
+
             clock_t previous_t = clock();
             nextFrame();
             clock_t elapsed = clock() - previous_t;
