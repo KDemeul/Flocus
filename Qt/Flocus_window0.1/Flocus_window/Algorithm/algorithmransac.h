@@ -19,8 +19,7 @@ class AlgorithmRansac
 public:
     AlgorithmRansac(int a_ransacNbPoint);
 
-//    void applyAlgorithm(cv::Mat a_pic, cv::Rect a_regionOfInterest);
-    void applyAlgorithmFLAT(cv::Mat a_pic, cv::Rect a_regionOfInterest);
+    void applyAlgorithm(cv::Mat a_pic, cv::Rect a_regionOfInterest);
 
     void setAreaOfInterest(cv::Rect a_regionOfInterest);
     void setEta(double a_eta);
@@ -28,6 +27,7 @@ public:
 
     bool isModelComputed();
     std::vector<cv::Point> getInliers();
+    cv::Mat getParamCurve();
 
 private:
     //-----> Param

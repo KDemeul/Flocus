@@ -12,7 +12,7 @@ AlgorithmRansac::AlgorithmRansac(int a_ransacNbPoint)
     mCRNS = std::numeric_limits<double>::max();
 }
 
-void AlgorithmRansac::applyAlgorithmFLAT(cv::Mat a_pic, cv::Rect a_regionOfInterest)
+void AlgorithmRansac::applyAlgorithm(cv::Mat a_pic, cv::Rect a_regionOfInterest)
 {
     // RESET PARAMETERS
     mModelComputed = false;
@@ -238,4 +238,9 @@ bool AlgorithmRansac::isModelComputed()
 std::vector<cv::Point> AlgorithmRansac::getInliers()
 {
     return mInliers;
+}
+
+cv::Mat AlgorithmRansac::getParamCurve()
+{
+    return mHRNS;
 }
