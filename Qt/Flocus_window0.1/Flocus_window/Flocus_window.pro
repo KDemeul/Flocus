@@ -20,7 +20,8 @@ SOURCES += main.cpp\
     fldatahandler.cpp \
     Algorithm/algorithm.cpp \
     Algorithm/algorithmransac.cpp \
-    common.cpp
+    common.cpp \
+    qalgorithm.cpp
 
 HEADERS  += mainwindow.h \
     centralarea.h \
@@ -28,7 +29,8 @@ HEADERS  += mainwindow.h \
     fldatahandler.h \
     Algorithm/algorithm.h \
     Algorithm/algorithmransac.h \
-    common.h
+    common.h \
+    qalgorithm.h
 
 #INCLUDEPATH += /usr/include/vtk-5.8
 
@@ -37,4 +39,7 @@ HEADERS  += mainwindow.h \
 INCLUDEPATH += /usr/include/opencv2
 
 LIBS+= -lopencv_core -lopencv_highgui -lopencv_imgproc
+
+OTHER_FILES += \
+    stylesheet.qss
 

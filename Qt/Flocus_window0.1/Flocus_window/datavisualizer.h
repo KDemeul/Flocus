@@ -27,6 +27,7 @@ public:
     void addDrawing();
     void updateImage();
     void setDataHandler(FlDataHandler* a_flDataHandler);
+    void drawROI(int a_posX, int a_poxY, int a_width, int a_height);
 
 
 public slots:

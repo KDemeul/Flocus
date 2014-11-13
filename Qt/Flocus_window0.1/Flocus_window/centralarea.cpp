@@ -1,7 +1,9 @@
 #include "centralarea.h"
 #include "mainwindow.h"
 
-CentralArea::CentralArea(QWidget *parent) : QWidget(parent)
+CentralArea::CentralArea(QWidget *parent)
+    : QWidget(parent)
+    , fileLoaded(false)
 {
     // Create main layout
     QHBoxLayout *mainLayout = new QHBoxLayout;
@@ -20,22 +22,9 @@ CentralArea::CentralArea(QWidget *parent) : QWidget(parent)
     rightLayout   = new QVBoxLayout;
 
     // Algorithm layout
-    layoutAlgorithm            = new QVBoxLayout;
-    labelAlgorithmPart         = new QLabel("<b>Algorithm</b>");
-    labelAlgorithmPart->setAlignment(Qt::AlignCenter);
+    qAlgorithm = new QAlgorithm(this);
+    rightLayout->addWidget(qAlgorithm);
 
-    // RANSAC LAYOUT
-    buttonRANSAC               = new QCheckBox("RANSAC");
-    for(int indexSlider = 0; indexSlider < 4 ; indexSlider++)
-    {
-        slidersRec[indexSlider] = new QSlider(Qt::Horizontal);
-        slidersRec[indexSlider]->setRange(0,100);
-    }
-
-     // ALGORITHM PART: Addition -- connection -- SLOT
-    layoutAlgorithm->addWidget(labelAlgorithmPart);
-    layoutAlgorithm->addWidget(buttonRANSAC);
-    connect(buttonRANSAC,SIGNAL(clicked()),this,SLOT(updateAlgorithmLayout()));
 
     // Visualization layout
     labelVisualizationPart     = new QLabel("<b>Visualization</b>");
@@ -66,7 +55,7 @@ CentralArea::CentralArea(QWidget *parent) : QWidget(parent)
         }
     }
 
-    rightLayout->addLayout(layoutAlgorithm);
+//    rightLayout->addLayout(layoutAlgorithm);
     rightLayout->addWidget(labelVisualizationPart);
     rightLayout->addLayout(layoutVisualizationPart);
     rightLayout->addStretch(2000);
@@ -92,18 +81,15 @@ CentralArea::CentralArea(QWidget *parent) : QWidget(parent)
     }
 }
 
-QCheckBox* CentralArea::getButtonRANSAC()
-{
-    return buttonRANSAC;
-}
-
-void CentralArea::updateImage()
+void CentralArea::updateFile()
 {
     flDataHandler = new FlDataHandler(((MainWindow*)this->parentWidget())->getFilename(),this);
     if(flDataHandler->fileLoaded)
     {
+        fileLoaded = true;
         dataVisualizer->setDataHandler(flDataHandler);
         dataVisualizer->updateImage();
+        qAlgorithm->setBounds(flDataHandler->w,flDataHandler->h);
     }
     else
     {
@@ -111,22 +97,19 @@ void CentralArea::updateImage()
     }
 }
 
-void CentralArea::updateAlgorithmLayout()
+void CentralArea::showROI(int a_posX, int a_poxY, int a_width, int a_height)
 {
-    if(buttonRANSAC->isChecked())
+    if(fileLoaded)
     {
-        for(int i=0;i<3;i++)
-        {
-            layoutAlgorithm->addWidget(slidersRec[i]);
-            slidersRec[i]->setVisible(true);
-        }
+       dataVisualizer->drawROI(a_posX,a_poxY,a_width,a_height);
     }
     else
     {
-        for(int i=0;i<3;i++)
-        {
-            layoutAlgorithm->removeWidget(slidersRec[i]);
-            slidersRec[i]->setVisible(false);
-        }
+        QMessageBox::critical(this, "Error", "Can not show area.\n Open a file first.");
     }
+}
+
+QAlgorithm* CentralArea::getQAlgorithm()
+{
+    return qAlgorithm;
 }

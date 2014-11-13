@@ -13,6 +13,7 @@
 #include <opencv2/highgui/highgui.hpp>
 #include "opencv/cv.h"
 
+#include "qalgorithm.h"
 #include "datavisualizer.h"
 #include "fldatahandler.h"
 
@@ -23,13 +24,13 @@ class CentralArea : public QWidget
 
 public:
     CentralArea(QWidget *parent = 0);
-    QCheckBox* getButtonRANSAC();
+    QAlgorithm* getQAlgorithm();
+    void showROI(int a_posX, int a_poxY, int a_width, int a_height);
 
 signals:
 
 public slots:
-    void updateImage();
-    void updateAlgorithmLayout();
+    void updateFile();
 
 private:
     // Left
@@ -39,12 +40,7 @@ private:
     QVBoxLayout *rightLayout;
 
     // Algorithm
-    QVBoxLayout *layoutAlgorithm;
-    QLabel      *labelAlgorithmPart;
-
-    // RANSAC
-    QCheckBox   *buttonRANSAC;
-    QSlider     *slidersRec[4];
+    QAlgorithm *qAlgorithm;
 
     // Vizualization
     QLabel      *labelVisualizationPart     ;
@@ -61,6 +57,7 @@ private:
 
     // Data Handler
     FlDataHandler *flDataHandler;
+    bool fileLoaded;
 };
 
 #endif // CENTRALAREA_H

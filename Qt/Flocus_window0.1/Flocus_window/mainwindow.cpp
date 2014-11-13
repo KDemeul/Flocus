@@ -1,5 +1,4 @@
 #include "mainwindow.h"
-#include "centralarea.h"
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {
@@ -68,9 +67,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     connect(actionAbout, SIGNAL(triggered()), this, SLOT(openAboutDialogue()));
 
     // RANSAC
-    connect(actionRANSAC,SIGNAL(toggled(bool)),centralArea->getButtonRANSAC(),SLOT(setChecked(bool)));
-    connect(actionRANSAC,SIGNAL(toggled(bool)),centralArea,SLOT(updateAlgorithmLayout()));
-    connect(centralArea->getButtonRANSAC(),SIGNAL(toggled(bool)),actionRANSAC,SLOT(setChecked(bool)));
+    connect(actionRANSAC,SIGNAL(toggled(bool)),centralArea->getQAlgorithm(),SLOT(toggledRANSAC(bool)));
 }
 
 
@@ -111,7 +108,7 @@ void MainWindow::openAboutDialogue()
 void MainWindow::openFileDialogue()
 {
     filename = QFileDialog::getOpenFileName(this, "Open file","/home/kilian/Documents/Flocus/data/10-21-2014-Generic/","US Data (*.b32 *.b8)");
-    centralArea->updateImage();
+    centralArea->updateFile();
 }
 
 QString MainWindow::getFilename(){

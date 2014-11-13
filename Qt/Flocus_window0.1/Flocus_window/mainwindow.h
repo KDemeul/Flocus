@@ -7,6 +7,8 @@
 #include <QFileDialog>
 
 #include "fldatahandler.h"
+#include "centralarea.h"
+#include "qalgorithm.h"
 
 class CentralArea;
 

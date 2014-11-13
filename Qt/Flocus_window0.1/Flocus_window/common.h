@@ -3,6 +3,7 @@
 
 #include <opencv2/core/core.hpp>
 #include <set>
+#include <QGroupBox>
 
 #define DEBUG
 #ifdef DEBUG
@@ -19,5 +20,6 @@ struct comparePoints {
 };
 
 typedef std::set<cv::Point,comparePoints> SetPoint;
+
 
 #endif // COMMON_H
