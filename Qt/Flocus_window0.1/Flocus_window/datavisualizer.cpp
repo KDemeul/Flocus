@@ -181,7 +181,7 @@ void DataVisualizer::play()
 void DataVisualizer::pause()
 {
     // TO REMOVE
-    mAlgorithmRansac->applyAlgorithm(mImgCV, cv::Rect(0,120,640,80));
+    mAlgorithmRansac->applyAlgorithmFLAT(mImgCV, cv::Rect(0,120,640,80));
 
     DEBUG_MSG("RANSAC HAS RUN");
     DEBUG_MSG((mAlgorithmRansac->isModelComputed() ? "A model has been computed " : "No model has been found"));

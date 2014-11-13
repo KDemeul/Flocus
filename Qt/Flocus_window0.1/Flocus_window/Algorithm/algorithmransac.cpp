@@ -3,26 +3,20 @@
 AlgorithmRansac::AlgorithmRansac(int a_ransacNbPoint)
     : mEta(0.001),
       mRho(1.0),
-      mPercentTh(10.0),
+      mPercentTh(5.0),
       mRansacNbPoint(a_ransacNbPoint),
-      mModelComputed(false)
+      mModelComputed(false),
+      mJ(1000)
 {
     // INITIALIZATION
     mCRNS = std::numeric_limits<double>::max();
-
-    // Compute the initial number of iterations J:
-    double ksi = 0.5;
-    mJ = log(mEta) / log(1 - pow(ksi,2));
-
 }
 
-void AlgorithmRansac::applyAlgorithm(cv::Mat a_pic, cv::Rect a_regionOfInterest)
+void AlgorithmRansac::applyAlgorithmFLAT(cv::Mat a_pic, cv::Rect a_regionOfInterest)
 {
     // RESET PARAMETERS
     mModelComputed = false;
     mCRNS = std::numeric_limits<double>::max();
-    double ksi = 0.5;
-    mJ = log(mEta) / log(1-pow(ksi,2));
 
     // Set image input
     mPic = a_pic;
@@ -44,12 +38,9 @@ void AlgorithmRansac::applyAlgorithm(cv::Mat a_pic, cv::Rect a_regionOfInterest)
     DEBUG_MSG("INDEX MAP THRESH CREATED (" << (mIndexThresh.size() * 100) / mPicNbPoint << "%)");
 
     int j=0; // nb iter inside loop
-
-    int TOTALCOUNT = 0;
     while(j < mJ)
     {
-        TOTALCOUNT++;
-        //  Select randomly a subset Sj ⊂ Xe, |Sj| = mRansacNbPoint
+         //  Select randomly a subset Sj ⊂ Xe, |Sj| = mRansacNbPoint
         SetPoint Sj = getRandPoints();
 
         bool acceptedPoint = isAPotentialCurve(Sj);
@@ -66,20 +57,6 @@ void AlgorithmRansac::applyAlgorithm(cv::Mat a_pic, cv::Rect a_regionOfInterest)
         cv::Mat Hj;
         cv::Mat Tj;
         fillMatricesHjTj(&Hj,&Tj,&Dj);
-
-        // Check consistency of a randomly selected point x from Xe with the model c(t; Hj)
-        // If x passes, then continue; otherwise increment j and loop
-
-        int indexRand = rand() % mIndexThresh.size();
-        cv::Point randPoint = mIndexThresh.at(indexRand);
-
-        double d = DistToCurve(&Hj,&Dj,&Tj,&randPoint);
-
-        if (d > mRho)
-        {
-            j++;
-            continue;
-        }
 
         //  Determine the model cost C(H).
         //  C(H) being define as the negativ of the number of consistent points
@@ -110,21 +87,14 @@ void AlgorithmRansac::applyAlgorithm(cv::Mat a_pic, cv::Rect a_regionOfInterest)
             mDRNS = Dj;
             mInliers.clear();
             mInliers = InliersTmp;
-            // Uptade J (approach optimal number of iterations) and reset j
-            j = 0;
-            ksi = -C / (mPicNbPoint+C);
-            mJ = log(mEta) / log(1 - pow(ksi,2));
         }
-        else
-        {
-            j = j+1;
-        }
+        j++;
     }
-    DEBUG_MSG("TOTALCOUNT: " << TOTALCOUNT);
 
     if(mCRNS < std::numeric_limits<double>::max())
         mModelComputed = true;
 }
+
 
 void AlgorithmRansac::setAreaOfInterest(cv::Rect a_regionOfInterest)
 {
