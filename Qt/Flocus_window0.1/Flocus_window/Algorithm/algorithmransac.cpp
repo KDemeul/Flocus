@@ -4,10 +4,11 @@ AlgorithmRansac::AlgorithmRansac(int a_ransacNbPoint)
     : mEta(0.001),
       mRho(1.0),
       mPercentTh(10.0),
-      mRansacNbPoint(a_ransacNbPoint)
+      mRansacNbPoint(a_ransacNbPoint),
+      mModelComputed(false)
 {
     // INITIALIZATION
-    CRNS = std::numeric_limits<double>::max();
+    mCRNS = std::numeric_limits<double>::max();
 
     // Compute the initial number of iterations J:
     double ksi = 0.5;
@@ -17,12 +18,17 @@ AlgorithmRansac::AlgorithmRansac(int a_ransacNbPoint)
 
 void AlgorithmRansac::applyAlgorithm(cv::Mat a_pic, cv::Rect a_regionOfInterest)
 {
+    // RESET PARAMETERS
+    mModelComputed = false;
+    mCRNS = std::numeric_limits<double>::max();
+    double ksi = 0.5;
+    mJ = log(mEta) / log(1-pow(ksi,2));
+
     // Set image input
     mPic = a_pic;
 
     // Crop image
     setAreaOfInterest(a_regionOfInterest);
-    DEBUG_MSG("IMAGE CROPPED");
 
     // Normalize image
     cv::normalize(mPicResized,mPicResized,0,255,cv::NORM_MINMAX);
@@ -32,7 +38,6 @@ void AlgorithmRansac::applyAlgorithm(cv::Mat a_pic, cv::Rect a_regionOfInterest)
 
     // Threshold pic
     convertPicToBoolMap();
-    DEBUG_MSG("IMAGE CONVERTED TO BOOLMAP");
 
     // Establish index thresh
     createIndexThresh();
@@ -40,47 +45,85 @@ void AlgorithmRansac::applyAlgorithm(cv::Mat a_pic, cv::Rect a_regionOfInterest)
 
     int j=0; // nb iter inside loop
 
-    while(j < 1)
+    int TOTALCOUNT = 0;
+    while(j < mJ)
     {
-    //  Select randomly a subset Sj ⊂ Xe, |Sj| = mRansacNbPoint
-    SetPoint Sj = getRandPoints();
+        TOTALCOUNT++;
+        //  Select randomly a subset Sj ⊂ Xe, |Sj| = mRansacNbPoint
+        SetPoint Sj = getRandPoints();
 
-    bool acceptedPoint = isAPotentialCurve(Sj);
+        bool acceptedPoint = isAPotentialCurve(Sj);
 
-    if(!acceptedPoint)
-        continue;
+        if(!acceptedPoint)
+            continue;
 
-    // Find Dj by ordering points in Sj
-       // TODO
+        // Find Dj by ordering points in Sj
+        // TODO
 
-    SetPoint Dj = Sj;
+        SetPoint Dj = Sj;
 
-    // Compute coefficient matrix Hj from the set Dj
-    cv::Mat Hj;
-    cv::Mat Tj;
-    fillMatricesHjTj(&Hj,&Tj,&Dj);
+        // Compute coefficient matrix Hj from the set Dj
+        cv::Mat Hj;
+        cv::Mat Tj;
+        fillMatricesHjTj(&Hj,&Tj,&Dj);
 
-    // Check consistency of a randomly selected point x from Xe with the model c(t; Hj)
-    // If x passes, then continue; otherwise increment j and loop
+        // Check consistency of a randomly selected point x from Xe with the model c(t; Hj)
+        // If x passes, then continue; otherwise increment j and loop
 
-    int indexRand = rand() % mIndexThresh.size();
-    cv::Point randPoint = mIndexThresh.at(indexRand);
+        int indexRand = rand() % mIndexThresh.size();
+        cv::Point randPoint = mIndexThresh.at(indexRand);
 
-    double d = DistToCurve(&Hj,&Dj,&Tj,&randPoint);
+        double d = DistToCurve(&Hj,&Dj,&Tj,&randPoint);
 
-    if (d > mRho)
-    {
-        j = j + 1 ;
-        continue;
+        if (d > mRho)
+        {
+            j++;
+            continue;
+        }
+
+        //  Determine the model cost C(H).
+        //  C(H) being define as the negativ of the number of consistent points
+        //  C(H) = −| {M ∈ Xe : d (c(t; H), M) ≤ ρ} |.
+
+        std::vector<cv::Point> InliersTmp;
+        double C = 0;
+        for(int index=0 ; index < mIndexThresh.size() ; index++)
+        {
+            cv::Point currentPoint = mIndexThresh.at(index);
+            double d = DistToCurve(&Hj,&Dj,&Tj,&currentPoint);
+            if(d < mRho)
+            {
+                InliersTmp.push_back(currentPoint);
+                C--;
+            }
+        }
+
+        // Compare the cost of current and the best-so-far model.
+
+        if (C < mCRNS)
+        {
+            // Update best result
+            mCRNS = C;
+            Hj.copyTo(mHRNS);
+            Tj.copyTo(mTRNS);
+            mDRNS.clear();
+            mDRNS = Dj;
+            mInliers.clear();
+            mInliers = InliersTmp;
+            // Uptade J (approach optimal number of iterations) and reset j
+            j = 0;
+            ksi = -C / (mPicNbPoint+C);
+            mJ = log(mEta) / log(1 - pow(ksi,2));
+        }
+        else
+        {
+            j = j+1;
+        }
     }
+    DEBUG_MSG("TOTALCOUNT: " << TOTALCOUNT);
 
-    j++;
-    }
-
-    // DEBUG DISPLAY
-//    cv::imshow("Pic Extracted", mPicResized);
-//    cv::imshow("Pic thresholded", mPicBool);
-//    cv::waitKey(0);
+    if(mCRNS < std::numeric_limits<double>::max())
+        mModelComputed = true;
 }
 
 void AlgorithmRansac::setAreaOfInterest(cv::Rect a_regionOfInterest)
@@ -143,12 +186,15 @@ void AlgorithmRansac::convertPicToBoolMap()
 
 void AlgorithmRansac::createIndexThresh()
 {
+    mIndexThresh.clear();
     for(int i=0; i < mPicBool.rows; i++)
     {
         for(int j=0; j < mPicBool.cols; j++)
         {
-            if(mPicBool.at<float>(i,j))
+            if(mPicBool.at<bool>(i,j))
+            {
                 mIndexThresh.push_back(cv::Point(i,j));
+            }
         }
     }
 }
@@ -212,4 +258,14 @@ double AlgorithmRansac::DistToCurve(cv::Mat *Hj,SetPoint *Dj,cv::Mat *Tj,cv::Poi
     }
     else
         return std::numeric_limits<double>::max();
+}
+
+bool AlgorithmRansac::isModelComputed()
+{
+    return mModelComputed;
+}
+
+std::vector<cv::Point> AlgorithmRansac::getInliers()
+{
+    return mInliers;
 }

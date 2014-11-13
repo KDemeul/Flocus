@@ -25,6 +25,9 @@ public:
     void setEta(double a_eta);
     void setRho(double a_rho);
 
+    bool isModelComputed();
+    std::vector<cv::Point> getInliers();
+
 private:
     //-----> Param
 
@@ -46,10 +49,11 @@ private:
     double mJ; // current nb of iteration
 
     //-----> Result
-    double CRNS;  // cost of the model
-    cv::Mat HRNS; // coefficient of the curve approximating the electrode axis
-    cv::Mat DRNS; // set of control points
-    cv::Mat TRNS; // value of parameters t for control points
+    bool mModelComputed;
+    double  mCRNS;  // cost of the model
+    cv::Mat mHRNS; // coefficient of the curve approximating the electrode axis
+    SetPoint mDRNS; // set of control points
+    cv::Mat mTRNS; // value of parameters t for control points
     std::vector<cv::Point> mInliers;
 
     //-----> Methods

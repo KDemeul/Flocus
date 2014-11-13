@@ -14,6 +14,7 @@ DataVisualizer::DataVisualizer(QWidget *parent)
     this->setMinimumSize(mWidth,mHeight);
     mImgRatio = mWidth/mHeight;
     mFlDataHandler = new FlDataHandler();
+    mAlgorithmRansac = new AlgorithmRansac(2);
 }
 
 // PAN INITIALIZATION, DEFINITION AND UPDATE
@@ -166,11 +167,6 @@ void DataVisualizer::play()
 
         while(mIsPlaying && mIndexCurrentFrame < mFlDataHandler->nframes-1)
         {
-            // TO REMOVE
-            AlgorithmRansac *algorithmRansac = new AlgorithmRansac(2);
-            algorithmRansac->applyAlgorithm(mImgCV, cv::Rect(0,120,640,80));
-            // TO REMOVE
-
             clock_t previous_t = clock();
             nextFrame();
             clock_t elapsed = clock() - previous_t;
@@ -184,6 +180,25 @@ void DataVisualizer::play()
 
 void DataVisualizer::pause()
 {
+    // TO REMOVE
+    mAlgorithmRansac->applyAlgorithm(mImgCV, cv::Rect(0,120,640,80));
+
+    DEBUG_MSG("RANSAC HAS RUN");
+    DEBUG_MSG((mAlgorithmRansac->isModelComputed() ? "A model has been computed " : "No model has been found"));
+
+    if(mAlgorithmRansac->isModelComputed())
+    {
+        std::vector<cv::Point> inliers = mAlgorithmRansac->getInliers();
+        for(std::vector<cv::Point>::iterator it = inliers.begin(); it != inliers.end() ; it++)
+        {
+            drawPoint(cv::Point(0,120) + cv::Point(it->y,it->x));
+        }
+
+        addDrawing();
+    }
+    // TO REMOVE
+
+
     mIsPlaying = false;
 }
 
@@ -199,3 +214,11 @@ void DataVisualizer::drawLine(cv::Point start, cv::Point end)
     addDrawing();
 }
 
+void DataVisualizer::drawPoint(cv::Point a_Point)
+{
+    if (!mFlDataHandler->fileLoaded)
+        return;
+
+    cv::circle(mImgCV,a_Point,1,cv::Scalar(255, 0, 0 ),-1,0);
+
+}

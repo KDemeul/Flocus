@@ -15,6 +15,7 @@
 // TO REMOVE
 #include "Algorithm/algorithmransac.h"
 
+#include "common.h"
 #include "fldatahandler.h"
 #include <time.h>
 class DataVisualizer : public QGLWidget
@@ -60,6 +61,7 @@ private:
     QImage mImgQt; // Qt image to be rendered
 
     FlDataHandler* mFlDataHandler;
+    AlgorithmRansac *mAlgorithmRansac;
 
     void setFrame(int a_indexFrame);
     bool mIsPlaying;
@@ -67,6 +69,7 @@ private:
 
     // Drawing function
     void drawLine(cv::Point start, cv::Point end);
+    void drawPoint(cv::Point a_Point);
 };
 
 #endif // DATAVISUALIZER_H

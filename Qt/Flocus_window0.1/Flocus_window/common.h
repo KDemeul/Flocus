@@ -6,7 +6,7 @@
 
 #define DEBUG
 #ifdef DEBUG
-#define DEBUG_MSG(str) std::cout << std::setprecision(18) << str << "\n";
+#define DEBUG_MSG(str) std::cout << str << std::endl;
 #else
 #define DEBUG_MSG(str) ;
 #endif
