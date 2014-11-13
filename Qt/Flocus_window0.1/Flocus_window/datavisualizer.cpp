@@ -188,6 +188,8 @@ void DataVisualizer::pause()
 
     if(mAlgorithmRansac->isModelComputed())
     {
+        convertToRGB();
+
         std::vector<cv::Point> inliers = mAlgorithmRansac->getInliers();
         for(std::vector<cv::Point>::iterator it = inliers.begin(); it != inliers.end() ; it++)
         {
@@ -219,7 +221,7 @@ void DataVisualizer::drawLine(cv::Point start, cv::Point end)
     if (!mFlDataHandler->fileLoaded)
         return;
 
-    line(mImgCV,start,end,cv::Scalar(255, 0, 0 ),2,8);
+    line(mImgCV,start,end,cv::Scalar(255, 0, 0 ),1,8);
 }
 
 void DataVisualizer::drawPoint(cv::Point a_Point)
@@ -227,6 +229,20 @@ void DataVisualizer::drawPoint(cv::Point a_Point)
     if (!mFlDataHandler->fileLoaded)
         return;
 
-    cv::circle(mImgCV,a_Point,1,cv::Scalar(255, 0, 0 ),-1,0);
+    cv::circle(mImgCV,a_Point,2,cv::Scalar(0, 0, 255),-1,0);
 
+}
+
+void DataVisualizer::convertToRGB()
+{
+    cv::Mat img_rgb(mImgCV.size(), CV_8UC3);
+    cv::cvtColor(mImgCV, img_rgb, CV_GRAY2RGB);
+    mImgCV = img_rgb;
+}
+
+void DataVisualizer::convertToGrey()
+{
+    cv::Mat img_grey(mImgCV.size(), CV_8UC1);
+    cv::cvtColor(mImgCV, img_grey, CV_RGB2GRAY);
+    mImgCV = img_grey;
 }

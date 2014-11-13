@@ -67,6 +67,10 @@ private:
     bool mIsPlaying;
     int mIndexCurrentFrame;
 
+    // Image handling function
+    void convertToRGB();
+    void convertToGrey();
+
     // Drawing function
     void drawLine(cv::Point start, cv::Point end);
     void drawPoint(cv::Point a_Point);
