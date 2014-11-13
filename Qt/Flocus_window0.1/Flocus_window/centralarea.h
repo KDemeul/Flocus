@@ -6,6 +6,7 @@
 #include <QLabel>
 #include <QLayout>
 #include <QPushButton>
+#include <QSlider>
 
 #include <stdlib.h>
 #include <opencv2/core/core.hpp>
@@ -23,21 +24,27 @@ class CentralArea : public QWidget
 public:
     CentralArea(QWidget *parent = 0);
     QCheckBox* getButtonRANSAC();
-    QCheckBox* getButtonKALMAN();
 
 signals:
 
 public slots:
     void updateImage();
+    void updateAlgorithmLayout();
 
 private:
     // Left
     DataVisualizer *dataVisualizer;
 
+    // Right layout
+    QVBoxLayout *rightLayout;
+
     // Algorithm
+    QVBoxLayout *layoutAlgorithm;
     QLabel      *labelAlgorithmPart;
-    QCheckBox   *buttonRANSAC      ;
-    QCheckBox   *buttonKALMAN      ;
+
+    // RANSAC
+    QCheckBox   *buttonRANSAC;
+    QSlider     *slidersRec[4];
 
     // Vizualization
     QLabel      *labelVisualizationPart     ;

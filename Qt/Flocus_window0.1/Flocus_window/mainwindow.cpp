@@ -67,13 +67,10 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     // About
     connect(actionAbout, SIGNAL(triggered()), this, SLOT(openAboutDialogue()));
 
-    // RANSAC & KALMAN
-    connect(actionRANSAC,SIGNAL(toggled(bool)),actionKalman,SLOT(setEnabled(bool)));
-    connect(actionRANSAC,SIGNAL(toggled(bool)),actionKalman,SLOT(setChecked(bool)));
+    // RANSAC
     connect(actionRANSAC,SIGNAL(toggled(bool)),centralArea->getButtonRANSAC(),SLOT(setChecked(bool)));
-    connect(actionKalman,SIGNAL(toggled(bool)),centralArea->getButtonKALMAN(),SLOT(setChecked(bool)));
+    connect(actionRANSAC,SIGNAL(toggled(bool)),centralArea,SLOT(updateAlgorithmLayout()));
     connect(centralArea->getButtonRANSAC(),SIGNAL(toggled(bool)),actionRANSAC,SLOT(setChecked(bool)));
-    connect(centralArea->getButtonKALMAN(),SIGNAL(toggled(bool)),actionKalman,SLOT(setChecked(bool)));
 }
 
 

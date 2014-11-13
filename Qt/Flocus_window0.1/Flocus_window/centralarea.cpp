@@ -17,16 +17,25 @@ CentralArea::CentralArea(QWidget *parent) : QWidget(parent)
     mainLayout->addLayout(dataVizualizerLayout);
 
     // Create right layout
-    QVBoxLayout *rightLayout   = new QVBoxLayout;
+    rightLayout   = new QVBoxLayout;
 
     // Algorithm layout
+    layoutAlgorithm            = new QVBoxLayout;
     labelAlgorithmPart         = new QLabel("<b>Algorithm</b>");
     labelAlgorithmPart->setAlignment(Qt::AlignCenter);
+
+    // RANSAC LAYOUT
     buttonRANSAC               = new QCheckBox("RANSAC");
-    buttonKALMAN               = new QCheckBox("KALMAN");
-    buttonKALMAN->setEnabled(false);
-    connect(buttonRANSAC,SIGNAL(toggled(bool)),buttonKALMAN,SLOT(setEnabled(bool)));
-    connect(buttonRANSAC,SIGNAL(toggled(bool)),buttonKALMAN,SLOT(setChecked(bool)));
+    for(int indexSlider = 0; indexSlider < 4 ; indexSlider++)
+    {
+        slidersRec[indexSlider] = new QSlider(Qt::Horizontal);
+        slidersRec[indexSlider]->setRange(0,100);
+    }
+
+     // ALGORITHM PART: Addition -- connection -- SLOT
+    layoutAlgorithm->addWidget(labelAlgorithmPart);
+    layoutAlgorithm->addWidget(buttonRANSAC);
+    connect(buttonRANSAC,SIGNAL(clicked()),this,SLOT(updateAlgorithmLayout()));
 
     // Visualization layout
     labelVisualizationPart     = new QLabel("<b>Visualization</b>");
@@ -57,13 +66,9 @@ CentralArea::CentralArea(QWidget *parent) : QWidget(parent)
         }
     }
 
-    rightLayout->addWidget(labelAlgorithmPart);
-    rightLayout->addWidget(buttonRANSAC);
-    rightLayout->addWidget(buttonKALMAN);
-
+    rightLayout->addLayout(layoutAlgorithm);
     rightLayout->addWidget(labelVisualizationPart);
     rightLayout->addLayout(layoutVisualizationPart);
-
     rightLayout->addStretch(2000);
 
     mainLayout->addLayout(rightLayout);
@@ -92,11 +97,6 @@ QCheckBox* CentralArea::getButtonRANSAC()
     return buttonRANSAC;
 }
 
-QCheckBox* CentralArea::getButtonKALMAN()
-{
-    return buttonKALMAN;
-}
-
 void CentralArea::updateImage()
 {
     flDataHandler = new FlDataHandler(((MainWindow*)this->parentWidget())->getFilename(),this);
@@ -108,5 +108,25 @@ void CentralArea::updateImage()
     else
     {
         QMessageBox::critical(this, "Error while opening", "File can not be load.");
+    }
+}
+
+void CentralArea::updateAlgorithmLayout()
+{
+    if(buttonRANSAC->isChecked())
+    {
+        for(int i=0;i<3;i++)
+        {
+            layoutAlgorithm->addWidget(slidersRec[i]);
+            slidersRec[i]->setVisible(true);
+        }
+    }
+    else
+    {
+        for(int i=0;i<3;i++)
+        {
+            layoutAlgorithm->removeWidget(slidersRec[i]);
+            slidersRec[i]->setVisible(false);
+        }
     }
 }
