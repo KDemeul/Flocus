@@ -143,6 +143,11 @@ void DataVisualizer::convertToGrey()
 
 // DATA - ALGORITHM CONTROL
 
+cv::Mat* DataVisualizer::getImgCV()
+{
+    return &mImgCV;
+}
+
 void DataVisualizer::setDataHandler(FlDataHandler* a_FlDataHandler)
 {
     mFlDataHandler = a_FlDataHandler;

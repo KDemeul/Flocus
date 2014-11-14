@@ -31,6 +31,7 @@ signals:
 
 public slots:
     void updateFile();
+    void saveImage(std::string a_filename);
 
 private:
     // Left

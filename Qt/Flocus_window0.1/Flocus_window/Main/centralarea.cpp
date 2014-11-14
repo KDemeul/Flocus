@@ -110,3 +110,8 @@ AlgorithmArea* CentralArea::getAlgorithmArea()
     return mAlgorithmArea;
 }
 
+void CentralArea::saveImage(std::string a_filename)
+{
+    DEBUG_MSG("Saving image under the name " << a_filename);
+    cv::imwrite(a_filename, *dataVisualizer->getImgCV());
+}

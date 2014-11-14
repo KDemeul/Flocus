@@ -55,13 +55,13 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 
     // Quit
     // TODO FIX THIS
-//    connect(actionClose, SIGNAL(triggered()),this, SLOT(quit()));
+    //    connect(actionClose, SIGNAL(triggered()),this, SLOT(quit()));
 
     // Open
     connect(actionOpen,SIGNAL(triggered()),this,SLOT(openFileDialogue()));
 
     // Save
-    // TODO
+    connect(actionSaveImage,SIGNAL(triggered()),this,SLOT(saveImageDialogue()));
 
     // About
     connect(actionAbout, SIGNAL(triggered()), this, SLOT(openAboutDialogue()));
@@ -110,6 +110,36 @@ void MainWindow::openFileDialogue()
 {
     filename = QFileDialog::getOpenFileName(this, "Open file","/home/kilian/Documents/Flocus/data/10-21-2014-Generic/","US Data (*.b32 *.b8)");
     centralArea->updateFile();
+}
+
+void MainWindow::saveImageDialogue()
+{
+    std::string picFilename = (QFileDialog::getSaveFileName(this,"Save file","/home/kilian/Documents/Flocus/data/saved/","Image (*.jpg *.jpeg *.png)")).toStdString();
+    if(picFilename.size()<4)
+    {
+        centralArea->saveImage(picFilename + ".jpg");
+    }
+    else
+    {
+        std::string suffix = picFilename.substr(picFilename.size()-4,4);
+        DEBUG_MSG("suffix: " << suffix);
+        if(suffix.compare(".jpg") == 0)
+        {
+            centralArea->saveImage(picFilename);
+        }
+        else if (suffix.compare("jpeg") == 0)
+        {
+            centralArea->saveImage(picFilename.substr(0,picFilename.size()-5) + ".jpg");
+        }
+        else if (suffix.compare(".png") == 0)
+        {
+            centralArea->saveImage(picFilename);
+        }
+        else
+        {
+            centralArea->saveImage(picFilename + ".jpg");
+        }
+    }
 }
 
 QString MainWindow::getFilename(){
