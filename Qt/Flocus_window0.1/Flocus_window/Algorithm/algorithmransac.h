@@ -12,7 +12,7 @@
 #include <limits>       // std::numeric_limits
 #include <math.h>       /* log */
 
-#include "common.h"
+#include "common/common.h"
 
 class AlgorithmRansac
 {

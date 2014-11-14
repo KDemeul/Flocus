@@ -1,5 +1,5 @@
-#include "qalgorithm.h"
-#include "centralarea.h"
+#include "Visualizers/qalgorithm.h"
+#include "Main/centralarea.h"
 
 QAlgorithm::QAlgorithm(QWidget *parent) :
     QWidget(parent)

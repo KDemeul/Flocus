@@ -13,9 +13,9 @@
 #include <opencv2/highgui/highgui.hpp>
 #include "opencv/cv.h"
 
-#include "qalgorithm.h"
-#include "datavisualizer.h"
-#include "fldatahandler.h"
+#include "Visualizers/qalgorithm.h"
+#include "Visualizers/datavisualizer.h"
+#include "DataHandling/fldatahandler.h"
 
 
 class CentralArea : public QWidget

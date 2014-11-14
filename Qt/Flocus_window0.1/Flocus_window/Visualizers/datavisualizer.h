@@ -15,8 +15,8 @@
 // TO REMOVE
 #include "Algorithm/algorithmransac.h"
 
-#include "common.h"
-#include "fldatahandler.h"
+#include "common/common.h"
+#include "DataHandling/fldatahandler.h"
 #include <time.h>
 class DataVisualizer : public QGLWidget
 {

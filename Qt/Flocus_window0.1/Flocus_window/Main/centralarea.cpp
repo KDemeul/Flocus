@@ -1,5 +1,5 @@
-#include "centralarea.h"
-#include "mainwindow.h"
+#include "Main/centralarea.h"
+#include "Main/mainwindow.h"
 
 CentralArea::CentralArea(QWidget *parent)
     : QWidget(parent)

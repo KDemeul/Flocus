@@ -6,9 +6,9 @@
 #include <QMenuBar>
 #include <QFileDialog>
 
-#include "fldatahandler.h"
-#include "centralarea.h"
-#include "qalgorithm.h"
+#include "DataHandling/fldatahandler.h"
+#include "Main/centralarea.h"
+#include "Visualizers/qalgorithm.h"
 
 class CentralArea;
 
