@@ -17,6 +17,7 @@ class AlgorithmArea : public QWidget
 public:
     AlgorithmArea(QWidget *parent = 0);
     void setBounds(int a_w, int a_h);
+    QGroupBox* getGroupBoxRansac();
 
 signals:
 

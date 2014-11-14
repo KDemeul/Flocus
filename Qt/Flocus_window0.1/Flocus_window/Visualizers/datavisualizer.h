@@ -15,9 +15,11 @@
 // TO REMOVE
 #include "Algorithm/algorithmransac.h"
 
+#include <time.h>
 #include "common/common.h"
 #include "DataHandling/fldatahandler.h"
-#include <time.h>
+#include "Visualizers/ransacvisualizer.h"
+
 class DataVisualizer : public QGLWidget
 {
     Q_OBJECT
@@ -28,7 +30,8 @@ public:
     void updateImage();
     void setDataHandler(FlDataHandler* a_flDataHandler);
     void setROI(int a_posX, int a_poxY, int a_width, int a_height);
-
+    cv::Rect* getROI();
+    void toggledRANSAC(bool a_isEnable);
 
 public slots:
     void fastPreviousFrame();
@@ -49,23 +52,15 @@ protected:
 
 private:
     // Display attributes
-    int mWidth;
-    int mHeight;
+    int mWidth, mHeight, mPosX, mPosY; // Width, Height, top left X, top left Y position to render image in the center of widget
     bool mSceneChanged;          // Indicates when OpenGL view is to be redrawn
     float mImgRatio;             // height/width ratio
-    int mOutH;
-    int mOutW;
-
-    int mPosX;                  // Top left X position to render image in the center of widget
-    int mPosY;                  // Top left Y position to render image in the center of widget
-
     cv::Mat mImgCV; // original OpenCV image to be shown
     QImage mImgQt; // Qt image to be rendered
 
     // Data -- algorithm attributes
     FlDataHandler* mFlDataHandler;
-    AlgorithmRansac *mAlgorithmRansac;
-    int mRANSACRate;
+    RansacVisualizer *mRansacVisualizer;
     cv::Rect *mROI;
 
     // Player

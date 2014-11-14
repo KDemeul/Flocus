@@ -67,7 +67,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     connect(actionAbout, SIGNAL(triggered()), this, SLOT(openAboutDialogue()));
 
     // RANSAC
-    connect(actionRANSAC,SIGNAL(toggled(bool)),centralArea->getQAlgorithm(),SLOT(toggledRANSAC(bool)));
+    connect(actionRANSAC,SIGNAL(toggled(bool)),centralArea->getAlgorithmArea()->getGroupBoxRansac(),SLOT(setChecked(bool)));
+    connect(centralArea->getAlgorithmArea()->getGroupBoxRansac(),SIGNAL(toggled(bool)),actionRANSAC,SLOT(setChecked(bool)));
 }
 
 

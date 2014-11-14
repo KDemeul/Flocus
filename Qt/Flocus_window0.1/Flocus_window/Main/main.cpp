@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
     a.setStyleSheet(StyleSheet);
 
     MainWindow w;
-    w.setMinimumSize(800,600);
+    w.setMinimumSize(1000,600);
     w.setWindowIcon(QIcon("../../fig/flocus_small_icon.png"));
     w.show();
 

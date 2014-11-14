@@ -109,7 +109,12 @@ void CentralArea::setROI(int a_posX, int a_poxY, int a_width, int a_height)
     }
 }
 
-AlgorithmArea* CentralArea::getQAlgorithm()
+AlgorithmArea* CentralArea::getAlgorithmArea()
 {
     return mAlgorithmArea;
+}
+
+void CentralArea::toggledRANSAC(bool a_isEnable)
+{
+    dataVisualizer->toggledRANSAC(a_isEnable);
 }

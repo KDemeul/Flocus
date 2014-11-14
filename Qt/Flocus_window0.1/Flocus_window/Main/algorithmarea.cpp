@@ -65,7 +65,7 @@ AlgorithmArea::AlgorithmArea(QWidget *parent) :
 
     connect(groupRANSAC,SIGNAL(toggled(bool)),this,SLOT(toggledRANSAC(bool)));
 
-
+    groupRANSAC->setChecked(false);
     // End group : RANSAC
 
     mMainLayout->addWidget(mMainLabel);
@@ -76,8 +76,9 @@ AlgorithmArea::AlgorithmArea(QWidget *parent) :
 
 void AlgorithmArea::toggledRANSAC(bool a_isVisible)
 {
-    groupRANSAC->setChecked(a_isVisible);
     groupRANSAC->setHidden(!a_isVisible);
+    CentralArea *parent = (CentralArea*)this->parentWidget();
+    parent->toggledRANSAC(a_isVisible);
 }
 
 void AlgorithmArea::setROI()
@@ -96,4 +97,9 @@ void AlgorithmArea::setBounds(int a_w, int a_h)
         mSlidersRANSACRec[2*i]->setRange(0,a_w);
         mSlidersRANSACRec[2*i+1]->setRange(0,a_h);
     }
+}
+
+QGroupBox* AlgorithmArea::getGroupBoxRansac()
+{
+    return groupRANSAC;
 }

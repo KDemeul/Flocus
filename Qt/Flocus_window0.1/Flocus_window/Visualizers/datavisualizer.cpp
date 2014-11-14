@@ -7,8 +7,6 @@ DataVisualizer::DataVisualizer(QWidget *parent)
     , mIndexCurrentFrame(0)
     , mPosX(0)
     , mPosY(0)
-    , mOutH(0)
-    , mOutW(0)
     , mSceneChanged(false)
 {
     this->setMinimumSize(mWidth,mHeight);
@@ -16,7 +14,7 @@ DataVisualizer::DataVisualizer(QWidget *parent)
     mFlDataHandler = new FlDataHandler();
 
     // Algorithms
-    mAlgorithmRansac = new AlgorithmRansac(2);
+    mRansacVisualizer = new RansacVisualizer();
     mROI = new cv::Rect(0,0,0,0);
 }
 
@@ -177,45 +175,24 @@ void DataVisualizer::setROI(int a_posX, int a_poxY, int a_width, int a_height)
     drawROI();
 }
 
+cv::Rect* DataVisualizer::getROI()
+{
+    return mROI;
+}
+
 void DataVisualizer::onFrame()
 {
     // TO REMOVE
     if(!mFlDataHandler->fileLoaded)
         return;
-
+    convertToRGB();
+    mRansacVisualizer->applyAndDraw(&mImgCV,mROI);
     updateImage();
+}
 
-    mAlgorithmRansac->applyAlgorithm(mImgCV, cv::Rect(0,120,640,80));
-
-    DEBUG_MSG("RANSAC HAS RUN");
-    DEBUG_MSG((mAlgorithmRansac->isModelComputed() ? "A model has been computed " : "No model has been found"));
-
-    if(mAlgorithmRansac->isModelComputed())
-    {
-        convertToRGB();
-
-        std::vector<cv::Point> inliers = mAlgorithmRansac->getInliers();
-        for(std::vector<cv::Point>::iterator it = inliers.begin(); it != inliers.end() ; it++)
-        {
-            drawPoint(cv::Point(0,120) + cv::Point(it->y,it->x));
-        }
-
-        cv::Mat paramCurve = mAlgorithmRansac->getParamCurve();
-        cv::Mat T1 = (cv::Mat_<double>(2,1) << 1, -1000);
-        cv::Mat T2 = (cv::Mat_<double>(2,1) << 1, 1000);
-        cv::Mat M1mat = paramCurve * T1;
-        cv::Mat M2mat = paramCurve * T2;
-        cv::Point M1(M1mat.at<double>(1,0),M1mat.at<double>(0,0));
-        cv::Point M2(M2mat.at<double>(1,0),M2mat.at<double>(0,0));
-        drawLine(cv::Point(0,120) + M1,cv::Point(0,120) + M2);
-
-        addDrawing();
-    }
-
-    // TO REMOVE
-
-
-    DEBUG_MSG("ON FRAME");
+void DataVisualizer::toggledRANSAC(bool a_isEnable)
+{
+    mRansacVisualizer->enable(a_isEnable);
 }
 
 // VIDEO CONTROL

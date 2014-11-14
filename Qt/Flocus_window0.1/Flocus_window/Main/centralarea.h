@@ -24,8 +24,9 @@ class CentralArea : public QWidget
 
 public:
     CentralArea(QWidget *parent = 0);
-    AlgorithmArea* getQAlgorithm();
+    AlgorithmArea* getAlgorithmArea();
     void setROI(int a_posX, int a_poxY, int a_width, int a_height);
+    void toggledRANSAC(bool a_isEnable);
 
 signals:
 
