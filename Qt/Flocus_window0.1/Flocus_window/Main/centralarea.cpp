@@ -83,7 +83,7 @@ CentralArea::CentralArea(QWidget *parent)
 
 void CentralArea::updateFile()
 {
-    flDataHandler = new FlDataHandler(((MainWindow*)this->parentWidget())->getFilename());
+    flDataHandler = new FlDataHandler(((MainWindow*)this->parentWidget())->getFilename(),this);
     if(flDataHandler->fileLoaded)
     {
         fileLoaded = true;
@@ -114,4 +114,45 @@ void CentralArea::saveImage(std::string a_filename)
 {
     DEBUG_MSG("Saving image under the name " << a_filename);
     cv::imwrite(a_filename, *dataVisualizer->getImgCV());
+}
+
+void CentralArea::saveMovie(std::string a_filename)
+{
+    if(!fileLoaded)
+    {
+        QMessageBox::critical(this,"No video to record","No video to record.\nLoad a file first.");
+        return;
+    }
+
+    std::vector<int> movieInfo = dataVisualizer->getMovieInfo();
+    if(movieInfo.size() != 4)
+    {
+        QMessageBox::critical(this,"Error","Not enough parameters for the video retrieved.\n See centralarea.cpp, saveImage() function.");
+        return;
+    }
+
+    cv::VideoWriter outputVideo(a_filename,CV_FOURCC('M','J','P','G'),movieInfo.at(1),cv::Size(movieInfo.at(2),movieInfo.at(3)));
+
+    QProgressDialog progress("Recording video...", "Abort recording", 0, 100,this);
+    progress.setWindowModality(Qt::WindowModal);
+    progress.show();
+    bool canceled = false;
+
+    dataVisualizer->firstFrame();
+    for(int indexFrame=0; indexFrame < movieInfo.at(0) ; indexFrame++)
+    {
+        progress.setValue(indexFrame*100 / movieInfo.at(0));
+        if(progress.wasCanceled())
+        {
+            canceled = true;
+            break;
+        }
+        outputVideo << *dataVisualizer->getImgCV();
+        dataVisualizer->nextFrame();
+    }
+    progress.setValue(100);
+    if(canceled)
+    {
+        QMessageBox::critical(this,"Error","Writing canceled");
+    }
 }

@@ -23,6 +23,7 @@ private slots:
     void openAboutDialogue();
     void openFileDialogue();
     void saveImageDialogue();
+    void saveMovieDialogue();
 
 private:
     CentralArea* centralArea;

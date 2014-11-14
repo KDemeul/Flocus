@@ -62,6 +62,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 
     // Save
     connect(actionSaveImage,SIGNAL(triggered()),this,SLOT(saveImageDialogue()));
+    connect(actionSaveMovie,SIGNAL(triggered()),this,SLOT(saveMovieDialogue()));
 
     // About
     connect(actionAbout, SIGNAL(triggered()), this, SLOT(openAboutDialogue()));
@@ -108,7 +109,7 @@ void MainWindow::openAboutDialogue()
 
 void MainWindow::openFileDialogue()
 {
-    filename = QFileDialog::getOpenFileName(this, "Open file","/home/kilian/Documents/Flocus/data/10-21-2014-Generic/","US Data (*.b32 *.b8)");
+    filename = QFileDialog::getOpenFileName(this, "Open file","/home/kilian/Documents/Flocus/data/10-21-2014-Generic/","US Data (*.b32 *.b8)",0,QFileDialog::DontUseNativeDialog);
     centralArea->updateFile();
 }
 
@@ -138,6 +139,33 @@ void MainWindow::saveImageDialogue()
         else
         {
             centralArea->saveImage(picFilename + ".jpg");
+        }
+    }
+}
+
+void MainWindow::saveMovieDialogue()
+{
+    int doRecording = QMessageBox::question(this,"Warning","You're about to record a movie sequence.\n This could take a while.\n Are you sure?", QMessageBox ::Yes | QMessageBox::No);
+    if(doRecording == QMessageBox::No)
+        return;
+
+    std::string movieFilename = QFileDialog::getSaveFileName(this,"Save file", "/home/kilian/Documents/Flocus/data/saved/", "avi (*.avi)", 0,QFileDialog::DontUseNativeDialog).toStdString();
+
+    if(movieFilename.size()<4)
+    {
+        centralArea->saveMovie(movieFilename);
+    }
+    else
+    {
+        std::string suffix = movieFilename.substr(movieFilename.size()-4,4);
+        DEBUG_MSG("suffix: " << suffix);
+        if(suffix.compare(".avi") == 0)
+        {
+            centralArea->saveMovie(movieFilename);
+        }
+        else
+        {
+            centralArea->saveMovie(movieFilename + ".avi");
         }
     }
 }

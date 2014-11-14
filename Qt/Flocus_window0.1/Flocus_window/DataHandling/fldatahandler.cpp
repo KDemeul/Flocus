@@ -6,12 +6,18 @@ FlDataHandler::FlDataHandler()
     fileLoaded = false;
 }
 
-FlDataHandler::FlDataHandler(QString filename)
+FlDataHandler::FlDataHandler(QString filename,QWidget* parent)
 {
     ifstream rawData(filename.toStdString().c_str(),ios::binary);
-//    ifstream rawData(filename.toStdString().c_str(),ios::binary);
+
     if(rawData)
     {
+                QProgressDialog progress("Parsing file...", "Cancel", 0, 100,parent);
+        int progressValue = 0;
+        progress.setWindowModality(Qt::WindowModal);
+        progress.show();
+        bool canceled = false;
+
         fileLoaded = true;
 
         // Header
@@ -57,6 +63,22 @@ FlDataHandler::FlDataHandler(QString filename)
                     allPictures[frameCount][x][y] = (float)tmp;
                 }
             }
+            if(frameCount * 100 / nframes > progressValue)
+            {
+                progressValue = frameCount*100 / nframes;
+                progress.setValue(progressValue);
+            }
+            if(progress.wasCanceled())
+            {
+                canceled = true;
+                break;
+            }
+        }
+
+        if(canceled)
+        {
+             fileLoaded = false;
+             return;
         }
 
         // NORMALIZE DATA

@@ -5,13 +5,16 @@
 #include <fstream>
 #include <string>
 #include <QMessageBox>
+#include <QProgressDialog>
+
+#include <time.h>
 
 
 class FlDataHandler
 {
 public:
     FlDataHandler();
-    FlDataHandler(QString filename);
+    FlDataHandler(QString filename,QWidget* parent = 0);
     int nbField;
     int filetype;
     int nframes;

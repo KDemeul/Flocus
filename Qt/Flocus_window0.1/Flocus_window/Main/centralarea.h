@@ -7,6 +7,7 @@
 #include <QLayout>
 #include <QPushButton>
 #include <QSlider>
+#include <QProgressDialog>
 
 #include <stdlib.h>
 #include <opencv2/core/core.hpp>
@@ -26,12 +27,13 @@ public:
     CentralArea(QWidget *parent = 0);
     AlgorithmArea* getAlgorithmArea();
     void setRansacParameters(int a_posX, int a_poxY, int a_width, int a_height, bool a_isEnable, int a_ransacRate);
+    void saveImage(std::string a_filename);
+    void saveMovie(std::string a_filename);
 
 signals:
 
 public slots:
     void updateFile();
-    void saveImage(std::string a_filename);
 
 private:
     // Left

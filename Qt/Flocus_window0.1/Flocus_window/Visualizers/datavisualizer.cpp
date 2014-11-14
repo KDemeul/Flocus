@@ -148,6 +148,19 @@ cv::Mat* DataVisualizer::getImgCV()
     return &mImgCV;
 }
 
+std::vector<int> DataVisualizer::getMovieInfo()
+{
+    std::vector<int> result;
+
+    if(!mFlDataHandler->fileLoaded)
+        return result;
+
+    result.push_back(mFlDataHandler->nframes);
+    result.push_back(mFlDataHandler->ss);
+    result.push_back(mFlDataHandler->w);
+    result.push_back(mFlDataHandler->h);
+}
+
 void DataVisualizer::setDataHandler(FlDataHandler* a_FlDataHandler)
 {
     mFlDataHandler = a_FlDataHandler;

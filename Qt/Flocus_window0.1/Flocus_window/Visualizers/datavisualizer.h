@@ -32,6 +32,7 @@ public:
     cv::Rect* getROI();
     void setRansacParameters(int a_posX, int a_poxY, int a_width, int a_height, bool a_isEnable, int a_ransacRate);
     cv::Mat* getImgCV();
+    std::vector<int> getMovieInfo();
 
 public slots:
     void fastPreviousFrame();
