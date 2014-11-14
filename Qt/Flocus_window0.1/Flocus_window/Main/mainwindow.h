@@ -8,7 +8,7 @@
 
 #include "DataHandling/fldatahandler.h"
 #include "Main/centralarea.h"
-#include "Visualizers/qalgorithm.h"
+#include "Main/algorithmarea.h"
 
 class CentralArea;
 

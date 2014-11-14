@@ -6,7 +6,7 @@ FlDataHandler::FlDataHandler()
     fileLoaded = false;
 }
 
-FlDataHandler::FlDataHandler(QString filename,QWidget* parent)
+FlDataHandler::FlDataHandler(QString filename)
 {
     ifstream rawData(filename.toStdString().c_str(),ios::binary);
 //    ifstream rawData(filename.toStdString().c_str(),ios::binary);

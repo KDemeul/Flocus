@@ -11,7 +11,7 @@ class FlDataHandler
 {
 public:
     FlDataHandler();
-    FlDataHandler(QString filename, QWidget *parent);
+    FlDataHandler(QString filename);
     int nbField;
     int filetype;
     int nframes;

@@ -13,7 +13,7 @@
 #include <opencv2/highgui/highgui.hpp>
 #include "opencv/cv.h"
 
-#include "Visualizers/qalgorithm.h"
+#include "Main/algorithmarea.h"
 #include "Visualizers/datavisualizer.h"
 #include "DataHandling/fldatahandler.h"
 
@@ -24,7 +24,7 @@ class CentralArea : public QWidget
 
 public:
     CentralArea(QWidget *parent = 0);
-    QAlgorithm* getQAlgorithm();
+    AlgorithmArea* getQAlgorithm();
     void setROI(int a_posX, int a_poxY, int a_width, int a_height);
 
 signals:
@@ -40,7 +40,7 @@ private:
     QVBoxLayout *rightLayout;
 
     // Algorithm
-    QAlgorithm *qAlgorithm;
+    AlgorithmArea *mAlgorithmArea;
 
     // Vizualization
     QLabel      *labelVisualizationPart     ;

@@ -1,5 +1,5 @@
-#ifndef QALGORITHM_H
-#define QALGORITHM_H
+#ifndef ALGORITHMAREA_H
+#define ALGORITHMAREA_H
 
 #include <QWidget>
 #include <QSlider>
@@ -11,15 +11,15 @@
 #include <QPushButton>
 #include <QSpinBox>
 
-class QAlgorithm : public QWidget
+class AlgorithmArea : public QWidget
 {
     Q_OBJECT
 public:
-    explicit QAlgorithm(QWidget *parent = 0);
+    AlgorithmArea(QWidget *parent = 0);
     void setBounds(int a_w, int a_h);
-    
+
 signals:
-    
+
 public slots:
     void toggledRANSAC(bool a_isVisible);
     void setROI();
@@ -38,4 +38,4 @@ private:
     QSpinBox    *mSpinRR;
 };
 
-#endif // QALGORITHM_H
+#endif // ALGORITHMAREA_H

@@ -1,7 +1,7 @@
-#include "Visualizers/qalgorithm.h"
+#include "Main/algorithmarea.h"
 #include "Main/centralarea.h"
 
-QAlgorithm::QAlgorithm(QWidget *parent) :
+AlgorithmArea::AlgorithmArea(QWidget *parent) :
     QWidget(parent)
 {
     mMainLayout = new QVBoxLayout;
@@ -74,13 +74,13 @@ QAlgorithm::QAlgorithm(QWidget *parent) :
     this->setLayout(mMainLayout);
 }
 
-void QAlgorithm::toggledRANSAC(bool a_isVisible)
+void AlgorithmArea::toggledRANSAC(bool a_isVisible)
 {
     groupRANSAC->setChecked(a_isVisible);
     groupRANSAC->setHidden(!a_isVisible);
 }
 
-void QAlgorithm::setROI()
+void AlgorithmArea::setROI()
 {
     CentralArea *parent = (CentralArea*)this->parentWidget();
     parent->setROI(mSlidersRANSACRec[0]->value(),
@@ -89,7 +89,7 @@ void QAlgorithm::setROI()
                     mSlidersRANSACRec[3]->value());
 }
 
-void QAlgorithm::setBounds(int a_w, int a_h)
+void AlgorithmArea::setBounds(int a_w, int a_h)
 {
     for(int i=0;i<2;i++)
     {

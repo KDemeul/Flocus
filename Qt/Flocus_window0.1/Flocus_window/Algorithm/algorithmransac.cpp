@@ -1,12 +1,12 @@
 #include "Algorithm/algorithmransac.h"
 
 AlgorithmRansac::AlgorithmRansac(int a_ransacNbPoint)
-    : mEta(0.001),
-      mRho(1.0),
-      mPercentTh(5.0),
-      mRansacNbPoint(a_ransacNbPoint),
-      mModelComputed(false),
-      mJ(1000)
+    : mRansacNbPoint(a_ransacNbPoint)
+    , mPercentTh(5.0)
+    , mEta(0.001)
+    , mRho(1.0)
+    , mJ(1000)
+    , mModelComputed(false)
 {
     // INITIALIZATION
     mCRNS = std::numeric_limits<double>::max();
@@ -64,7 +64,7 @@ void AlgorithmRansac::applyAlgorithm(cv::Mat a_pic, cv::Rect a_regionOfInterest)
 
         std::vector<cv::Point> InliersTmp;
         double C = 0;
-        for(int index=0 ; index < mIndexThresh.size() ; index++)
+        for(unsigned int index=0 ; index < mIndexThresh.size() ; index++)
         {
             cv::Point currentPoint = mIndexThresh.at(index);
             double d = DistToCurve(&Hj,&Dj,&Tj,&currentPoint);
@@ -172,7 +172,7 @@ void AlgorithmRansac::createIndexThresh()
 SetPoint AlgorithmRansac::getRandPoints()
 {
     std::set<cv::Point,comparePoints> results;
-    while(results.size() != mRansacNbPoint)
+    while((int)results.size() != mRansacNbPoint)
     {
         int index = rand() % mIndexThresh.size();
         results.insert(mIndexThresh.at(index));
@@ -182,7 +182,7 @@ SetPoint AlgorithmRansac::getRandPoints()
 
 bool AlgorithmRansac::isAPotentialCurve(SetPoint a_potentialSet) // STUPID FUNCTION
 {
-    if(a_potentialSet.size() == mRansacNbPoint)
+    if((int)a_potentialSet.size() == mRansacNbPoint)
         return true;
     return true;
 }

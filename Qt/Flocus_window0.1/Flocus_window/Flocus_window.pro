@@ -17,20 +17,22 @@ SOURCES += \
     Algorithm/algorithmransac.cpp \
     common/common.cpp \
     DataHandling/fldatahandler.cpp \
+    Main/algorithmarea.cpp \
     Main/mainwindow.cpp \
-    Main/main.cpp \
     Main/centralarea.cpp \
-    Visualizers/qalgorithm.cpp \
-    Visualizers/datavisualizer.cpp
+    Visualizers/datavisualizer.cpp \
+    Visualizers/ransacvisualizer.cpp \
+    Main/main.cpp
 
 HEADERS  += \
     Algorithm/algorithmransac.h \
     common/common.h \
     DataHandling/fldatahandler.h \
+    Main/algorithmarea.h \
     Main/mainwindow.h \
     Main/centralarea.h \
-    Visualizers/qalgorithm.h \
-    Visualizers/datavisualizer.h
+    Visualizers/datavisualizer.h \
+    Visualizers/ransacvisualizer.h \
 
 #INCLUDEPATH += /usr/include/vtk-5.8
 

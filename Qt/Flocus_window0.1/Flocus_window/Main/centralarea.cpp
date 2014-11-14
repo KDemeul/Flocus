@@ -22,8 +22,8 @@ CentralArea::CentralArea(QWidget *parent)
     rightLayout   = new QVBoxLayout;
 
     // Algorithm layout
-    qAlgorithm = new QAlgorithm(this);
-    rightLayout->addWidget(qAlgorithm);
+    mAlgorithmArea = new AlgorithmArea(this);
+    rightLayout->addWidget(mAlgorithmArea);
 
 
     // Visualization layout
@@ -83,13 +83,13 @@ CentralArea::CentralArea(QWidget *parent)
 
 void CentralArea::updateFile()
 {
-    flDataHandler = new FlDataHandler(((MainWindow*)this->parentWidget())->getFilename(),this);
+    flDataHandler = new FlDataHandler(((MainWindow*)this->parentWidget())->getFilename());
     if(flDataHandler->fileLoaded)
     {
         fileLoaded = true;
         dataVisualizer->setDataHandler(flDataHandler);
         dataVisualizer->updateImage();
-        qAlgorithm->setBounds(flDataHandler->w,flDataHandler->h);
+        mAlgorithmArea->setBounds(flDataHandler->w,flDataHandler->h);
     }
     else
     {
@@ -109,7 +109,7 @@ void CentralArea::setROI(int a_posX, int a_poxY, int a_width, int a_height)
     }
 }
 
-QAlgorithm* CentralArea::getQAlgorithm()
+AlgorithmArea* CentralArea::getQAlgorithm()
 {
-    return qAlgorithm;
+    return mAlgorithmArea;
 }
