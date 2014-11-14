@@ -148,7 +148,7 @@ void DataVisualizer::convertToRGB()
 
 void DataVisualizer::convertToGrey()
 {
-    if(!mImgCV.type()!=CV_8UC1)
+    if(mImgCV.type()!=CV_8UC1)
     {
         cv::Mat img_grey(mImgCV.size(), CV_8UC1);
         cv::cvtColor(mImgCV, img_grey, CV_RGB2GRAY);
@@ -163,16 +163,25 @@ void DataVisualizer::setDataHandler(FlDataHandler* a_FlDataHandler)
     mFlDataHandler = a_FlDataHandler;
 }
 
-void DataVisualizer::setROI(int a_posX, int a_poxY, int a_width, int a_height)
+
+void DataVisualizer::setRansacParameters(int a_posX, int a_poxY, int a_width, int a_height, bool a_isEnable, int a_ransacRate)
 {
-    int x = a_posX;
-    int y = a_poxY;
-    int w = a_width;
-    int h = a_height;
-    w = x+w >= mImgCV.cols ? mImgCV.cols - x : w;
-    h = y+h >= mImgCV.rows ? mImgCV.rows - y : h;
-    mROI = new cv::Rect(x,y,w,h);
-    drawROI();
+    mRansacVisualizer->enable(a_isEnable);
+    if(a_isEnable)
+    {
+        // ROI
+        int x = a_posX;
+        int y = a_poxY;
+        int w = a_width;
+        int h = a_height;
+        w = x+w < mImgCV.cols ? w : mImgCV.cols - x - 1;
+        h = y+h < mImgCV.rows ? h : mImgCV.rows - y - 1;
+        mROI = new cv::Rect(x,y,w,h);
+        drawROI();
+
+        // Ransac Rate
+        mRansacVisualizer->setRansacRate(a_ransacRate);
+    }
 }
 
 cv::Rect* DataVisualizer::getROI()
@@ -182,17 +191,13 @@ cv::Rect* DataVisualizer::getROI()
 
 void DataVisualizer::onFrame()
 {
-    // TO REMOVE
     if(!mFlDataHandler->fileLoaded)
         return;
-    convertToRGB();
-    mRansacVisualizer->applyAndDraw(&mImgCV,mROI);
-    updateImage();
-}
 
-void DataVisualizer::toggledRANSAC(bool a_isEnable)
-{
-    mRansacVisualizer->enable(a_isEnable);
+    updateImage();
+    convertToRGB();
+    mRansacVisualizer->applyAndDraw(&mImgCV,mROI,mIndexCurrentFrame);
+    addDrawing();
 }
 
 // VIDEO CONTROL
@@ -205,7 +210,6 @@ void DataVisualizer::setFrame(int a_indexFrame)
         else
             mIndexCurrentFrame = a_indexFrame < 0 ? 0 : mFlDataHandler->nframes-1;
         onFrame();
-        updateImage();
     }
 }
 

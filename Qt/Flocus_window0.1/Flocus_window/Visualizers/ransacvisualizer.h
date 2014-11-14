@@ -9,7 +9,7 @@ class RansacVisualizer : public QWidget
     Q_OBJECT
 public:
     explicit RansacVisualizer(QWidget *parent = 0);
-    void applyAndDraw(cv::Mat *a_imgCV, cv::Rect *aROI);
+    void applyAndDraw(cv::Mat *a_imgCV, cv::Rect *a_ROI, int a_indexFrame);
     
 signals:
     
@@ -21,6 +21,9 @@ private:
     AlgorithmRansac *mAlgorithmRansac;
     int mRansacRate;
     bool mIsEnabled;
+
+    void drawPoint(cv::Mat* a_imgCV, cv::Point a_Point);
+    void drawLine(cv::Mat* a_imgCV, cv::Point start, cv::Point end);
     
 };
 

@@ -22,8 +22,7 @@ public:
 signals:
 
 public slots:
-    void toggledRANSAC(bool a_isVisible);
-    void setROI();
+    void communicateToVisualizer();
 
 private:
     // GLOBAL ATTRIBUTES

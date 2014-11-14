@@ -97,16 +97,9 @@ void CentralArea::updateFile()
     }
 }
 
-void CentralArea::setROI(int a_posX, int a_poxY, int a_width, int a_height)
+void CentralArea::setRansacParameters(int a_posX, int a_poxY, int a_width, int a_height, bool a_isEnable, int a_ransacRate)
 {
-    if(fileLoaded)
-    {
-       dataVisualizer->setROI(a_posX,a_poxY,a_width,a_height);
-    }
-    else
-    {
-        QMessageBox::critical(this, "Error", "Can not show area.\n Open a file first.");
-    }
+   dataVisualizer->setRansacParameters(a_posX,a_poxY,a_width,a_height,a_isEnable,a_ransacRate);
 }
 
 AlgorithmArea* CentralArea::getAlgorithmArea()
@@ -114,7 +107,3 @@ AlgorithmArea* CentralArea::getAlgorithmArea()
     return mAlgorithmArea;
 }
 
-void CentralArea::toggledRANSAC(bool a_isEnable)
-{
-    dataVisualizer->toggledRANSAC(a_isEnable);
-}

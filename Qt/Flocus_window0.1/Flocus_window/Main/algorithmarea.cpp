@@ -36,7 +36,7 @@ AlgorithmArea::AlgorithmArea(QWidget *parent) :
     }
     for(int i=0;i<4;i++)
     {
-        connect(mSlidersRANSACRec[i],SIGNAL(actionTriggered(int)),this,SLOT(setROI()));
+        connect(mSlidersRANSACRec[i],SIGNAL(actionTriggered(int)),this,SLOT(communicateToVisualizer()));
     }
 
     QGroupBox *groupROI = new QGroupBox("ROI");
@@ -48,7 +48,7 @@ AlgorithmArea::AlgorithmArea(QWidget *parent) :
     // Show ROI
     mButtonShowROi = new QPushButton("Show ROI");
     ransacLayout->addWidget(mButtonShowROi);
-    connect(mButtonShowROi,SIGNAL(clicked()),this,SLOT(setROI()));
+    connect(mButtonShowROi,SIGNAL(clicked()),this,SLOT(communicateToVisualizer()));
 
     // Frame rate
     mSpinRR = new QSpinBox;
@@ -58,12 +58,13 @@ AlgorithmArea::AlgorithmArea(QWidget *parent) :
     QWidget *RANSACRateWidget = new QWidget;
     RANSACRateWidget->setLayout(RANSACRateLayout);
     ransacLayout->addWidget(RANSACRateWidget);
+    connect(mSpinRR,SIGNAL(valueChanged(int)),this,SLOT(communicateToVisualizer()));
 
     groupRANSAC = new QGroupBox("RANSAC");
     groupRANSAC->setCheckable(true);
     groupRANSAC->setLayout(ransacLayout);
 
-    connect(groupRANSAC,SIGNAL(toggled(bool)),this,SLOT(toggledRANSAC(bool)));
+    connect(groupRANSAC,SIGNAL(toggled(bool)),this,SLOT(communicateToVisualizer()));
 
     groupRANSAC->setChecked(false);
     // End group : RANSAC
@@ -72,22 +73,6 @@ AlgorithmArea::AlgorithmArea(QWidget *parent) :
     mMainLayout->addWidget(groupRANSAC);
 
     this->setLayout(mMainLayout);
-}
-
-void AlgorithmArea::toggledRANSAC(bool a_isVisible)
-{
-    groupRANSAC->setHidden(!a_isVisible);
-    CentralArea *parent = (CentralArea*)this->parentWidget();
-    parent->toggledRANSAC(a_isVisible);
-}
-
-void AlgorithmArea::setROI()
-{
-    CentralArea *parent = (CentralArea*)this->parentWidget();
-    parent->setROI(mSlidersRANSACRec[0]->value(),
-                    mSlidersRANSACRec[1]->value(),
-                    mSlidersRANSACRec[2]->value(),
-                    mSlidersRANSACRec[3]->value());
 }
 
 void AlgorithmArea::setBounds(int a_w, int a_h)
@@ -102,4 +87,16 @@ void AlgorithmArea::setBounds(int a_w, int a_h)
 QGroupBox* AlgorithmArea::getGroupBoxRansac()
 {
     return groupRANSAC;
+}
+
+void AlgorithmArea::communicateToVisualizer()
+{
+    CentralArea *parent = (CentralArea*)this->parentWidget();
+    parent->setRansacParameters(mSlidersRANSACRec[0]->value(),
+                                mSlidersRANSACRec[1]->value(),
+                                mSlidersRANSACRec[2]->value(),
+                                mSlidersRANSACRec[3]->value(),
+                                groupRANSAC->isChecked(),
+                                mSpinRR->value());
+    groupRANSAC->setHidden(!groupRANSAC->isChecked());
 }

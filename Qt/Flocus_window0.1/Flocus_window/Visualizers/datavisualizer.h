@@ -29,9 +29,8 @@ public:
     void addDrawing();
     void updateImage();
     void setDataHandler(FlDataHandler* a_flDataHandler);
-    void setROI(int a_posX, int a_poxY, int a_width, int a_height);
     cv::Rect* getROI();
-    void toggledRANSAC(bool a_isEnable);
+    void setRansacParameters(int a_posX, int a_poxY, int a_width, int a_height, bool a_isEnable, int a_ransacRate);
 
 public slots:
     void fastPreviousFrame();

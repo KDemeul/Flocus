@@ -12,17 +12,24 @@ AlgorithmRansac::AlgorithmRansac(int a_ransacNbPoint)
     mCRNS = std::numeric_limits<double>::max();
 }
 
-void AlgorithmRansac::applyAlgorithm(cv::Mat a_pic, cv::Rect a_regionOfInterest)
+void AlgorithmRansac::applyAlgorithm(cv::Mat *a_pic, cv::Rect *a_regionOfInterest)
 {
+
     // RESET PARAMETERS
     mModelComputed = false;
     mCRNS = std::numeric_limits<double>::max();
 
     // Set image input
-    mPic = a_pic;
+    cv::Mat img_grey(a_pic->size(), CV_8UC1);
+    if(a_pic->type()!=CV_8UC1)
+    {
+        cv::cvtColor(*a_pic, img_grey, CV_RGB2GRAY);
+        a_pic = &img_grey;
+    }
+    mPic = *a_pic;
 
     // Crop image
-    setAreaOfInterest(a_regionOfInterest);
+     setAreaOfInterest(*a_regionOfInterest);
 
     // Normalize image
     cv::normalize(mPicResized,mPicResized,0,255,cv::NORM_MINMAX);
