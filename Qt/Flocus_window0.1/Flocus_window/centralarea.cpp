@@ -97,11 +97,11 @@ void CentralArea::updateFile()
     }
 }
 
-void CentralArea::showROI(int a_posX, int a_poxY, int a_width, int a_height)
+void CentralArea::setROI(int a_posX, int a_poxY, int a_width, int a_height)
 {
     if(fileLoaded)
     {
-       dataVisualizer->drawROI(a_posX,a_poxY,a_width,a_height);
+       dataVisualizer->setROI(a_posX,a_poxY,a_width,a_height);
     }
     else
     {

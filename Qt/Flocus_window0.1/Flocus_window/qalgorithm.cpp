@@ -36,7 +36,7 @@ QAlgorithm::QAlgorithm(QWidget *parent) :
     }
     for(int i=0;i<4;i++)
     {
-        connect(mSlidersRANSACRec[i],SIGNAL(actionTriggered(int)),this,SLOT(showROI()));
+        connect(mSlidersRANSACRec[i],SIGNAL(actionTriggered(int)),this,SLOT(setROI()));
     }
 
     QGroupBox *groupROI = new QGroupBox("ROI");
@@ -48,7 +48,7 @@ QAlgorithm::QAlgorithm(QWidget *parent) :
     // Show ROI
     mButtonShowROi = new QPushButton("Show ROI");
     ransacLayout->addWidget(mButtonShowROi);
-    connect(mButtonShowROi,SIGNAL(clicked()),this,SLOT(showROI()));
+    connect(mButtonShowROi,SIGNAL(clicked()),this,SLOT(setROI()));
 
     // Frame rate
     mSpinRR = new QSpinBox;
@@ -80,10 +80,10 @@ void QAlgorithm::toggledRANSAC(bool a_isVisible)
     groupRANSAC->setHidden(!a_isVisible);
 }
 
-void QAlgorithm::showROI()
+void QAlgorithm::setROI()
 {
     CentralArea *parent = (CentralArea*)this->parentWidget();
-    parent->showROI(mSlidersRANSACRec[0]->value(),
+    parent->setROI(mSlidersRANSACRec[0]->value(),
                     mSlidersRANSACRec[1]->value(),
                     mSlidersRANSACRec[2]->value(),
                     mSlidersRANSACRec[3]->value());

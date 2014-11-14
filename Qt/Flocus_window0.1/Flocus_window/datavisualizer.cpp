@@ -14,7 +14,10 @@ DataVisualizer::DataVisualizer(QWidget *parent)
     this->setMinimumSize(mWidth,mHeight);
     mImgRatio = mWidth/mHeight;
     mFlDataHandler = new FlDataHandler();
+
+    // Algorithms
     mAlgorithmRansac = new AlgorithmRansac(2);
+    mROI = new cv::Rect(0,0,0,0);
 }
 
 // PAN INITIALIZATION, DEFINITION AND UPDATE
@@ -90,6 +93,7 @@ void DataVisualizer::updateImage(){
     updateScene();
 }
 
+// DRAWING FUNCTION
 void DataVisualizer::addDrawing(){
     // Convert cv image to qimage
     if( mImgCV.channels() == 3)
@@ -107,9 +111,76 @@ void DataVisualizer::addDrawing(){
     updateScene();
 }
 
+void DataVisualizer::drawLine(cv::Point start, cv::Point end)
+{
+    if (!mFlDataHandler->fileLoaded)
+        return;
+
+    line(mImgCV,start,end,cv::Scalar(255, 0, 0 ),1,8);
+}
+
+void DataVisualizer::drawPoint(cv::Point a_Point)
+{
+    if (!mFlDataHandler->fileLoaded)
+        return;
+
+    cv::circle(mImgCV,a_Point,2,cv::Scalar(0, 0, 255),-1,0);
+}
+
+void DataVisualizer::drawROI()
+{
+   if(!mFlDataHandler->fileLoaded)
+        return;
+
+   updateImage();
+   convertToRGB();
+   cv::rectangle(mImgCV,*mROI,cv::Scalar(0,255,0),1);
+   addDrawing();
+}
+
+void DataVisualizer::convertToRGB()
+{
+    if(mImgCV.type()!=CV_8UC3)
+    {
+        cv::Mat img_rgb(mImgCV.size(), CV_8UC3);
+        cv::cvtColor(mImgCV, img_rgb, CV_GRAY2RGB);
+        mImgCV = img_rgb;
+    }
+}
+
+void DataVisualizer::convertToGrey()
+{
+    if(!mImgCV.type()!=CV_8UC1)
+    {
+        cv::Mat img_grey(mImgCV.size(), CV_8UC1);
+        cv::cvtColor(mImgCV, img_grey, CV_RGB2GRAY);
+        mImgCV = img_grey;
+    }
+}
+
+// DATA - ALGORITHM CONTROL
+
 void DataVisualizer::setDataHandler(FlDataHandler* a_FlDataHandler)
 {
     mFlDataHandler = a_FlDataHandler;
+}
+
+void DataVisualizer::setROI(int a_posX, int a_poxY, int a_width, int a_height)
+{
+    int x = a_posX;
+    int y = a_poxY;
+    int w = a_width;
+    int h = a_height;
+    w = x+w >= mImgCV.cols ? mImgCV.cols - x : w;
+    h = y+h >= mImgCV.rows ? mImgCV.rows - y : h;
+    mROI = new cv::Rect(x,y,w,h);
+    drawROI();
+}
+
+void DataVisualizer::onFrame()
+{
+
+    DEBUG_MSG("ON FRAME");
 }
 
 // VIDEO CONTROL
@@ -121,6 +192,7 @@ void DataVisualizer::setFrame(int a_indexFrame)
             mIndexCurrentFrame = a_indexFrame;
         else
             mIndexCurrentFrame = a_indexFrame < 0 ? 0 : mFlDataHandler->nframes-1;
+        onFrame();
         updateImage();
     }
 }
@@ -136,7 +208,6 @@ void DataVisualizer::previousFrame()
     int desiredIndex = mIndexCurrentFrame - 1;
     setFrame(desiredIndex);
 }
-
 
 void DataVisualizer::firstFrame()
 {
@@ -180,99 +251,5 @@ void DataVisualizer::play()
 
 void DataVisualizer::pause()
 {
-    // TO REMOVE
-    if(!mFlDataHandler->fileLoaded)
-        return;
-
-    updateImage();
-
-    mAlgorithmRansac->applyAlgorithm(mImgCV, cv::Rect(0,120,640,80));
-
-    DEBUG_MSG("RANSAC HAS RUN");
-    DEBUG_MSG((mAlgorithmRansac->isModelComputed() ? "A model has been computed " : "No model has been found"));
-
-    if(mAlgorithmRansac->isModelComputed())
-    {
-        convertToRGB();
-
-        std::vector<cv::Point> inliers = mAlgorithmRansac->getInliers();
-        for(std::vector<cv::Point>::iterator it = inliers.begin(); it != inliers.end() ; it++)
-        {
-            drawPoint(cv::Point(0,120) + cv::Point(it->y,it->x));
-        }
-
-        cv::Mat paramCurve = mAlgorithmRansac->getParamCurve();
-        cv::Mat T1 = (cv::Mat_<double>(2,1) << 1, -1000);
-        cv::Mat T2 = (cv::Mat_<double>(2,1) << 1, 1000);
-        cv::Mat M1mat = paramCurve * T1;
-        cv::Mat M2mat = paramCurve * T2;
-        cv::Point M1(M1mat.at<double>(1,0),M1mat.at<double>(0,0));
-        cv::Point M2(M2mat.at<double>(1,0),M2mat.at<double>(0,0));
-        drawLine(cv::Point(0,120) + M1,cv::Point(0,120) + M2);
-
-        addDrawing();
-    }
-
-    // TO REMOVE
-
-
     mIsPlaying = false;
-}
-
-
-// DRAWING FUNCTION
-void DataVisualizer::drawLine(cv::Point start, cv::Point end)
-{
-    if (!mFlDataHandler->fileLoaded)
-        return;
-
-    line(mImgCV,start,end,cv::Scalar(255, 0, 0 ),1,8);
-}
-
-void DataVisualizer::drawPoint(cv::Point a_Point)
-{
-    if (!mFlDataHandler->fileLoaded)
-        return;
-
-    cv::circle(mImgCV,a_Point,2,cv::Scalar(0, 0, 255),-1,0);
-}
-
-void DataVisualizer::drawROI(int a_posX, int a_poxY, int a_width, int a_height)
-{
-    if(!mFlDataHandler->fileLoaded)
-        return;
-
-    updateImage();
-
-    convertToRGB();
-
-    int x = a_posX;
-    int y = a_poxY;
-    int w = a_width;
-    int h = a_height;
-    w = x+w >= mImgCV.cols ? mImgCV.cols - x : w;
-    h = y+h >= mImgCV.rows ? mImgCV.rows - y : h;
-    cv::rectangle(mImgCV,cv::Rect(x,y,w,h),cv::Scalar(0,255,0),1);
-
-    addDrawing();
-}
-
-void DataVisualizer::convertToRGB()
-{
-    if(mImgCV.type()!=CV_8UC3)
-    {
-        cv::Mat img_rgb(mImgCV.size(), CV_8UC3);
-        cv::cvtColor(mImgCV, img_rgb, CV_GRAY2RGB);
-        mImgCV = img_rgb;
-    }
-}
-
-void DataVisualizer::convertToGrey()
-{
-    if(!mImgCV.type()!=CV_8UC1)
-    {
-        cv::Mat img_grey(mImgCV.size(), CV_8UC1);
-        cv::cvtColor(mImgCV, img_grey, CV_RGB2GRAY);
-        mImgCV = img_grey;
-    }
 }

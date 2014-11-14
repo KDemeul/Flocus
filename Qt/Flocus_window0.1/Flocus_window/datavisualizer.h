@@ -27,7 +27,7 @@ public:
     void addDrawing();
     void updateImage();
     void setDataHandler(FlDataHandler* a_flDataHandler);
-    void drawROI(int a_posX, int a_poxY, int a_width, int a_height);
+    void setROI(int a_posX, int a_poxY, int a_width, int a_height);
 
 
 public slots:
@@ -48,6 +48,7 @@ protected:
     void renderImage();
 
 private:
+    // Display attributes
     int mWidth;
     int mHeight;
     bool mSceneChanged;          // Indicates when OpenGL view is to be redrawn
@@ -61,9 +62,14 @@ private:
     cv::Mat mImgCV; // original OpenCV image to be shown
     QImage mImgQt; // Qt image to be rendered
 
+    // Data -- algorithm attributes
     FlDataHandler* mFlDataHandler;
     AlgorithmRansac *mAlgorithmRansac;
+    int mRANSACRate;
+    cv::Rect *mROI;
 
+    // Player
+    void onFrame();
     void setFrame(int a_indexFrame);
     bool mIsPlaying;
     int mIndexCurrentFrame;
@@ -75,6 +81,7 @@ private:
     // Drawing function
     void drawLine(cv::Point start, cv::Point end);
     void drawPoint(cv::Point a_Point);
+    void drawROI();
 };
 
 #endif // DATAVISUALIZER_H

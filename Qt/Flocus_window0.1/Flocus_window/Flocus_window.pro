@@ -18,7 +18,6 @@ SOURCES += main.cpp\
     centralarea.cpp \
     datavisualizer.cpp \
     fldatahandler.cpp \
-    Algorithm/algorithm.cpp \
     Algorithm/algorithmransac.cpp \
     common.cpp \
     qalgorithm.cpp
@@ -27,7 +26,6 @@ HEADERS  += mainwindow.h \
     centralarea.h \
     datavisualizer.h \
     fldatahandler.h \
-    Algorithm/algorithm.h \
     Algorithm/algorithmransac.h \
     common.h \
     qalgorithm.h
