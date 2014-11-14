@@ -181,6 +181,9 @@ void DataVisualizer::play()
 void DataVisualizer::pause()
 {
     // TO REMOVE
+    if(!mFlDataHandler->fileLoaded)
+        return;
+
     updateImage();
 
     mAlgorithmRansac->applyAlgorithm(mImgCV, cv::Rect(0,120,640,80));
