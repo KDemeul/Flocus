@@ -22,6 +22,10 @@ private:
     int mRansacRate;
     bool mIsEnabled;
 
+    int mIndexLastFrameProcessed;
+
+    void drawInliers(cv::Mat* a_imgCV, cv::Rect *a_ROI);
+
     void drawPoint(cv::Mat* a_imgCV, cv::Point a_Point);
     void drawLine(cv::Mat* a_imgCV, cv::Point start, cv::Point end);
     

@@ -89,6 +89,9 @@ void CentralArea::updateFile()
         fileLoaded = true;
         dataVisualizer->setDataHandler(flDataHandler);
         dataVisualizer->updateImage();
+        dataVisualizer->addDrawing();
+        if(mAlgorithmArea->getGroupBoxRansac()->isChecked())
+            mAlgorithmArea->communicateToVisualizer();
         mAlgorithmArea->setBounds(flDataHandler->w,flDataHandler->h);
     }
     else

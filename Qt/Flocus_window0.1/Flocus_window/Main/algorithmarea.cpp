@@ -18,7 +18,7 @@ AlgorithmArea::AlgorithmArea(QWidget *parent) :
         mSlidersRANSACRec[i]->setRange(0,1000);
     }
 
-    // TEMP
+    // STARTING VALUE
     mSlidersRANSACRec[0]->setValue(0);
     mSlidersRANSACRec[1]->setValue(120);
     mSlidersRANSACRec[2]->setValue(640);
@@ -50,9 +50,10 @@ AlgorithmArea::AlgorithmArea(QWidget *parent) :
     ransacLayout->addWidget(mButtonShowROi);
     connect(mButtonShowROi,SIGNAL(clicked()),this,SLOT(communicateToVisualizer()));
 
-    // Frame rate
+    // RANSAC rate
     mSpinRR = new QSpinBox;
     mSpinRR->setRange(1,20);
+    mSpinRR->setValue(10);
     QFormLayout *RANSACRateLayout = new QFormLayout;
     RANSACRateLayout->addRow("RANSAC Rate:", mSpinRR);
     QWidget *RANSACRateWidget = new QWidget;

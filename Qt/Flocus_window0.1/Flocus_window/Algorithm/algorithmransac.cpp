@@ -2,7 +2,7 @@
 
 AlgorithmRansac::AlgorithmRansac(int a_ransacNbPoint)
     : mRansacNbPoint(a_ransacNbPoint)
-    , mPercentTh(5.0)
+    , mPercentTh(7.5)
     , mEta(0.001)
     , mRho(1.0)
     , mJ(1000)

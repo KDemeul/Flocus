@@ -74,21 +74,6 @@ void DataVisualizer::updateImage(){
     image.convertTo(mImgCV, CV_8UC1, 255, 0);
 
     mImgRatio = (float)image.cols/(float)image.rows;
-
-    // Convert cv image to qimage
-    if( mImgCV.channels() == 3)
-        mImgQt = QImage((const unsigned char*)(mImgCV.data),
-                        mImgCV.cols, mImgCV.rows,
-                        mImgCV.step, QImage::Format_RGB888).rgbSwapped();
-    else if( mImgCV.channels() == 1)
-        mImgQt = QImage((const unsigned char*)(mImgCV.data),
-                        mImgCV.cols, mImgCV.rows,
-                        mImgCV.step, QImage::Format_Indexed8);
-
-    mImgQt = QGLWidget::convertToGLFormat(mImgQt);
-
-    mSceneChanged = true;
-    updateScene();
 }
 
 // DRAWING FUNCTION
