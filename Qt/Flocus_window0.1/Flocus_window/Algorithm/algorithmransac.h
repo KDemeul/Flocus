@@ -11,6 +11,7 @@
 #include <stdlib.h>     /* srand, rand */
 #include <limits>       // std::numeric_limits
 #include <math.h>       /* log */
+#include <time.h>
 
 #include "common/common.h"
 

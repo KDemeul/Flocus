@@ -16,6 +16,7 @@ DataVisualizer::DataVisualizer(QWidget *parent)
     // Algorithms
     mRansacVisualizer = new RansacVisualizer();
     mROI = new cv::Rect(0,0,0,0);
+    mTipVisualizer = new TipVisualizer();
 }
 
 // PAN INITIALIZATION, DEFINITION AND UPDATE

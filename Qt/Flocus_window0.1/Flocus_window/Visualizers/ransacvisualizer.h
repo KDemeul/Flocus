@@ -2,11 +2,11 @@
 #define RANSACVISUALIZER_H
 
 #include <QWidget>
+#include "common/common.h"
 #include "Algorithm/algorithmransac.h"
 
 class RansacVisualizer : public QWidget
 {
-    Q_OBJECT
 public:
     explicit RansacVisualizer(QWidget *parent = 0);
     void applyAndDraw(cv::Mat *a_imgCV, cv::Rect *a_ROI, int a_indexFrame);
@@ -21,7 +21,6 @@ private:
     AlgorithmRansac *mAlgorithmRansac;
     int mRansacRate;
     bool mIsEnabled;
-
     int mIndexLastFrameProcessed;
 
     void drawInliers(cv::Mat* a_imgCV, cv::Rect *a_ROI);

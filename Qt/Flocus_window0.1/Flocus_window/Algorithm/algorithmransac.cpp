@@ -5,7 +5,7 @@ AlgorithmRansac::AlgorithmRansac(int a_ransacNbPoint)
     , mPercentTh(7.5)
     , mEta(0.001)
     , mRho(1.0)
-    , mJ(1000)
+    , mJ(500)
     , mModelComputed(false)
 {
     // INITIALIZATION
@@ -14,7 +14,6 @@ AlgorithmRansac::AlgorithmRansac(int a_ransacNbPoint)
 
 void AlgorithmRansac::applyAlgorithm(cv::Mat *a_pic, cv::Rect *a_regionOfInterest)
 {
-
     // RESET PARAMETERS
     mModelComputed = false;
     mCRNS = std::numeric_limits<double>::max();
@@ -40,6 +39,7 @@ void AlgorithmRansac::applyAlgorithm(cv::Mat *a_pic, cv::Rect *a_regionOfInteres
     // Threshold pic
     convertPicToBoolMap();
 
+    clock_t time = clock();
     // Establish index thresh
     createIndexThresh();
     DEBUG_MSG("INDEX MAP THRESH CREATED (" << (mIndexThresh.size() * 100) / mPicNbPoint << "%)");
@@ -73,6 +73,7 @@ void AlgorithmRansac::applyAlgorithm(cv::Mat *a_pic, cv::Rect *a_regionOfInteres
         double C = 0;
         for(unsigned int index=0 ; index < mIndexThresh.size() ; index++)
         {
+
             cv::Point currentPoint = mIndexThresh.at(index);
             double d = DistToCurve(&Hj,&Dj,&Tj,&currentPoint);
             if(d < mRho)
@@ -100,6 +101,9 @@ void AlgorithmRansac::applyAlgorithm(cv::Mat *a_pic, cv::Rect *a_regionOfInteres
 
     if(mCRNS < std::numeric_limits<double>::max())
         mModelComputed = true;
+
+    time = clock() - time;
+    DEBUG_MSG("RANSAC RAN IN " << ((float)time*1000)/CLOCKS_PER_SEC << "ms.");
 }
 
 
@@ -158,7 +162,9 @@ void AlgorithmRansac::convertPicToBoolMap()
 
     double threshValue = index;
 
+    DEBUG_MSG("Threshold value : " << threshValue);
     cv::threshold(mPicResized, mPicBool, threshValue, 255, cv::THRESH_BINARY);
+    cv::imshow("Bool map", mPicBool);
 }
 
 void AlgorithmRansac::createIndexThresh()

@@ -22,7 +22,9 @@ SOURCES += \
     Main/centralarea.cpp \
     Visualizers/datavisualizer.cpp \
     Visualizers/ransacvisualizer.cpp \
-    Main/main.cpp
+    Main/main.cpp \
+    Algorithm/algorithmtip.cpp \
+    Visualizers/tipvisualizer.cpp
 
 HEADERS  += \
     Algorithm/algorithmransac.h \
@@ -33,6 +35,8 @@ HEADERS  += \
     Main/centralarea.h \
     Visualizers/datavisualizer.h \
     Visualizers/ransacvisualizer.h \
+    Algorithm/algorithmtip.h \
+    Visualizers/tipvisualizer.h
 
 #INCLUDEPATH += /usr/include/vtk-5.8
 
@@ -40,7 +44,8 @@ HEADERS  += \
 
 INCLUDEPATH += /usr/include/opencv2
 
-LIBS+= -lopencv_core -lopencv_highgui -lopencv_imgproc
+#LIBS+= -lopencv_core -lopencv_highgui -lopencv_imgproc
+LIBS+= -lopencv_calib3d -lopencv_features2d -lopencv_flann -lopencv_imgproc -lopencv_core  -lopencv_highgui
 
 OTHER_FILES += \
     stylesheet.qss \

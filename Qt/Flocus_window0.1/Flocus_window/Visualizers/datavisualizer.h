@@ -14,11 +14,13 @@
 
 // TO REMOVE
 #include "Algorithm/algorithmransac.h"
+#include "Algorithm/algorithmtip.h"
 
 #include <time.h>
 #include "common/common.h"
 #include "DataHandling/fldatahandler.h"
 #include "Visualizers/ransacvisualizer.h"
+#include "Visualizers/tipvisualizer.h"
 
 class DataVisualizer : public QGLWidget
 {
@@ -63,6 +65,8 @@ private:
     FlDataHandler* mFlDataHandler;
     RansacVisualizer *mRansacVisualizer;
     cv::Rect *mROI;
+
+    TipVisualizer *mTipVisualizer;
 
     // Player
     void onFrame();
