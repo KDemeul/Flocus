@@ -2,13 +2,19 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QApplication>
 #include <QMenu>
 #include <QMenuBar>
 #include <QFileDialog>
+#include <QStandardItemModel>
+#include <QTreeView>
+#include <QTableView>
 
 #include "DataHandling/fldatahandler.h"
 #include "Main/centralarea.h"
 #include "Main/algorithmarea.h"
+#include "common/xmlhandler.h"
+#include "Main/extractdialog.h"
 
 class CentralArea;
 
@@ -25,9 +31,12 @@ private slots:
     void saveImageDialogue();
     void saveMovieDialogue();
 
+    void openExtractDialogue();
+
 private:
     CentralArea* centralArea;
     QString filename;
+    ExtractDialog *mExtractDialog;
 
 };
 

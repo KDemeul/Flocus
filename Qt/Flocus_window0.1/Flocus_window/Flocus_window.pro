@@ -24,7 +24,10 @@ SOURCES += \
     Visualizers/ransacvisualizer.cpp \
     Main/main.cpp \
     Algorithm/algorithmtip.cpp \
-    Visualizers/tipvisualizer.cpp
+    Visualizers/tipvisualizer.cpp \
+	common/xmlhandler.cpp \
+    ../../../pugixml/src/pugixml.cpp \
+    Main/extractdialog.cpp
 
 HEADERS  += \
     Algorithm/algorithmransac.h \
@@ -36,7 +39,11 @@ HEADERS  += \
     Visualizers/datavisualizer.h \
     Visualizers/ransacvisualizer.h \
     Algorithm/algorithmtip.h \
-    Visualizers/tipvisualizer.h
+    Visualizers/tipvisualizer.h \
+    common/xmlhandler.h \
+    ../../../pugixml/src/pugiconfig.hpp \
+    ../../../pugixml/src/pugixml.hpp \
+    Main/extractdialog.h
 
 #INCLUDEPATH += /usr/include/vtk-5.8
 
@@ -46,6 +53,8 @@ INCLUDEPATH += /usr/include/opencv2
 
 #LIBS+= -lopencv_core -lopencv_highgui -lopencv_imgproc
 LIBS+= -lopencv_calib3d -lopencv_features2d -lopencv_flann -lopencv_imgproc -lopencv_core  -lopencv_highgui
+
+INCLUDEPATH += ../../pugixml/src
 
 OTHER_FILES += \
     stylesheet.qss \

@@ -33,6 +33,13 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 
     menuFile->addSeparator();
 
+    QAction *actionExtract = new QAction("&Extract",this);
+    menuFile->addAction(actionExtract);
+    actionExtract->setIcon(QIcon("../../icons/glyphicons_041_charts.png"));
+    mExtractDialog = new ExtractDialog(this);
+
+    menuFile->addSeparator();
+
     QAction *actionClose = new QAction("&Close", this);
     menuFile->addAction(actionClose);
     actionClose->setIcon(QIcon("../../icons/glyphicons_063_power.png"));
@@ -54,8 +61,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     //---> Slot connections
 
     // Quit
-    // TODO FIX THIS
-    //    connect(actionClose, SIGNAL(triggered()),this, SLOT(quit()));
+    connect(actionClose, SIGNAL(triggered()),qApp, SLOT(quit()));
 
     // Open
     connect(actionOpen,SIGNAL(triggered()),this,SLOT(openFileDialogue()));
@@ -63,6 +69,9 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     // Save
     connect(actionSaveImage,SIGNAL(triggered()),this,SLOT(saveImageDialogue()));
     connect(actionSaveMovie,SIGNAL(triggered()),this,SLOT(saveMovieDialogue()));
+
+    // Extract
+    connect(actionExtract,SIGNAL(triggered()),this,SLOT(openExtractDialogue()));
 
     // About
     connect(actionAbout, SIGNAL(triggered()), this, SLOT(openAboutDialogue()));
@@ -105,6 +114,11 @@ void MainWindow::openAboutDialogue()
     connect(buttonOK,SIGNAL(clicked()),msg,SLOT(accept()));
 
     msg->exec();
+}
+
+void MainWindow::openExtractDialogue()
+{
+    mExtractDialog->exec();
 }
 
 void MainWindow::openFileDialogue()

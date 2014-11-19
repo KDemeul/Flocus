@@ -21,11 +21,7 @@ void RansacVisualizer::applyAndDraw(cv::Mat *a_imgCV, cv::Rect *a_ROI, int a_ind
         return;
     }
 
-    DEBUG_MSG("STARTING RANSAC");
     mAlgorithmRansac->applyAlgorithm(a_imgCV, a_ROI);
-
-    DEBUG_MSG("RANSAC HAS RUN");
-    DEBUG_MSG((mAlgorithmRansac->isModelComputed() ? "A model has been computed " : "No model has been found"));
 
     if(mAlgorithmRansac->isModelComputed())
     {
@@ -65,10 +61,10 @@ void RansacVisualizer::enable(bool a_isEnable)
 
 void RansacVisualizer::drawLine(cv::Mat* a_imgCV, cv::Point start, cv::Point end)
 {
-    line(*a_imgCV,start,end,cv::Scalar(255, 0, 0 ),1,8);
+    line(*a_imgCV,start,end,COLOR_AXIS,1,8);
 }
 
 void RansacVisualizer::drawPoint(cv::Mat* a_imgCV, cv::Point a_Point)
 {
-    cv::circle(*a_imgCV,a_Point,2,cv::Scalar(0, 0, 255),-1,0);
+    cv::circle(*a_imgCV,a_Point,1,COLOR_INLIERS,-1,0);
 }

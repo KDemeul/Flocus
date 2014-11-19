@@ -14,6 +14,7 @@
 #include <time.h>
 
 #include "common/common.h"
+#include "common/xmlhandler.h"
 
 class AlgorithmRansac
 {
@@ -65,6 +66,8 @@ private:
     bool isAPotentialCurve(SetPoint a_potentialSet);
     void fillMatricesHjTj(cv::Mat *Hj,cv::Mat *Tj, SetPoint *Dj);
     double DistToCurve(cv::Mat *Hj,SetPoint *Dj,cv::Mat *Tj,cv::Point *randPoint);
+
+    //-----> DEBUG
 
 };
 

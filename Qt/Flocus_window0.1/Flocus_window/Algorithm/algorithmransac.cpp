@@ -4,7 +4,7 @@ AlgorithmRansac::AlgorithmRansac(int a_ransacNbPoint)
     : mRansacNbPoint(a_ransacNbPoint)
     , mPercentTh(7.5)
     , mEta(0.001)
-    , mRho(1.0)
+    , mRho(4.0)
     , mJ(500)
     , mModelComputed(false)
 {
@@ -28,7 +28,7 @@ void AlgorithmRansac::applyAlgorithm(cv::Mat *a_pic, cv::Rect *a_regionOfInteres
     mPic = *a_pic;
 
     // Crop image
-     setAreaOfInterest(*a_regionOfInterest);
+    setAreaOfInterest(*a_regionOfInterest);
 
     // Normalize image
     cv::normalize(mPicResized,mPicResized,0,255,cv::NORM_MINMAX);
@@ -42,12 +42,11 @@ void AlgorithmRansac::applyAlgorithm(cv::Mat *a_pic, cv::Rect *a_regionOfInteres
     clock_t time = clock();
     // Establish index thresh
     createIndexThresh();
-    DEBUG_MSG("INDEX MAP THRESH CREATED (" << (mIndexThresh.size() * 100) / mPicNbPoint << "%)");
 
     int j=0; // nb iter inside loop
-    while(j < mJ)
+    while((((float)(clock()-time)*1000) / CLOCKS_PER_SEC <MAX_TIME_RANSAC) && j < mJ)
     {
-         //  Select randomly a subset Sj ⊂ Xe, |Sj| = mRansacNbPoint
+        //  Select randomly a subset Sj ⊂ Xe, |Sj| = mRansacNbPoint
         SetPoint Sj = getRandPoints();
 
         bool acceptedPoint = isAPotentialCurve(Sj);
@@ -104,6 +103,9 @@ void AlgorithmRansac::applyAlgorithm(cv::Mat *a_pic, cv::Rect *a_regionOfInteres
 
     time = clock() - time;
     DEBUG_MSG("RANSAC RAN IN " << ((float)time*1000)/CLOCKS_PER_SEC << "ms.");
+
+    // DEBUG LOG
+    XMLhandler::addRansacInfo(mRansacNbPoint,mPicNbPoint,mPercentTh,mRho,mJ,((float)time*1000)/CLOCKS_PER_SEC);
 }
 
 
@@ -162,9 +164,7 @@ void AlgorithmRansac::convertPicToBoolMap()
 
     double threshValue = index;
 
-    DEBUG_MSG("Threshold value : " << threshValue);
     cv::threshold(mPicResized, mPicBool, threshValue, 255, cv::THRESH_BINARY);
-    cv::imshow("Bool map", mPicBool);
 }
 
 void AlgorithmRansac::createIndexThresh()
