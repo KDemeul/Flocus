@@ -14,7 +14,6 @@ void XMLhandler::init()
 
 void XMLhandler::addRansacInfo(int a_ransacNbPoint, int a_picNbPoint, float a_percentTh, float a_rho, int a_J, float a_time)
 {
-#ifdef DEBUG
     pugi::xml_node statNode = doc.child("Statistics");
     pugi::xml_node nodeRansac = statNode.append_child("RANSAC");
 
@@ -26,7 +25,19 @@ void XMLhandler::addRansacInfo(int a_ransacNbPoint, int a_picNbPoint, float a_pe
     nodeRansac.append_attribute("time") = a_time;
 
     doc.save_file(filename.c_str());
-#endif
+}
+
+void XMLhandler::addTipInfo(bool a_ransacOnSameFrame, cv::Point tip_Position, float a_time)
+{
+    pugi::xml_node statNode = doc.child("Statistics");
+    pugi::xml_node nodeTip = statNode.append_child("TIP");
+
+    nodeTip.append_attribute("Ransac ran on frame") = a_ransacOnSameFrame;
+    nodeTip.append_attribute("tip_position.x") = tip_Position.x;
+    nodeTip.append_attribute("tip_position.y") = tip_Position.y;
+    nodeTip.append_attribute("time") = a_time;
+
+    doc.save_file(filename.c_str());
 }
 
 QStandardItemModel* XMLhandler::getItemModel()
@@ -49,6 +60,24 @@ QStandardItemModel* XMLhandler::getItemModel()
     {
         int indexAttr = 0;
         foreach(pugi::xml_attribute attr, ransacNode.attributes())
+        {
+            item = new QStandardItem(attr.value());
+            model->setItem(indexCurrentRow,indexAttr,item);
+            indexAttr++;
+        }
+        indexCurrentRow++;
+    }
+
+    // TIP PART
+    model->setHorizontalHeaderItem(7,new QStandardItem("Ransac_on_frame"));
+    model->setHorizontalHeaderItem(8,new QStandardItem("tip_position.x"));
+    model->setHorizontalHeaderItem(8,new QStandardItem("tip_position.y"));
+    model->setHorizontalHeaderItem(9,new QStandardItem("time"));
+
+    foreach(pugi::xml_node tipNode, statNode.children("TIP"))
+    {
+        int indexAttr = 7;
+        foreach(pugi::xml_attribute attr, tipNode.attributes())
         {
             item = new QStandardItem(attr.value());
             model->setItem(indexCurrentRow,indexAttr,item);

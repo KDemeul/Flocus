@@ -28,6 +28,23 @@ struct comparePoints {
     }
 };
 
+enum ORIENTATION_NEEDLE {
+    ORI_UNDEF = -1,
+    ORI_RIGHT,
+    ORI_UP,
+    ORI_LEFT,
+    ORI_DOWN
+};
+
+const static char *ORIENTATION_TYPE[] =
+{
+    "UNDEF",
+    "RIGHT",
+    "UP",
+    "LEFT",
+    "DOWN"
+};
+
 typedef std::set<cv::Point,comparePoints> SetPoint;
 typedef std::vector<cv::Point> Blob;
 

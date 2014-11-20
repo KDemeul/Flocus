@@ -33,6 +33,7 @@ public:
     void setDataHandler(FlDataHandler* a_flDataHandler);
     cv::Rect* getROI();
     void setRansacParameters(int a_posX, int a_poxY, int a_width, int a_height, bool a_isEnable, int a_ransacRate);
+    void setTipParameters(ORIENTATION_NEEDLE a_dir, bool a_isEnable);
     cv::Mat* getImgCV();
     std::vector<int> getMovieInfo();
 

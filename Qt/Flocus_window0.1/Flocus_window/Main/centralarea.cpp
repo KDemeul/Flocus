@@ -105,6 +105,11 @@ void CentralArea::setRansacParameters(int a_posX, int a_poxY, int a_width, int a
    dataVisualizer->setRansacParameters(a_posX,a_poxY,a_width,a_height,a_isEnable,a_ransacRate);
 }
 
+void CentralArea::setTipParameters(ORIENTATION_NEEDLE a_dir, bool a_isEnable)
+{
+    dataVisualizer->setTipParameters(a_dir,a_isEnable);
+}
+
 AlgorithmArea* CentralArea::getAlgorithmArea()
 {
     return mAlgorithmArea;

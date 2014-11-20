@@ -312,4 +312,765 @@
 	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="339.006" />
 	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.789" />
 	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.948" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="334.846" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.755" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="344.465" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.24" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="348.214" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="345.092" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="351.815" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="352.167" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="356.355" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="356.786" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.996" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.147" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="358.562" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.13" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="360.739" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="339.356" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.727" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="341.418" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="343.082" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="351.28" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.02" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="331.917" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="333.976" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="342.382" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.929" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="339.027" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="340.571" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="343.913" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.666" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="339.793" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.46" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.178" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.334" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="339.114" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="340.353" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.438" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="340.284" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="341.825" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="342.824" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.531" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="344.245" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="341.725" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.728" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="342.938" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="342.302" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="344.06" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.999" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="348.318" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.601" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="345.051" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="348.293" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.887" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="344.55" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.672" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="341.847" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.977" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="349.674" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.495" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="342.795" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.569" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.498" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.707" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="343.472" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="344.829" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="343.579" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="348.539" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.158" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="354.272" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="349.921" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="352.977" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.817" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.516" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="355.53" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="349.365" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="352.97" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.327" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="348.85" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.229" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="350.27" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="350.599" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="348.084" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="352.855" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="352.189" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="352.163" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="350.136" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.152" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="351.956" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="352.666" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="351.395" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="348.293" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="355.958" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="350.062" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="356.399" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="350.794" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.804" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.923" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="360.674" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="354.333" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="358.683" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="357.565" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="358.507" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="361.586" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="357.936" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="359.428" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="359.86" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="359.965" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="356.341" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="355.505" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="357.59" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="355.161" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="358.01" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="352.432" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="358.21" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="360.892" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="357.221" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="357.696" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="334.557" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.52" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.237" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.981" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.551" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.449" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.35" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.861" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.385" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.705" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.589" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="341.373" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.6" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="356.574" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="350.042" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="349.421" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="360.076" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="355.085" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="357.303" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="360.183" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="356.298" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="363.635" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="360.076" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="357.155" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="367.54" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="359.25" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.193" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.733" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="343.716" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.11" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="348.078" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.446" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.188" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.984" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.485" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.591" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.036" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.086" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.434" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="333.934" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.342" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.366" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.879" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.586" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="345.44" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="344.541" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="345.012" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="348.763" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="350.828" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="351.383" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="355.405" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="351.746" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="352.511" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.261" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.493" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.455" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="355.207" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="358.873" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="351.257" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.401" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="345.866" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="339.019" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.044" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.907" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.153" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="342.227" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="345.334" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="345.737" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="345.474" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="348.275" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="349.819" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.463" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="357.107" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="352.112" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="344.858" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.742" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.635" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="342.716" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.922" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.697" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="344.656" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="349.849" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.782" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.294" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="343.586" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="348.093" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.074" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="345.804" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="349.285" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="350.507" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="356.219" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.431" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.354" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.887" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.093" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.04" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.672" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.856" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.101" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.962" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.813" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.484" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.752" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="344.326" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.593" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="345.083" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.786" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="356.39" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="351.062" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="354.905" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="356.716" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="352.618" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.918" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="356.318" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.905" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="360.537" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="355.441" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="334.863" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.562" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.876" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.514" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.098" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="341.52" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.184" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.903" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="343.308" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.366" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.397" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.872" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.615" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.347" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.341" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="342.948" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="356.207" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="349.741" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="348.511" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="351.584" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="351.672" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="354.433" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="358.694" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.249" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.571" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.186" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.165" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.463" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.434" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.371" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.983" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.562" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.834" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.602" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.649" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="331.77" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.768" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.672" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="352.44" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="356.003" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="358.826" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="360.366" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="358.005" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="356.135" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.432" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.508" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="344.185" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="348.499" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="341.943" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.217" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.827" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.286" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.364" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.458" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.345" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.006" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.787" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="345.566" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="341.904" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="352.782" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.81" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.612" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="357.64" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="352.242" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.495" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="366.352" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.782" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="355.923" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="364.21" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="358.632" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="358.287" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="357.468" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="341.912" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.152" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="342.822" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.262" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.418" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.895" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="350.437" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="351.898" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="354.414" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="357.791" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="354.746" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.32" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.468" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="350.167" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="348.74" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.934" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="352.826" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="351.266" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="352.073" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.832" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="358.192" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="352.546" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="355.198" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="358.712" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="355.08" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="360.127" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="358.833" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.052" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.777" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="343.747" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.581" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.743" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="344.666" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.559" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="349.394" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.08" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.301" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.018" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="343.899" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.196" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="344.885" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="342.986" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="348.923" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="345.887" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="345.939" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="349.928" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="350.733" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="354.731" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="359.34" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.989" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="354.438" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="365.462" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="360.788" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="361.793" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="357.635" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.676" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="339.015" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="342.673" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.704" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.894" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="343.423" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.951" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.057" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.176" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="348.951" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="350.49" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="355.172" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="359.55" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.074" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="355.234" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="364.224" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.235" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="359.345" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="358.359" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.113" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.039" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="349.317" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="348.051" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="348.75" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.663" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="351.61" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="352.117" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="355.172" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="358.972" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="357.194" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="358.123" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="358.516" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="352.158" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="369.675" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="358.444" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="341.87" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.404" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="344.422" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="356.18" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.792" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.525" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="344.929" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="349.157" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.926" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="354.515" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="352.95" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="349.457" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="351.733" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="354.091" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="359.897" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="359.85" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="359.093" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="358.024" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="352.703" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="359.812" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="356.54" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="341.712" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.575" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="343.265" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.542" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.79" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.65" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="349.967" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="356.954" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="360.003" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="366.718" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="361.7" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="355.823" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="363.011" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="360.519" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="366.384" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.635" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.509" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="342.438" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.578" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="345.979" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.696" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.293" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="350.024" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.704" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.254" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.181" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.152" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="344.063" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.688" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="334.108" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.017" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="342.958" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.532" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.107" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.847" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="350.429" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.567" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.484" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="355.436" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="357.463" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="363.681" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="366.307" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="365.731" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="372.587" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="377.229" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="378.385" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="380.349" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="386.086" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="373.529" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="355.626" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="355.455" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="356.255" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="355.957" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="359.52" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="363.153" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="360.332" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="361.318" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="364.037" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="366.756" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="369.109" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="363.335" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="364.294" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="360.356" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="360.986" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.556" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="357.912" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="354.76" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="356.642" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="360.154" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="359.603" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="364.031" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="362.292" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="361.078" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="361.941" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="360.193" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="357.766" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="360.574" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="363.336" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="363.233" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="363.121" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="359.441" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="364.43" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="361.769" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="359.261" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="366.449" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="357.415" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="362.299" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="364.919" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="362.43" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="358.147" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="362.092" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="364.467" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="363.65" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="359.69" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="360.831" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="360.415" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="363.099" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="362.045" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="365.541" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="362.059" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="362.799" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="363.61" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="372.949" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="373.736" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="369.368" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="373.15" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="370.293" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="370.786" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="365.518" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="372.442" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="373.335" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="372.554" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="370.072" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="371.976" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="372.206" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="374.616" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="363.619" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="368.547" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="367.231" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="368.181" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="365.681" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="368.291" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="366.584" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="369.619" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="363.771" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="368.046" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="365.821" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="371.68" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="365.889" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="374.023" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="369.216" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="370.104" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="372.424" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="367.807" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="370.147" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="371.022" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="372.223" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="369.476" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="366.581" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="367.48" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="369.411" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="373.96" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="377.787" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="378.874" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="380.947" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="380.19" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="379.316" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="381.883" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="382.531" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="376.101" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="376.294" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="377.58" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="379.728" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="378.804" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="383.707" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="378.691" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="378.118" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="381.184" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="377.458" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="381.348" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="379.045" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="380.258" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="380.933" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="387.792" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="385.697" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="386.55" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="380.624" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="384.46" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="377.347" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="375.971" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="380.424" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="381.076" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="373.748" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="377.534" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="373.563" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="367.747" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="369.688" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="370.345" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="377.905" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="368.396" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="377.307" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="368.176" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="372.775" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="379.196" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="379.048" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="379.945" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="375.841" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="379.064" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="376.198" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="378.173" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="374.369" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="375.019" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="369.826" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="379.237" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="375.969" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="371.007" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="376.951" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="374.27" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="377.366" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="378.491" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="373.672" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="373.983" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="375.421" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="381.123" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="377.901" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="375.729" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="372.568" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="374.862" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="387.92" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="386.752" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="379.702" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="382.159" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="346.029" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="350.716" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="363.309" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="355.599" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="358.278" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="354.82" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="360.082" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="359.077" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="362.471" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="366.813" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="366.063" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="366.857" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="362.888" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="361.314" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="367.499" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="338.43" />
+	<TIP Ransac ran on frame="false" tip_position.x="181" tip_position.y="37" time="15.175" />
+	<TIP Ransac ran on frame="false" tip_position.x="186" tip_position.y="37" time="14.843" />
+	<TIP Ransac ran on frame="false" tip_position.x="189" tip_position.y="37" time="14.941" />
+	<TIP Ransac ran on frame="false" tip_position.x="200" tip_position.y="37" time="15.317" />
+	<TIP Ransac ran on frame="false" tip_position.x="204" tip_position.y="37" time="15.222" />
+	<TIP Ransac ran on frame="false" tip_position.x="210" tip_position.y="36" time="15.069" />
+	<TIP Ransac ran on frame="false" tip_position.x="214" tip_position.y="36" time="15.513" />
+	<TIP Ransac ran on frame="false" tip_position.x="216" tip_position.y="37" time="15.401" />
+	<TIP Ransac ran on frame="false" tip_position.x="220" tip_position.y="37" time="15.905" />
+	<TIP Ransac ran on frame="false" tip_position.x="224" tip_position.y="37" time="15.963" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="345.589" />
+	<TIP Ransac ran on frame="false" tip_position.x="223" tip_position.y="35" time="14.523" />
+	<TIP Ransac ran on frame="false" tip_position.x="224" tip_position.y="34" time="15.069" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="346.628" />
+	<TIP Ransac ran on frame="false" tip_position.x="223" tip_position.y="35" time="14.638" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="337.95" />
+	<TIP Ransac ran on frame="false" tip_position.x="174" tip_position.y="34" time="13.797" />
+	<TIP Ransac ran on frame="false" tip_position.x="181" tip_position.y="34" time="14.135" />
+	<TIP Ransac ran on frame="false" tip_position.x="185" tip_position.y="34" time="14.244" />
+	<TIP Ransac ran on frame="false" tip_position.x="195" tip_position.y="35" time="14.525" />
+	<TIP Ransac ran on frame="false" tip_position.x="200" tip_position.y="35" time="14.255" />
+	<TIP Ransac ran on frame="false" tip_position.x="209" tip_position.y="35" time="14.589" />
+	<TIP Ransac ran on frame="false" tip_position.x="213" tip_position.y="35" time="14.555" />
+	<TIP Ransac ran on frame="false" tip_position.x="214" tip_position.y="35" time="14.51" />
+	<TIP Ransac ran on frame="false" tip_position.x="218" tip_position.y="35" time="14.677" />
+	<TIP Ransac ran on frame="false" tip_position.x="223" tip_position.y="35" time="14.865" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="345.806" />
+	<TIP Ransac ran on frame="false" tip_position.x="222" tip_position.y="34" time="14.014" />
+	<TIP Ransac ran on frame="false" tip_position.x="224" tip_position.y="34" time="14.179" />
+	<TIP Ransac ran on frame="false" tip_position.x="232" tip_position.y="33" time="14.219" />
+	<TIP Ransac ran on frame="false" tip_position.x="236" tip_position.y="34" time="14.717" />
+	<TIP Ransac ran on frame="false" tip_position.x="237" tip_position.y="34" time="13.847" />
+	<TIP Ransac ran on frame="false" tip_position.x="235" tip_position.y="31" time="14.657" />
+	<TIP Ransac ran on frame="false" tip_position.x="245" tip_position.y="35" time="14.751" />
+	<TIP Ransac ran on frame="false" tip_position.x="252" tip_position.y="33" time="14.274" />
+	<TIP Ransac ran on frame="false" tip_position.x="252" tip_position.y="33" time="15.014" />
+	<TIP Ransac ran on frame="false" tip_position.x="256" tip_position.y="33" time="14.055" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="350.887" />
+	<TIP Ransac ran on frame="false" tip_position.x="260" tip_position.y="34" time="14.145" />
+	<TIP Ransac ran on frame="false" tip_position.x="264" tip_position.y="31" time="14.25" />
+	<TIP Ransac ran on frame="false" tip_position.x="266" tip_position.y="34" time="13.782" />
+	<TIP Ransac ran on frame="false" tip_position.x="270" tip_position.y="32" time="13.83" />
+	<TIP Ransac ran on frame="false" tip_position.x="295" tip_position.y="32" time="14.47" />
+	<TIP Ransac ran on frame="false" tip_position.x="295" tip_position.y="33" time="14.117" />
+	<TIP Ransac ran on frame="false" tip_position.x="295" tip_position.y="33" time="13.988" />
+	<TIP Ransac ran on frame="false" tip_position.x="296" tip_position.y="34" time="14.268" />
+	<TIP Ransac ran on frame="false" tip_position.x="296" tip_position.y="34" time="13.714" />
+	<TIP Ransac ran on frame="false" tip_position.x="295" tip_position.y="33" time="14.553" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="354.994" />
+	<TIP Ransac ran on frame="false" tip_position.x="296" tip_position.y="32" time="13.929" />
+	<TIP Ransac ran on frame="false" tip_position.x="297" tip_position.y="34" time="13.987" />
+	<TIP Ransac ran on frame="false" tip_position.x="296" tip_position.y="32" time="14.146" />
+	<TIP Ransac ran on frame="false" tip_position.x="295" tip_position.y="33" time="13.91" />
+	<TIP Ransac ran on frame="false" tip_position.x="295" tip_position.y="34" time="14.303" />
+	<TIP Ransac ran on frame="false" tip_position.x="296" tip_position.y="32" time="14.22" />
+	<TIP Ransac ran on frame="false" tip_position.x="300" tip_position.y="32" time="14.147" />
+	<TIP Ransac ran on frame="false" tip_position.x="299" tip_position.y="32" time="14.095" />
+	<TIP Ransac ran on frame="false" tip_position.x="300" tip_position.y="32" time="14.12" />
+	<TIP Ransac ran on frame="false" tip_position.x="301" tip_position.y="32" time="14.51" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="353.2" />
+	<TIP Ransac ran on frame="false" tip_position.x="299" tip_position.y="32" time="14.005" />
+	<TIP Ransac ran on frame="false" tip_position.x="302" tip_position.y="32" time="13.994" />
+	<TIP Ransac ran on frame="false" tip_position.x="300" tip_position.y="32" time="14.223" />
+	<TIP Ransac ran on frame="false" tip_position.x="298" tip_position.y="32" time="14.363" />
+	<TIP Ransac ran on frame="false" tip_position.x="302" tip_position.y="32" time="14.261" />
+	<TIP Ransac ran on frame="false" tip_position.x="308" tip_position.y="32" time="14.035" />
+	<TIP Ransac ran on frame="false" tip_position.x="311" tip_position.y="32" time="13.965" />
+	<TIP Ransac ran on frame="false" tip_position.x="313" tip_position.y="33" time="13.917" />
+	<TIP Ransac ran on frame="false" tip_position.x="313" tip_position.y="33" time="13.908" />
+	<TIP Ransac ran on frame="false" tip_position.x="315" tip_position.y="33" time="13.735" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="364.578" />
+	<TIP Ransac ran on frame="false" tip_position.x="317" tip_position.y="32" time="14.919" />
+	<TIP Ransac ran on frame="false" tip_position.x="320" tip_position.y="32" time="14.814" />
+	<TIP Ransac ran on frame="false" tip_position.x="320" tip_position.y="32" time="15.135" />
+	<TIP Ransac ran on frame="false" tip_position.x="320" tip_position.y="32" time="15.283" />
+	<TIP Ransac ran on frame="false" tip_position.x="319" tip_position.y="32" time="14.952" />
+	<TIP Ransac ran on frame="false" tip_position.x="322" tip_position.y="32" time="14.849" />
+	<TIP Ransac ran on frame="false" tip_position.x="331" tip_position.y="32" time="15.267" />
+	<TIP Ransac ran on frame="false" tip_position.x="331" tip_position.y="32" time="14.606" />
+	<TIP Ransac ran on frame="false" tip_position.x="334" tip_position.y="33" time="14.794" />
+	<TIP Ransac ran on frame="false" tip_position.x="334" tip_position.y="33" time="14.534" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="356.915" />
+	<TIP Ransac ran on frame="false" tip_position.x="341" tip_position.y="34" time="14.602" />
+	<TIP Ransac ran on frame="false" tip_position.x="345" tip_position.y="34" time="14.819" />
+	<TIP Ransac ran on frame="false" tip_position.x="350" tip_position.y="34" time="14.539" />
+	<TIP Ransac ran on frame="false" tip_position.x="347" tip_position.y="34" time="14.638" />
+	<TIP Ransac ran on frame="false" tip_position.x="358" tip_position.y="34" time="14.361" />
+	<TIP Ransac ran on frame="false" tip_position.x="357" tip_position.y="34" time="14.762" />
+	<TIP Ransac ran on frame="false" tip_position.x="357" tip_position.y="34" time="14.486" />
+	<TIP Ransac ran on frame="false" tip_position.x="357" tip_position.y="35" time="15.057" />
+	<TIP Ransac ran on frame="false" tip_position.x="363" tip_position.y="34" time="14.924" />
+	<TIP Ransac ran on frame="false" tip_position.x="372" tip_position.y="35" time="14.402" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="361.045" />
+	<TIP Ransac ran on frame="false" tip_position.x="375" tip_position.y="33" time="14.304" />
+	<TIP Ransac ran on frame="false" tip_position.x="376" tip_position.y="34" time="14.731" />
+	<TIP Ransac ran on frame="false" tip_position.x="381" tip_position.y="33" time="14.515" />
+	<TIP Ransac ran on frame="false" tip_position.x="375" tip_position.y="33" time="14.728" />
+	<TIP Ransac ran on frame="false" tip_position.x="383" tip_position.y="33" time="14.615" />
+	<TIP Ransac ran on frame="false" tip_position.x="428" tip_position.y="34" time="15.739" />
+	<TIP Ransac ran on frame="false" tip_position.x="389" tip_position.y="33" time="14.144" />
+	<TIP Ransac ran on frame="false" tip_position.x="427" tip_position.y="34" time="15.048" />
+	<TIP Ransac ran on frame="false" tip_position.x="427" tip_position.y="34" time="14.961" />
+	<TIP Ransac ran on frame="false" tip_position.x="427" tip_position.y="34" time="15.071" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="360.15" />
+	<TIP Ransac ran on frame="false" tip_position.x="428" tip_position.y="33" time="15.128" />
+	<TIP Ransac ran on frame="false" tip_position.x="426" tip_position.y="33" time="15.021" />
+	<TIP Ransac ran on frame="false" tip_position.x="425" tip_position.y="35" time="15.052" />
+	<TIP Ransac ran on frame="false" tip_position.x="419" tip_position.y="35" time="15.48" />
+	<TIP Ransac ran on frame="false" tip_position.x="421" tip_position.y="34" time="14.77" />
+	<TIP Ransac ran on frame="false" tip_position.x="428" tip_position.y="36" time="14.957" />
+	<TIP Ransac ran on frame="false" tip_position.x="429" tip_position.y="35" time="14.939" />
+	<TIP Ransac ran on frame="false" tip_position.x="432" tip_position.y="35" time="15.02" />
+	<TIP Ransac ran on frame="false" tip_position.x="429" tip_position.y="35" time="14.808" />
+	<TIP Ransac ran on frame="false" tip_position.x="424" tip_position.y="34" time="14.549" />
+	<RANSAC nb_point_curve="2" nb_point_pic="49203" percent_threshold="7.5" rho="4" nb_iter="500" time="363.827" />
+	<TIP Ransac ran on frame="false" tip_position.x="425" tip_position.y="33" time="15.423" />
+	<TIP Ransac ran on frame="false" tip_position.x="425" tip_position.y="33" time="15.491" />
 </Statistics>

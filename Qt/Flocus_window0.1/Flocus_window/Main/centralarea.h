@@ -27,6 +27,7 @@ public:
     CentralArea(QWidget *parent = 0);
     AlgorithmArea* getAlgorithmArea();
     void setRansacParameters(int a_posX, int a_poxY, int a_width, int a_height, bool a_isEnable, int a_ransacRate);
+    void setTipParameters(ORIENTATION_NEEDLE a_dir, bool a_isEnable);
     void saveImage(std::string a_filename);
     void saveMovie(std::string a_filename);
 

@@ -104,7 +104,6 @@ void AlgorithmRansac::applyAlgorithm(cv::Mat *a_pic, cv::Rect *a_regionOfInteres
     time = clock() - time;
     DEBUG_MSG("RANSAC RAN IN " << ((float)time*1000)/CLOCKS_PER_SEC << "ms.");
 
-    // DEBUG LOG
     XMLhandler::addRansacInfo(mRansacNbPoint,mPicNbPoint,mPercentTh,mRho,mJ,((float)time*1000)/CLOCKS_PER_SEC);
 }
 

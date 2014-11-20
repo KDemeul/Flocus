@@ -11,6 +11,7 @@ class XMLhandler
 public:
     static void init();
     static void addRansacInfo(int a_ransacNbPoint, int a_picNbPoint, float a_percentTh, float a_rho, int a_J, float a_time);
+    static void addTipInfo(bool a_ransacOnSameFrame, cv::Point tip_Position, float a_time);
     static QStandardItemModel *getItemModel();
 
 private:

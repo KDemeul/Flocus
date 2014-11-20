@@ -161,6 +161,8 @@ std::vector<int> DataVisualizer::getMovieInfo()
     result.push_back(mFlDataHandler->ss);
     result.push_back(mFlDataHandler->w);
     result.push_back(mFlDataHandler->h);
+
+    return result;
 }
 
 void DataVisualizer::setDataHandler(FlDataHandler* a_FlDataHandler)
@@ -186,6 +188,15 @@ void DataVisualizer::setRansacParameters(int a_posX, int a_poxY, int a_width, in
 
         // Ransac Rate
         mRansacVisualizer->setRansacRate(a_ransacRate);
+    }
+}
+
+void DataVisualizer::setTipParameters(ORIENTATION_NEEDLE a_dir, bool a_isEnable)
+{
+    mTipVisualizer->enable(a_isEnable);
+    if(a_isEnable)
+    {
+        mTipVisualizer->setDirection(a_dir);
     }
 }
 

@@ -2,6 +2,7 @@
 #define ALGORITHMTIP_H
 
 #include "common/common.h"
+#include "common/xmlhandler.h"
 
 class AlgorithmTip
 {
@@ -19,10 +20,15 @@ public:
     // Return pointer to tip point
     cv::Point* getTip();
 
+    // Set needle insertion direction
+    void setDirection(ORIENTATION_NEEDLE a_ori);
+
 private:
     // tip parameters
     bool mTipComputed;
     cv::Point mPointTip;
+    ORIENTATION_NEEDLE mOrientationNeedle;
+    bool mHjChanged;
 
     // Algorithm attributes & methods
     float mPercentTh;
@@ -30,9 +36,14 @@ private:
     cv::Mat mPic;
     cv::Mat mPicResized;
     cv::Mat mPicBinary;
+    cv::Mat mHj;
     std::vector<Blob> mBlobs;
+    std::vector<Blob> mBlobsOnLine;
+    Blob mBlobWithTip;
+
     void findBlobs();
     void convertPicToBoolMap();
+    bool isPointOnCurve(cv::Point P);
 
 };
 

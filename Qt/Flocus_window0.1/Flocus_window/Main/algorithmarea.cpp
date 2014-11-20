@@ -66,14 +66,35 @@ AlgorithmArea::AlgorithmArea(QWidget *parent) :
     groupRANSAC->setLayout(ransacLayout);
 
     connect(groupRANSAC,SIGNAL(toggled(bool)),this,SLOT(communicateToVisualizer()));
-
-    groupRANSAC->setChecked(false);
     // End group : RANSAC
+
+    // Group : TIP
+    QFormLayout *tipLayout = new QFormLayout;
+
+    mComboTipDirection = new QComboBox;
+    mComboTipDirection->addItem("Right");
+    mComboTipDirection->addItem("Up");
+    mComboTipDirection->addItem("Left");
+    mComboTipDirection->addItem("Down");
+    connect(mComboTipDirection,SIGNAL(activated(int)),this,SLOT(communicateToVisualizer()));
+    tipLayout->addWidget(mComboTipDirection);
+
+    groupTip = new QGroupBox("TIP");
+    groupTip->setCheckable(true);
+    groupTip->setLayout(tipLayout);
+
+    connect(groupTip,SIGNAL(toggled(bool)),this,SLOT(communicateToVisualizer()));
+    // End group : TIP
 
     mMainLayout->addWidget(mMainLabel);
     mMainLayout->addWidget(groupRANSAC);
+    mMainLayout->addWidget(groupTip);
 
     this->setLayout(mMainLayout);
+
+    // INITIAL VALUES
+    groupRANSAC->setChecked(false);
+    groupTip->setChecked(true);
 }
 
 void AlgorithmArea::setBounds(int a_w, int a_h)
@@ -90,14 +111,27 @@ QGroupBox* AlgorithmArea::getGroupBoxRansac()
     return groupRANSAC;
 }
 
+QGroupBox* AlgorithmArea::getGroupBoxTip()
+{
+    return groupTip;
+}
+
 void AlgorithmArea::communicateToVisualizer()
 {
     CentralArea *parent = (CentralArea*)this->parentWidget();
     parent->setRansacParameters(mSlidersRANSACRec[0]->value(),
-                                mSlidersRANSACRec[1]->value(),
-                                mSlidersRANSACRec[2]->value(),
-                                mSlidersRANSACRec[3]->value(),
-                                groupRANSAC->isChecked(),
-                                mSpinRR->value());
+            mSlidersRANSACRec[1]->value(),
+            mSlidersRANSACRec[2]->value(),
+            mSlidersRANSACRec[3]->value(),
+            groupRANSAC->isChecked(),
+            mSpinRR->value());
     groupRANSAC->setHidden(!groupRANSAC->isChecked());
+    if(!groupRANSAC->isChecked())
+    {
+        groupTip->setChecked(false);
+    }
+    parent->setTipParameters((ORIENTATION_NEEDLE)mComboTipDirection->currentIndex(),
+                             groupTip->isChecked());
+    groupTip->setHidden(!groupTip->isChecked());
+
 }

@@ -6,15 +6,26 @@ AlgorithmTip::AlgorithmTip() :
     mPercentTh(10.0),
     mPicNbPoint(0)
 {
-
 }
 
 // ------------ applyAlgorithm ----------------
 void AlgorithmTip::applyAlgorithm(cv::Mat *a_pic, cv::Rect *a_ROI, cv::Mat *a_Hj)
 {
-    DEBUG_MSG("Applying tip algo");
     if(a_ROI->width <= 0 || a_ROI->height <= 0)
         return;
+
+    // TIME
+    clock_t time = clock();
+
+    // Reset results
+    mPointTip = cv::Point(-1,-1);
+
+    // Set parameters
+//    if(mHj == a_Hj)
+
+        mHjChanged = false;
+
+    mHj = *a_Hj;
 
     // Set image input
     cv::Mat img_grey(a_pic->size(), CV_8UC1);
@@ -42,9 +53,46 @@ void AlgorithmTip::applyAlgorithm(cv::Mat *a_pic, cv::Rect *a_ROI, cv::Mat *a_Hj
     findBlobs();
 
     // Find the blobs intersecting the curve depicted by Hj
+    mBlobsOnLine.clear();
 
-    // Find the biggest
+    foreach(Blob blob, mBlobs)
+    {
+        foreach(cv::Point P, blob)
+        {
+            if(isPointOnCurve(P))
+            {
+                mBlobsOnLine.push_back(blob);
+                break;
+            }
+        }
+    }
+
+    // Find the biggest blob
+    size_t sizeBiggestBlob = 0;
+    foreach(Blob blob, mBlobsOnLine)
+    {
+        if(sizeBiggestBlob < blob.size())
+        {
+            sizeBiggestBlob = blob.size();
+            mBlobWithTip = blob;
+        }
+    }
+
     // Return the intersection of the biggest blob with the axis
+    foreach(cv::Point P, mBlobWithTip)
+    {
+        if(isPointOnCurve(P))
+        {
+            mPointTip = mPointTip.x < P.x ? P : mPointTip;
+        }
+    }
+
+    mTipComputed = true;
+
+    time = clock() - time;
+    DEBUG_MSG("TIP DETECTION RAN IN " << ((float)time*1000)/CLOCKS_PER_SEC << "ms.");
+
+    XMLhandler::addTipInfo(mHjChanged,mPointTip,((float)time*1000)/CLOCKS_PER_SEC);
 }
 
 // ------------ findBlobls ----------------
@@ -124,6 +172,21 @@ void AlgorithmTip::convertPicToBoolMap()
     cv::threshold(mPicResized, mPicBinary, threshValue, 255, cv::THRESH_BINARY);
 }
 
+// ------------ isPointOnCurve ----------------
+bool AlgorithmTip::isPointOnCurve(cv::Point P)
+{
+    //Get two point of the curve
+    cv::Mat D1Mat = mHj * (cv::Mat_<double>(2,1) << 1, -1000);
+    cv::Mat D2Mat = mHj * (cv::Mat_<double>(2,1) << 1, 1000);
+    cv::Point D1(D1Mat.at<double>(1,0),D1Mat.at<double>(0,0));
+    cv::Point D2(D2Mat.at<double>(1,0),D2Mat.at<double>(0,0));
+
+    cv::Point vL = D2 - D1;
+    cv::Point w = P-D1;
+
+    return (abs(vL.x*w.y - vL.y * w.x) / cv::norm(vL)) < 2;
+}
+
 // ------------ isTipComputed ----------------
 bool AlgorithmTip::isTipComputed()
 {
@@ -134,4 +197,9 @@ bool AlgorithmTip::isTipComputed()
 cv::Point* AlgorithmTip::getTip()
 {
     return &mPointTip;
+}
+
+void AlgorithmTip::setDirection(ORIENTATION_NEEDLE a_ori)
+{
+    mOrientationNeedle = a_ori;
 }

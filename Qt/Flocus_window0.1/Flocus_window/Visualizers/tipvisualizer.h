@@ -15,6 +15,9 @@ public:
     // method for applying algorithm to the image imgCv regarding curve parameter Hj
     void applyAndDraw(cv::Mat *a_imgToDrawOn, cv::Mat *a_imgToProcess, cv::Rect *a_ROI, cv::Mat *a_Hj);
 
+    // method to change parameters from GUI
+    void setDirection(ORIENTATION_NEEDLE a_dir);
+
 signals:
 
 public slots:
@@ -30,7 +33,7 @@ private:
     int mIndexLastFrameProcessed;
 
     //  this draw the tip on imgToDrawOn at ptTip
-    void drawTip(cv::Mat* a_imgToDrawOn, cv::Point *a_ptTip);
+    void drawTip(cv::Mat* a_imgToDrawOn, cv::Rect *a_ROI, cv::Point *a_ptTip);
 };
 
 #endif // TIPVISUALIZER_H
