@@ -307,4 +307,9 @@
 	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="334.538" />
 	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="334.65" />
 	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="354.347" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.473" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.94" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="339.006" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.789" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.948" />
 </Statistics>

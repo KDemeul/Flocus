@@ -31,7 +31,7 @@ private:
     cv::Mat mPicResized;
     cv::Mat mPicBinary;
     std::vector<Blob> mBlobs;
-    void findBlobls(cv::Mat *a_binaryPic);
+    void findBlobs();
     void convertPicToBoolMap();
 
 };

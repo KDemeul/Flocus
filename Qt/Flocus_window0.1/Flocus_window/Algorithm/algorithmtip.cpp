@@ -3,7 +3,7 @@
 // ------------ Constructor ----------------
 AlgorithmTip::AlgorithmTip() :
     mTipComputed(false),
-    mPercentTh(7.5),
+    mPercentTh(10.0),
     mPicNbPoint(0)
 {
 
@@ -39,49 +39,52 @@ void AlgorithmTip::applyAlgorithm(cv::Mat *a_pic, cv::Rect *a_ROI, cv::Mat *a_Hj
     convertPicToBoolMap();
 
     // Find the blob in the picture
+    findBlobs();
+
     // Find the blobs intersecting the curve depicted by Hj
+
     // Find the biggest
     // Return the intersection of the biggest blob with the axis
 }
 
 // ------------ findBlobls ----------------
-void AlgorithmTip::findBlobls(cv::Mat *a_binaryPic)
+void AlgorithmTip::findBlobs()
 {
-    //    mBlobs.clear();
+    mBlobs.clear();
 
-    //    cv::Mat label_image;
-    //    a_binaryPic->convertTo(label_image, CV_32SC1);
+    cv::Mat label_image;
+    mPicBinary.convertTo(label_image, CV_32SC1);
 
-    //    int label_count = 2; // starts at 2 because 0,1 are used already
+    int label_count = 2; // starts at 2 because 0,1 are used already
 
-    //    for(int y=0; y < label_image.rows; y++) {
-    //        int *row = (int*)label_image.ptr(y);
-    //        for(int x=0; x < label_image.cols; x++) {
-    //            if(row[x] != 255) {
-    //                continue;
-    //            }
+    for(int y=0; y < label_image.rows; y++) {
+        int *row = (int*)label_image.ptr(y);
+        for(int x=0; x < label_image.cols; x++) {
+            if(row[x] != 255) {
+                continue;
+            }
 
-    //            cv::Rect rect;
-    //            cv::floodFill(label_image, cv::Point(x,y), label_count, &rect, 0, 0, 4);
+            cv::Rect rect;
+            cv::floodFill(label_image, cv::Point(x,y), label_count, &rect, 0, 0, 4);
 
-    //            std::vector <cv::Point2i> blob;
+            std::vector <cv::Point> blob;
 
-    //            for(int i=rect.y; i < (rect.y+rect.height); i++) {
-    //                int *row2 = (int*)label_image.ptr(i);
-    //                for(int j=rect.x; j < (rect.x+rect.width); j++) {
-    //                    if(row2[j] != label_count) {
-    //                        continue;
-    //                    }
+            for(int i=rect.y; i < (rect.y+rect.height); i++) {
+                int *row2 = (int*)label_image.ptr(i);
+                for(int j=rect.x; j < (rect.x+rect.width); j++) {
+                    if(row2[j] != label_count) {
+                        continue;
+                    }
 
-    //                    blob.push_back(cv::Point2i(j,i));
-    //                }
-    //            }
+                    blob.push_back(cv::Point(j,i));
+                }
+            }
 
-    //            blobs.push_back(blob);
+            mBlobs.push_back(blob);
 
-    //            label_count++;
-    //        }
-    //    }
+            label_count++;
+        }
+    }
 }
 
 // ------------ convertPicToBoolMap ----------------
@@ -104,23 +107,6 @@ void AlgorithmTip::convertPicToBoolMap()
         }
     }
 
-    cv::Mat hist2 = cv::Mat::zeros(1,bins,CV_32SC1);          // array for storing the histogram
-
-    cv::Mat dst;
-    cv::imshow("before",mPicResized);
-    cv::equalizeHist(mPicResized,dst);
-    cv::imshow("after",dst);
-
-    for (int i = 0; i < dst.rows; i++)
-    {
-        for (int j = 0; j < dst.cols; j++)
-        {
-            uchar val = dst.at<uchar>(i,j);
-            hist2.at<int>(val) += 1;
-        }
-    }
-
-
     /* ------
      * Count brightest and threshold
      * ------
@@ -135,24 +121,7 @@ void AlgorithmTip::convertPicToBoolMap()
     }
     uchar threshValue = (uchar)index;
 
-    DEBUG_MSG("threshValue: " << (int)threshValue);
     cv::threshold(mPicResized, mPicBinary, threshValue, 255, cv::THRESH_BINARY);
-    cv::imshow("normal", mPicBinary);
-
-    cv::Mat picBinary2;
-    countBrightest = 0;
-    index = bins-1;
-    while(countBrightest < mPercentTh*mPicNbPoint/ 100)
-    {
-        countBrightest += hist2.at<int>(index);
-        index--;
-    }
-
-    threshValue = (uchar)index;
-    DEBUG_MSG("threshValue: " << (int)threshValue);
-    cv::threshold(dst, picBinary2, threshValue, 255, cv::THRESH_BINARY);
-    cv::imshow("normalized", picBinary2);
-
 }
 
 // ------------ isTipComputed ----------------
