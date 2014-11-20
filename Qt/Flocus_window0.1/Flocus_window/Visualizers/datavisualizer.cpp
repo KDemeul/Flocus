@@ -73,6 +73,7 @@ void DataVisualizer::updateImage(){
         }
     }
     image.convertTo(mImgCV, CV_8UC1, 255, 0);
+    image.convertTo(mImgForProcessing,CV_8UC1,255,0);
 
     mImgRatio = (float)image.cols/(float)image.rows;
 }
@@ -200,7 +201,8 @@ void DataVisualizer::onFrame()
 
     updateImage();
     convertToRGB();
-    mRansacVisualizer->applyAndDraw(&mImgCV,mROI,mIndexCurrentFrame);
+    mRansacVisualizer->applyAndDraw(&mImgCV,&mImgForProcessing,mROI,mIndexCurrentFrame);
+    mTipVisualizer->applyAndDraw(&mImgCV,&mImgForProcessing,mROI, mRansacVisualizer->getParamCurve());
     addDrawing();
 }
 

@@ -29,7 +29,7 @@ public:
 
     bool isModelComputed();
     std::vector<cv::Point> getInliers();
-    cv::Mat getParamCurve();
+    cv::Mat *getParamCurve();
 
 private:
     //-----> Param

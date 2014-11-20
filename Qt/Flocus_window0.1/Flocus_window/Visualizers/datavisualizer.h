@@ -65,6 +65,7 @@ private:
     FlDataHandler* mFlDataHandler;
     RansacVisualizer *mRansacVisualizer;
     cv::Rect *mROI;
+    cv::Mat mImgForProcessing;
 
     TipVisualizer *mTipVisualizer;
 

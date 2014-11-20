@@ -4,6 +4,7 @@
 #include <QWidget>
 #include "common/common.h"
 #include "Algorithm/algorithmtip.h"
+#include "Algorithm/algorithmransac.h"
 
 class TipVisualizer : public QWidget
 {
@@ -12,7 +13,7 @@ public:
     TipVisualizer(QWidget *parent = 0);
 
     // method for applying algorithm to the image imgCv regarding curve parameter Hj
-    void applyAndDraw(cv::Mat *a_imgCV, cv::Mat *a_Hj);
+    void applyAndDraw(cv::Mat *a_imgToDrawOn, cv::Mat *a_imgToProcess, cv::Rect *a_ROI, cv::Mat *a_Hj);
 
 signals:
 
@@ -28,8 +29,8 @@ private:
     bool mIsEnabled;
     int mIndexLastFrameProcessed;
 
-    //  this draw the tip on imgCV at ptTip
-    void drawTip(cv::Mat* a_imgCV, cv::Point *a_ptTip);
+    //  this draw the tip on imgToDrawOn at ptTip
+    void drawTip(cv::Mat* a_imgToDrawOn, cv::Point *a_ptTip);
 };
 
 #endif // TIPVISUALIZER_H

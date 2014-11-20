@@ -9,7 +9,8 @@ class RansacVisualizer : public QWidget
 {
 public:
     explicit RansacVisualizer(QWidget *parent = 0);
-    void applyAndDraw(cv::Mat *a_imgCV, cv::Rect *a_ROI, int a_indexFrame);
+    void applyAndDraw(cv::Mat *a_imgToDrawOn, cv::Mat *a_imgToProcess, cv::Rect *a_ROI, int a_indexFrame);
+    cv::Mat* getParamCurve();
     
 signals:
     
@@ -23,10 +24,10 @@ private:
     bool mIsEnabled;
     int mIndexLastFrameProcessed;
 
-    void drawInliers(cv::Mat* a_imgCV, cv::Rect *a_ROI);
+    void drawInliers(cv::Mat* a_imgToDrawOn, cv::Rect *a_ROI);
 
-    void drawPoint(cv::Mat* a_imgCV, cv::Point a_Point);
-    void drawLine(cv::Mat* a_imgCV, cv::Point start, cv::Point end);
+    void drawPoint(cv::Mat* a_imgToDrawOn, cv::Point a_Point);
+    void drawLine(cv::Mat* a_imgToDrawOn, cv::Point start, cv::Point end);
     
 };
 

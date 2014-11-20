@@ -253,7 +253,7 @@ std::vector<cv::Point> AlgorithmRansac::getInliers()
     return mInliers;
 }
 
-cv::Mat AlgorithmRansac::getParamCurve()
+cv::Mat* AlgorithmRansac::getParamCurve()
 {
-    return mHRNS;
+    return &mHRNS;
 }

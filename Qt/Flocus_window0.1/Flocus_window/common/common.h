@@ -29,10 +29,19 @@ struct comparePoints {
 };
 
 typedef std::set<cv::Point,comparePoints> SetPoint;
+typedef std::vector<cv::Point> Blob;
 
 const static cv::Scalar COLOR_TIP = cv::Scalar(255,255,0);
 const static cv::Scalar COLOR_INLIERS = cv::Scalar(255,0,0);
 const static cv::Scalar COLOR_AXIS = cv::Scalar(0,0,255);
+const static cv::Scalar COLOR_BLOB = cv::Scalar(255,0,255);
 const static float MAX_TIME_RANSAC = 1000.0; // in ms.
+
+class common{
+
+public:
+    static void witchType(cv::Mat mat);
+    static void showHist(cv::Mat hist, char* name);
+};
 
 #endif // COMMON_H
