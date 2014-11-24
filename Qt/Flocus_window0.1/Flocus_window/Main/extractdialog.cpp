@@ -51,11 +51,16 @@ void ExtractDialog::displayStat()
     }
 
     double mean = 0;
+    int size = 0;
     for(std::vector<double>::iterator it = values.begin(); it != values.end(); it++)
     {
-        mean += *it;
+        if(*it != 0)
+        {
+            mean += *it;
+            size ++;
+        }
     }
-    mean /= values.size();
+    mean /= size;
 
     double var=0;
     for(std::vector<double>::iterator it = values.begin(); it != values.end(); it++)

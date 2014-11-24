@@ -6,10 +6,11 @@ AlgorithmTip::AlgorithmTip() :
     mPercentTh(10.0),
     mPicNbPoint(0)
 {
+    mHj = cv::Mat::zeros(2,2,CV_8UC1);
 }
 
 // ------------ applyAlgorithm ----------------
-void AlgorithmTip::applyAlgorithm(cv::Mat *a_pic, cv::Rect *a_ROI, cv::Mat *a_Hj)
+void AlgorithmTip::applyAlgorithm(cv::Mat *a_pic, cv::Rect *a_ROI, cv::Mat *a_Hj, int a_indexFrame)
 {
     if(a_ROI->width <= 0 || a_ROI->height <= 0)
         return;
@@ -21,11 +22,8 @@ void AlgorithmTip::applyAlgorithm(cv::Mat *a_pic, cv::Rect *a_ROI, cv::Mat *a_Hj
     mPointTip = cv::Point(-1,-1);
 
     // Set parameters
-//    if(mHj == a_Hj)
-
-        mHjChanged = false;
-
     mHj = *a_Hj;
+    mHjChanged = false;
 
     // Set image input
     cv::Mat img_grey(a_pic->size(), CV_8UC1);
@@ -92,7 +90,7 @@ void AlgorithmTip::applyAlgorithm(cv::Mat *a_pic, cv::Rect *a_ROI, cv::Mat *a_Hj
     time = clock() - time;
     DEBUG_MSG("TIP DETECTION RAN IN " << ((float)time*1000)/CLOCKS_PER_SEC << "ms.");
 
-    XMLhandler::addTipInfo(mHjChanged,mPointTip,((float)time*1000)/CLOCKS_PER_SEC);
+    XMLhandler::addTipInfo(mHjChanged,mPointTip,((float)time*1000)/CLOCKS_PER_SEC,a_indexFrame);
 }
 
 // ------------ findBlobls ----------------

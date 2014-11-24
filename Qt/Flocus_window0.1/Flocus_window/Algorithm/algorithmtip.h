@@ -12,7 +12,7 @@ public:
 
     // Method for applying tip detection on pic regarding curve
     // with parameter &Hj
-   void applyAlgorithm(cv::Mat *a_pic, cv::Rect *a_ROI, cv::Mat *a_Hj);
+   void applyAlgorithm(cv::Mat *a_pic, cv::Rect *a_ROI, cv::Mat *a_Hj, int a_indexFrame);
 
     // Return if a tip has been found
     bool isTipComputed();

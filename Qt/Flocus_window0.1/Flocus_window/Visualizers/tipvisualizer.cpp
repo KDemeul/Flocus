@@ -10,12 +10,12 @@ TipVisualizer::TipVisualizer(QWidget *parent)
 }
 
 // ------------ applyAndDraw ----------------
-void TipVisualizer::applyAndDraw(cv::Mat *a_imgToDrawOn, cv::Mat *a_imgToProcess, cv::Rect *a_ROI, cv::Mat *a_Hj)
+void TipVisualizer::applyAndDraw(cv::Mat *a_imgToDrawOn, cv::Mat *a_imgToProcess, cv::Rect *a_ROI, cv::Mat *a_Hj, int a_indexFrame)
 {
     if(!mIsEnabled)
         return;
 
-    mAlgorithmTip->applyAlgorithm(a_imgToProcess,a_ROI,a_Hj);
+    mAlgorithmTip->applyAlgorithm(a_imgToProcess,a_ROI,a_Hj,a_indexFrame);
 
     if(mAlgorithmTip->isTipComputed())
     {

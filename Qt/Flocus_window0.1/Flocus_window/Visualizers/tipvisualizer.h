@@ -13,7 +13,7 @@ public:
     TipVisualizer(QWidget *parent = 0);
 
     // method for applying algorithm to the image imgCv regarding curve parameter Hj
-    void applyAndDraw(cv::Mat *a_imgToDrawOn, cv::Mat *a_imgToProcess, cv::Rect *a_ROI, cv::Mat *a_Hj);
+    void applyAndDraw(cv::Mat *a_imgToDrawOn, cv::Mat *a_imgToProcess, cv::Rect *a_ROI, cv::Mat *a_Hj, int a_indexFrame);
 
     // method to change parameters from GUI
     void setDirection(ORIENTATION_NEEDLE a_dir);

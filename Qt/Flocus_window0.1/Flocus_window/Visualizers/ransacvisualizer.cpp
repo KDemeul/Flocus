@@ -21,7 +21,7 @@ void RansacVisualizer::applyAndDraw(cv::Mat *a_imgToDrawOn, cv::Mat *a_imgToProc
         return;
     }
 
-    mAlgorithmRansac->applyAlgorithm(a_imgToProcess, a_ROI);
+    mAlgorithmRansac->applyAlgorithm(a_imgToProcess, a_ROI,a_indexFrame);
 
     if(mAlgorithmRansac->isModelComputed())
     {

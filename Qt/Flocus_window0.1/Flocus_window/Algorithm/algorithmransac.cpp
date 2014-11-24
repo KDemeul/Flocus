@@ -12,7 +12,7 @@ AlgorithmRansac::AlgorithmRansac(int a_ransacNbPoint)
     mCRNS = std::numeric_limits<double>::max();
 }
 
-void AlgorithmRansac::applyAlgorithm(cv::Mat *a_pic, cv::Rect *a_regionOfInterest)
+void AlgorithmRansac::applyAlgorithm(cv::Mat *a_pic, cv::Rect *a_regionOfInterest, int a_indexFrame)
 {
     // RESET PARAMETERS
     mModelComputed = false;
@@ -104,7 +104,7 @@ void AlgorithmRansac::applyAlgorithm(cv::Mat *a_pic, cv::Rect *a_regionOfInteres
     time = clock() - time;
     DEBUG_MSG("RANSAC RAN IN " << ((float)time*1000)/CLOCKS_PER_SEC << "ms.");
 
-    XMLhandler::addRansacInfo(mRansacNbPoint,mPicNbPoint,mPercentTh,mRho,mJ,((float)time*1000)/CLOCKS_PER_SEC);
+    XMLhandler::addRansacInfo(mRansacNbPoint,mPicNbPoint,mPercentTh,mRho,mJ,((float)time*1000)/CLOCKS_PER_SEC,a_indexFrame);
 }
 
 

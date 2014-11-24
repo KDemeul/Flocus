@@ -213,7 +213,7 @@ void DataVisualizer::onFrame()
     updateImage();
     convertToRGB();
     mRansacVisualizer->applyAndDraw(&mImgCV,&mImgForProcessing,mROI,mIndexCurrentFrame);
-    mTipVisualizer->applyAndDraw(&mImgCV,&mImgForProcessing,mROI, mRansacVisualizer->getParamCurve());
+    mTipVisualizer->applyAndDraw(&mImgCV,&mImgForProcessing,mROI, mRansacVisualizer->getParamCurve(),mIndexCurrentFrame);
     addDrawing();
 }
 
