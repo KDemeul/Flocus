@@ -86,15 +86,33 @@ AlgorithmArea::AlgorithmArea(QWidget *parent) :
     connect(groupTip,SIGNAL(toggled(bool)),this,SLOT(communicateToVisualizer()));
     // End group : TIP
 
+    // Group : KALMAN
+
+    QFormLayout *kalmanLayout = new QFormLayout;
+
+    mButtonLoadMatrix = new QPushButton("Load Matrix");
+    connect(mButtonLoadMatrix,SIGNAL(clicked()),this,SLOT(communicateToVisualizer()));
+    kalmanLayout->addWidget(mButtonLoadMatrix);
+
+    groupKalman = new QGroupBox("KALMAN");
+    groupKalman->setCheckable(true);
+    groupKalman->setLayout(kalmanLayout);
+
+    connect(groupKalman,SIGNAL(toggled(bool)),this,SLOT(communicateToVisualizer()));
+
+    // End group : KALMAN
+
     mMainLayout->addWidget(mMainLabel);
     mMainLayout->addWidget(groupRANSAC);
     mMainLayout->addWidget(groupTip);
+    mMainLayout->addWidget(groupKalman);
 
     this->setLayout(mMainLayout);
 
     // INITIAL VALUES
     groupRANSAC->setChecked(false);
     groupTip->setChecked(true);
+    groupKalman->setChecked(true);
 }
 
 void AlgorithmArea::setBounds(int a_w, int a_h)
@@ -119,6 +137,8 @@ QGroupBox* AlgorithmArea::getGroupBoxTip()
 void AlgorithmArea::communicateToVisualizer()
 {
     CentralArea *parent = (CentralArea*)this->parentWidget();
+
+    // RANSAC
     parent->setRansacParameters(mSlidersRANSACRec[0]->value(),
             mSlidersRANSACRec[1]->value(),
             mSlidersRANSACRec[2]->value(),
@@ -126,6 +146,8 @@ void AlgorithmArea::communicateToVisualizer()
             groupRANSAC->isChecked(),
             mSpinRR->value());
     groupRANSAC->setHidden(!groupRANSAC->isChecked());
+
+    // TIP
     if(!groupRANSAC->isChecked())
     {
         groupTip->setChecked(false);
@@ -133,5 +155,14 @@ void AlgorithmArea::communicateToVisualizer()
     parent->setTipParameters((ORIENTATION_NEEDLE)mComboTipDirection->currentIndex(),
                              groupTip->isChecked());
     groupTip->setHidden(!groupTip->isChecked());
+
+    // KALMAN
+    if(!groupRANSAC->isChecked() || !groupTip->isChecked())
+    {
+        groupKalman->setChecked(false);
+    }
+//    parent->setKalmanParameters((ORIENTATION_NEEDLE)mComboTipDirection->currentIndex(),
+//                                groupKalman->isChecked());
+    groupKalman->setHidden(!groupKalman->isChecked());
 
 }

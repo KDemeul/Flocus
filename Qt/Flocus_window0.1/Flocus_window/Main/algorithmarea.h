@@ -45,6 +45,10 @@ private:
     QGroupBox *groupTip;
     QComboBox *mComboTipDirection;
 
+    // Kalman
+    QGroupBox *groupKalman;
+    QPushButton *mButtonLoadMatrix;
+
 };
 
 #endif // ALGORITHMAREA_H
