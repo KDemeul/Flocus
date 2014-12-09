@@ -10,4 +10,4 @@ This project is included in the CAMI labex.
 
 ## Environment
 
-The project recquire qt and opencv. (It has been tested with qt5 and opencv2.4.) 
+The project require qt and opencv. (It has been tested with qt5 and opencv2.4.) 
