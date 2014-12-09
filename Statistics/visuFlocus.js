@@ -18,7 +18,7 @@ for(i = 0; i < MeanDiff.length; i++)
 var vis = new pv.Panel()
 	.width((nbFrame*2)*(columnSize+columnPadding))
 	.height(Math.max(maxX,maxY))
-	.left(0);
+	.left(10);
 
 var column = vis.add(pv.Panel)
 	.data(MeanDiff)
@@ -53,6 +53,13 @@ var errorX = vis.add(pv.Line)
 	.left(function() botPadding + this.index * (columnSize + columnPadding))
 	.lineWidth(3)
 	.strokeStyle(colors[2]);
+
+var errorKalman = vis.add(pv.Line)
+	.data(Kalman)
+	.bottom(function() botPadding + Math.abs(Kalman[this.index].Kalmanx - MeanDiff[this.index].Groundx))
+	.left(function() botPadding + this.index * (columnSize + columnPadding))
+	.lineWidth(3)
+	.strokeStyle(colors[4]);
 
 var label = vis.add(pv.Label)
 	.data(pv.range(0,nbFrame/5))
@@ -117,6 +124,18 @@ var errorLegend = legend.add(pv.Panel)
 		.bottom(-columnSize)
 		.left(3*columnSize)
 		.text("Ground truth")
+	;
+
+var errorKalmanLegend = legend.add(pv.Panel)
+	.left(4*columnSize)
+	.bottom(20*columnSize+columnSize)
+	.height(3)
+	.width(2*columnSize)
+	.fillStyle(colors[4])
+	.add(pv.Label)
+		.bottom(-columnSize)
+		.left(3*columnSize)
+		.text("Error Kalman")
 	;
 
 // var horLine = row.add(pv.Line)

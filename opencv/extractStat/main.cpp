@@ -54,6 +54,7 @@ void xmlFillGroundTruth();
 void xmlFillMeasures();
 void printVec(std::vector<Statistics> a_vec);
 void displayMeanDiff();
+void displayVarDIff();
 
 // PARAMETERS
 std::string filenameGroundTruth;
@@ -125,7 +126,7 @@ int main(int argc, char **argv)
     // printVec(mStatisticsMeasures);
 
     displayMeanDiff();
-  
+    displayVarDIff();
 }
 
 // ---------------- xmlFillGroundTruth ---------------- 
@@ -222,12 +223,34 @@ void displayMeanDiff()
 { 
  // Compare mean to ground truth
     size_t index = 0;
+    std::cout << "var MeanDiff= [" << std::endl;
     for(std::vector<Statistics>::iterator currentStat = mStatisticsMeasures.begin(); currentStat != mStatisticsMeasures.end() ; ++currentStat)
     {
         double meanx = currentStat->mean.x;
         double meany = currentStat->mean.y;
         cv::Point ground = mTipGroundTruth.at(index).pos;
-        std::cout << index << " " << meanx << " " << meany << " " << ground.x << " " << ground.y <<  std::endl; 
+        std::cout << "{Frame:" << index << ",Meanx:" << meanx << ",Meany:" << meany << ",Groundx:" << ground.x << ",Groundy:" << ground.y << "}";
+        if(currentStat+1 != mStatisticsMeasures.end())
+            std::cout << "," << std::endl;
         index++;
     }
+    std::cout << "];" << std::endl;
+}
+
+// ---------------- displayVarDIff ---------------- 
+void displayVarDIff()
+{ 
+ // Compare mean to ground truth
+    size_t index = 0;
+    std::cout << "var VarTip= [" << std::endl;
+    for(std::vector<Statistics>::iterator currentStat = mStatisticsMeasures.begin(); currentStat != mStatisticsMeasures.end() ; ++currentStat)
+    {
+        double varx = currentStat->var.x;
+        double vary = currentStat->var.y;
+        std::cout << "{Frame:" << index << ",Varx:" << varx << ",Vary:" << vary << "}";
+        if(currentStat+1 != mStatisticsMeasures.end())
+            std::cout << "," << std::endl;
+        index++;
+    }
+    std::cout << "];" << std::endl;
 }

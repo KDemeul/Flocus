@@ -1,0 +1,215 @@
+#include <iostream>
+#include <sstream>
+#include <vector>
+#include <string>
+#include <time.h>
+#include <stdlib.h>  
+
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+
+#include "pugixml.hpp"
+
+#include "kalman.h"
+
+#define DEBUG
+#ifdef DEBUG
+#define DEBUG_MSG(str) std::cout << str << std::endl;
+#else
+#define DEBUG_MSG(str) ;
+#endif
+
+#define DEBUG_VEC(vec) for(std::vector<double>::iterator it = vec.begin() ; it != vec.end() ; ++it){ DEBUG_MSG(*it) } 
+
+#define YMAX 2100.0
+#define YMIN -200.0
+#define g 10
+
+// VISU
+cv::Mat output;
+
+// Kalman
+Kalman* kalman;
+
+cv::Scalar COLOR_KALMAN = cv::Scalar(255,0,0); // BLUE
+cv::Scalar COLOR_MEASURE = cv::Scalar(0,255,0); // GREEN
+cv::Scalar COLOR_TRUTH = cv::Scalar(0,0,255);  // RED
+
+int main(int argc, char **argv)
+{
+    int WIDTH= 700;
+    int HEIGHT= 700;
+    int sigmaR = 0; // HOW DO WE TRUST MODEL ?
+    int sigmaQ = 100*100; // HOW DO WE TRUST MEASUREMENT ?
+    double delta_t = 0.1;
+    if(argc > 2)
+    {
+        std::stringstream ss1;
+        ss1 << argv[1];
+        ss1 >> WIDTH;
+        std::stringstream ss2;
+        ss2 << argv[2];
+        ss2 >> HEIGHT;
+        std::stringstream ss3;
+        ss3 << argv[3];
+        ss3 >> sigmaQ;
+        std::stringstream ss4;
+        ss4 << argv[4];
+        ss4 >> sigmaR;
+    }
+
+    DEBUG_MSG("sigmaQ=" << sigmaQ);
+    DEBUG_MSG("sigmaR=" << sigmaR);
+
+    // READ STEP
+    std::cin >> delta_t;
+
+    // READ MEASUREMENTS
+    std::vector<double> vecMeasures;
+    std::vector<double> vecTrue;
+    int N;
+    int M;
+    std::cin >> N;
+    for (int i = 0; i < N; ++i)
+    {
+        double tmp;
+        std::cin >> tmp;  
+        vecTrue.push_back(tmp);
+    }
+    std::cin >> M;
+    for (int i = 0; i < M; ++i)
+    {
+        double tmp;
+        std::cin >> tmp;
+        vecMeasures.push_back(tmp);
+    }
+
+    // Kalman
+    std::vector<double> vecKalman;
+
+    // Create
+
+    // Model
+    cv::Mat A = (cv::Mat_<double>(2,2) << 1, delta_t,
+                                          0, 1);
+
+    cv::Mat B = (cv::Mat_<double>(2,1) << -0.5*g*delta_t*delta_t, -g*delta_t);
+
+    cv::Mat R = (cv::Mat_<double>(2,2) << sigmaR, sigmaR,
+                                          sigmaR, sigmaR); 
+
+    cv::Mat C = (cv::Mat_<double>(1,2) << 1, 0);
+
+    cv::Mat Q = (cv::Mat_<double>(1,1) << sigmaQ*sigmaQ);
+    
+    cv::Mat u = (cv::Mat_<double>(1,1) << 1);
+    
+    kalman = new Kalman(A,B,R,C,Q);
+
+    // Init
+    cv::Mat mu0 = (cv::Mat_<double>(2,1) << 2000,0);
+    cv::Mat Sigma0 = (cv::Mat_<double>(2,2) << 10,10,10,10);
+    kalman->init(mu0,Sigma0);
+
+    // Update 
+    // kalman->update((cv::Mat_<double>(1,1) << 0),u); // first update
+    vecKalman.push_back(kalman->mu.at<double>(0,0));
+
+    for(size_t k=1; k < N; k++)
+    {
+        // DEBUG_MSG("New measure: " << vecMeasures.at(k));
+        cv::Mat zk = (cv::Mat_<double>(1,1) << vecMeasures.at(k));
+        kalman->update(zk,u); 
+        vecKalman.push_back(kalman->mu.at<double>(0,0));
+    }
+
+    // Display
+    output = cv::Mat::zeros(WIDTH,HEIGHT,CV_8UC3);
+    for(int i = 0; i < WIDTH; i ++)
+    {
+        for(int j=0 ; j < HEIGHT ; j++)
+        {
+            cv::circle(output,cv::Point(i,j),3,cv::Scalar(255,255,255),-1,0);
+        }
+    }
+
+    cv::Point pos1;
+    pos1.x = 0;
+    pos1.y = HEIGHT-(0-YMIN)*HEIGHT/(YMAX-YMIN);
+    cv::Point pos2;
+    pos2.x = WIDTH;
+    pos2.y = pos1.y;
+    cv::line(output,pos1,pos2,cv::Scalar(0,0,0));
+    
+    cv::Point prev_pos;
+    // // Measurement
+    for(size_t i=0; i < N ; i++)
+    {
+        cv::Point pos;
+        pos.x = i* WIDTH / N;
+        pos.y = HEIGHT-(vecMeasures.at(i)-YMIN)*HEIGHT/(YMAX-YMIN);
+        // cv::circle(output,pos,3,COLOR_MEASURE,-1,0);
+        if(i>0)
+            cv::line(output,prev_pos,pos,COLOR_MEASURE);
+        prev_pos = pos;
+    }
+
+    // Estimate
+    for(size_t i=0; i < M ; i++)
+    {
+        cv::Point pos;
+        pos.x = i* WIDTH / N;
+        pos.y = HEIGHT-(vecKalman.at(i)-YMIN)*HEIGHT/(YMAX-YMIN);
+        // cv::circle(output,pos,3,COLOR_KALMAN,-1,0);
+        if(i>0)
+            cv::line(output,prev_pos,pos,COLOR_KALMAN);
+        prev_pos = pos;
+    }
+
+    // Ground truth
+    for(size_t i=0; i < M ; i++)
+    {
+        cv::Point pos;
+        pos.x = i* WIDTH / N;
+        pos.y = HEIGHT-(vecTrue.at(i)-YMIN)*HEIGHT/(YMAX-YMIN);
+        // cv::circle(output,pos,3,COLOR_TRUTH,-1,0);
+        if(i>0)
+            cv::line(output,prev_pos,pos,COLOR_TRUTH);
+        prev_pos=pos;
+    }
+
+    // ERROR KALMAN
+    for(size_t i=0; i < M ; i++)
+    {
+        cv::Point pos;
+        pos.x = i* WIDTH / N;
+        double error = (vecKalman.at(i) - vecTrue.at(i));
+        DEBUG_MSG("error step " << i << ": " << error);
+        error *= 10;
+        pos.y = HEIGHT-(error-YMIN)*HEIGHT/(YMAX-YMIN);
+        // cv::circle(output,pos,3,COLOR_KALMAN,-1,0);
+        if(i>0)
+            cv::line(output,prev_pos,pos,COLOR_KALMAN);
+        prev_pos=pos;
+    }
+
+    // ERROR MEASURE
+    for(size_t i=0; i < M ; i++)
+    {
+        cv::Point pos;
+        pos.x = i* WIDTH / N;
+        double error = (vecMeasures.at(i) - vecTrue.at(i));
+        error *= 10;
+        pos.y = HEIGHT-(error-YMIN)*HEIGHT/(YMAX-YMIN);
+        // cv::circle(output,pos,3,COLOR_MEASURE,-1,0);
+        if(i>0)
+            cv::line(output,prev_pos,pos,COLOR_MEASURE);
+        prev_pos=pos;
+    }
+
+    imshow("Pic",output);
+    cv::waitKey(0);
+
+    return 0;
+}
+
