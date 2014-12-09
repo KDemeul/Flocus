@@ -21,6 +21,7 @@
 #include "DataHandling/fldatahandler.h"
 #include "Visualizers/ransacvisualizer.h"
 #include "Visualizers/tipvisualizer.h"
+#include "Visualizers/kalmanvisualizer.h"
 
 class DataVisualizer : public QGLWidget
 {
@@ -69,6 +70,8 @@ private:
     cv::Mat mImgForProcessing;
 
     TipVisualizer *mTipVisualizer;
+
+    KalmanVisualizer *mKalmanVisualizer;
 
     // Player
     void onFrame();

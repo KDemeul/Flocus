@@ -47,6 +47,13 @@ var groundX = vis.add(pv.Line)
     	.lineWidth(3)
     	.strokeStyle (colors[0]);
 
+var curveKalman = vis.add(pv.Line)
+	.data(Kalman)
+	.bottom(function() botPadding + Kalman[this.index].Kalmanx)
+	.left(function() botPadding + this.index * (columnSize + columnPadding))
+	.lineWidth(3)
+	.strokeStyle(colors[4])
+
 var errorX = vis.add(pv.Line)
 	.data(MeanDiff)
 	.bottom(function() botPadding + Math.abs(MeanDiff[this.index].Meanx- MeanDiff[this.index].Groundx))

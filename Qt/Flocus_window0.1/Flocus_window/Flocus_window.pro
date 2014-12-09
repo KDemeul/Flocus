@@ -27,7 +27,9 @@ SOURCES += \
     Visualizers/tipvisualizer.cpp \
 	common/xmlhandler.cpp \
     ../../../pugixml/src/pugixml.cpp \
-    Main/extractdialog.cpp
+    Main/extractdialog.cpp \
+    Visualizers/kalmanvisualizer.cpp \
+    Algorithm/algorithmkalman.cpp
 
 HEADERS  += \
     Algorithm/algorithmransac.h \
@@ -43,7 +45,9 @@ HEADERS  += \
     common/xmlhandler.h \
     ../../../pugixml/src/pugiconfig.hpp \
     ../../../pugixml/src/pugixml.hpp \
-    Main/extractdialog.h
+    Main/extractdialog.h \
+    Visualizers/kalmanvisualizer.h \
+    Algorithm/algorithmkalman.h
 
 #INCLUDEPATH += /usr/include/vtk-5.8
 
