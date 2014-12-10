@@ -12,7 +12,8 @@ public:
     AlgorithmKalman();
 
     // Method for initialization of Kalman filter
-    void init(cv::Mat *A, cv::Mat *B, cv::Mat *Q, cv::Mat *C, cv::Mat *R, cv::Mat *mu0,cv::Mat *Sigma0);
+    void init(cv::Mat *A, cv::Mat *B, cv::Mat *Q, cv::Mat *C, cv::Mat *R, cv::Mat *a_mu0, cv::Mat *a_Sigma0);
+    void reinit();
 
     // Method for applying kalman filter on pic regarding input u and measure z
     void applyAlgorithm(cv::Mat *u, cv::Mat *z, int a_indexFrame);
@@ -43,6 +44,17 @@ private:
 
     cv::Mat mu; // Mean
     cv::Mat Sigma; // Variance
+
+    // Init param
+    int mKalmanInit;
+    cv::Mat A0; // Model matrix
+    cv::Mat B0; // Input matrix
+    cv::Mat Q0; // Covariance noise in model update
+    cv::Mat C0; // Measurement matrix
+    cv::Mat R0; // Covariance noise in measurement
+
+    cv::Mat mu0; // Mean
+    cv::Mat Sigma0; // Variance
 };
 
 #endif // ALGORITHMKALMAN_H

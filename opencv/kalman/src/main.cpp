@@ -18,7 +18,7 @@
 #define DEBUG_MSG(str) ;
 #endif
 
-#define PRINT
+// #define PRINT
 #ifdef PRINT
 #define PRINT_MSG(str) std::cout << str << std::endl;
 #else
@@ -52,74 +52,83 @@ cv::Scalar COLOR_TRUTH = cv::Scalar(0,0,255);  // RED
             // Kalman
 Kalman* kalman;
 
+void displayResults(cv::Mat *output);
+void displayError(cv::Mat *output);
+void animate();
+
+void addNoise(cv::Mat *a_mat, double a_amp){
+    for(int i = 0 ; i < a_mat->rows; i++){
+        for (int j = 0; j < a_mat->cols; ++j){
+             a_mat->at<double>(i,j) += (((double)(rand() % 100)) / 100.0)*a_amp;
+        }
+    }
+}
+
 int main(int argc, char **argv)
 {
-    if(argc < 2)
-    {
-        std::cout << "Input: measure, ground truth" << std::endl;
+    DEBUG_MSG("------");
+    double sigmaQ = 1e-5;
+    double sigmaR = 1e-1;
+
+    if(argc < 2) {
+        std::cout << "Input: measure, ground truth, sigmaQ, sigmaR" << std::endl;
         return 0;
+    } else if (argc == 5) {
+        std::stringstream ssQ;
+        ssQ << argv[3];
+        ssQ >> sigmaQ;
+        std::stringstream ssR;
+        ssR << argv[4];
+        ssR >> sigmaR;
     }
+    DEBUG_MSG("sigmaQ = " << sigmaQ << ", sigmaR = " << sigmaR);
             // READ MEASUREMENTS
     std::string filename1 = argv[1];
     std::string filename2 = argv[2];
     readMeasureFile(filename1);
     int N = vecMeasures.size();
-    DEBUG_MSG("Measures read");
     readGroundTruth(filename2);
-    DEBUG_MSG("Ground truth read");
 
     // // Create kalman
-    cv::Mat A = (cv::Mat_<double>(6,6) << 1, 0, 1, 0, 0.5, 0,
-        0, 1, 0, 1, 0, 0.5,
-        0, 0, 1, 0, 1, 0,
-        0, 0, 0, 1, 0, 1,
-        0, 0, 0, 0, 1, 0,
-        0, 0, 0, 0, 0, 1 );
+    cv::Mat A = (cv::Mat_<double>(4,4) << 
+        1, 0, 1, 0,
+        0, 1, 0, 1,
+        0, 0, 1, 0,
+        0, 0, 0, 1);
 
-    cv::Mat B = (cv::Mat_<double>(6,1) << 1, 0, 0, 0, 0, 0);
+    cv::Mat B = (cv::Mat_<double>(4,1) << 0, 0, 0, 0);
 
-    cv::Mat Q= (cv::Mat_<double>(6,6) <<
-        1e-3,1e-3,1e-3,1e-3,1e-3,1e-3,
-        1e-3,1e-3,1e-3,1e-3,1e-3,1e-3,
-        1e-3,1e-3,1e-3,1e-3,1e-3,1e-3,
-        1e-3,1e-3,1e-3,1e-3,1e-3,1e-3,
-        1e-3,1e-3,1e-3,1e-3,1e-3,1e-3,
-        1e-3,1e-3,1e-3,1e-3,1e-3,1e-3);
+    cv::Mat Q= (cv::Mat_<double>(4,4) <<
+      sigmaQ, 0, 0, 0,
+      0, sigmaQ, 0, 0,
+      0, 0, sigmaQ, 0,
+      0, 0, 0, sigmaQ);
 
-    // for(int i=0; i < 6 ; i++)
-    // {
-    //     for(int j= 0 ; j < 6 ; j++)
-    //     {
-    //         Q.at<double>(i,j) += ((double)(rand() % 10) - 5)/100.0;
-    //     }
-    // }
-            // 6725.2378976052 ,3.8299368345    ,6728.5345743117     ,5.4833248793        ,6725.7565488606     ,0.047147905,
-        // 2.190275318     ,6728.6435283637 ,9.552230991         ,6728.5197591838     ,1.2085585436        ,6727.204275989,
-        // 6726.7958094282 ,0.4336166685    ,13001.5730500468    ,0.440078692         ,19605.013554045     ,7.1279468224,
-        // 2.5002462487    ,6724.7756043784 ,8.368421332         ,13005.9786789273    ,3.3835149975        ,19601.2418044056,
-        // 6724.624768096  ,5.4394991347    ,19609.8576591024    ,4.9374689115        ,40009.9219300365    ,6.474043522,
-        // 4.1557390173    ,6724.1056129485 ,1.695682304         ,19604.1920411354    ,5.9087028145        ,40007.0959469955);
+    addNoise(&Q,sigmaQ/1000);
 
-    cv::Mat C = (cv::Mat_<double>(2,6) << 
-        1, 0, 0, 0, 0, 0, 
-        0, 1, 0, 0, 0, 0);
+    cv::Mat C = (cv::Mat_<double>(2,4) << 
+        1, 0, 0, 0, 
+        0, 1, 0, 0);
 
     cv::Mat R = (cv::Mat_<double>(2,2) << 
-        10, 0,
-        0, 10);
-
+        sigmaR, 0,
+        0, sigmaR);
+    addNoise(&R,sigmaR/1000);
 
     kalman = new Kalman(A,B,Q,C,R);
 
-    cv::Mat mu0 = (cv::Mat_<double>(6,1) << vecGround.begin()->x,vecGround.begin()->y,0,0,0,0);
-    cv::Mat Sigma0 = (cv::Mat_<double>(6,6) <<
-        44.91527728182324, 29.01907585420759, 5.227328694788755, 4.829069020350386, 0.3456378542995343, 0.3414802562278842,
-        29.01907584281928, 44.91527723908357, 4.829069011116202, 5.227328683974491, 0.3414802554128484, 0.3456378534598457,
-        5.227328697840449, 4.829069008632975, 1.080450204820537, 1.067051349588245, 0.09986170623990445, 0.09970397119904237,
-        4.829069013281678, 5.22732869047434, 1.067051349387744, 1.080450204014527, 0.09970397116222871, 0.09986170619364397,
-        0.3456378542922439, 0.341480255428902, 0.09986170623718751, 0.09970397116803979, 0.0136366084698522, 0.01363462620177318,
-        0.341480255914507, 0.3456378537644058, 0.09970397118575476, 0.09986170620382954, 0.01363462620152601, 0.01363660846880824);
+    cv::Mat mu0 = (cv::Mat_<double>(4,1) << 0,0,0,0);
+    mu0.at<double>(0,0) = vecMeasures.begin()->x;
+    mu0.at<double>(1,0) = vecMeasures.begin()->y;
+    mu0.at<double>(2,0) = vecMeasures.at(1).x - vecMeasures.at(0).x;
+    mu0.at<double>(3,0) = vecMeasures.at(1).y - vecMeasures.at(0).y;
 
+    cv::Mat Sigma0 = (cv::Mat_<double>(4,4) <<
+      0, 0, 0, 0,
+      0, 0, 0, 0,
+      0, 0, 0, 0,
+      0, 0, 0, 0);
+    addNoise(&Sigma0,0.01);
 
     kalman->init(mu0,Sigma0);
 
@@ -132,67 +141,98 @@ int main(int argc, char **argv)
         cv::Mat mu = kalman->mu;
         cv::Mat Sigma = kalman->Sigma;
         vecEstimated.push_back(cv::Point(mu.at<double>(0,0),mu.at<double>(1,0)));
-        // kalman->printInfo();
+        // kalman->printInfo() ;
         index++; 
     }
 
-    // Display
-    output = cv::Mat::zeros(WIDTH,HEIGHT,CV_8UC3);
-    for(int i = 0; i < WIDTH; i ++)
-    {
-        for(int j=0 ; j < HEIGHT ; j++)
-        {
-            cv::circle(output,cv::Point(i,j),3,cv::Scalar(255,255,255),-1,0);
+    cv::Mat output = cv::Mat::zeros(WIDTH,HEIGHT,CV_8UC3);
+    cv::circle(output,cv::Point(0,0),10000,cv::Scalar(255,255,255),-1,0);
+    
+    // animate();
+    displayResults(&output);
+    displayError(&output);  
+
+    imshow("ouput",output);
+    cv::waitKey(0);
+}
+
+void animate(){
+    size_t N = vecMeasures.size();
+    cv::Mat output = cv::Mat::zeros(WIDTH,HEIGHT,CV_8UC3);
+    cv::circle(output,cv::Point(0,0),10000,cv::Scalar(255,255,255),-1,0);
+
+    for(size_t i = 0; i < N; i++){
+        cv::circle(output,vecMeasures.at(i),3,COLOR_MEASURE);
+        cv::circle(output,vecGround.at(i),3,COLOR_TRUTH);
+        cv::circle(output,vecEstimated.at(i),3,COLOR_KALMAN);
+        imshow("output",output);
+        cv::waitKey(50);
+        cv::circle(output,cv::Point(0,0),10000,cv::Scalar(255,255,255),-1,0);
+    }
+}
+
+void displayResults(cv::Mat *output){
+    cv::Point prev_posx_ground;
+    cv::Point prev_posx_kalman;
+    cv::Point prev_posx_measure;
+    cv::Point prev_posy_ground;
+    cv::Point prev_posy_kalman;
+    cv::Point prev_posy_measure;
+
+    size_t N = vecMeasures.size();
+
+    for(size_t i=0 ; i < N ; i++){
+        // Measurement
+        cv::Point posx_measure;
+        cv::Point posy_measure;
+        posx_measure.x = i* WIDTH / N;
+        posy_measure.x = i* WIDTH / N;
+        posx_measure.y = HEIGHT-(vecMeasures.at(i).x-YMIN)*HEIGHT/(YMAX-YMIN);
+        posy_measure.y = HEIGHT-(vecMeasures.at(i).y - YMIN)*HEIGHT/(YMAX-YMIN);
+        if(i>0){
+            cv::line(*output,prev_posx_measure,posx_measure,COLOR_MEASURE);
+            cv::line(*output,prev_posy_measure,posy_measure,COLOR_MEASURE);
         }
-    }
 
-    cv::Point prev_pos;
-
-    // Measurement
-    for(size_t i=0; i < N ; i++)
-    {
-        cv::Point pos;
-        pos.x = i* WIDTH / N;
-        pos.y = HEIGHT-(vecMeasures.at(i).x-YMIN)*HEIGHT/(YMAX-YMIN);
-        // cv::circle(output,pos,3,COLOR_MEASURE,-1,0);
-        if(i>0)
-            cv::line(output,prev_pos,pos,COLOR_MEASURE);
-        prev_pos = pos;
-    }
-
-    // Estimate
-    PRINT_MSG("var Kalman= ["); // ]
-    for(size_t i=0; i < N ; i++)
-    {
-        cv::Point pos;
-        pos.x = i* WIDTH / N;
-        pos.y = HEIGHT-(vecEstimated.at(i).x-YMIN)*HEIGHT/(YMAX-YMIN);
-        // cv::circle(output,pos,3,COLOR_KALMAN,-1,0);
-        if(i>0)
-            cv::line(output,prev_pos,pos,COLOR_KALMAN);
-        prev_pos = pos;
-        if(i<N-1){
-            PRINT_MSG("{Frame:"<<i<<",Kalmanx:"<<vecEstimated.at(i).x<<",Kalmany:"<<vecEstimated.at(i).y<<"},");
+        // KALMAN
+        cv::Point posx_kalman;
+        cv::Point posy_kalman;
+        posx_kalman.x = i* WIDTH / N;
+        posy_kalman.x = i* WIDTH / N;
+        posx_kalman.y = HEIGHT-(vecEstimated.at(i).x-YMIN)*HEIGHT/(YMAX-YMIN);
+        posy_kalman.y = HEIGHT-(vecEstimated.at(i).y - YMIN)*HEIGHT/(YMAX-YMIN);
+        if(i>0){
+            cv::line(*output,prev_posx_kalman,posx_kalman,COLOR_KALMAN);
+            cv::line(*output,prev_posy_kalman,posy_kalman,COLOR_KALMAN);
         }
-        else{
-            PRINT_MSG("{Frame:"<<i<<",Kalmanx:"<<vecEstimated.at(i).x<<",Kalmany:"<<vecEstimated.at(i).y<<"}];");
-        }
-    }
 
-    // Ground truth
-    for(size_t i=0; i < N ; i++)
-    {
-        cv::Point pos;
-        pos.x = i* WIDTH / N;
-        pos.y = HEIGHT-(vecGround.at(i).x-YMIN)*HEIGHT/(YMAX-YMIN);
-        // cv::circle(output,pos,3,COLOR_TRUTH,-1,0);
-        if(i>0)
-            cv::line(output,prev_pos,pos,COLOR_TRUTH);
-        prev_pos=pos;
-        // DEBUG_MSG(vecGround.at(i).x << "," << vecGround.at(i).y);
+        // GROUND
+        cv::Point posx_ground;
+        cv::Point posy_ground;
+        posx_ground.x = i* WIDTH / N;
+        posy_ground.x = i* WIDTH / N;
+        posx_ground.y = HEIGHT-(vecGround.at(i).x-YMIN)*HEIGHT/(YMAX-YMIN);
+        posy_ground.y = HEIGHT-(vecGround.at(i).y - YMIN)*HEIGHT/(YMAX-YMIN);
+        if(i>0){
+            cv::line(*output,prev_posx_ground,posx_ground,COLOR_TRUTH);
+            cv::line(*output,prev_posy_ground,posy_ground,COLOR_TRUTH);
+        }
+
+        prev_posx_measure = posx_measure;
+        prev_posy_measure = posy_measure; 
+        prev_posx_ground = posx_ground;
+        prev_posy_ground = posy_ground; 
+        prev_posx_kalman = posx_kalman;
+        prev_posy_kalman = posy_kalman; 
     }
+}
+
+void displayError(cv::Mat *output){
+    size_t N = vecMeasures.size(); 
 
     // ERROR KALMAN
+    cv::Point prev_pos;
+
     double mean_error_kalman = 0;
     for(size_t i=0; i < N ; i++)
     {
@@ -205,7 +245,7 @@ int main(int argc, char **argv)
         pos.y = HEIGHT-(error-YMIN)*HEIGHT/(YMAX-YMIN);
             // cv::circle(output,pos,3,COLOR_KALMAN,-1,0);
         if(i>0)
-            cv::line(output,prev_pos,pos,COLOR_KALMAN);
+            cv::line(*output,prev_pos,pos,COLOR_KALMAN);
         prev_pos=pos;
         // DEBUG_MSG("<TIP tip_position.x=\"" << vecGround.at(i).x << "\" tip_position.y=\"" << vecGround.at(i).y << "\" index_frame=\"" << i << "\"/>");
     }
@@ -221,25 +261,20 @@ int main(int argc, char **argv)
         // DEBUG_MSG("error satep " << i << ": " << error);
         // error += 10;
         pos.y = HEIGHT-(error-YMIN)*HEIGHT/(YMAX-YMIN);
-            // cv::circle(output,pos,3,COLOR_KALMAN,-1,0);
+            // cv::circle(*output,pos,3,COLOR_KALMAN,-1,0);
         if(i>0)
-            cv::line(output,prev_pos,pos,COLOR_MEASURE);
+            cv::line(*output,prev_pos,pos,COLOR_MEASURE);
         prev_pos=pos;
     }
 
     mean_error_kalman /= N;
     mean_error_measure /= N;
-
+   
     DEBUG_MSG("mean_error_measure = " << mean_error_measure);
     DEBUG_MSG("mean_error_kalman = " << mean_error_kalman);
-    imshow("ouput",output);
-    cv::waitKey(0);
-
 }
 
-
-void readMeasureFile(std::string filename)
-{
+void readMeasureFile(std::string filename){
     xmlDoc.load_file(filename.c_str());
 
     pugi::xml_node tipNode = xmlDoc.child("Statistics");
@@ -277,8 +312,7 @@ void readMeasureFile(std::string filename)
     // DEBUG_VEC(vecMeasures);
 }
 
-void readGroundTruth(std::string filename)
-{
+void readGroundTruth(std::string filename){
     xmlDoc.load_file(filename.c_str());
 
     pugi::xml_node tipNode = xmlDoc.child("tip_positions");

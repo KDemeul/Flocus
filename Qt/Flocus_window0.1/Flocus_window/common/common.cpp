@@ -54,3 +54,11 @@ void common::showHist(cv::Mat hist, char* name)
 
     imshow(name, canvas);
 }
+
+void common::addNoise(cv::Mat *a_mat,double a_amp){
+    for(int i = 0 ; i < a_mat->rows; i++){
+            for (int j = 0; j < a_mat->cols; ++j){
+                 a_mat->at<double>(i,j) += (((double)(rand() % 100)) / 100.0)*a_amp;
+            }
+        }
+}

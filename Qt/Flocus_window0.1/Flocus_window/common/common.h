@@ -60,6 +60,7 @@ class common{
 public:
     static void witchType(cv::Mat mat);
     static void showHist(cv::Mat hist, char* name);
+    static void addNoise(cv::Mat *a_mat, double a_amp);
 };
 
 #endif // COMMON_H

@@ -6,7 +6,47 @@ KalmanVisualizer::KalmanVisualizer(QWidget *parent)
       mIsEnabled(true),
       mIndexLastFrameProcessed(-1)
 {
+    // // Create kalman
     mAlgorithmKalman = new AlgorithmKalman();
+    double sigmaQ = 1e-5;
+    double sigmaR = 1e-1;
+
+    cv::Mat A = (cv::Mat_<double>(4,4) <<
+                 1, 0, 1, 0,
+                 0, 1, 0, 1,
+                 0, 0, 1, 0,
+                 0, 0, 0, 1);
+
+    cv::Mat B = (cv::Mat_<double>(4,1) << 0, 0, 0, 0);
+
+    cv::Mat Q= (cv::Mat_<double>(4,4) <<
+                sigmaQ, 0, 0, 0,
+                0, sigmaQ, 0, 0,
+                0, 0, sigmaQ, 0,
+                0, 0, 0, sigmaQ);
+
+    common::addNoise(&Q,sigmaQ/1000);
+
+    cv::Mat C = (cv::Mat_<double>(2,4) <<
+                 1, 0, 0, 0,
+                 0, 1, 0, 0);
+
+    cv::Mat R = (cv::Mat_<double>(2,2) <<
+                 sigmaR, 0,
+                 0, sigmaR);
+    common::addNoise(&R,sigmaR/1000);
+
+    cv::Mat mu0 = (cv::Mat_<double>(4,1) << 0,0,0,0);
+
+    cv::Mat Sigma0 = (cv::Mat_<double>(4,4) <<
+                      0, 0, 0, 0,
+                      0, 0, 0, 0,
+                      0, 0, 0, 0,
+                      0, 0, 0, 0);
+    common::addNoise(&Sigma0,0.01);
+
+    mAlgorithmKalman->init(&A,&B,&Q,&C,&R,&mu0,&Sigma0);
+
 }
 
 // ------------ applyAndDraw ----------------
@@ -14,8 +54,12 @@ void KalmanVisualizer::applyAndDraw(cv::Mat *a_imgToDrawOn, cv::Rect *a_ROI,  cv
 {
     if(!mIsEnabled)
         return;
+    if(abs(mIndexLastFrameProcessed-a_indexFrame) > 1){
+        mAlgorithmKalman->reinit();
+    }
 
     mAlgorithmKalman->applyAlgorithm(a_u,a_z,a_indexFrame);
+    mIndexLastFrameProcessed = a_indexFrame;
 
     if(mAlgorithmKalman->isTipComputed())
     {

@@ -9,16 +9,30 @@ AlgorithmKalman::AlgorithmKalman() :
 
 
 // ------------ init ----------------
-void AlgorithmKalman::init(cv::Mat *a_A, cv::Mat *a_B, cv::Mat *a_Q, cv::Mat *a_C, cv::Mat *a_R, cv::Mat *mu0,cv::Mat *Sigma0)
+void AlgorithmKalman::init(cv::Mat *a_A, cv::Mat *a_B, cv::Mat *a_Q, cv::Mat *a_C, cv::Mat *a_R, cv::Mat *a_mu0,cv::Mat *a_Sigma0)
 {
-    A = *a_A;
-    B = *a_B;
-    Q = *a_Q;
-    C = *a_C;
-    R = *a_R;
+    A0 = *a_A;
+    B0 = *a_B;
+    Q0 = *a_Q;
+    C0 = *a_C;
+    R0 = *a_R;
+    mu0 = *a_mu0;
+    Sigma0 = *a_Sigma0;
+    this->reinit();
+}
 
-    mu = *mu0;
-    Sigma = *Sigma0;
+// ------------ reinit ----------------
+void AlgorithmKalman::reinit()
+{
+    A0.copyTo(A);
+    B0.copyTo(B);
+    Q0.copyTo(Q);
+    C0.copyTo(C);
+    R0.copyTo(R);
+    mu0.copyTo(mu);
+    Sigma0.copyTo(Sigma);
+
+    mKalmanInit = 0;
 }
 
 // ------------ applyAlgorithm ----------------
@@ -26,23 +40,29 @@ void AlgorithmKalman::applyAlgorithm(cv::Mat *u, cv::Mat *z, int a_indexFrame)
 {
     clock_t time = clock();
 
-    // DEBUG_KALMAN("Before: mu=" << mu);
-    // DEBUG_KALMAN("Before: Sigma=" << Sigma);
-    cv::Mat mu_hat = A * mu + B * (*u);
-    // DEBUG_KALMAN("mu_hat=" << mu_hat);
-    cv::Mat Sigma_hat = A * Sigma * A.t() + Q;
-    cv::Mat K = Sigma_hat * C.t() * (( C * Sigma_hat * C.t() + R).inv());
-    mu = mu_hat + K * ( (*z) - C * mu_hat);
-    Sigma = Sigma_hat - K * C * Sigma_hat;
-    // DEBUG_KALMAN("After: mu=" << mu);
-    // DEBUG_KALMAN("After: Sigma=" << Sigma);
+    if(mKalmanInit==0){
+        mu.at<double>(2,0) -= z->at<double>(0,0);
+        mu.at<double>(3,0) -= z->at<double>(1,0);
+    } else if (mKalmanInit==1) {
+        mu.at<double>(0,0) += z->at<double>(0,0);
+        mu.at<double>(1,0) += z->at<double>(1,0);
+        mu.at<double>(2,0) += z->at<double>(0,0);
+        mu.at<double>(3,0) += z->at<double>(1,0);
+    } else {
+        cv::Mat mu_hat = A * mu + B * (*u);
+        cv::Mat Sigma_hat = A * Sigma * A.t() + Q;
+        cv::Mat K = Sigma_hat * C.t() * (( C * Sigma_hat * C.t() + R).inv());
+        mu = mu_hat + K * ( (*z) - C * mu_hat);
+        Sigma = Sigma_hat - K * C * Sigma_hat;
+    }
 
+    mKalmanInit += mKalmanInit > 1 ? 0 : 1;
     mTipComputed = true;
 
     time = clock() - time;
     DEBUG_MSG("KALMAN FILTER RAN IN " << ((float)time*1000)/CLOCKS_PER_SEC << "ms.");
 
-//    XMLhandler::addKalmanInfo(mHjChanged,mPointTip,((float)time*1000)/CLOCKS_PER_SEC,a_indexFrame);
+    //    XMLhandler::addKalmanInfo(mHjChanged,mPointTip,((float)time*1000)/CLOCKS_PER_SEC,a_indexFrame);
 }
 
 // ------------ isTipComputed ----------------
@@ -54,6 +74,7 @@ bool AlgorithmKalman::isTipComputed()
 // ------------ getTip ----------------
 cv::Point* AlgorithmKalman::getTip()
 {
+    mPointTip = cv::Point(mu.at<double>(0,0),mu.at<double>(1,0));
     return &mPointTip;
 }
 

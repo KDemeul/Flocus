@@ -40,3 +40,8 @@ void TipVisualizer::setDirection(ORIENTATION_NEEDLE a_dir)
 {
     mAlgorithmTip->setDirection(a_dir);
 }
+
+// ------------ getTip ----------------
+cv::Point* TipVisualizer::getTip(){
+    return mAlgorithmTip->getTip();
+}

@@ -18,6 +18,9 @@ public:
     // method to change parameters from GUI
     void setDirection(ORIENTATION_NEEDLE a_dir);
 
+    // Getters
+    cv::Point* getTip();
+
 signals:
 
 public slots:

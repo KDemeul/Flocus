@@ -17,6 +17,7 @@ DataVisualizer::DataVisualizer(QWidget *parent)
     mRansacVisualizer = new RansacVisualizer();
     mROI = new cv::Rect(0,0,0,0);
     mTipVisualizer = new TipVisualizer();
+    mKalmanVisualizer = new KalmanVisualizer();
 }
 
 // PAN INITIALIZATION, DEFINITION AND UPDATE
@@ -144,7 +145,6 @@ void DataVisualizer::convertToGrey()
 }
 
 // DATA - ALGORITHM CONTROL
-
 cv::Mat* DataVisualizer::getImgCV()
 {
     return &mImgCV;
@@ -200,6 +200,14 @@ void DataVisualizer::setTipParameters(ORIENTATION_NEEDLE a_dir, bool a_isEnable)
     }
 }
 
+void DataVisualizer::setKalmanParameters(ORIENTATION_NEEDLE a_dir, bool a_isEnable)
+{
+    mKalmanVisualizer->enable(a_isEnable);
+    if(a_isEnable){
+        mKalmanVisualizer->setDirection(a_dir);
+    }
+}
+
 cv::Rect* DataVisualizer::getROI()
 {
     return mROI;
@@ -212,8 +220,16 @@ void DataVisualizer::onFrame()
 
     updateImage();
     convertToRGB();
+
+    // Apply RANSAC ALGORITHM
     mRansacVisualizer->applyAndDraw(&mImgCV,&mImgForProcessing,mROI,mIndexCurrentFrame);
+    // Apply TIP DETECTION
     mTipVisualizer->applyAndDraw(&mImgCV,&mImgForProcessing,mROI, mRansacVisualizer->getParamCurve(),mIndexCurrentFrame);
+    // Apply Kalman filter
+    cv::Mat u = (cv::Mat_<double>(1,1) << 2);
+    cv::Mat z = (cv::Mat_<double>(2,1) << mTipVisualizer->getTip()->x, mTipVisualizer->getTip()->y);
+    mKalmanVisualizer->applyAndDraw(&mImgCV,mROI,&u,&z,mIndexCurrentFrame);
+    // Display results
     addDrawing();
 }
 
