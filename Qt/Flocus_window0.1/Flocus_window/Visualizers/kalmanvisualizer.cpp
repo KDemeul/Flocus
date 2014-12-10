@@ -70,7 +70,10 @@ void KalmanVisualizer::applyAndDraw(cv::Mat *a_imgToDrawOn, cv::Rect *a_ROI,  cv
 // ------------ drawTip ----------------
 void KalmanVisualizer::drawTip(cv::Mat *a_imgToDrawOn, cv::Rect *a_ROI, cv::Point *a_ptTip)
 {
-    cv::circle(*a_imgToDrawOn,cv::Point(a_ROI->x + a_ptTip->x,a_ROI->y + a_ptTip->y),3,COLOR_KALMAN,-1,0);
+    cv::Point tipOnPic(a_ROI->x + a_ptTip->x,a_ROI->y + a_ptTip->y);
+    cv::line(*a_imgToDrawOn,tipOnPic,tipOnPic+cv::Point(20,20),COLOR_KALMAN,1);
+    cv::putText(*a_imgToDrawOn,"K",tipOnPic+cv::Point(20,30),cv::FONT_HERSHEY_SIMPLEX,0.5,COLOR_KALMAN);
+    cv::circle(*a_imgToDrawOn,tipOnPic,3,COLOR_KALMAN,-1,0);
 }
 
 // ------------ enable ----------------

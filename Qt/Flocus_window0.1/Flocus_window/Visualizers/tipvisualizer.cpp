@@ -26,6 +26,10 @@ void TipVisualizer::applyAndDraw(cv::Mat *a_imgToDrawOn, cv::Mat *a_imgToProcess
 // ------------ drawTip ----------------
 void TipVisualizer::drawTip(cv::Mat *a_imgToDrawOn, cv::Rect *a_ROI, cv::Point *a_ptTip)
 {
+    cv::Point tipOnPic(a_ROI->x + a_ptTip->x,a_ROI->y + a_ptTip->y);
+    cv::line(*a_imgToDrawOn,tipOnPic,tipOnPic+cv::Point(-20,20),COLOR_TIP,1);
+    cv::putText(*a_imgToDrawOn,"T",tipOnPic+cv::Point(-24,30),cv::FONT_HERSHEY_SIMPLEX,0.5,COLOR_TIP);
+    cv::circle(*a_imgToDrawOn,tipOnPic,3,COLOR_TIP,-1,0);
     cv::circle(*a_imgToDrawOn,cv::Point(a_ROI->x + a_ptTip->x,a_ROI->y + a_ptTip->y),3,COLOR_TIP,-1,0);
 }
 
