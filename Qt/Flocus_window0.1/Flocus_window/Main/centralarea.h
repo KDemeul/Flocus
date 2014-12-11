@@ -26,6 +26,7 @@ class CentralArea : public QWidget
 public:
     CentralArea(QWidget *parent = 0);
     AlgorithmArea* getAlgorithmArea();
+    DataVisualizer* getDataVisualizer();
     void setRansacParameters(int a_posX, int a_poxY, int a_width, int a_height, bool a_isEnable, int a_ransacRate);
     void setTipParameters(ORIENTATION_NEEDLE a_dir, bool a_isEnable);
     void setKalmanParameters(bool a_isEnable);

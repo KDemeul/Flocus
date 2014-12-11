@@ -13,7 +13,7 @@
 #include <QComboBox>
 #include <QAction>
 
-#include "Main/matrixdialog.h"
+//#include "Main/matrixframe.h"
 
 class AlgorithmArea : public QWidget
 {
@@ -54,6 +54,7 @@ private:
     // Kalman
     QGroupBox *groupKalman;
     QPushButton *mButtonDisplayMatrix;
+//    MatrixFrame *mMatrixFrame;
 
 };
 

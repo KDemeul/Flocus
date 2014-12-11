@@ -124,6 +124,11 @@ AlgorithmArea* CentralArea::getAlgorithmArea()
     return mAlgorithmArea;
 }
 
+DataVisualizer* CentralArea::getDataVisualizer()
+{
+    return dataVisualizer;
+}
+
 void CentralArea::saveImage(std::string a_filename)
 {
     DEBUG_MSG("Saving image under the name " << a_filename);

@@ -40,6 +40,9 @@ public:
     cv::Mat* getImgCV();
     std::vector<int> getMovieInfo();
 
+signals:
+    void matrixKalmanUpdated(std::vector<cv::Mat> matrix);
+
 public slots:
     void fastPreviousFrame();
     void fastNextFrame();

@@ -1,9 +1,9 @@
-#include "matrixdialog.h"
+#include "matrixframe.h"
 
-MatrixDialog::MatrixDialog(QWidget *parent) :
-    QDialog(parent)
+MatrixFrame::MatrixFrame(QWidget *parent)
 {
     QVBoxLayout *layoutMsg = new QVBoxLayout;
+    layoutMsg->setAlignment(Qt::AlignCenter);
 
     QString title("Kalman Matrix");
     setWindowTitle(title);
@@ -15,30 +15,32 @@ MatrixDialog::MatrixDialog(QWidget *parent) :
 
     mMatrixWidget = new QWidget;
     layoutMsg->addWidget(mMatrixWidget);
+    mMatrixLayout = new QGridLayout();
+    mMatrixWidget->setLayout(mMatrixLayout);
+
+    // Add each label to its correct pos
+    m_A = new QLabel();
 
     QPushButton *buttonOK = new QPushButton("OK");
     buttonOK->setMaximumWidth(50);
     layoutMsg->addWidget(buttonOK);
 
-    connect(buttonOK,SIGNAL(clicked()),this,SLOT(accept()));
+    connect(buttonOK,SIGNAL(clicked()),this,SLOT(close()));
 
     this->setLayout(layoutMsg);
 }
 
-void MatrixDialog::setMatrix(std::vector<cv::Mat> a_matrix)
+void MatrixFrame::setMatrix(std::vector<cv::Mat> a_matrix)
 {
-    QHBoxLayout *layout = new QHBoxLayout();
-    mMatrixWidget->setLayout(layout);
-
-    // Add vertical line
-    QFrame *line = new QFrame();    // <<< this does the trick
-    line->setLineWidth(2);
-    line->setMidLineWidth(1);
-    line->setFrameShape(QFrame::VLine);
-    line->setFrameShadow(QFrame::Raised);
-    layout->addWidget(line);
-
+    int currentRow = 0;
+    int currentCol = 0;
     for(std::vector<cv::Mat>::iterator it = a_matrix.begin(); it != a_matrix.end(); it++){
+//        // Delete previous matrix
+//        if(mMatrixLayout->itemAtPosition(currentRow,currentCol) != NULL){
+//            QWidget* widget = mMatrixLayout->itemAtPosition(currentRow,currentCol)->widget();
+//            delete widget;
+//        }
+
         cv::Mat currentMat = *it;
         QWidget *matrix = new QWidget;
         QGridLayout *matrixLayout = new QGridLayout;
@@ -56,14 +58,16 @@ void MatrixDialog::setMatrix(std::vector<cv::Mat> a_matrix)
             }
         }
 
-        layout->addWidget(matrix);
-
-        // Add vertical line
-        QFrame *line = new QFrame();    // <<< this does the trick
-        line->setLineWidth(2);
-        line->setMidLineWidth(1);
-        line->setFrameShape(QFrame::VLine);
-        line->setFrameShadow(QFrame::Raised);
-        layout->addWidget(line);
+        mMatrixLayout->addWidget(matrix,currentRow,currentCol);
+        currentCol = currentCol > 2 ? 0 : currentCol+1;
+        currentRow = currentCol == 0 ? currentRow+1:  currentRow;
     }
 }
+
+//        // Add vertical line
+//        QFrame *line = new QFrame();
+//        line->setLineWidth(2);
+//        line->setMidLineWidth(1);
+//        line->setFrameShape(QFrame::VLine);
+//        line->setFrameShadow(QFrame::Raised);
+//        layout->addWidget(line);

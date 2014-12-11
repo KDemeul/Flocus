@@ -231,6 +231,7 @@ void DataVisualizer::onFrame()
     cv::Mat u = (cv::Mat_<double>(1,1) << 2);
     cv::Mat z = (cv::Mat_<double>(2,1) << mTipVisualizer->getTip()->x, mTipVisualizer->getTip()->y);
     mKalmanVisualizer->applyAndDraw(&mImgCV,mROI,&u,&z,mIndexCurrentFrame);
+    emit matrixKalmanUpdated(mKalmanVisualizer->getMatrix());
     // Display results
     addDrawing();
 }

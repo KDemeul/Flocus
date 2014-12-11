@@ -99,6 +99,11 @@ AlgorithmArea::AlgorithmArea(QWidget *parent) :
     groupKalman->setLayout(kalmanLayout);
     connect(groupKalman,SIGNAL(toggled(bool)),this,SLOT(communicateToVisualizer()));
 
+
+//    mMatrixFrame = new MatrixFrame(this);
+//    CentralArea* parentCentralArea = (CentralArea*)parent;
+//    connect(parentCentralArea->getDataVisualizer(),SIGNAL(matrixKalmanUpdated(std::vector<cv::Mat>)),mMatrixFrame,SLOT(setMatrix(std::vector<cv::Mat>)));
+
     // End group : KALMAN
 
     mMainLayout->addWidget(mMainLabel);
@@ -142,11 +147,9 @@ void AlgorithmArea::displayKalmanMatrix()
 {
      CentralArea *parent = (CentralArea*)this->parentWidget();
 
-     std::vector<cv::Mat> matrix = parent->getKalmanMatrix();
-
-     MatrixDialog *matrixDialog = new MatrixDialog(this);
-     matrixDialog->setMatrix(matrix);
-     matrixDialog->exec();
+//     std::vector<cv::Mat> matrix = parent->getKalmanMatrix();
+//     mMatrixFrame->setMatrix(matrix);
+//     mMatrixFrame->show();
 }
 
 void AlgorithmArea::communicateToVisualizer()
