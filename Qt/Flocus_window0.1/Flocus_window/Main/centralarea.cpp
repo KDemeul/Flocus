@@ -110,6 +110,15 @@ void CentralArea::setTipParameters(ORIENTATION_NEEDLE a_dir, bool a_isEnable)
     dataVisualizer->setTipParameters(a_dir,a_isEnable);
 }
 
+void CentralArea::setKalmanParameters(bool a_isEnable){
+    dataVisualizer->setKalmanParameters(a_isEnable);
+}
+
+std::vector<cv::Mat> CentralArea::getKalmanMatrix()
+{
+    return dataVisualizer->getKalmanMatrix();
+}
+
 AlgorithmArea* CentralArea::getAlgorithmArea()
 {
     return mAlgorithmArea;

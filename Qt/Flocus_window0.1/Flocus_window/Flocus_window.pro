@@ -29,7 +29,8 @@ SOURCES += \
     ../../../pugixml/src/pugixml.cpp \
     Main/extractdialog.cpp \
     Visualizers/kalmanvisualizer.cpp \
-    Algorithm/algorithmkalman.cpp
+    Algorithm/algorithmkalman.cpp \
+    Main/matrixdialog.cpp
 
 HEADERS  += \
     Algorithm/algorithmransac.h \
@@ -47,7 +48,8 @@ HEADERS  += \
     ../../../pugixml/src/pugixml.hpp \
     Main/extractdialog.h \
     Visualizers/kalmanvisualizer.h \
-    Algorithm/algorithmkalman.h
+    Algorithm/algorithmkalman.h \
+    Main/matrixdialog.h
 
 #INCLUDEPATH += /usr/include/vtk-5.8
 

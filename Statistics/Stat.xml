@@ -7033,4 +7033,1394 @@
 	<TIP Ransac_on_frame="false" tip_position.x="492" tip_position.y="36" time="15.028" index_frame="149" />
 	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="356.777" index_frame="150" />
 	<TIP Ransac_on_frame="false" tip_position.x="491" tip_position.y="36" time="17.018" index_frame="150" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="344.785" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="170" tip_position.y="33" time="15.028" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="178" tip_position.y="33" time="14.107" index_frame="1" />
+	<TIP Ransac_on_frame="false" tip_position.x="182" tip_position.y="33" time="14.823" index_frame="2" />
+	<TIP Ransac_on_frame="false" tip_position.x="190" tip_position.y="33" time="14.483" index_frame="3" />
+	<TIP Ransac_on_frame="false" tip_position.x="198" tip_position.y="34" time="14.815" index_frame="4" />
+	<TIP Ransac_on_frame="false" tip_position.x="208" tip_position.y="34" time="14.683" index_frame="5" />
+	<TIP Ransac_on_frame="false" tip_position.x="211" tip_position.y="34" time="14.994" index_frame="6" />
+	<TIP Ransac_on_frame="false" tip_position.x="213" tip_position.y="34" time="14.932" index_frame="7" />
+	<TIP Ransac_on_frame="false" tip_position.x="216" tip_position.y="34" time="15.09" index_frame="8" />
+	<TIP Ransac_on_frame="false" tip_position.x="221" tip_position.y="34" time="15.339" index_frame="9" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="341.93" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="222" tip_position.y="34" time="15.129" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="224" tip_position.y="34" time="15.362" index_frame="11" />
+	<TIP Ransac_on_frame="false" tip_position.x="232" tip_position.y="33" time="15.477" index_frame="12" />
+	<TIP Ransac_on_frame="false" tip_position.x="236" tip_position.y="34" time="15.317" index_frame="13" />
+	<TIP Ransac_on_frame="false" tip_position.x="237" tip_position.y="34" time="15.053" index_frame="14" />
+	<TIP Ransac_on_frame="false" tip_position.x="235" tip_position.y="32" time="15.792" index_frame="15" />
+	<TIP Ransac_on_frame="false" tip_position.x="245" tip_position.y="35" time="15.839" index_frame="16" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="15.37" index_frame="17" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="15.756" index_frame="18" />
+	<TIP Ransac_on_frame="false" tip_position.x="256" tip_position.y="33" time="15.45" index_frame="19" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.715" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="260" tip_position.y="34" time="15.007" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="264" tip_position.y="31" time="14.974" index_frame="21" />
+	<TIP Ransac_on_frame="false" tip_position.x="266" tip_position.y="33" time="14.714" index_frame="22" />
+	<TIP Ransac_on_frame="false" tip_position.x="270" tip_position.y="32" time="14.418" index_frame="23" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.929" index_frame="24" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.829" index_frame="25" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.746" index_frame="26" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="14.74" index_frame="27" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="14.604" index_frame="28" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.582" index_frame="29" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="355.79" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="15.598" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="14.636" index_frame="31" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="32" time="15.002" index_frame="32" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.885" index_frame="33" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.189" index_frame="34" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="32" time="15.552" index_frame="35" />
+	<TIP Ransac_on_frame="false" tip_position.x="300" tip_position.y="32" time="15.313" index_frame="36" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="32" time="15.412" index_frame="37" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="32" time="15.407" index_frame="38" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="32" time="15.352" index_frame="39" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="348.169" index_frame="40" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="32" time="15.351" index_frame="40" />
+	<TIP Ransac_on_frame="false" tip_position.x="304" tip_position.y="32" time="15.242" index_frame="41" />
+	<TIP Ransac_on_frame="false" tip_position.x="300" tip_position.y="32" time="15.544" index_frame="42" />
+	<TIP Ransac_on_frame="false" tip_position.x="298" tip_position.y="32" time="15.231" index_frame="43" />
+	<TIP Ransac_on_frame="false" tip_position.x="303" tip_position.y="32" time="15.077" index_frame="44" />
+	<TIP Ransac_on_frame="false" tip_position.x="308" tip_position.y="32" time="14.94" index_frame="45" />
+	<TIP Ransac_on_frame="false" tip_position.x="310" tip_position.y="32" time="15.121" index_frame="46" />
+	<TIP Ransac_on_frame="false" tip_position.x="314" tip_position.y="33" time="15.26" index_frame="47" />
+	<TIP Ransac_on_frame="false" tip_position.x="313" tip_position.y="33" time="15.248" index_frame="48" />
+	<TIP Ransac_on_frame="false" tip_position.x="316" tip_position.y="33" time="15.161" index_frame="49" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="348.066" index_frame="50" />
+	<TIP Ransac_on_frame="false" tip_position.x="316" tip_position.y="33" time="15.696" index_frame="50" />
+	<TIP Ransac_on_frame="false" tip_position.x="318" tip_position.y="33" time="16.214" index_frame="51" />
+	<TIP Ransac_on_frame="false" tip_position.x="318" tip_position.y="33" time="15.514" index_frame="52" />
+	<TIP Ransac_on_frame="false" tip_position.x="319" tip_position.y="33" time="15.591" index_frame="53" />
+	<TIP Ransac_on_frame="false" tip_position.x="317" tip_position.y="33" time="15.762" index_frame="54" />
+	<TIP Ransac_on_frame="false" tip_position.x="319" tip_position.y="33" time="15.429" index_frame="55" />
+	<TIP Ransac_on_frame="false" tip_position.x="322" tip_position.y="33" time="15.605" index_frame="56" />
+	<TIP Ransac_on_frame="false" tip_position.x="330" tip_position.y="33" time="15.417" index_frame="57" />
+	<TIP Ransac_on_frame="false" tip_position.x="334" tip_position.y="33" time="15.533" index_frame="58" />
+	<TIP Ransac_on_frame="false" tip_position.x="335" tip_position.y="33" time="15.637" index_frame="59" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="352.532" index_frame="60" />
+	<TIP Ransac_on_frame="false" tip_position.x="344" tip_position.y="33" time="15.337" index_frame="60" />
+	<TIP Ransac_on_frame="false" tip_position.x="346" tip_position.y="34" time="15.474" index_frame="61" />
+	<TIP Ransac_on_frame="false" tip_position.x="350" tip_position.y="34" time="15.044" index_frame="62" />
+	<TIP Ransac_on_frame="false" tip_position.x="347" tip_position.y="34" time="14.801" index_frame="63" />
+	<TIP Ransac_on_frame="false" tip_position.x="359" tip_position.y="34" time="15.344" index_frame="64" />
+	<TIP Ransac_on_frame="false" tip_position.x="357" tip_position.y="34" time="15.111" index_frame="65" />
+	<TIP Ransac_on_frame="false" tip_position.x="357" tip_position.y="34" time="15.207" index_frame="66" />
+	<TIP Ransac_on_frame="false" tip_position.x="359" tip_position.y="34" time="15.416" index_frame="67" />
+	<TIP Ransac_on_frame="false" tip_position.x="364" tip_position.y="34" time="15.365" index_frame="68" />
+	<TIP Ransac_on_frame="false" tip_position.x="372" tip_position.y="34" time="15.163" index_frame="69" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="354.096" index_frame="70" />
+	<TIP Ransac_on_frame="false" tip_position.x="376" tip_position.y="32" time="15.599" index_frame="70" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="339.794" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="181" tip_position.y="37" time="14.746" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.987" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="177" tip_position.y="35" time="15.082" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="340.022" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="182" tip_position.y="38" time="15.037" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="339.703" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="177" tip_position.y="35" time="14.273" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="340.182" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="179" tip_position.y="36" time="14.479" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="185" tip_position.y="36" time="14.846" index_frame="1" />
+	<TIP Ransac_on_frame="false" tip_position.x="188" tip_position.y="36" time="15.803" index_frame="2" />
+	<TIP Ransac_on_frame="false" tip_position.x="197" tip_position.y="36" time="15.749" index_frame="3" />
+	<TIP Ransac_on_frame="false" tip_position.x="202" tip_position.y="36" time="15.627" index_frame="4" />
+	<TIP Ransac_on_frame="false" tip_position.x="210" tip_position.y="36" time="15.933" index_frame="5" />
+	<TIP Ransac_on_frame="false" tip_position.x="214" tip_position.y="36" time="16.263" index_frame="6" />
+	<TIP Ransac_on_frame="false" tip_position.x="215" tip_position.y="36" time="16.006" index_frame="7" />
+	<TIP Ransac_on_frame="false" tip_position.x="219" tip_position.y="36" time="16.473" index_frame="8" />
+	<TIP Ransac_on_frame="false" tip_position.x="223" tip_position.y="35" time="16.712" index_frame="9" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.685" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="223" tip_position.y="35" time="16.007" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="224" tip_position.y="34" time="15.868" index_frame="11" />
+	<TIP Ransac_on_frame="false" tip_position.x="232" tip_position.y="33" time="15.706" index_frame="12" />
+	<TIP Ransac_on_frame="false" tip_position.x="236" tip_position.y="34" time="15.659" index_frame="13" />
+	<TIP Ransac_on_frame="false" tip_position.x="237" tip_position.y="34" time="15.44" index_frame="14" />
+	<TIP Ransac_on_frame="false" tip_position.x="235" tip_position.y="32" time="16.052" index_frame="15" />
+	<TIP Ransac_on_frame="false" tip_position.x="245" tip_position.y="35" time="16.222" index_frame="16" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="15.589" index_frame="17" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="16.037" index_frame="18" />
+	<TIP Ransac_on_frame="false" tip_position.x="256" tip_position.y="33" time="15.71" index_frame="19" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="345.798" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="260" tip_position.y="34" time="15.186" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="264" tip_position.y="31" time="15.318" index_frame="21" />
+	<TIP Ransac_on_frame="false" tip_position.x="266" tip_position.y="33" time="15.369" index_frame="22" />
+	<TIP Ransac_on_frame="false" tip_position.x="270" tip_position.y="32" time="14.946" index_frame="23" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.481" index_frame="24" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.536" index_frame="25" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.321" index_frame="26" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="15.268" index_frame="27" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="15.12" index_frame="28" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.134" index_frame="29" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="351.293" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="14.787" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="14.608" index_frame="31" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="32" time="14.673" index_frame="32" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.547" index_frame="33" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.917" index_frame="34" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="32" time="15.22" index_frame="35" />
+	<TIP Ransac_on_frame="false" tip_position.x="300" tip_position.y="32" time="15.066" index_frame="36" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="32" time="15.018" index_frame="37" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="32" time="15.105" index_frame="38" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="32" time="14.966" index_frame="39" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="349.677" index_frame="40" />
+	<TIP Ransac_on_frame="false" tip_position.x="298" tip_position.y="33" time="15.975" index_frame="40" />
+	<TIP Ransac_on_frame="false" tip_position.x="300" tip_position.y="33" time="16.006" index_frame="41" />
+	<TIP Ransac_on_frame="false" tip_position.x="298" tip_position.y="33" time="16.327" index_frame="42" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="16.055" index_frame="43" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="33" time="15.755" index_frame="44" />
+	<TIP Ransac_on_frame="false" tip_position.x="306" tip_position.y="33" time="15.884" index_frame="45" />
+	<TIP Ransac_on_frame="false" tip_position.x="309" tip_position.y="33" time="15.911" index_frame="46" />
+	<TIP Ransac_on_frame="false" tip_position.x="314" tip_position.y="33" time="16.211" index_frame="47" />
+	<TIP Ransac_on_frame="false" tip_position.x="313" tip_position.y="33" time="16.014" index_frame="48" />
+	<TIP Ransac_on_frame="false" tip_position.x="316" tip_position.y="33" time="16.028" index_frame="49" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="354.261" index_frame="50" />
+	<TIP Ransac_on_frame="false" tip_position.x="316" tip_position.y="33" time="16.028" index_frame="50" />
+	<TIP Ransac_on_frame="false" tip_position.x="318" tip_position.y="33" time="16.241" index_frame="51" />
+	<TIP Ransac_on_frame="false" tip_position.x="318" tip_position.y="33" time="15.791" index_frame="52" />
+	<TIP Ransac_on_frame="false" tip_position.x="319" tip_position.y="33" time="15.925" index_frame="53" />
+	<TIP Ransac_on_frame="false" tip_position.x="317" tip_position.y="33" time="15.909" index_frame="54" />
+	<TIP Ransac_on_frame="false" tip_position.x="319" tip_position.y="33" time="15.726" index_frame="55" />
+	<TIP Ransac_on_frame="false" tip_position.x="322" tip_position.y="33" time="15.931" index_frame="56" />
+	<TIP Ransac_on_frame="false" tip_position.x="330" tip_position.y="33" time="15.573" index_frame="57" />
+	<TIP Ransac_on_frame="false" tip_position.x="334" tip_position.y="33" time="15.774" index_frame="58" />
+	<TIP Ransac_on_frame="false" tip_position.x="335" tip_position.y="33" time="15.834" index_frame="59" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="357.977" index_frame="60" />
+	<TIP Ransac_on_frame="false" tip_position.x="344" tip_position.y="32" time="16.628" index_frame="60" />
+	<TIP Ransac_on_frame="false" tip_position.x="347" tip_position.y="33" time="16.348" index_frame="61" />
+	<TIP Ransac_on_frame="false" tip_position.x="352" tip_position.y="33" time="15.92" index_frame="62" />
+	<TIP Ransac_on_frame="false" tip_position.x="354" tip_position.y="33" time="15.612" index_frame="63" />
+	<TIP Ransac_on_frame="false" tip_position.x="361" tip_position.y="33" time="16.211" index_frame="64" />
+	<TIP Ransac_on_frame="false" tip_position.x="360" tip_position.y="33" time="15.885" index_frame="65" />
+	<TIP Ransac_on_frame="false" tip_position.x="357" tip_position.y="33" time="16.244" index_frame="66" />
+	<TIP Ransac_on_frame="false" tip_position.x="362" tip_position.y="33" time="16.553" index_frame="67" />
+	<TIP Ransac_on_frame="false" tip_position.x="365" tip_position.y="33" time="16.425" index_frame="68" />
+	<TIP Ransac_on_frame="false" tip_position.x="374" tip_position.y="33" time="16.208" index_frame="69" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="360.204" index_frame="70" />
+	<TIP Ransac_on_frame="false" tip_position.x="376" tip_position.y="32" time="16.509" index_frame="70" />
+	<TIP Ransac_on_frame="false" tip_position.x="380" tip_position.y="32" time="16.355" index_frame="71" />
+	<TIP Ransac_on_frame="false" tip_position.x="381" tip_position.y="32" time="16.112" index_frame="72" />
+	<TIP Ransac_on_frame="false" tip_position.x="381" tip_position.y="32" time="16.197" index_frame="73" />
+	<TIP Ransac_on_frame="false" tip_position.x="384" tip_position.y="33" time="15.904" index_frame="74" />
+	<TIP Ransac_on_frame="false" tip_position.x="428" tip_position.y="34" time="17.413" index_frame="75" />
+	<TIP Ransac_on_frame="false" tip_position.x="428" tip_position.y="34" time="17.519" index_frame="76" />
+	<TIP Ransac_on_frame="false" tip_position.x="427" tip_position.y="34" time="17.225" index_frame="77" />
+	<TIP Ransac_on_frame="false" tip_position.x="427" tip_position.y="34" time="17.116" index_frame="78" />
+	<TIP Ransac_on_frame="false" tip_position.x="427" tip_position.y="34" time="17.378" index_frame="79" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="365.827" index_frame="80" />
+	<TIP Ransac_on_frame="false" tip_position.x="427" tip_position.y="34" time="16.114" index_frame="80" />
+	<TIP Ransac_on_frame="false" tip_position.x="426" tip_position.y="34" time="15.597" index_frame="81" />
+	<TIP Ransac_on_frame="false" tip_position.x="425" tip_position.y="34" time="15.646" index_frame="82" />
+	<TIP Ransac_on_frame="false" tip_position.x="419" tip_position.y="34" time="15.66" index_frame="83" />
+	<TIP Ransac_on_frame="false" tip_position.x="422" tip_position.y="34" time="15.737" index_frame="84" />
+	<TIP Ransac_on_frame="false" tip_position.x="428" tip_position.y="36" time="15.288" index_frame="85" />
+	<TIP Ransac_on_frame="false" tip_position.x="431" tip_position.y="35" time="15.786" index_frame="86" />
+	<TIP Ransac_on_frame="false" tip_position.x="433" tip_position.y="35" time="15.875" index_frame="87" />
+	<TIP Ransac_on_frame="false" tip_position.x="430" tip_position.y="35" time="15.524" index_frame="88" />
+	<TIP Ransac_on_frame="false" tip_position.x="427" tip_position.y="36" time="15.504" index_frame="89" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="361.447" index_frame="90" />
+	<TIP Ransac_on_frame="false" tip_position.x="425" tip_position.y="32" time="17.424" index_frame="90" />
+	<TIP Ransac_on_frame="false" tip_position.x="425" tip_position.y="31" time="17.9" index_frame="91" />
+	<TIP Ransac_on_frame="false" tip_position.x="427" tip_position.y="32" time="17.501" index_frame="92" />
+	<TIP Ransac_on_frame="false" tip_position.x="426" tip_position.y="32" time="17.426" index_frame="93" />
+	<TIP Ransac_on_frame="false" tip_position.x="431" tip_position.y="30" time="17.361" index_frame="94" />
+	<TIP Ransac_on_frame="false" tip_position.x="433" tip_position.y="32" time="17.698" index_frame="95" />
+	<TIP Ransac_on_frame="false" tip_position.x="435" tip_position.y="31" time="17.277" index_frame="96" />
+	<TIP Ransac_on_frame="false" tip_position.x="441" tip_position.y="30" time="16.917" index_frame="97" />
+	<TIP Ransac_on_frame="false" tip_position.x="437" tip_position.y="31" time="17.155" index_frame="98" />
+	<TIP Ransac_on_frame="false" tip_position.x="436" tip_position.y="29" time="16.86" index_frame="99" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="356.035" index_frame="100" />
+	<TIP Ransac_on_frame="false" tip_position.x="441" tip_position.y="33" time="15.724" index_frame="100" />
+	<TIP Ransac_on_frame="false" tip_position.x="441" tip_position.y="32" time="15.929" index_frame="101" />
+	<TIP Ransac_on_frame="false" tip_position.x="442" tip_position.y="31" time="15.893" index_frame="102" />
+	<TIP Ransac_on_frame="false" tip_position.x="447" tip_position.y="32" time="15.472" index_frame="103" />
+	<TIP Ransac_on_frame="false" tip_position.x="455" tip_position.y="33" time="15.99" index_frame="104" />
+	<TIP Ransac_on_frame="false" tip_position.x="457" tip_position.y="31" time="16.402" index_frame="105" />
+	<TIP Ransac_on_frame="false" tip_position.x="457" tip_position.y="33" time="16.25" index_frame="106" />
+	<TIP Ransac_on_frame="false" tip_position.x="459" tip_position.y="33" time="16.293" index_frame="107" />
+	<TIP Ransac_on_frame="false" tip_position.x="461" tip_position.y="34" time="15.473" index_frame="108" />
+	<TIP Ransac_on_frame="false" tip_position.x="462" tip_position.y="31" time="15.51" index_frame="109" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="357.395" index_frame="110" />
+	<TIP Ransac_on_frame="false" tip_position.x="462" tip_position.y="36" time="16.17" index_frame="110" />
+	<TIP Ransac_on_frame="false" tip_position.x="471" tip_position.y="35" time="16.46" index_frame="111" />
+	<TIP Ransac_on_frame="false" tip_position.x="472" tip_position.y="33" time="16.562" index_frame="112" />
+	<TIP Ransac_on_frame="false" tip_position.x="476" tip_position.y="36" time="16.768" index_frame="113" />
+	<TIP Ransac_on_frame="false" tip_position.x="479" tip_position.y="34" time="16.42" index_frame="114" />
+	<TIP Ransac_on_frame="false" tip_position.x="476" tip_position.y="36" time="16.534" index_frame="115" />
+	<TIP Ransac_on_frame="false" tip_position.x="481" tip_position.y="36" time="16.405" index_frame="116" />
+	<TIP Ransac_on_frame="false" tip_position.x="482" tip_position.y="35" time="17.047" index_frame="117" />
+	<TIP Ransac_on_frame="false" tip_position.x="482" tip_position.y="35" time="15.91" index_frame="118" />
+	<TIP Ransac_on_frame="false" tip_position.x="486" tip_position.y="35" time="16.474" index_frame="119" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="367.383" index_frame="120" />
+	<TIP Ransac_on_frame="false" tip_position.x="491" tip_position.y="36" time="16.499" index_frame="120" />
+	<TIP Ransac_on_frame="false" tip_position.x="490" tip_position.y="35" time="15.596" index_frame="121" />
+	<TIP Ransac_on_frame="false" tip_position.x="493" tip_position.y="38" time="16.359" index_frame="122" />
+	<TIP Ransac_on_frame="false" tip_position.x="495" tip_position.y="37" time="16.289" index_frame="123" />
+	<TIP Ransac_on_frame="false" tip_position.x="437" tip_position.y="33" time="15.465" index_frame="124" />
+	<TIP Ransac_on_frame="false" tip_position.x="444" tip_position.y="34" time="15.298" index_frame="125" />
+	<TIP Ransac_on_frame="false" tip_position.x="432" tip_position.y="33" time="15.288" index_frame="126" />
+	<TIP Ransac_on_frame="false" tip_position.x="496" tip_position.y="37" time="15.778" index_frame="127" />
+	<TIP Ransac_on_frame="false" tip_position.x="427" tip_position.y="33" time="14.973" index_frame="128" />
+	<TIP Ransac_on_frame="false" tip_position.x="492" tip_position.y="36" time="15.897" index_frame="129" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="361.034" index_frame="130" />
+	<TIP Ransac_on_frame="false" tip_position.x="492" tip_position.y="36" time="15.862" index_frame="130" />
+	<TIP Ransac_on_frame="false" tip_position.x="489" tip_position.y="34" time="15.911" index_frame="131" />
+	<TIP Ransac_on_frame="false" tip_position.x="489" tip_position.y="34" time="14.36" index_frame="132" />
+	<TIP Ransac_on_frame="false" tip_position.x="487" tip_position.y="34" time="15.78" index_frame="133" />
+	<TIP Ransac_on_frame="false" tip_position.x="487" tip_position.y="35" time="15.621" index_frame="134" />
+	<TIP Ransac_on_frame="false" tip_position.x="486" tip_position.y="34" time="16.326" index_frame="135" />
+	<TIP Ransac_on_frame="false" tip_position.x="487" tip_position.y="36" time="16.028" index_frame="136" />
+	<TIP Ransac_on_frame="false" tip_position.x="488" tip_position.y="37" time="15.646" index_frame="137" />
+	<TIP Ransac_on_frame="false" tip_position.x="487" tip_position.y="34" time="15.947" index_frame="138" />
+	<TIP Ransac_on_frame="false" tip_position.x="487" tip_position.y="34" time="15.958" index_frame="139" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="371.879" index_frame="140" />
+	<TIP Ransac_on_frame="false" tip_position.x="487" tip_position.y="37" time="16.84" index_frame="140" />
+	<TIP Ransac_on_frame="false" tip_position.x="487" tip_position.y="37" time="16.658" index_frame="141" />
+	<TIP Ransac_on_frame="false" tip_position.x="486" tip_position.y="36" time="16.587" index_frame="142" />
+	<TIP Ransac_on_frame="false" tip_position.x="487" tip_position.y="37" time="16.481" index_frame="143" />
+	<TIP Ransac_on_frame="false" tip_position.x="488" tip_position.y="37" time="16.135" index_frame="144" />
+	<TIP Ransac_on_frame="false" tip_position.x="489" tip_position.y="37" time="15.855" index_frame="145" />
+	<TIP Ransac_on_frame="false" tip_position.x="490" tip_position.y="36" time="15.989" index_frame="146" />
+	<TIP Ransac_on_frame="false" tip_position.x="490" tip_position.y="36" time="14.687" index_frame="147" />
+	<TIP Ransac_on_frame="false" tip_position.x="492" tip_position.y="36" time="16.247" index_frame="148" />
+	<TIP Ransac_on_frame="false" tip_position.x="492" tip_position.y="36" time="15.675" index_frame="149" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="362.587" index_frame="150" />
+	<TIP Ransac_on_frame="false" tip_position.x="491" tip_position.y="36" time="17.625" index_frame="150" />
+	<TIP Ransac_on_frame="false" tip_position.x="492" tip_position.y="36" time="17.817" index_frame="151" />
+	<TIP Ransac_on_frame="false" tip_position.x="491" tip_position.y="36" time="17.689" index_frame="152" />
+	<TIP Ransac_on_frame="false" tip_position.x="491" tip_position.y="35" time="17.84" index_frame="153" />
+	<TIP Ransac_on_frame="false" tip_position.x="490" tip_position.y="35" time="17.671" index_frame="154" />
+	<TIP Ransac_on_frame="false" tip_position.x="488" tip_position.y="35" time="18.337" index_frame="155" />
+	<TIP Ransac_on_frame="false" tip_position.x="489" tip_position.y="35" time="19.529" index_frame="156" />
+	<TIP Ransac_on_frame="false" tip_position.x="490" tip_position.y="35" time="18.082" index_frame="157" />
+	<TIP Ransac_on_frame="false" tip_position.x="490" tip_position.y="36" time="17.916" index_frame="158" />
+	<TIP Ransac_on_frame="false" tip_position.x="489" tip_position.y="35" time="17.757" index_frame="159" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="340.27" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="182" tip_position.y="38" time="14.768" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="342.513" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="177" tip_position.y="35" time="14.843" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.031" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="170" tip_position.y="33" time="14.045" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.332" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="177" tip_position.y="35" time="14.456" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="342.258" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="182" tip_position.y="38" time="15.274" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="342.234" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="174" tip_position.y="34" time="14.578" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="345.496" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="177" tip_position.y="35" time="14.942" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.566" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="177" tip_position.y="35" time="14.32" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.416" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="179" tip_position.y="36" time="14.627" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.398" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="177" tip_position.y="35" time="14.419" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.289" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="177" tip_position.y="35" time="14.498" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.677" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="174" tip_position.y="34" time="14.21" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.318" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="174" tip_position.y="34" time="14.418" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.215" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="182" tip_position.y="38" time="14.984" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.572" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="183" tip_position.y="39" time="15.205" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.338" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="183" tip_position.y="39" time="15.281" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.825" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="181" tip_position.y="37" time="14.879" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="186" tip_position.y="37" time="15.67" index_frame="1" />
+	<TIP Ransac_on_frame="false" tip_position.x="189" tip_position.y="37" time="16.247" index_frame="2" />
+	<TIP Ransac_on_frame="false" tip_position.x="199" tip_position.y="37" time="15.976" index_frame="3" />
+	<TIP Ransac_on_frame="false" tip_position.x="204" tip_position.y="37" time="16.103" index_frame="4" />
+	<TIP Ransac_on_frame="false" tip_position.x="210" tip_position.y="36" time="16.344" index_frame="5" />
+	<TIP Ransac_on_frame="false" tip_position.x="214" tip_position.y="36" time="16.84" index_frame="6" />
+	<TIP Ransac_on_frame="false" tip_position.x="216" tip_position.y="37" time="16.472" index_frame="7" />
+	<TIP Ransac_on_frame="false" tip_position.x="220" tip_position.y="37" time="17.218" index_frame="8" />
+	<TIP Ransac_on_frame="false" tip_position.x="224" tip_position.y="37" time="17.11" index_frame="9" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="344.168" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="222" tip_position.y="34" time="15.261" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="224" tip_position.y="34" time="15.156" index_frame="11" />
+	<TIP Ransac_on_frame="false" tip_position.x="232" tip_position.y="33" time="15.4" index_frame="12" />
+	<TIP Ransac_on_frame="false" tip_position.x="236" tip_position.y="34" time="15.251" index_frame="13" />
+	<TIP Ransac_on_frame="false" tip_position.x="237" tip_position.y="34" time="14.553" index_frame="14" />
+	<TIP Ransac_on_frame="false" tip_position.x="235" tip_position.y="31" time="15.134" index_frame="15" />
+	<TIP Ransac_on_frame="false" tip_position.x="245" tip_position.y="35" time="15.131" index_frame="16" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="15.076" index_frame="17" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="15.526" index_frame="18" />
+	<TIP Ransac_on_frame="false" tip_position.x="256" tip_position.y="33" time="15.077" index_frame="19" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="343.275" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="260" tip_position.y="34" time="15.184" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="264" tip_position.y="32" time="15.108" index_frame="21" />
+	<TIP Ransac_on_frame="false" tip_position.x="266" tip_position.y="33" time="15.382" index_frame="22" />
+	<TIP Ransac_on_frame="false" tip_position.x="270" tip_position.y="32" time="14.718" index_frame="23" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.216" index_frame="24" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.15" index_frame="25" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.093" index_frame="26" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="15.05" index_frame="27" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="14.912" index_frame="28" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.614" index_frame="29" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.518" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="15.497" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="14.982" index_frame="31" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="32" time="15.398" index_frame="32" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.951" index_frame="33" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.38" index_frame="34" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="31" time="15.915" index_frame="35" />
+	<TIP Ransac_on_frame="false" tip_position.x="300" tip_position.y="32" time="15.856" index_frame="36" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="31" time="15.618" index_frame="37" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="32" time="15.541" index_frame="38" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="32" time="15.549" index_frame="39" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.478" index_frame="40" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="31" time="15.655" index_frame="40" />
+	<TIP Ransac_on_frame="false" tip_position.x="306" tip_position.y="31" time="15.165" index_frame="41" />
+	<TIP Ransac_on_frame="false" tip_position.x="303" tip_position.y="31" time="15.512" index_frame="42" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="31" time="15.179" index_frame="43" />
+	<TIP Ransac_on_frame="false" tip_position.x="305" tip_position.y="31" time="14.991" index_frame="44" />
+	<TIP Ransac_on_frame="false" tip_position.x="308" tip_position.y="31" time="14.893" index_frame="45" />
+	<TIP Ransac_on_frame="false" tip_position.x="317" tip_position.y="32" time="15.046" index_frame="46" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="343.342" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="177" tip_position.y="35" time="14.989" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="183" tip_position.y="35" time="14.847" index_frame="1" />
+	<TIP Ransac_on_frame="false" tip_position.x="187" tip_position.y="35" time="15.409" index_frame="2" />
+	<TIP Ransac_on_frame="false" tip_position.x="195" tip_position.y="35" time="15.182" index_frame="3" />
+	<TIP Ransac_on_frame="false" tip_position.x="200" tip_position.y="35" time="15.361" index_frame="4" />
+	<TIP Ransac_on_frame="false" tip_position.x="210" tip_position.y="36" time="15.785" index_frame="5" />
+	<TIP Ransac_on_frame="false" tip_position.x="214" tip_position.y="36" time="16.196" index_frame="6" />
+	<TIP Ransac_on_frame="false" tip_position.x="215" tip_position.y="36" time="16.034" index_frame="7" />
+	<TIP Ransac_on_frame="false" tip_position.x="219" tip_position.y="36" time="16.261" index_frame="8" />
+	<TIP Ransac_on_frame="false" tip_position.x="223" tip_position.y="35" time="16.517" index_frame="9" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="344.201" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="222" tip_position.y="34" time="15.679" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="224" tip_position.y="34" time="15.763" index_frame="11" />
+	<TIP Ransac_on_frame="false" tip_position.x="232" tip_position.y="33" time="15.758" index_frame="12" />
+	<TIP Ransac_on_frame="false" tip_position.x="236" tip_position.y="34" time="15.631" index_frame="13" />
+	<TIP Ransac_on_frame="false" tip_position.x="237" tip_position.y="34" time="15.378" index_frame="14" />
+	<TIP Ransac_on_frame="false" tip_position.x="235" tip_position.y="32" time="16.014" index_frame="15" />
+	<TIP Ransac_on_frame="false" tip_position.x="245" tip_position.y="35" time="15.959" index_frame="16" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="15.663" index_frame="17" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="16.031" index_frame="18" />
+	<TIP Ransac_on_frame="false" tip_position.x="256" tip_position.y="33" time="15.765" index_frame="19" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="344.57" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="260" tip_position.y="34" time="15.41" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="264" tip_position.y="31" time="15.035" index_frame="21" />
+	<TIP Ransac_on_frame="false" tip_position.x="266" tip_position.y="33" time="15.144" index_frame="22" />
+	<TIP Ransac_on_frame="false" tip_position.x="270" tip_position.y="32" time="14.504" index_frame="23" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="32" time="14.928" index_frame="24" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.786" index_frame="25" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.9" index_frame="26" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="14.816" index_frame="27" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="14.681" index_frame="28" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.87" index_frame="29" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="354.232" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="15.511" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="15.132" index_frame="31" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="33" time="15.145" index_frame="32" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.139" index_frame="33" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.555" index_frame="34" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="33" time="16.13" index_frame="35" />
+	<TIP Ransac_on_frame="false" tip_position.x="298" tip_position.y="33" time="15.523" index_frame="36" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="33" time="15.543" index_frame="37" />
+	<TIP Ransac_on_frame="false" tip_position.x="300" tip_position.y="33" time="15.625" index_frame="38" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="33" time="15.573" index_frame="39" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.831" index_frame="40" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="32" time="16.014" index_frame="40" />
+	<TIP Ransac_on_frame="false" tip_position.x="303" tip_position.y="32" time="15.256" index_frame="41" />
+	<TIP Ransac_on_frame="false" tip_position.x="300" tip_position.y="32" time="15.568" index_frame="42" />
+	<TIP Ransac_on_frame="false" tip_position.x="298" tip_position.y="32" time="15.404" index_frame="43" />
+	<TIP Ransac_on_frame="false" tip_position.x="303" tip_position.y="32" time="15.271" index_frame="44" />
+	<TIP Ransac_on_frame="false" tip_position.x="306" tip_position.y="33" time="15.181" index_frame="45" />
+	<TIP Ransac_on_frame="false" tip_position.x="309" tip_position.y="33" time="15.257" index_frame="46" />
+	<TIP Ransac_on_frame="false" tip_position.x="314" tip_position.y="33" time="15.341" index_frame="47" />
+	<TIP Ransac_on_frame="false" tip_position.x="313" tip_position.y="33" time="15.233" index_frame="48" />
+	<TIP Ransac_on_frame="false" tip_position.x="316" tip_position.y="33" time="15.174" index_frame="49" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.65" index_frame="50" />
+	<TIP Ransac_on_frame="false" tip_position.x="317" tip_position.y="32" time="15.331" index_frame="50" />
+	<TIP Ransac_on_frame="false" tip_position.x="321" tip_position.y="32" time="16.066" index_frame="51" />
+	<TIP Ransac_on_frame="false" tip_position.x="320" tip_position.y="32" time="15.531" index_frame="52" />
+	<TIP Ransac_on_frame="false" tip_position.x="320" tip_position.y="32" time="15.513" index_frame="53" />
+	<TIP Ransac_on_frame="false" tip_position.x="321" tip_position.y="32" time="15.668" index_frame="54" />
+	<TIP Ransac_on_frame="false" tip_position.x="326" tip_position.y="32" time="15.383" index_frame="55" />
+	<TIP Ransac_on_frame="false" tip_position.x="326" tip_position.y="32" time="15.373" index_frame="56" />
+	<TIP Ransac_on_frame="false" tip_position.x="330" tip_position.y="33" time="15.185" index_frame="57" />
+	<TIP Ransac_on_frame="false" tip_position.x="334" tip_position.y="33" time="15.425" index_frame="58" />
+	<TIP Ransac_on_frame="false" tip_position.x="335" tip_position.y="33" time="15.593" index_frame="59" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="349.848" index_frame="60" />
+	<TIP Ransac_on_frame="false" tip_position.x="342" tip_position.y="34" time="15.988" index_frame="60" />
+	<TIP Ransac_on_frame="false" tip_position.x="346" tip_position.y="34" time="16.13" index_frame="61" />
+	<TIP Ransac_on_frame="false" tip_position.x="350" tip_position.y="34" time="15.915" index_frame="62" />
+	<TIP Ransac_on_frame="false" tip_position.x="347" tip_position.y="34" time="15.534" index_frame="63" />
+	<TIP Ransac_on_frame="false" tip_position.x="359" tip_position.y="34" time="16.147" index_frame="64" />
+	<TIP Ransac_on_frame="false" tip_position.x="357" tip_position.y="34" time="15.77" index_frame="65" />
+	<TIP Ransac_on_frame="false" tip_position.x="357" tip_position.y="34" time="15.81" index_frame="66" />
+	<TIP Ransac_on_frame="false" tip_position.x="359" tip_position.y="34" time="16.25" index_frame="67" />
+	<TIP Ransac_on_frame="false" tip_position.x="364" tip_position.y="34" time="16.09" index_frame="68" />
+	<TIP Ransac_on_frame="false" tip_position.x="372" tip_position.y="35" time="15.767" index_frame="69" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="350.176" index_frame="70" />
+	<TIP Ransac_on_frame="false" tip_position.x="375" tip_position.y="33" time="15.695" index_frame="70" />
+	<TIP Ransac_on_frame="false" tip_position.x="379" tip_position.y="33" time="15.868" index_frame="71" />
+	<TIP Ransac_on_frame="false" tip_position.x="381" tip_position.y="33" time="15.81" index_frame="72" />
+	<TIP Ransac_on_frame="false" tip_position.x="375" tip_position.y="33" time="15.937" index_frame="73" />
+	<TIP Ransac_on_frame="false" tip_position.x="384" tip_position.y="33" time="15.927" index_frame="74" />
+	<TIP Ransac_on_frame="false" tip_position.x="428" tip_position.y="34" time="17.042" index_frame="75" />
+	<TIP Ransac_on_frame="false" tip_position.x="428" tip_position.y="34" time="17.413" index_frame="76" />
+	<TIP Ransac_on_frame="false" tip_position.x="427" tip_position.y="34" time="17.087" index_frame="77" />
+	<TIP Ransac_on_frame="false" tip_position.x="427" tip_position.y="34" time="16.971" index_frame="78" />
+	<TIP Ransac_on_frame="false" tip_position.x="427" tip_position.y="34" time="17.503" index_frame="79" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="359.738" index_frame="80" />
+	<TIP Ransac_on_frame="false" tip_position.x="427" tip_position.y="34" time="16.052" index_frame="80" />
+	<TIP Ransac_on_frame="false" tip_position.x="426" tip_position.y="34" time="15.333" index_frame="81" />
+	<TIP Ransac_on_frame="false" tip_position.x="425" tip_position.y="34" time="15.158" index_frame="82" />
+	<TIP Ransac_on_frame="false" tip_position.x="419" tip_position.y="34" time="15.875" index_frame="83" />
+	<TIP Ransac_on_frame="false" tip_position.x="422" tip_position.y="34" time="15.194" index_frame="84" />
+	<TIP Ransac_on_frame="false" tip_position.x="428" tip_position.y="36" time="15.327" index_frame="85" />
+	<TIP Ransac_on_frame="false" tip_position.x="431" tip_position.y="35" time="15.596" index_frame="86" />
+	<TIP Ransac_on_frame="false" tip_position.x="433" tip_position.y="35" time="15.43" index_frame="87" />
+	<TIP Ransac_on_frame="false" tip_position.x="430" tip_position.y="35" time="15.534" index_frame="88" />
+	<TIP Ransac_on_frame="false" tip_position.x="427" tip_position.y="36" time="15.169" index_frame="89" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="358.304" index_frame="90" />
+	<TIP Ransac_on_frame="false" tip_position.x="426" tip_position.y="33" time="17.069" index_frame="90" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="339.073" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="177" tip_position.y="35" time="14.555" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="185" tip_position.y="36" time="14.789" index_frame="1" />
+	<TIP Ransac_on_frame="false" tip_position.x="188" tip_position.y="36" time="15.568" index_frame="2" />
+	<TIP Ransac_on_frame="false" tip_position.x="197" tip_position.y="36" time="15.234" index_frame="3" />
+	<TIP Ransac_on_frame="false" tip_position.x="202" tip_position.y="36" time="15.486" index_frame="4" />
+	<TIP Ransac_on_frame="false" tip_position.x="210" tip_position.y="36" time="15.532" index_frame="5" />
+	<TIP Ransac_on_frame="false" tip_position.x="214" tip_position.y="36" time="15.987" index_frame="6" />
+	<TIP Ransac_on_frame="false" tip_position.x="215" tip_position.y="36" time="15.727" index_frame="7" />
+	<TIP Ransac_on_frame="false" tip_position.x="219" tip_position.y="36" time="15.98" index_frame="8" />
+	<TIP Ransac_on_frame="false" tip_position.x="223" tip_position.y="35" time="16.417" index_frame="9" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.244" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="222" tip_position.y="34" time="15.09" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="224" tip_position.y="34" time="15.274" index_frame="11" />
+	<TIP Ransac_on_frame="false" tip_position.x="232" tip_position.y="33" time="15.209" index_frame="12" />
+	<TIP Ransac_on_frame="false" tip_position.x="236" tip_position.y="34" time="15.271" index_frame="13" />
+	<TIP Ransac_on_frame="false" tip_position.x="237" tip_position.y="34" time="15.009" index_frame="14" />
+	<TIP Ransac_on_frame="false" tip_position.x="235" tip_position.y="31" time="15.722" index_frame="15" />
+	<TIP Ransac_on_frame="false" tip_position.x="245" tip_position.y="35" time="15.908" index_frame="16" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="15.368" index_frame="17" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="15.608" index_frame="18" />
+	<TIP Ransac_on_frame="false" tip_position.x="256" tip_position.y="33" time="15.259" index_frame="19" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="351.062" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="260" tip_position.y="34" time="15.257" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="264" tip_position.y="31" time="15.184" index_frame="21" />
+	<TIP Ransac_on_frame="false" tip_position.x="266" tip_position.y="33" time="14.865" index_frame="22" />
+	<TIP Ransac_on_frame="false" tip_position.x="270" tip_position.y="32" time="14.753" index_frame="23" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="32" time="15.358" index_frame="24" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.962" index_frame="25" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.043" index_frame="26" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="15.008" index_frame="27" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="14.507" index_frame="28" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.892" index_frame="29" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="351.534" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="15.43" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="15.488" index_frame="31" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="32" time="14.941" index_frame="32" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.889" index_frame="33" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.239" index_frame="34" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="32" time="15.903" index_frame="35" />
+	<TIP Ransac_on_frame="false" tip_position.x="300" tip_position.y="32" time="15.355" index_frame="36" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="32" time="15.534" index_frame="37" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="32" time="15.329" index_frame="38" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="32" time="15.266" index_frame="39" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.936" index_frame="40" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="32" time="15.301" index_frame="40" />
+	<TIP Ransac_on_frame="false" tip_position.x="304" tip_position.y="32" time="15.557" index_frame="41" />
+	<TIP Ransac_on_frame="false" tip_position.x="300" tip_position.y="32" time="15.38" index_frame="42" />
+	<TIP Ransac_on_frame="false" tip_position.x="298" tip_position.y="32" time="15.568" index_frame="43" />
+	<TIP Ransac_on_frame="false" tip_position.x="303" tip_position.y="32" time="15.207" index_frame="44" />
+	<TIP Ransac_on_frame="false" tip_position.x="308" tip_position.y="32" time="15.412" index_frame="45" />
+	<TIP Ransac_on_frame="false" tip_position.x="317" tip_position.y="32" time="15.048" index_frame="46" />
+	<TIP Ransac_on_frame="false" tip_position.x="317" tip_position.y="32" time="15.149" index_frame="47" />
+	<TIP Ransac_on_frame="false" tip_position.x="315" tip_position.y="32" time="15.094" index_frame="48" />
+	<TIP Ransac_on_frame="false" tip_position.x="316" tip_position.y="32" time="15.369" index_frame="49" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.79" index_frame="50" />
+	<TIP Ransac_on_frame="false" tip_position.x="317" tip_position.y="32" time="15.398" index_frame="50" />
+	<TIP Ransac_on_frame="false" tip_position.x="318" tip_position.y="33" time="15.498" index_frame="51" />
+	<TIP Ransac_on_frame="false" tip_position.x="318" tip_position.y="33" time="16.328" index_frame="52" />
+	<TIP Ransac_on_frame="false" tip_position.x="319" tip_position.y="33" time="15.967" index_frame="53" />
+	<TIP Ransac_on_frame="false" tip_position.x="317" tip_position.y="32" time="15.733" index_frame="54" />
+	<TIP Ransac_on_frame="false" tip_position.x="319" tip_position.y="33" time="15.63" index_frame="55" />
+	<TIP Ransac_on_frame="false" tip_position.x="322" tip_position.y="33" time="16.522" index_frame="56" />
+	<TIP Ransac_on_frame="false" tip_position.x="330" tip_position.y="33" time="15.788" index_frame="57" />
+	<TIP Ransac_on_frame="false" tip_position.x="334" tip_position.y="33" time="15.662" index_frame="58" />
+	<TIP Ransac_on_frame="false" tip_position.x="335" tip_position.y="33" time="16.452" index_frame="59" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="350.96" index_frame="60" />
+	<TIP Ransac_on_frame="false" tip_position.x="344" tip_position.y="33" time="14.904" index_frame="60" />
+	<TIP Ransac_on_frame="false" tip_position.x="347" tip_position.y="33" time="15.174" index_frame="61" />
+	<TIP Ransac_on_frame="false" tip_position.x="352" tip_position.y="33" time="14.953" index_frame="62" />
+	<TIP Ransac_on_frame="false" tip_position.x="354" tip_position.y="33" time="14.707" index_frame="63" />
+	<TIP Ransac_on_frame="false" tip_position.x="361" tip_position.y="33" time="14.996" index_frame="64" />
+	<TIP Ransac_on_frame="false" tip_position.x="360" tip_position.y="33" time="15.515" index_frame="65" />
+	<TIP Ransac_on_frame="false" tip_position.x="357" tip_position.y="33" time="15.187" index_frame="66" />
+	<TIP Ransac_on_frame="false" tip_position.x="362" tip_position.y="33" time="15.283" index_frame="67" />
+	<TIP Ransac_on_frame="false" tip_position.x="364" tip_position.y="34" time="15.326" index_frame="68" />
+	<TIP Ransac_on_frame="false" tip_position.x="373" tip_position.y="34" time="15.062" index_frame="69" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="351.99" index_frame="70" />
+	<TIP Ransac_on_frame="false" tip_position.x="376" tip_position.y="32" time="15.764" index_frame="70" />
+	<TIP Ransac_on_frame="false" tip_position.x="380" tip_position.y="32" time="16.265" index_frame="71" />
+	<TIP Ransac_on_frame="false" tip_position.x="381" tip_position.y="32" time="15.837" index_frame="72" />
+	<TIP Ransac_on_frame="false" tip_position.x="384" tip_position.y="32" time="16.118" index_frame="73" />
+	<TIP Ransac_on_frame="false" tip_position.x="386" tip_position.y="32" time="15.947" index_frame="74" />
+	<TIP Ransac_on_frame="false" tip_position.x="430" tip_position.y="33" time="16.709" index_frame="75" />
+	<TIP Ransac_on_frame="false" tip_position.x="430" tip_position.y="33" time="16.97" index_frame="76" />
+	<TIP Ransac_on_frame="false" tip_position.x="429" tip_position.y="33" time="16.724" index_frame="77" />
+	<TIP Ransac_on_frame="false" tip_position.x="429" tip_position.y="33" time="16.693" index_frame="78" />
+	<TIP Ransac_on_frame="false" tip_position.x="429" tip_position.y="33" time="17.375" index_frame="79" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="361.072" index_frame="80" />
+	<TIP Ransac_on_frame="false" tip_position.x="429" tip_position.y="33" time="15.881" index_frame="80" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="341.803" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="182" tip_position.y="38" time="15.353" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="186" tip_position.y="37" time="15.135" index_frame="1" />
+	<TIP Ransac_on_frame="false" tip_position.x="189" tip_position.y="37" time="15.898" index_frame="2" />
+	<TIP Ransac_on_frame="false" tip_position.x="199" tip_position.y="37" time="15.696" index_frame="3" />
+	<TIP Ransac_on_frame="false" tip_position.x="205" tip_position.y="38" time="15.969" index_frame="4" />
+	<TIP Ransac_on_frame="false" tip_position.x="210" tip_position.y="36" time="16.188" index_frame="5" />
+	<TIP Ransac_on_frame="false" tip_position.x="214" tip_position.y="36" time="16.596" index_frame="6" />
+	<TIP Ransac_on_frame="false" tip_position.x="216" tip_position.y="37" time="16.35" index_frame="7" />
+	<TIP Ransac_on_frame="false" tip_position.x="220" tip_position.y="37" time="16.771" index_frame="8" />
+	<TIP Ransac_on_frame="false" tip_position.x="224" tip_position.y="37" time="16.997" index_frame="9" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="340.558" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="222" tip_position.y="34" time="15.423" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="224" tip_position.y="34" time="15.932" index_frame="11" />
+	<TIP Ransac_on_frame="false" tip_position.x="232" tip_position.y="33" time="15.847" index_frame="12" />
+	<TIP Ransac_on_frame="false" tip_position.x="236" tip_position.y="34" time="15.601" index_frame="13" />
+	<TIP Ransac_on_frame="false" tip_position.x="237" tip_position.y="34" time="15.198" index_frame="14" />
+	<TIP Ransac_on_frame="false" tip_position.x="235" tip_position.y="31" time="15.942" index_frame="15" />
+	<TIP Ransac_on_frame="false" tip_position.x="245" tip_position.y="35" time="15.796" index_frame="16" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="15.537" index_frame="17" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="15.845" index_frame="18" />
+	<TIP Ransac_on_frame="false" tip_position.x="256" tip_position.y="33" time="15.573" index_frame="19" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="342.979" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="260" tip_position.y="34" time="15.299" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="264" tip_position.y="32" time="15.731" index_frame="21" />
+	<TIP Ransac_on_frame="false" tip_position.x="266" tip_position.y="33" time="15.607" index_frame="22" />
+	<TIP Ransac_on_frame="false" tip_position.x="270" tip_position.y="32" time="15.328" index_frame="23" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.428" index_frame="24" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.19" index_frame="25" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.39" index_frame="26" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="15.416" index_frame="27" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="15.266" index_frame="28" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.182" index_frame="29" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.165" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="15.635" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="14.468" index_frame="31" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="32" time="14.544" index_frame="32" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.398" index_frame="33" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.097" index_frame="34" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="31" time="15.326" index_frame="35" />
+	<TIP Ransac_on_frame="false" tip_position.x="300" tip_position.y="31" time="14.961" index_frame="36" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="31" time="15.165" index_frame="37" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="31" time="15.177" index_frame="38" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="31" time="14.892" index_frame="39" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="351.855" index_frame="40" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="31" time="16.115" index_frame="40" />
+	<TIP Ransac_on_frame="false" tip_position.x="306" tip_position.y="31" time="15.693" index_frame="41" />
+	<TIP Ransac_on_frame="false" tip_position.x="303" tip_position.y="31" time="15.899" index_frame="42" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="31" time="15.703" index_frame="43" />
+	<TIP Ransac_on_frame="false" tip_position.x="305" tip_position.y="31" time="15.708" index_frame="44" />
+	<TIP Ransac_on_frame="false" tip_position.x="310" tip_position.y="31" time="15.656" index_frame="45" />
+	<TIP Ransac_on_frame="false" tip_position.x="317" tip_position.y="32" time="15.66" index_frame="46" />
+	<TIP Ransac_on_frame="false" tip_position.x="317" tip_position.y="32" time="15.879" index_frame="47" />
+	<TIP Ransac_on_frame="false" tip_position.x="315" tip_position.y="32" time="15.766" index_frame="48" />
+	<TIP Ransac_on_frame="false" tip_position.x="316" tip_position.y="32" time="15.533" index_frame="49" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="351.266" index_frame="50" />
+	<TIP Ransac_on_frame="false" tip_position.x="316" tip_position.y="33" time="15.425" index_frame="50" />
+	<TIP Ransac_on_frame="false" tip_position.x="318" tip_position.y="33" time="15.331" index_frame="51" />
+	<TIP Ransac_on_frame="false" tip_position.x="318" tip_position.y="33" time="14.991" index_frame="52" />
+	<TIP Ransac_on_frame="false" tip_position.x="319" tip_position.y="33" time="15.08" index_frame="53" />
+	<TIP Ransac_on_frame="false" tip_position.x="317" tip_position.y="33" time="15.129" index_frame="54" />
+	<TIP Ransac_on_frame="false" tip_position.x="319" tip_position.y="33" time="14.913" index_frame="55" />
+	<TIP Ransac_on_frame="false" tip_position.x="322" tip_position.y="33" time="14.887" index_frame="56" />
+	<TIP Ransac_on_frame="false" tip_position.x="330" tip_position.y="33" time="14.827" index_frame="57" />
+	<TIP Ransac_on_frame="false" tip_position.x="334" tip_position.y="33" time="14.874" index_frame="58" />
+	<TIP Ransac_on_frame="false" tip_position.x="335" tip_position.y="33" time="15.001" index_frame="59" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="349.801" index_frame="60" />
+	<TIP Ransac_on_frame="false" tip_position.x="342" tip_position.y="34" time="15.566" index_frame="60" />
+	<TIP Ransac_on_frame="false" tip_position.x="346" tip_position.y="34" time="15.603" index_frame="61" />
+	<TIP Ransac_on_frame="false" tip_position.x="347" tip_position.y="34" time="15.088" index_frame="62" />
+	<TIP Ransac_on_frame="false" tip_position.x="347" tip_position.y="34" time="15.006" index_frame="63" />
+	<TIP Ransac_on_frame="false" tip_position.x="349" tip_position.y="36" time="15.33" index_frame="64" />
+	<TIP Ransac_on_frame="false" tip_position.x="356" tip_position.y="35" time="15.302" index_frame="65" />
+	<TIP Ransac_on_frame="false" tip_position.x="357" tip_position.y="35" time="15.353" index_frame="66" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.918" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="177" tip_position.y="35" time="14.601" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.815" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="179" tip_position.y="36" time="14.525" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="185" tip_position.y="36" time="14.851" index_frame="1" />
+	<TIP Ransac_on_frame="false" tip_position.x="188" tip_position.y="36" time="15.734" index_frame="2" />
+	<TIP Ransac_on_frame="false" tip_position.x="197" tip_position.y="36" time="15.2" index_frame="3" />
+	<TIP Ransac_on_frame="false" tip_position.x="202" tip_position.y="36" time="15.302" index_frame="4" />
+	<TIP Ransac_on_frame="false" tip_position.x="210" tip_position.y="36" time="16.165" index_frame="5" />
+	<TIP Ransac_on_frame="false" tip_position.x="214" tip_position.y="36" time="16.171" index_frame="6" />
+	<TIP Ransac_on_frame="false" tip_position.x="215" tip_position.y="36" time="15.992" index_frame="7" />
+	<TIP Ransac_on_frame="false" tip_position.x="219" tip_position.y="36" time="16.217" index_frame="8" />
+	<TIP Ransac_on_frame="false" tip_position.x="223" tip_position.y="35" time="16.438" index_frame="9" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.142" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="222" tip_position.y="34" time="15.317" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="224" tip_position.y="34" time="15.537" index_frame="11" />
+	<TIP Ransac_on_frame="false" tip_position.x="232" tip_position.y="33" time="15.636" index_frame="12" />
+	<TIP Ransac_on_frame="false" tip_position.x="236" tip_position.y="34" time="15.575" index_frame="13" />
+	<TIP Ransac_on_frame="false" tip_position.x="237" tip_position.y="34" time="15.358" index_frame="14" />
+	<TIP Ransac_on_frame="false" tip_position.x="235" tip_position.y="32" time="16.184" index_frame="15" />
+	<TIP Ransac_on_frame="false" tip_position.x="245" tip_position.y="35" time="16.036" index_frame="16" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="15.675" index_frame="17" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="16.445" index_frame="18" />
+	<TIP Ransac_on_frame="false" tip_position.x="256" tip_position.y="33" time="15.932" index_frame="19" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="348.153" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="260" tip_position.y="34" time="16.289" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="264" tip_position.y="32" time="15.428" index_frame="21" />
+	<TIP Ransac_on_frame="false" tip_position.x="266" tip_position.y="33" time="16.305" index_frame="22" />
+	<TIP Ransac_on_frame="false" tip_position.x="270" tip_position.y="32" time="15.161" index_frame="23" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="34" time="15.742" index_frame="24" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="34" time="15.548" index_frame="25" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="34" time="15.278" index_frame="26" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="15.545" index_frame="27" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="15.212" index_frame="28" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="34" time="15.206" index_frame="29" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.127" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="15.371" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="15.692" index_frame="31" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="32" time="15.026" index_frame="32" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.919" index_frame="33" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.46" index_frame="34" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="32" time="15.374" index_frame="35" />
+	<TIP Ransac_on_frame="false" tip_position.x="300" tip_position.y="32" time="15.38" index_frame="36" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="32" time="15.79" index_frame="37" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="32" time="15.34" index_frame="38" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="32" time="15.246" index_frame="39" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.299" index_frame="40" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="32" time="15.379" index_frame="40" />
+	<TIP Ransac_on_frame="false" tip_position.x="304" tip_position.y="32" time="15.019" index_frame="41" />
+	<TIP Ransac_on_frame="false" tip_position.x="300" tip_position.y="32" time="15.338" index_frame="42" />
+	<TIP Ransac_on_frame="false" tip_position.x="298" tip_position.y="32" time="15.191" index_frame="43" />
+	<TIP Ransac_on_frame="false" tip_position.x="303" tip_position.y="32" time="14.954" index_frame="44" />
+	<TIP Ransac_on_frame="false" tip_position.x="308" tip_position.y="32" time="14.957" index_frame="45" />
+	<TIP Ransac_on_frame="false" tip_position.x="317" tip_position.y="32" time="15.367" index_frame="46" />
+	<TIP Ransac_on_frame="false" tip_position.x="317" tip_position.y="32" time="15.888" index_frame="47" />
+	<TIP Ransac_on_frame="false" tip_position.x="315" tip_position.y="32" time="15.869" index_frame="48" />
+	<TIP Ransac_on_frame="false" tip_position.x="316" tip_position.y="32" time="15.262" index_frame="49" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.516" index_frame="50" />
+	<TIP Ransac_on_frame="false" tip_position.x="318" tip_position.y="31" time="15.301" index_frame="50" />
+	<TIP Ransac_on_frame="false" tip_position.x="323" tip_position.y="31" time="15.672" index_frame="51" />
+	<TIP Ransac_on_frame="false" tip_position.x="322" tip_position.y="31" time="15.728" index_frame="52" />
+	<TIP Ransac_on_frame="false" tip_position.x="321" tip_position.y="31" time="16.081" index_frame="53" />
+	<TIP Ransac_on_frame="false" tip_position.x="323" tip_position.y="31" time="15.639" index_frame="54" />
+	<TIP Ransac_on_frame="false" tip_position.x="329" tip_position.y="31" time="15.381" index_frame="55" />
+	<TIP Ransac_on_frame="false" tip_position.x="332" tip_position.y="32" time="15.279" index_frame="56" />
+	<TIP Ransac_on_frame="false" tip_position.x="335" tip_position.y="32" time="15.744" index_frame="57" />
+	<TIP Ransac_on_frame="false" tip_position.x="338" tip_position.y="32" time="15.328" index_frame="58" />
+	<TIP Ransac_on_frame="false" tip_position.x="339" tip_position.y="32" time="16.253" index_frame="59" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.651" index_frame="60" />
+	<TIP Ransac_on_frame="false" tip_position.x="342" tip_position.y="33" time="15.371" index_frame="60" />
+	<TIP Ransac_on_frame="false" tip_position.x="346" tip_position.y="34" time="15.062" index_frame="61" />
+	<TIP Ransac_on_frame="false" tip_position.x="350" tip_position.y="34" time="14.792" index_frame="62" />
+	<TIP Ransac_on_frame="false" tip_position.x="347" tip_position.y="34" time="14.711" index_frame="63" />
+	<TIP Ransac_on_frame="false" tip_position.x="359" tip_position.y="34" time="14.954" index_frame="64" />
+	<TIP Ransac_on_frame="false" tip_position.x="357" tip_position.y="34" time="14.878" index_frame="65" />
+	<TIP Ransac_on_frame="false" tip_position.x="357" tip_position.y="34" time="15.079" index_frame="66" />
+	<TIP Ransac_on_frame="false" tip_position.x="359" tip_position.y="34" time="15.012" index_frame="67" />
+	<TIP Ransac_on_frame="false" tip_position.x="364" tip_position.y="34" time="15.318" index_frame="68" />
+	<TIP Ransac_on_frame="false" tip_position.x="372" tip_position.y="35" time="14.945" index_frame="69" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="349.352" index_frame="70" />
+	<TIP Ransac_on_frame="false" tip_position.x="375" tip_position.y="33" time="15.72" index_frame="70" />
+	<TIP Ransac_on_frame="false" tip_position.x="379" tip_position.y="33" time="16.045" index_frame="71" />
+	<TIP Ransac_on_frame="false" tip_position.x="381" tip_position.y="33" time="15.84" index_frame="72" />
+	<TIP Ransac_on_frame="false" tip_position.x="375" tip_position.y="33" time="16.036" index_frame="73" />
+	<TIP Ransac_on_frame="false" tip_position.x="384" tip_position.y="33" time="15.639" index_frame="74" />
+	<TIP Ransac_on_frame="false" tip_position.x="426" tip_position.y="35" time="16.649" index_frame="75" />
+	<TIP Ransac_on_frame="false" tip_position.x="426" tip_position.y="35" time="16.849" index_frame="76" />
+	<TIP Ransac_on_frame="false" tip_position.x="425" tip_position.y="35" time="16.718" index_frame="77" />
+	<TIP Ransac_on_frame="false" tip_position.x="426" tip_position.y="35" time="16.575" index_frame="78" />
+	<TIP Ransac_on_frame="false" tip_position.x="426" tip_position.y="35" time="17.573" index_frame="79" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="355.381" index_frame="80" />
+	<TIP Ransac_on_frame="false" tip_position.x="427" tip_position.y="34" time="16.124" index_frame="80" />
+	<TIP Ransac_on_frame="false" tip_position.x="426" tip_position.y="34" time="16.239" index_frame="81" />
+	<TIP Ransac_on_frame="false" tip_position.x="425" tip_position.y="34" time="15.94" index_frame="82" />
+	<TIP Ransac_on_frame="false" tip_position.x="419" tip_position.y="34" time="16.058" index_frame="83" />
+	<TIP Ransac_on_frame="false" tip_position.x="422" tip_position.y="34" time="16.001" index_frame="84" />
+	<TIP Ransac_on_frame="false" tip_position.x="428" tip_position.y="36" time="15.794" index_frame="85" />
+	<TIP Ransac_on_frame="false" tip_position.x="431" tip_position.y="35" time="16.063" index_frame="86" />
+	<TIP Ransac_on_frame="false" tip_position.x="433" tip_position.y="35" time="15.767" index_frame="87" />
+	<TIP Ransac_on_frame="false" tip_position.x="430" tip_position.y="35" time="15.995" index_frame="88" />
+	<TIP Ransac_on_frame="false" tip_position.x="427" tip_position.y="36" time="15.846" index_frame="89" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="364.194" index_frame="90" />
+	<TIP Ransac_on_frame="false" tip_position.x="426" tip_position.y="33" time="17.691" index_frame="90" />
+	<TIP Ransac_on_frame="false" tip_position.x="425" tip_position.y="31" time="17.522" index_frame="91" />
+	<TIP Ransac_on_frame="false" tip_position.x="430" tip_position.y="33" time="17.596" index_frame="92" />
+	<TIP Ransac_on_frame="false" tip_position.x="426" tip_position.y="32" time="17.944" index_frame="93" />
+	<TIP Ransac_on_frame="false" tip_position.x="431" tip_position.y="30" time="17.334" index_frame="94" />
+	<TIP Ransac_on_frame="false" tip_position.x="433" tip_position.y="32" time="17.265" index_frame="95" />
+	<TIP Ransac_on_frame="false" tip_position.x="435" tip_position.y="31" time="17.424" index_frame="96" />
+	<TIP Ransac_on_frame="false" tip_position.x="441" tip_position.y="30" time="17.033" index_frame="97" />
+	<TIP Ransac_on_frame="false" tip_position.x="437" tip_position.y="31" time="17.054" index_frame="98" />
+	<TIP Ransac_on_frame="false" tip_position.x="435" tip_position.y="30" time="17.534" index_frame="99" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="352.941" index_frame="100" />
+	<TIP Ransac_on_frame="false" tip_position.x="441" tip_position.y="33" time="15.6" index_frame="100" />
+	<TIP Ransac_on_frame="false" tip_position.x="441" tip_position.y="32" time="15.917" index_frame="101" />
+	<TIP Ransac_on_frame="false" tip_position.x="442" tip_position.y="31" time="16.04" index_frame="102" />
+	<TIP Ransac_on_frame="false" tip_position.x="447" tip_position.y="32" time="15.631" index_frame="103" />
+	<TIP Ransac_on_frame="false" tip_position.x="455" tip_position.y="33" time="15.545" index_frame="104" />
+	<TIP Ransac_on_frame="false" tip_position.x="457" tip_position.y="31" time="15.852" index_frame="105" />
+	<TIP Ransac_on_frame="false" tip_position.x="457" tip_position.y="33" time="15.594" index_frame="106" />
+	<TIP Ransac_on_frame="false" tip_position.x="459" tip_position.y="33" time="15.631" index_frame="107" />
+	<TIP Ransac_on_frame="false" tip_position.x="461" tip_position.y="34" time="15.567" index_frame="108" />
+	<TIP Ransac_on_frame="false" tip_position.x="462" tip_position.y="31" time="15.554" index_frame="109" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="354.029" index_frame="110" />
+	<TIP Ransac_on_frame="false" tip_position.x="459" tip_position.y="34" time="16.106" index_frame="110" />
+	<TIP Ransac_on_frame="false" tip_position.x="471" tip_position.y="35" time="16.569" index_frame="111" />
+	<TIP Ransac_on_frame="false" tip_position.x="472" tip_position.y="32" time="16.417" index_frame="112" />
+	<TIP Ransac_on_frame="false" tip_position.x="476" tip_position.y="36" time="16.662" index_frame="113" />
+	<TIP Ransac_on_frame="false" tip_position.x="479" tip_position.y="34" time="17.01" index_frame="114" />
+	<TIP Ransac_on_frame="false" tip_position.x="476" tip_position.y="36" time="16.422" index_frame="115" />
+	<TIP Ransac_on_frame="false" tip_position.x="481" tip_position.y="36" time="16.352" index_frame="116" />
+	<TIP Ransac_on_frame="false" tip_position.x="482" tip_position.y="35" time="16.706" index_frame="117" />
+	<TIP Ransac_on_frame="false" tip_position.x="482" tip_position.y="35" time="15.56" index_frame="118" />
+	<TIP Ransac_on_frame="false" tip_position.x="486" tip_position.y="35" time="16.254" index_frame="119" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="356.459" index_frame="120" />
+	<TIP Ransac_on_frame="false" tip_position.x="491" tip_position.y="36" time="15.189" index_frame="120" />
+	<TIP Ransac_on_frame="false" tip_position.x="490" tip_position.y="35" time="15.603" index_frame="121" />
+	<TIP Ransac_on_frame="false" tip_position.x="492" tip_position.y="37" time="16.42" index_frame="122" />
+	<TIP Ransac_on_frame="false" tip_position.x="495" tip_position.y="37" time="15.903" index_frame="123" />
+	<TIP Ransac_on_frame="false" tip_position.x="437" tip_position.y="33" time="15" index_frame="124" />
+	<TIP Ransac_on_frame="false" tip_position.x="446" tip_position.y="33" time="15.292" index_frame="125" />
+	<TIP Ransac_on_frame="false" tip_position.x="432" tip_position.y="33" time="15.353" index_frame="126" />
+	<TIP Ransac_on_frame="false" tip_position.x="496" tip_position.y="37" time="15.948" index_frame="127" />
+	<TIP Ransac_on_frame="false" tip_position.x="427" tip_position.y="33" time="14.676" index_frame="128" />
+	<TIP Ransac_on_frame="false" tip_position.x="492" tip_position.y="36" time="15.551" index_frame="129" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="358.61" index_frame="130" />
+	<TIP Ransac_on_frame="false" tip_position.x="492" tip_position.y="36" time="15.51" index_frame="130" />
+	<TIP Ransac_on_frame="false" tip_position.x="489" tip_position.y="34" time="15.737" index_frame="131" />
+	<TIP Ransac_on_frame="false" tip_position.x="489" tip_position.y="34" time="14.126" index_frame="132" />
+	<TIP Ransac_on_frame="false" tip_position.x="487" tip_position.y="34" time="15.539" index_frame="133" />
+	<TIP Ransac_on_frame="false" tip_position.x="487" tip_position.y="35" time="15.471" index_frame="134" />
+	<TIP Ransac_on_frame="false" tip_position.x="486" tip_position.y="34" time="16.059" index_frame="135" />
+	<TIP Ransac_on_frame="false" tip_position.x="487" tip_position.y="36" time="15.734" index_frame="136" />
+	<TIP Ransac_on_frame="false" tip_position.x="488" tip_position.y="37" time="15.558" index_frame="137" />
+	<TIP Ransac_on_frame="false" tip_position.x="487" tip_position.y="34" time="15.746" index_frame="138" />
+	<TIP Ransac_on_frame="false" tip_position.x="487" tip_position.y="34" time="15.72" index_frame="139" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="364.255" index_frame="140" />
+	<TIP Ransac_on_frame="false" tip_position.x="487" tip_position.y="37" time="16.666" index_frame="140" />
+	<TIP Ransac_on_frame="false" tip_position.x="487" tip_position.y="37" time="16.534" index_frame="141" />
+	<TIP Ransac_on_frame="false" tip_position.x="486" tip_position.y="36" time="17.355" index_frame="142" />
+	<TIP Ransac_on_frame="false" tip_position.x="487" tip_position.y="37" time="16.365" index_frame="143" />
+	<TIP Ransac_on_frame="false" tip_position.x="488" tip_position.y="37" time="15.997" index_frame="144" />
+	<TIP Ransac_on_frame="false" tip_position.x="489" tip_position.y="37" time="15.586" index_frame="145" />
+	<TIP Ransac_on_frame="false" tip_position.x="490" tip_position.y="36" time="15.7" index_frame="146" />
+	<TIP Ransac_on_frame="false" tip_position.x="490" tip_position.y="36" time="14.724" index_frame="147" />
+	<TIP Ransac_on_frame="false" tip_position.x="492" tip_position.y="36" time="15.804" index_frame="148" />
+	<TIP Ransac_on_frame="false" tip_position.x="492" tip_position.y="36" time="15.845" index_frame="149" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="363.619" index_frame="150" />
+	<TIP Ransac_on_frame="false" tip_position.x="491" tip_position.y="36" time="17.547" index_frame="150" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.788" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="182" tip_position.y="38" time="14.835" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="186" tip_position.y="37" time="15.256" index_frame="1" />
+	<TIP Ransac_on_frame="false" tip_position.x="189" tip_position.y="37" time="16.002" index_frame="2" />
+	<TIP Ransac_on_frame="false" tip_position.x="199" tip_position.y="37" time="15.75" index_frame="3" />
+	<TIP Ransac_on_frame="false" tip_position.x="205" tip_position.y="38" time="15.934" index_frame="4" />
+	<TIP Ransac_on_frame="false" tip_position.x="210" tip_position.y="36" time="16.244" index_frame="5" />
+	<TIP Ransac_on_frame="false" tip_position.x="214" tip_position.y="36" time="16.677" index_frame="6" />
+	<TIP Ransac_on_frame="false" tip_position.x="216" tip_position.y="37" time="16.498" index_frame="7" />
+	<TIP Ransac_on_frame="false" tip_position.x="220" tip_position.y="37" time="16.781" index_frame="8" />
+	<TIP Ransac_on_frame="false" tip_position.x="224" tip_position.y="37" time="17.13" index_frame="9" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.787" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="222" tip_position.y="34" time="15.248" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="224" tip_position.y="34" time="15.543" index_frame="11" />
+	<TIP Ransac_on_frame="false" tip_position.x="232" tip_position.y="33" time="16.038" index_frame="12" />
+	<TIP Ransac_on_frame="false" tip_position.x="236" tip_position.y="34" time="15.901" index_frame="13" />
+	<TIP Ransac_on_frame="false" tip_position.x="237" tip_position.y="34" time="15.145" index_frame="14" />
+	<TIP Ransac_on_frame="false" tip_position.x="235" tip_position.y="32" time="15.994" index_frame="15" />
+	<TIP Ransac_on_frame="false" tip_position.x="245" tip_position.y="35" time="15.901" index_frame="16" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="15.599" index_frame="17" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="15.939" index_frame="18" />
+	<TIP Ransac_on_frame="false" tip_position.x="256" tip_position.y="33" time="15.621" index_frame="19" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="343.55" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="260" tip_position.y="34" time="15.732" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="264" tip_position.y="32" time="15.196" index_frame="21" />
+	<TIP Ransac_on_frame="false" tip_position.x="266" tip_position.y="33" time="15.173" index_frame="22" />
+	<TIP Ransac_on_frame="false" tip_position.x="270" tip_position.y="32" time="15.1" index_frame="23" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.611" index_frame="24" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.459" index_frame="25" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.126" index_frame="26" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="15.214" index_frame="27" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="15" index_frame="28" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.978" index_frame="29" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.363" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="15.028" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="14.851" index_frame="31" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="32" time="15.379" index_frame="32" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.861" index_frame="33" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.082" index_frame="34" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="32" time="15.521" index_frame="35" />
+	<TIP Ransac_on_frame="false" tip_position.x="300" tip_position.y="32" time="15.416" index_frame="36" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="32" time="15.482" index_frame="37" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="32" time="15.507" index_frame="38" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="32" time="15.514" index_frame="39" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.856" index_frame="40" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="31" time="14.986" index_frame="40" />
+	<TIP Ransac_on_frame="false" tip_position.x="304" tip_position.y="32" time="15.039" index_frame="41" />
+	<TIP Ransac_on_frame="false" tip_position.x="302" tip_position.y="31" time="15.395" index_frame="42" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="31" time="15.067" index_frame="43" />
+	<TIP Ransac_on_frame="false" tip_position.x="303" tip_position.y="32" time="14.797" index_frame="44" />
+	<TIP Ransac_on_frame="false" tip_position.x="308" tip_position.y="32" time="14.88" index_frame="45" />
+	<TIP Ransac_on_frame="false" tip_position.x="317" tip_position.y="32" time="14.915" index_frame="46" />
+	<TIP Ransac_on_frame="false" tip_position.x="317" tip_position.y="32" time="14.969" index_frame="47" />
+	<TIP Ransac_on_frame="false" tip_position.x="315" tip_position.y="32" time="15.42" index_frame="48" />
+	<TIP Ransac_on_frame="false" tip_position.x="316" tip_position.y="32" time="14.595" index_frame="49" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.182" index_frame="50" />
+	<TIP Ransac_on_frame="false" tip_position.x="317" tip_position.y="32" time="14.788" index_frame="50" />
+	<TIP Ransac_on_frame="false" tip_position.x="321" tip_position.y="32" time="15.034" index_frame="51" />
+	<TIP Ransac_on_frame="false" tip_position.x="320" tip_position.y="32" time="14.97" index_frame="52" />
+	<TIP Ransac_on_frame="false" tip_position.x="320" tip_position.y="32" time="14.965" index_frame="53" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.005" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="179" tip_position.y="36" time="14.48" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="185" tip_position.y="36" time="15.126" index_frame="1" />
+	<TIP Ransac_on_frame="false" tip_position.x="188" tip_position.y="36" time="15.549" index_frame="2" />
+	<TIP Ransac_on_frame="false" tip_position.x="197" tip_position.y="36" time="15.324" index_frame="3" />
+	<TIP Ransac_on_frame="false" tip_position.x="202" tip_position.y="36" time="16.084" index_frame="4" />
+	<TIP Ransac_on_frame="false" tip_position.x="210" tip_position.y="36" time="15.981" index_frame="5" />
+	<TIP Ransac_on_frame="false" tip_position.x="214" tip_position.y="36" time="16.399" index_frame="6" />
+	<TIP Ransac_on_frame="false" tip_position.x="215" tip_position.y="36" time="16.211" index_frame="7" />
+	<TIP Ransac_on_frame="false" tip_position.x="220" tip_position.y="37" time="16.62" index_frame="8" />
+	<TIP Ransac_on_frame="false" tip_position.x="224" tip_position.y="37" time="16.798" index_frame="9" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.015" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="222" tip_position.y="34" time="15.085" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="224" tip_position.y="34" time="15.359" index_frame="11" />
+	<TIP Ransac_on_frame="false" tip_position.x="232" tip_position.y="33" time="15.838" index_frame="12" />
+	<TIP Ransac_on_frame="false" tip_position.x="236" tip_position.y="34" time="15.712" index_frame="13" />
+	<TIP Ransac_on_frame="false" tip_position.x="237" tip_position.y="34" time="14.973" index_frame="14" />
+	<TIP Ransac_on_frame="false" tip_position.x="235" tip_position.y="31" time="15.711" index_frame="15" />
+	<TIP Ransac_on_frame="false" tip_position.x="245" tip_position.y="35" time="15.618" index_frame="16" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="15.272" index_frame="17" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="15.583" index_frame="18" />
+	<TIP Ransac_on_frame="false" tip_position.x="256" tip_position.y="33" time="15.284" index_frame="19" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="342.506" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="260" tip_position.y="34" time="15.333" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="264" tip_position.y="32" time="15.268" index_frame="21" />
+	<TIP Ransac_on_frame="false" tip_position.x="266" tip_position.y="33" time="15.08" index_frame="22" />
+	<TIP Ransac_on_frame="false" tip_position.x="270" tip_position.y="32" time="14.871" index_frame="23" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.472" index_frame="24" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.216" index_frame="25" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.207" index_frame="26" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="15.096" index_frame="27" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="15.111" index_frame="28" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.438" index_frame="29" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.776" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="14.36" index_frame="30" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.157" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="181" tip_position.y="37" time="15.442" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.365" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="181" tip_position.y="37" time="14.989" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="343.698" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="174" tip_position.y="34" time="14.715" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="181" tip_position.y="34" time="14.678" index_frame="1" />
+	<TIP Ransac_on_frame="false" tip_position.x="185" tip_position.y="34" time="15.34" index_frame="2" />
+	<TIP Ransac_on_frame="false" tip_position.x="192" tip_position.y="34" time="15.172" index_frame="3" />
+	<TIP Ransac_on_frame="false" tip_position.x="198" tip_position.y="34" time="15.563" index_frame="4" />
+	<TIP Ransac_on_frame="false" tip_position.x="209" tip_position.y="35" time="15.386" index_frame="5" />
+	<TIP Ransac_on_frame="false" tip_position.x="213" tip_position.y="35" time="15.71" index_frame="6" />
+	<TIP Ransac_on_frame="false" tip_position.x="214" tip_position.y="35" time="15.424" index_frame="7" />
+	<TIP Ransac_on_frame="false" tip_position.x="218" tip_position.y="35" time="15.634" index_frame="8" />
+	<TIP Ransac_on_frame="false" tip_position.x="223" tip_position.y="35" time="16.003" index_frame="9" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="345.279" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="223" tip_position.y="35" time="16.004" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="224" tip_position.y="34" time="16.212" index_frame="11" />
+	<TIP Ransac_on_frame="false" tip_position.x="232" tip_position.y="33" time="16.774" index_frame="12" />
+	<TIP Ransac_on_frame="false" tip_position.x="236" tip_position.y="34" time="16.652" index_frame="13" />
+	<TIP Ransac_on_frame="false" tip_position.x="237" tip_position.y="34" time="16.386" index_frame="14" />
+	<TIP Ransac_on_frame="false" tip_position.x="235" tip_position.y="32" time="16.806" index_frame="15" />
+	<TIP Ransac_on_frame="false" tip_position.x="245" tip_position.y="35" time="17.445" index_frame="16" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="16.752" index_frame="17" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="340.447" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="179" tip_position.y="36" time="15.141" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="185" tip_position.y="36" time="15.059" index_frame="1" />
+	<TIP Ransac_on_frame="false" tip_position.x="188" tip_position.y="36" time="15.775" index_frame="2" />
+	<TIP Ransac_on_frame="false" tip_position.x="197" tip_position.y="36" time="15.596" index_frame="3" />
+	<TIP Ransac_on_frame="false" tip_position.x="202" tip_position.y="36" time="15.571" index_frame="4" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="340.039" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="177" tip_position.y="35" time="14.23" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="339.299" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="177" tip_position.y="35" time="15.232" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="183" tip_position.y="35" time="15.098" index_frame="1" />
+	<TIP Ransac_on_frame="false" tip_position.x="188" tip_position.y="36" time="15.826" index_frame="2" />
+	<TIP Ransac_on_frame="false" tip_position.x="197" tip_position.y="36" time="15.368" index_frame="3" />
+	<TIP Ransac_on_frame="false" tip_position.x="202" tip_position.y="36" time="15.507" index_frame="4" />
+	<TIP Ransac_on_frame="false" tip_position.x="210" tip_position.y="36" time="15.701" index_frame="5" />
+	<TIP Ransac_on_frame="false" tip_position.x="214" tip_position.y="36" time="16.032" index_frame="6" />
+	<TIP Ransac_on_frame="false" tip_position.x="215" tip_position.y="36" time="15.827" index_frame="7" />
+	<TIP Ransac_on_frame="false" tip_position.x="219" tip_position.y="36" time="16.038" index_frame="8" />
+	<TIP Ransac_on_frame="false" tip_position.x="223" tip_position.y="35" time="16.386" index_frame="9" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="332.366" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="222" tip_position.y="34" time="14.982" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="224" tip_position.y="34" time="15.139" index_frame="11" />
+	<TIP Ransac_on_frame="false" tip_position.x="232" tip_position.y="33" time="15.249" index_frame="12" />
+	<TIP Ransac_on_frame="false" tip_position.x="236" tip_position.y="34" time="15.116" index_frame="13" />
+	<TIP Ransac_on_frame="false" tip_position.x="237" tip_position.y="34" time="14.766" index_frame="14" />
+	<TIP Ransac_on_frame="false" tip_position.x="235" tip_position.y="31" time="15.487" index_frame="15" />
+	<TIP Ransac_on_frame="false" tip_position.x="245" tip_position.y="35" time="15.474" index_frame="16" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="15.081" index_frame="17" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="15.496" index_frame="18" />
+	<TIP Ransac_on_frame="false" tip_position.x="256" tip_position.y="33" time="15.148" index_frame="19" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="260" tip_position.y="34" time="14.867" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="264" tip_position.y="31" time="14.729" index_frame="21" />
+	<TIP Ransac_on_frame="false" tip_position.x="266" tip_position.y="33" time="14.681" index_frame="22" />
+	<TIP Ransac_on_frame="false" tip_position.x="270" tip_position.y="32" time="14.314" index_frame="23" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="32" time="14.978" index_frame="24" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.109" index_frame="25" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.036" index_frame="26" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="15.411" index_frame="27" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="14.853" index_frame="28" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.165" index_frame="29" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="345.414" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="15.308" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="14.884" index_frame="31" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="32" time="14.956" index_frame="32" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.99" index_frame="33" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.264" index_frame="34" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="32" time="15.438" index_frame="35" />
+	<TIP Ransac_on_frame="false" tip_position.x="300" tip_position.y="32" time="15.117" index_frame="36" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="32" time="15.483" index_frame="37" />
+	<TIP Ransac_on_frame="false" tip_position.x="300" tip_position.y="32" time="15.311" index_frame="38" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="33" time="15.334" index_frame="39" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="345.799" index_frame="40" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="32" time="15.971" index_frame="40" />
+	<TIP Ransac_on_frame="false" tip_position.x="304" tip_position.y="32" time="15.706" index_frame="41" />
+	<TIP Ransac_on_frame="false" tip_position.x="300" tip_position.y="32" time="15.856" index_frame="42" />
+	<TIP Ransac_on_frame="false" tip_position.x="298" tip_position.y="32" time="15.665" index_frame="43" />
+	<TIP Ransac_on_frame="false" tip_position.x="303" tip_position.y="32" time="15.304" index_frame="44" />
+	<TIP Ransac_on_frame="false" tip_position.x="308" tip_position.y="32" time="15.263" index_frame="45" />
+	<TIP Ransac_on_frame="false" tip_position.x="313" tip_position.y="32" time="15.549" index_frame="46" />
+	<TIP Ransac_on_frame="false" tip_position.x="314" tip_position.y="33" time="15.54" index_frame="47" />
+	<TIP Ransac_on_frame="false" tip_position.x="313" tip_position.y="32" time="15.638" index_frame="48" />
+	<TIP Ransac_on_frame="false" tip_position.x="316" tip_position.y="33" time="15.291" index_frame="49" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.211" index_frame="50" />
+	<TIP Ransac_on_frame="false" tip_position.x="318" tip_position.y="31" time="15.825" index_frame="50" />
+	<TIP Ransac_on_frame="false" tip_position.x="323" tip_position.y="31" time="15.837" index_frame="51" />
+	<TIP Ransac_on_frame="false" tip_position.x="322" tip_position.y="31" time="15.375" index_frame="52" />
+	<TIP Ransac_on_frame="false" tip_position.x="321" tip_position.y="31" time="15.298" index_frame="53" />
+	<TIP Ransac_on_frame="false" tip_position.x="323" tip_position.y="31" time="15.538" index_frame="54" />
+	<TIP Ransac_on_frame="false" tip_position.x="329" tip_position.y="31" time="15.14" index_frame="55" />
+	<TIP Ransac_on_frame="false" tip_position.x="335" tip_position.y="31" time="14.95" index_frame="56" />
+	<TIP Ransac_on_frame="false" tip_position.x="335" tip_position.y="31" time="14.756" index_frame="57" />
+	<TIP Ransac_on_frame="false" tip_position.x="338" tip_position.y="32" time="14.939" index_frame="58" />
+	<TIP Ransac_on_frame="false" tip_position.x="339" tip_position.y="32" time="14.99" index_frame="59" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="342.009" index_frame="60" />
+	<TIP Ransac_on_frame="false" tip_position.x="345" tip_position.y="32" time="15.464" index_frame="60" />
+	<TIP Ransac_on_frame="false" tip_position.x="348" tip_position.y="32" time="15.939" index_frame="61" />
+	<TIP Ransac_on_frame="false" tip_position.x="352" tip_position.y="32" time="15.419" index_frame="62" />
+	<TIP Ransac_on_frame="false" tip_position.x="355" tip_position.y="32" time="15.212" index_frame="63" />
+	<TIP Ransac_on_frame="false" tip_position.x="361" tip_position.y="33" time="15.609" index_frame="64" />
+	<TIP Ransac_on_frame="false" tip_position.x="360" tip_position.y="33" time="15.431" index_frame="65" />
+	<TIP Ransac_on_frame="false" tip_position.x="357" tip_position.y="33" time="15.635" index_frame="66" />
+	<TIP Ransac_on_frame="false" tip_position.x="362" tip_position.y="33" time="15.641" index_frame="67" />
+	<TIP Ransac_on_frame="false" tip_position.x="365" tip_position.y="33" time="15.704" index_frame="68" />
+	<TIP Ransac_on_frame="false" tip_position.x="374" tip_position.y="33" time="15.519" index_frame="69" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.866" index_frame="70" />
+	<TIP Ransac_on_frame="false" tip_position.x="384" tip_position.y="31" time="15.936" index_frame="70" />
+	<TIP Ransac_on_frame="false" tip_position.x="381" tip_position.y="31" time="17.027" index_frame="71" />
+	<TIP Ransac_on_frame="false" tip_position.x="382" tip_position.y="31" time="16.835" index_frame="72" />
+	<TIP Ransac_on_frame="false" tip_position.x="385" tip_position.y="31" time="16.821" index_frame="73" />
+	<TIP Ransac_on_frame="false" tip_position.x="386" tip_position.y="31" time="16.569" index_frame="74" />
+	<TIP Ransac_on_frame="false" tip_position.x="431" tip_position.y="32" time="17.994" index_frame="75" />
+	<TIP Ransac_on_frame="false" tip_position.x="431" tip_position.y="32" time="18.098" index_frame="76" />
+	<TIP Ransac_on_frame="false" tip_position.x="430" tip_position.y="32" time="17.898" index_frame="77" />
+	<TIP Ransac_on_frame="false" tip_position.x="429" tip_position.y="32" time="17.371" index_frame="78" />
+	<TIP Ransac_on_frame="false" tip_position.x="429" tip_position.y="32" time="17.603" index_frame="79" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="345.643" index_frame="80" />
+	<TIP Ransac_on_frame="false" tip_position.x="427" tip_position.y="34" time="15.721" index_frame="80" />
+	<TIP Ransac_on_frame="false" tip_position.x="426" tip_position.y="34" time="15.708" index_frame="81" />
+	<TIP Ransac_on_frame="false" tip_position.x="425" tip_position.y="34" time="15.619" index_frame="82" />
+	<TIP Ransac_on_frame="false" tip_position.x="419" tip_position.y="34" time="15.776" index_frame="83" />
+	<TIP Ransac_on_frame="false" tip_position.x="422" tip_position.y="34" time="16.221" index_frame="84" />
+	<TIP Ransac_on_frame="false" tip_position.x="428" tip_position.y="36" time="16.228" index_frame="85" />
+	<TIP Ransac_on_frame="false" tip_position.x="431" tip_position.y="35" time="16.771" index_frame="86" />
+	<TIP Ransac_on_frame="false" tip_position.x="433" tip_position.y="35" time="16.315" index_frame="87" />
+	<TIP Ransac_on_frame="false" tip_position.x="430" tip_position.y="35" time="16.468" index_frame="88" />
+	<TIP Ransac_on_frame="false" tip_position.x="427" tip_position.y="36" time="15.36" index_frame="89" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="352.744" index_frame="90" />
+	<TIP Ransac_on_frame="false" tip_position.x="425" tip_position.y="32" time="17.238" index_frame="90" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.85" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="177" tip_position.y="35" time="14.455" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="183" tip_position.y="35" time="14.698" index_frame="1" />
+	<TIP Ransac_on_frame="false" tip_position.x="187" tip_position.y="35" time="15.428" index_frame="2" />
+	<TIP Ransac_on_frame="false" tip_position.x="195" tip_position.y="35" time="15.088" index_frame="3" />
+	<TIP Ransac_on_frame="false" tip_position.x="200" tip_position.y="35" time="15.309" index_frame="4" />
+	<TIP Ransac_on_frame="false" tip_position.x="210" tip_position.y="36" time="15.456" index_frame="5" />
+	<TIP Ransac_on_frame="false" tip_position.x="214" tip_position.y="36" time="15.773" index_frame="6" />
+	<TIP Ransac_on_frame="false" tip_position.x="215" tip_position.y="36" time="15.676" index_frame="7" />
+	<TIP Ransac_on_frame="false" tip_position.x="219" tip_position.y="36" time="15.904" index_frame="8" />
+	<TIP Ransac_on_frame="false" tip_position.x="223" tip_position.y="35" time="16.202" index_frame="9" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="334.795" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="222" tip_position.y="34" time="15.138" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="224" tip_position.y="34" time="15.367" index_frame="11" />
+	<TIP Ransac_on_frame="false" tip_position.x="232" tip_position.y="33" time="15.487" index_frame="12" />
+	<TIP Ransac_on_frame="false" tip_position.x="236" tip_position.y="34" time="15.427" index_frame="13" />
+	<TIP Ransac_on_frame="false" tip_position.x="237" tip_position.y="34" time="15.081" index_frame="14" />
+	<TIP Ransac_on_frame="false" tip_position.x="235" tip_position.y="32" time="15.8" index_frame="15" />
+	<TIP Ransac_on_frame="false" tip_position.x="245" tip_position.y="35" time="15.713" index_frame="16" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="15.42" index_frame="17" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="15.709" index_frame="18" />
+	<TIP Ransac_on_frame="false" tip_position.x="256" tip_position.y="33" time="16.606" index_frame="19" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="340.763" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="260" tip_position.y="34" time="15.486" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="264" tip_position.y="31" time="15.207" index_frame="21" />
+	<TIP Ransac_on_frame="false" tip_position.x="266" tip_position.y="33" time="15.112" index_frame="22" />
+	<TIP Ransac_on_frame="false" tip_position.x="270" tip_position.y="32" time="15.113" index_frame="23" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.618" index_frame="24" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.614" index_frame="25" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.389" index_frame="26" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="15.476" index_frame="27" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="15.107" index_frame="28" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.297" index_frame="29" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="348.608" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="15.296" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="14.586" index_frame="31" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="32" time="14.591" index_frame="32" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.486" index_frame="33" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.836" index_frame="34" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="32" time="16.38" index_frame="35" />
+	<TIP Ransac_on_frame="false" tip_position.x="300" tip_position.y="32" time="15.15" index_frame="36" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="32" time="15.239" index_frame="37" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="32" time="15.293" index_frame="38" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="32" time="15.272" index_frame="39" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="344.558" index_frame="40" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="31" time="15.479" index_frame="40" />
+	<TIP Ransac_on_frame="false" tip_position.x="304" tip_position.y="32" time="15.997" index_frame="41" />
+	<TIP Ransac_on_frame="false" tip_position.x="303" tip_position.y="31" time="16.124" index_frame="42" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="31" time="15.848" index_frame="43" />
+	<TIP Ransac_on_frame="false" tip_position.x="303" tip_position.y="31" time="15.878" index_frame="44" />
+	<TIP Ransac_on_frame="false" tip_position.x="308" tip_position.y="32" time="15.982" index_frame="45" />
+	<TIP Ransac_on_frame="false" tip_position.x="317" tip_position.y="32" time="16.24" index_frame="46" />
+	<TIP Ransac_on_frame="false" tip_position.x="317" tip_position.y="32" time="16.135" index_frame="47" />
+	<TIP Ransac_on_frame="false" tip_position.x="315" tip_position.y="32" time="15.904" index_frame="48" />
+	<TIP Ransac_on_frame="false" tip_position.x="316" tip_position.y="32" time="16.151" index_frame="49" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="340.931" index_frame="50" />
+	<TIP Ransac_on_frame="false" tip_position.x="318" tip_position.y="31" time="15.312" index_frame="50" />
+	<TIP Ransac_on_frame="false" tip_position.x="323" tip_position.y="31" time="16.575" index_frame="51" />
+	<TIP Ransac_on_frame="false" tip_position.x="322" tip_position.y="31" time="16.316" index_frame="52" />
+	<TIP Ransac_on_frame="false" tip_position.x="321" tip_position.y="31" time="16.408" index_frame="53" />
+	<TIP Ransac_on_frame="false" tip_position.x="323" tip_position.y="31" time="15.432" index_frame="54" />
+	<TIP Ransac_on_frame="false" tip_position.x="329" tip_position.y="31" time="15.267" index_frame="55" />
+	<TIP Ransac_on_frame="false" tip_position.x="335" tip_position.y="31" time="15.303" index_frame="56" />
+	<TIP Ransac_on_frame="false" tip_position.x="336" tip_position.y="31" time="15.159" index_frame="57" />
+	<TIP Ransac_on_frame="false" tip_position.x="338" tip_position.y="32" time="15.302" index_frame="58" />
+	<TIP Ransac_on_frame="false" tip_position.x="339" tip_position.y="32" time="15.349" index_frame="59" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="343.745" index_frame="60" />
+	<TIP Ransac_on_frame="false" tip_position.x="345" tip_position.y="32" time="15.379" index_frame="60" />
+	<TIP Ransac_on_frame="false" tip_position.x="348" tip_position.y="32" time="15.43" index_frame="61" />
+	<TIP Ransac_on_frame="false" tip_position.x="352" tip_position.y="32" time="15.104" index_frame="62" />
+	<TIP Ransac_on_frame="false" tip_position.x="355" tip_position.y="32" time="15.217" index_frame="63" />
+	<TIP Ransac_on_frame="false" tip_position.x="361" tip_position.y="33" time="15.505" index_frame="64" />
+	<TIP Ransac_on_frame="false" tip_position.x="360" tip_position.y="33" time="15.46" index_frame="65" />
+	<TIP Ransac_on_frame="false" tip_position.x="357" tip_position.y="33" time="15.576" index_frame="66" />
+	<TIP Ransac_on_frame="false" tip_position.x="362" tip_position.y="33" time="15.764" index_frame="67" />
+	<TIP Ransac_on_frame="false" tip_position.x="365" tip_position.y="33" time="15.681" index_frame="68" />
+	<TIP Ransac_on_frame="false" tip_position.x="374" tip_position.y="33" time="15.479" index_frame="69" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="345.635" index_frame="70" />
+	<TIP Ransac_on_frame="false" tip_position.x="375" tip_position.y="32" time="14.661" index_frame="70" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="355.214" index_frame="80" />
+	<TIP Ransac_on_frame="false" tip_position.x="427" tip_position.y="34" time="16.324" index_frame="80" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.746" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="174" tip_position.y="34" time="14.4" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="183" tip_position.y="35" time="14.585" index_frame="1" />
+	<TIP Ransac_on_frame="false" tip_position.x="187" tip_position.y="35" time="15.246" index_frame="2" />
+	<TIP Ransac_on_frame="false" tip_position.x="195" tip_position.y="35" time="15.011" index_frame="3" />
+	<TIP Ransac_on_frame="false" tip_position.x="200" tip_position.y="35" time="15.196" index_frame="4" />
+	<TIP Ransac_on_frame="false" tip_position.x="209" tip_position.y="35" time="15.257" index_frame="5" />
+	<TIP Ransac_on_frame="false" tip_position.x="213" tip_position.y="35" time="15.607" index_frame="6" />
+	<TIP Ransac_on_frame="false" tip_position.x="214" tip_position.y="35" time="15.402" index_frame="7" />
+	<TIP Ransac_on_frame="false" tip_position.x="218" tip_position.y="35" time="15.607" index_frame="8" />
+	<TIP Ransac_on_frame="false" tip_position.x="223" tip_position.y="35" time="15.922" index_frame="9" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.855" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="222" tip_position.y="34" time="15.508" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="224" tip_position.y="34" time="16.496" index_frame="11" />
+	<TIP Ransac_on_frame="false" tip_position.x="232" tip_position.y="33" time="16.669" index_frame="12" />
+	<TIP Ransac_on_frame="false" tip_position.x="236" tip_position.y="34" time="16.197" index_frame="13" />
+	<TIP Ransac_on_frame="false" tip_position.x="237" tip_position.y="34" time="16.46" index_frame="14" />
+	<TIP Ransac_on_frame="false" tip_position.x="235" tip_position.y="32" time="17.238" index_frame="15" />
+	<TIP Ransac_on_frame="false" tip_position.x="245" tip_position.y="35" time="17.407" index_frame="16" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="15.76" index_frame="17" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="16.048" index_frame="18" />
+	<TIP Ransac_on_frame="false" tip_position.x="256" tip_position.y="33" time="17.058" index_frame="19" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="340.126" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="260" tip_position.y="34" time="15.351" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="264" tip_position.y="31" time="16.025" index_frame="21" />
+	<TIP Ransac_on_frame="false" tip_position.x="266" tip_position.y="33" time="15.726" index_frame="22" />
+	<TIP Ransac_on_frame="false" tip_position.x="270" tip_position.y="32" time="14.726" index_frame="23" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.231" index_frame="24" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.096" index_frame="25" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.15" index_frame="26" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="14.995" index_frame="27" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="14.89" index_frame="28" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.85" index_frame="29" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="341.984" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="14.745" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="14.561" index_frame="31" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="32" time="14.612" index_frame="32" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.465" index_frame="33" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.842" index_frame="34" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="32" time="15.132" index_frame="35" />
+	<TIP Ransac_on_frame="false" tip_position.x="300" tip_position.y="32" time="14.978" index_frame="36" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="32" time="14.969" index_frame="37" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="32" time="15.289" index_frame="38" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="32" time="15.226" index_frame="39" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.355" index_frame="40" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="32" time="16.378" index_frame="40" />
+	<TIP Ransac_on_frame="false" tip_position.x="304" tip_position.y="32" time="15.881" index_frame="41" />
+	<TIP Ransac_on_frame="false" tip_position.x="300" tip_position.y="32" time="16.151" index_frame="42" />
+	<TIP Ransac_on_frame="false" tip_position.x="298" tip_position.y="32" time="16.176" index_frame="43" />
+	<TIP Ransac_on_frame="false" tip_position.x="303" tip_position.y="32" time="15.952" index_frame="44" />
+	<TIP Ransac_on_frame="false" tip_position.x="308" tip_position.y="32" time="15.76" index_frame="45" />
+	<TIP Ransac_on_frame="false" tip_position.x="317" tip_position.y="32" time="16.098" index_frame="46" />
+	<TIP Ransac_on_frame="false" tip_position.x="317" tip_position.y="32" time="16.152" index_frame="47" />
+	<TIP Ransac_on_frame="false" tip_position.x="315" tip_position.y="32" time="15.846" index_frame="48" />
+	<TIP Ransac_on_frame="false" tip_position.x="316" tip_position.y="32" time="15.736" index_frame="49" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.578" index_frame="50" />
+	<TIP Ransac_on_frame="false" tip_position.x="317" tip_position.y="32" time="15.941" index_frame="50" />
+	<TIP Ransac_on_frame="false" tip_position.x="319" tip_position.y="32" time="15.867" index_frame="51" />
+	<TIP Ransac_on_frame="false" tip_position.x="319" tip_position.y="32" time="15.91" index_frame="52" />
+	<TIP Ransac_on_frame="false" tip_position.x="319" tip_position.y="32" time="15.789" index_frame="53" />
+	<TIP Ransac_on_frame="false" tip_position.x="319" tip_position.y="32" time="15.916" index_frame="54" />
+	<TIP Ransac_on_frame="false" tip_position.x="319" tip_position.y="32" time="15.562" index_frame="55" />
+	<TIP Ransac_on_frame="false" tip_position.x="322" tip_position.y="33" time="15.773" index_frame="56" />
+	<TIP Ransac_on_frame="false" tip_position.x="330" tip_position.y="33" time="15.579" index_frame="57" />
+	<TIP Ransac_on_frame="false" tip_position.x="334" tip_position.y="33" time="15.563" index_frame="58" />
+	<TIP Ransac_on_frame="false" tip_position.x="335" tip_position.y="33" time="15.699" index_frame="59" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="342.455" index_frame="60" />
+	<TIP Ransac_on_frame="false" tip_position.x="342" tip_position.y="34" time="15.499" index_frame="60" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="346.255" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="179" tip_position.y="36" time="15.746" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="342.582" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="177" tip_position.y="35" time="14.953" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="340.751" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="182" tip_position.y="38" time="14.644" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="186" tip_position.y="37" time="15.18" index_frame="1" />
+	<TIP Ransac_on_frame="false" tip_position.x="189" tip_position.y="37" time="15.923" index_frame="2" />
+	<TIP Ransac_on_frame="false" tip_position.x="199" tip_position.y="37" time="15.809" index_frame="3" />
+	<TIP Ransac_on_frame="false" tip_position.x="204" tip_position.y="37" time="15.699" index_frame="4" />
+	<TIP Ransac_on_frame="false" tip_position.x="210" tip_position.y="36" time="15.943" index_frame="5" />
+	<TIP Ransac_on_frame="false" tip_position.x="214" tip_position.y="36" time="16.272" index_frame="6" />
+	<TIP Ransac_on_frame="false" tip_position.x="216" tip_position.y="37" time="16.184" index_frame="7" />
+	<TIP Ransac_on_frame="false" tip_position.x="220" tip_position.y="37" time="16.486" index_frame="8" />
+	<TIP Ransac_on_frame="false" tip_position.x="224" tip_position.y="37" time="16.826" index_frame="9" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="341.686" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="222" tip_position.y="34" time="15.018" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="224" tip_position.y="34" time="15.236" index_frame="11" />
+	<TIP Ransac_on_frame="false" tip_position.x="232" tip_position.y="33" time="15.336" index_frame="12" />
+	<TIP Ransac_on_frame="false" tip_position.x="236" tip_position.y="34" time="15.227" index_frame="13" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="345.592" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="177" tip_position.y="35" time="14.887" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="183" tip_position.y="35" time="14.749" index_frame="1" />
+	<TIP Ransac_on_frame="false" tip_position.x="187" tip_position.y="35" time="15.524" index_frame="2" />
+	<TIP Ransac_on_frame="false" tip_position.x="195" tip_position.y="35" time="15.229" index_frame="3" />
+	<TIP Ransac_on_frame="false" tip_position.x="200" tip_position.y="35" time="15.357" index_frame="4" />
+	<TIP Ransac_on_frame="false" tip_position.x="209" tip_position.y="35" time="15.483" index_frame="5" />
+	<TIP Ransac_on_frame="false" tip_position.x="214" tip_position.y="36" time="15.81" index_frame="6" />
+	<TIP Ransac_on_frame="false" tip_position.x="215" tip_position.y="36" time="15.654" index_frame="7" />
+	<TIP Ransac_on_frame="false" tip_position.x="219" tip_position.y="36" time="15.882" index_frame="8" />
+	<TIP Ransac_on_frame="false" tip_position.x="223" tip_position.y="35" time="16.207" index_frame="9" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="341.061" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="222" tip_position.y="34" time="15.233" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="224" tip_position.y="34" time="15.45" index_frame="11" />
+	<TIP Ransac_on_frame="false" tip_position.x="232" tip_position.y="33" time="15.558" index_frame="12" />
+	<TIP Ransac_on_frame="false" tip_position.x="236" tip_position.y="34" time="15.43" index_frame="13" />
+	<TIP Ransac_on_frame="false" tip_position.x="237" tip_position.y="34" time="15.299" index_frame="14" />
+	<TIP Ransac_on_frame="false" tip_position.x="235" tip_position.y="32" time="15.866" index_frame="15" />
+	<TIP Ransac_on_frame="false" tip_position.x="245" tip_position.y="35" time="16.002" index_frame="16" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="15.639" index_frame="17" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="16.077" index_frame="18" />
+	<TIP Ransac_on_frame="false" tip_position.x="256" tip_position.y="33" time="15.77" index_frame="19" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="345.074" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="260" tip_position.y="34" time="15.616" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="264" tip_position.y="32" time="15.043" index_frame="21" />
+	<TIP Ransac_on_frame="false" tip_position.x="266" tip_position.y="33" time="14.941" index_frame="22" />
+	<TIP Ransac_on_frame="false" tip_position.x="270" tip_position.y="32" time="14.685" index_frame="23" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.228" index_frame="24" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.112" index_frame="25" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.042" index_frame="26" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="15.02" index_frame="27" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="14.873" index_frame="28" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.861" index_frame="29" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="350.128" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="14.711" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="14.429" index_frame="31" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="32" time="14.51" index_frame="32" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.353" index_frame="33" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.697" index_frame="34" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="32" time="15.047" index_frame="35" />
+	<TIP Ransac_on_frame="false" tip_position.x="300" tip_position.y="32" time="14.785" index_frame="36" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="32" time="14.887" index_frame="37" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="32" time="14.853" index_frame="38" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="32" time="14.765" index_frame="39" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="348.875" index_frame="40" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="32" time="15.337" index_frame="40" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.425" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="183" tip_position.y="39" time="15.303" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.192" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="174" tip_position.y="34" time="14.731" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.583" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="181" tip_position.y="37" time="15.373" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="343.635" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="179" tip_position.y="36" time="15.387" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="185" tip_position.y="36" time="15.116" index_frame="1" />
+	<TIP Ransac_on_frame="false" tip_position.x="188" tip_position.y="36" time="15.855" index_frame="2" />
+	<TIP Ransac_on_frame="false" tip_position.x="199" tip_position.y="37" time="15.559" index_frame="3" />
+	<TIP Ransac_on_frame="false" tip_position.x="204" tip_position.y="37" time="15.919" index_frame="4" />
+	<TIP Ransac_on_frame="false" tip_position.x="210" tip_position.y="36" time="15.996" index_frame="5" />
+	<TIP Ransac_on_frame="false" tip_position.x="214" tip_position.y="36" time="16.396" index_frame="6" />
+	<TIP Ransac_on_frame="false" tip_position.x="216" tip_position.y="37" time="16.237" index_frame="7" />
+	<TIP Ransac_on_frame="false" tip_position.x="220" tip_position.y="37" time="16.478" index_frame="8" />
+	<TIP Ransac_on_frame="false" tip_position.x="224" tip_position.y="37" time="16.837" index_frame="9" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="343.628" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="220" tip_position.y="33" time="14.818" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="223" tip_position.y="33" time="14.968" index_frame="11" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.305" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="174" tip_position.y="34" time="14.462" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.882" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="177" tip_position.y="35" time="14.46" index_frame="0" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.682" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="222" tip_position.y="34" time="15.121" index_frame="10" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="341.597" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="260" tip_position.y="34" time="14.925" index_frame="20" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="336.012" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="182" tip_position.y="38" time="14.659" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="186" tip_position.y="37" time="15.035" index_frame="1" />
+	<TIP Ransac_on_frame="false" tip_position.x="189" tip_position.y="37" time="15.842" index_frame="2" />
+	<TIP Ransac_on_frame="false" tip_position.x="199" tip_position.y="37" time="15.709" index_frame="3" />
+	<TIP Ransac_on_frame="false" tip_position.x="205" tip_position.y="38" time="15.961" index_frame="4" />
+	<TIP Ransac_on_frame="false" tip_position.x="210" tip_position.y="36" time="16.242" index_frame="5" />
+	<TIP Ransac_on_frame="false" tip_position.x="214" tip_position.y="36" time="16.56" index_frame="6" />
+	<TIP Ransac_on_frame="false" tip_position.x="216" tip_position.y="37" time="16.465" index_frame="7" />
+	<TIP Ransac_on_frame="false" tip_position.x="220" tip_position.y="37" time="16.739" index_frame="8" />
+	<TIP Ransac_on_frame="false" tip_position.x="224" tip_position.y="37" time="16.956" index_frame="9" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.815" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="222" tip_position.y="34" time="14.913" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="224" tip_position.y="34" time="15.035" index_frame="11" />
+	<TIP Ransac_on_frame="false" tip_position.x="232" tip_position.y="33" time="15.113" index_frame="12" />
+	<TIP Ransac_on_frame="false" tip_position.x="236" tip_position.y="34" time="15.123" index_frame="13" />
+	<TIP Ransac_on_frame="false" tip_position.x="237" tip_position.y="34" time="14.818" index_frame="14" />
+	<TIP Ransac_on_frame="false" tip_position.x="235" tip_position.y="32" time="15.547" index_frame="15" />
+	<TIP Ransac_on_frame="false" tip_position.x="245" tip_position.y="35" time="15.53" index_frame="16" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="15.198" index_frame="17" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="15.398" index_frame="18" />
+	<TIP Ransac_on_frame="false" tip_position.x="256" tip_position.y="33" time="15.246" index_frame="19" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="342.356" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="260" tip_position.y="34" time="15.087" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="264" tip_position.y="32" time="14.85" index_frame="21" />
+	<TIP Ransac_on_frame="false" tip_position.x="266" tip_position.y="33" time="14.821" index_frame="22" />
+	<TIP Ransac_on_frame="false" tip_position.x="270" tip_position.y="32" time="14.506" index_frame="23" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="15.036" index_frame="24" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.928" index_frame="25" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.843" index_frame="26" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="14.82" index_frame="27" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="14.721" index_frame="28" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.665" index_frame="29" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="344.943" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="14.891" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="14.606" index_frame="31" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="32" time="14.661" index_frame="32" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.564" index_frame="33" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.494" index_frame="34" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="32" time="15.236" index_frame="35" />
+	<TIP Ransac_on_frame="false" tip_position.x="300" tip_position.y="32" time="14.997" index_frame="36" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="32" time="15.026" index_frame="37" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="32" time="15.065" index_frame="38" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="32" time="15.028" index_frame="39" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="345.953" index_frame="40" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="32" time="15.092" index_frame="40" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.833" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="174" tip_position.y="34" time="15.131" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="183" tip_position.y="35" time="14.597" index_frame="1" />
+	<TIP Ransac_on_frame="false" tip_position.x="187" tip_position.y="35" time="15.249" index_frame="2" />
+	<TIP Ransac_on_frame="false" tip_position.x="195" tip_position.y="35" time="15.15" index_frame="3" />
+	<TIP Ransac_on_frame="false" tip_position.x="200" tip_position.y="35" time="14.978" index_frame="4" />
+	<TIP Ransac_on_frame="false" tip_position.x="209" tip_position.y="35" time="15.005" index_frame="5" />
+	<TIP Ransac_on_frame="false" tip_position.x="213" tip_position.y="35" time="15.653" index_frame="6" />
+	<TIP Ransac_on_frame="false" tip_position.x="214" tip_position.y="35" time="15.413" index_frame="7" />
+	<TIP Ransac_on_frame="false" tip_position.x="218" tip_position.y="35" time="15.59" index_frame="8" />
+	<TIP Ransac_on_frame="false" tip_position.x="223" tip_position.y="35" time="15.987" index_frame="9" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="337.731" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="222" tip_position.y="34" time="14.913" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="224" tip_position.y="34" time="15.25" index_frame="11" />
+	<TIP Ransac_on_frame="false" tip_position.x="232" tip_position.y="33" time="15.29" index_frame="12" />
+	<TIP Ransac_on_frame="false" tip_position.x="236" tip_position.y="34" time="15.214" index_frame="13" />
+	<TIP Ransac_on_frame="false" tip_position.x="237" tip_position.y="34" time="14.84" index_frame="14" />
+	<TIP Ransac_on_frame="false" tip_position.x="235" tip_position.y="32" time="15.495" index_frame="15" />
+	<TIP Ransac_on_frame="false" tip_position.x="245" tip_position.y="35" time="15.326" index_frame="16" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="15.032" index_frame="17" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="15.486" index_frame="18" />
+	<TIP Ransac_on_frame="false" tip_position.x="256" tip_position.y="33" time="15.095" index_frame="19" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="344.224" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="260" tip_position.y="34" time="14.898" index_frame="20" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="335.652" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="182" tip_position.y="38" time="15.2" index_frame="0" />
+	<TIP Ransac_on_frame="false" tip_position.x="186" tip_position.y="37" time="15.017" index_frame="1" />
+	<TIP Ransac_on_frame="false" tip_position.x="189" tip_position.y="37" time="15.763" index_frame="2" />
+	<TIP Ransac_on_frame="false" tip_position.x="199" tip_position.y="37" time="15.515" index_frame="3" />
+	<TIP Ransac_on_frame="false" tip_position.x="205" tip_position.y="38" time="15.649" index_frame="4" />
+	<TIP Ransac_on_frame="false" tip_position.x="210" tip_position.y="36" time="16.332" index_frame="5" />
+	<TIP Ransac_on_frame="false" tip_position.x="214" tip_position.y="36" time="16.733" index_frame="6" />
+	<TIP Ransac_on_frame="false" tip_position.x="216" tip_position.y="37" time="16.819" index_frame="7" />
+	<TIP Ransac_on_frame="false" tip_position.x="220" tip_position.y="37" time="17.114" index_frame="8" />
+	<TIP Ransac_on_frame="false" tip_position.x="224" tip_position.y="37" time="17.41" index_frame="9" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="338.453" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="220" tip_position.y="33" time="14.473" index_frame="10" />
+	<TIP Ransac_on_frame="false" tip_position.x="223" tip_position.y="33" time="14.671" index_frame="11" />
+	<TIP Ransac_on_frame="false" tip_position.x="232" tip_position.y="33" time="14.851" index_frame="12" />
+	<TIP Ransac_on_frame="false" tip_position.x="236" tip_position.y="34" time="14.74" index_frame="13" />
+	<TIP Ransac_on_frame="false" tip_position.x="237" tip_position.y="34" time="14.596" index_frame="14" />
+	<TIP Ransac_on_frame="false" tip_position.x="235" tip_position.y="31" time="15.233" index_frame="15" />
+	<TIP Ransac_on_frame="false" tip_position.x="244" tip_position.y="33" time="15.063" index_frame="16" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="14.762" index_frame="17" />
+	<TIP Ransac_on_frame="false" tip_position.x="252" tip_position.y="33" time="14.926" index_frame="18" />
+	<TIP Ransac_on_frame="false" tip_position.x="256" tip_position.y="33" time="14.731" index_frame="19" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="347.082" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="260" tip_position.y="34" time="15.097" index_frame="20" />
+	<TIP Ransac_on_frame="false" tip_position.x="264" tip_position.y="31" time="14.764" index_frame="21" />
+	<TIP Ransac_on_frame="false" tip_position.x="266" tip_position.y="33" time="14.657" index_frame="22" />
+	<TIP Ransac_on_frame="false" tip_position.x="270" tip_position.y="32" time="14.476" index_frame="23" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="32" time="14.988" index_frame="24" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.738" index_frame="25" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.67" index_frame="26" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="14.728" index_frame="27" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="34" time="14.53" index_frame="28" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.502" index_frame="29" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="351.656" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="14.919" index_frame="30" />
+	<TIP Ransac_on_frame="false" tip_position.x="297" tip_position.y="34" time="14.617" index_frame="31" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="32" time="14.446" index_frame="32" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.328" index_frame="33" />
+	<TIP Ransac_on_frame="false" tip_position.x="295" tip_position.y="33" time="14.84" index_frame="34" />
+	<TIP Ransac_on_frame="false" tip_position.x="296" tip_position.y="31" time="15.047" index_frame="35" />
+	<TIP Ransac_on_frame="false" tip_position.x="300" tip_position.y="32" time="14.818" index_frame="36" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="32" time="14.757" index_frame="37" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="32" time="14.8" index_frame="38" />
+	<TIP Ransac_on_frame="false" tip_position.x="301" tip_position.y="32" time="14.788" index_frame="39" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="351.921" index_frame="40" />
+	<TIP Ransac_on_frame="false" tip_position.x="299" tip_position.y="32" time="15.658" index_frame="40" />
+	<TIP Ransac_on_frame="false" tip_position.x="304" tip_position.y="32" time="15.301" index_frame="41" />
+	<TIP Ransac_on_frame="false" tip_position.x="300" tip_position.y="32" time="15.554" index_frame="42" />
+	<TIP Ransac_on_frame="false" tip_position.x="298" tip_position.y="32" time="15.139" index_frame="43" />
+	<TIP Ransac_on_frame="false" tip_position.x="303" tip_position.y="32" time="15.167" index_frame="44" />
+	<TIP Ransac_on_frame="false" tip_position.x="308" tip_position.y="32" time="14.903" index_frame="45" />
+	<TIP Ransac_on_frame="false" tip_position.x="317" tip_position.y="32" time="15.275" index_frame="46" />
+	<TIP Ransac_on_frame="false" tip_position.x="317" tip_position.y="32" time="15.384" index_frame="47" />
+	<TIP Ransac_on_frame="false" tip_position.x="315" tip_position.y="32" time="15.2" index_frame="48" />
+	<TIP Ransac_on_frame="false" tip_position.x="316" tip_position.y="32" time="14.973" index_frame="49" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="350.377" index_frame="50" />
+	<TIP Ransac_on_frame="false" tip_position.x="317" tip_position.y="32" time="15.043" index_frame="50" />
+	<TIP Ransac_on_frame="false" tip_position.x="321" tip_position.y="32" time="15.179" index_frame="51" />
+	<TIP Ransac_on_frame="false" tip_position.x="320" tip_position.y="32" time="15.011" index_frame="52" />
+	<TIP Ransac_on_frame="false" tip_position.x="320" tip_position.y="32" time="14.871" index_frame="53" />
+	<TIP Ransac_on_frame="false" tip_position.x="321" tip_position.y="32" time="15.191" index_frame="54" />
+	<TIP Ransac_on_frame="false" tip_position.x="327" tip_position.y="32" time="14.822" index_frame="55" />
+	<TIP Ransac_on_frame="false" tip_position.x="332" tip_position.y="32" time="14.968" index_frame="56" />
+	<TIP Ransac_on_frame="false" tip_position.x="335" tip_position.y="32" time="14.764" index_frame="57" />
+	<TIP Ransac_on_frame="false" tip_position.x="338" tip_position.y="32" time="14.888" index_frame="58" />
+	<TIP Ransac_on_frame="false" tip_position.x="339" tip_position.y="32" time="15.076" index_frame="59" />
+	<RANSAC nb_point_curve="2" nb_point_pic="51120" percent_threshold="7.5" rho="4" nb_iter="500" time="353.408" index_frame="60" />
+	<TIP Ransac_on_frame="false" tip_position.x="345" tip_position.y="32" time="15.824" index_frame="60" />
 </Statistics>

@@ -24,14 +24,13 @@ public:
     // Return pointer to tip point
     cv::Point* getTip();
 
-    // Set needle insertion direction
-    void setDirection(ORIENTATION_NEEDLE a_ori);
+    // Getters
+    std::vector<cv::Mat> getMatrix();
 
 private:
     // tip parameters
     bool mTipComputed;
     cv::Point mPointTip;
-    ORIENTATION_NEEDLE mOrientationNeedle;
 
     // Algorithm attributes & methods
     // x(k+1) = A x(k) + B u(k) + epsilon(k), with cov(epsilon) = Q

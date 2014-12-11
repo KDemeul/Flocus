@@ -13,6 +13,8 @@
 #include <QComboBox>
 #include <QAction>
 
+#include "Main/matrixdialog.h"
+
 class AlgorithmArea : public QWidget
 {
     Q_OBJECT
@@ -21,11 +23,15 @@ public:
     void setBounds(int a_w, int a_h);
     QGroupBox* getGroupBoxRansac();
     QGroupBox* getGroupBoxTip();
+    QGroupBox* getGroupBoxKalman();
 
 signals:
 
 public slots:
     void communicateToVisualizer();
+
+private slots:
+    void displayKalmanMatrix();
 
 private:
     // GLOBAL ATTRIBUTES
@@ -47,7 +53,7 @@ private:
 
     // Kalman
     QGroupBox *groupKalman;
-    QPushButton *mButtonLoadMatrix;
+    QPushButton *mButtonDisplayMatrix;
 
 };
 

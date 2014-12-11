@@ -78,7 +78,15 @@ cv::Point* AlgorithmKalman::getTip()
     return &mPointTip;
 }
 
-void AlgorithmKalman::setDirection(ORIENTATION_NEEDLE a_ori)
+std::vector<cv::Mat> AlgorithmKalman::getMatrix()
 {
-    mOrientationNeedle = a_ori;
+    std::vector<cv::Mat> matrix;
+    matrix.push_back(A);
+    matrix.push_back(B);
+    matrix.push_back(Q);
+    matrix.push_back(C);
+    matrix.push_back(R);
+    matrix.push_back(mu);
+    matrix.push_back(Sigma);
+    return matrix;
 }

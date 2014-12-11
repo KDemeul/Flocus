@@ -14,6 +14,7 @@ public:
     void applyAndDraw(cv::Mat *a_imgToDrawOn, cv::Rect *a_ROI,  cv::Mat *a_u, cv::Mat *a_z, int a_indexFrame);
     void enable(bool a_isEnable);
     void setDirection(ORIENTATION_NEEDLE a_dir);
+    std::vector<cv::Mat> getMatrix();
 
 private:
     bool mIsEnabled;

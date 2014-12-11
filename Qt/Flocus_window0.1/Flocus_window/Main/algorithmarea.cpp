@@ -90,14 +90,13 @@ AlgorithmArea::AlgorithmArea(QWidget *parent) :
 
     QFormLayout *kalmanLayout = new QFormLayout;
 
-    mButtonLoadMatrix = new QPushButton("Load Matrix");
-    connect(mButtonLoadMatrix,SIGNAL(clicked()),this,SLOT(communicateToVisualizer()));
-    kalmanLayout->addWidget(mButtonLoadMatrix);
+    mButtonDisplayMatrix = new QPushButton("Show Matrix");
+    connect(mButtonDisplayMatrix,SIGNAL(clicked()),this,SLOT(displayKalmanMatrix()));
+    kalmanLayout->addWidget(mButtonDisplayMatrix);
 
     groupKalman = new QGroupBox("KALMAN");
     groupKalman->setCheckable(true);
     groupKalman->setLayout(kalmanLayout);
-
     connect(groupKalman,SIGNAL(toggled(bool)),this,SLOT(communicateToVisualizer()));
 
     // End group : KALMAN
@@ -134,6 +133,22 @@ QGroupBox* AlgorithmArea::getGroupBoxTip()
     return groupTip;
 }
 
+QGroupBox* AlgorithmArea::getGroupBoxKalman()
+{
+    return groupKalman;
+}
+
+void AlgorithmArea::displayKalmanMatrix()
+{
+     CentralArea *parent = (CentralArea*)this->parentWidget();
+
+     std::vector<cv::Mat> matrix = parent->getKalmanMatrix();
+
+     MatrixDialog *matrixDialog = new MatrixDialog(this);
+     matrixDialog->setMatrix(matrix);
+     matrixDialog->exec();
+}
+
 void AlgorithmArea::communicateToVisualizer()
 {
     CentralArea *parent = (CentralArea*)this->parentWidget();
@@ -148,8 +163,7 @@ void AlgorithmArea::communicateToVisualizer()
     groupRANSAC->setHidden(!groupRANSAC->isChecked());
 
     // TIP
-    if(!groupRANSAC->isChecked())
-    {
+    if(!groupRANSAC->isChecked()){
         groupTip->setChecked(false);
     }
     parent->setTipParameters((ORIENTATION_NEEDLE)mComboTipDirection->currentIndex(),
@@ -157,12 +171,10 @@ void AlgorithmArea::communicateToVisualizer()
     groupTip->setHidden(!groupTip->isChecked());
 
     // KALMAN
-    if(!groupRANSAC->isChecked() || !groupTip->isChecked())
-    {
+    if(!groupTip->isChecked()) {
         groupKalman->setChecked(false);
     }
-//    parent->setKalmanParameters((ORIENTATION_NEEDLE)mComboTipDirection->currentIndex(),
-//                                groupKalman->isChecked());
+    parent->setKalmanParameters(groupKalman->isChecked());
     groupKalman->setHidden(!groupKalman->isChecked());
 
 }

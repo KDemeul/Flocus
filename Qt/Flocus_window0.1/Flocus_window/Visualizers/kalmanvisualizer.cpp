@@ -52,8 +52,10 @@ KalmanVisualizer::KalmanVisualizer(QWidget *parent)
 // ------------ applyAndDraw ----------------
 void KalmanVisualizer::applyAndDraw(cv::Mat *a_imgToDrawOn, cv::Rect *a_ROI,  cv::Mat *a_u, cv::Mat *a_z, int a_indexFrame)
 {
-    if(!mIsEnabled)
+    if(!mIsEnabled){
         return;
+    }
+
     if(abs(mIndexLastFrameProcessed-a_indexFrame) > 1){
         mAlgorithmKalman->reinit();
     }
@@ -61,8 +63,7 @@ void KalmanVisualizer::applyAndDraw(cv::Mat *a_imgToDrawOn, cv::Rect *a_ROI,  cv
     mAlgorithmKalman->applyAlgorithm(a_u,a_z,a_indexFrame);
     mIndexLastFrameProcessed = a_indexFrame;
 
-    if(mAlgorithmKalman->isTipComputed())
-    {
+    if(mAlgorithmKalman->isTipComputed()){
         drawTip(a_imgToDrawOn,a_ROI, mAlgorithmKalman->getTip());
     }
 }
@@ -82,8 +83,8 @@ void KalmanVisualizer::enable(bool a_isEnable)
     mIsEnabled = a_isEnable;
 }
 
-// ------------ setDirection ----------------
-void KalmanVisualizer::setDirection(ORIENTATION_NEEDLE a_dir)
+// ------------ getMatrix ----------------
+std::vector<cv::Mat> KalmanVisualizer::getMatrix()
 {
-    mAlgorithmKalman->setDirection(a_dir);
+    return mAlgorithmKalman->getMatrix();
 }

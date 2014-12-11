@@ -200,12 +200,14 @@ void DataVisualizer::setTipParameters(ORIENTATION_NEEDLE a_dir, bool a_isEnable)
     }
 }
 
-void DataVisualizer::setKalmanParameters(ORIENTATION_NEEDLE a_dir, bool a_isEnable)
+void DataVisualizer::setKalmanParameters(bool a_isEnable)
 {
     mKalmanVisualizer->enable(a_isEnable);
-    if(a_isEnable){
-        mKalmanVisualizer->setDirection(a_dir);
-    }
+}
+
+std::vector<cv::Mat> DataVisualizer::getKalmanMatrix()
+{
+    return mKalmanVisualizer->getMatrix();
 }
 
 cv::Rect* DataVisualizer::getROI()

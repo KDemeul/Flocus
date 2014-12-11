@@ -49,14 +49,15 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     menuAlgorithm->addAction(actionRANSAC);
     actionRANSAC->setCheckable(true);
 
-    QAction *actionKalman = new QAction("&KALMAN",this);
-    menuAlgorithm->addAction(actionKalman);
-    actionKalman->setCheckable(true);
-
     QAction *actionTip = new QAction("&TIP",this);
     menuAlgorithm->addAction(actionTip);
     actionTip->setCheckable(true);
     actionTip->setEnabled(false);
+
+    QAction *actionKalman = new QAction("&KALMAN",this);
+    menuAlgorithm->addAction(actionKalman);
+    actionKalman->setCheckable(true);
+    actionKalman->setEnabled(false);
 
     //---> Sub menu help
     QAction *actionAbout = new QAction("&About",this);
@@ -89,6 +90,11 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     // TIP
     connect(actionTip,SIGNAL(toggled(bool)),centralArea->getAlgorithmArea()->getGroupBoxTip(),SLOT(setChecked(bool)));
     connect(centralArea->getAlgorithmArea()->getGroupBoxTip(),SIGNAL(toggled(bool)),actionTip,SLOT(setChecked(bool)));
+
+    // KALMAN
+    connect(actionKalman,SIGNAL(toggled(bool)),centralArea->getAlgorithmArea()->getGroupBoxKalman(),SLOT(setChecked(bool)));
+    connect(centralArea->getAlgorithmArea()->getGroupBoxKalman(),SIGNAL(toggled(bool)),actionKalman,SLOT(setChecked(bool)));
+    connect(actionTip,SIGNAL(toggled(bool)),actionKalman,SLOT(setEnabled(bool)));
 }
 
 
