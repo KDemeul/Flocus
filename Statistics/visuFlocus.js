@@ -1,5 +1,5 @@
 var columnSize = 6,
-columnPadding = 1,
+columnPadding = 0,
 botPadding = 30,
 colors = pv.Colors.category20().range();
 

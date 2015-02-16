@@ -100,6 +100,11 @@ void CentralArea::updateFile()
     }
 }
 
+void CentralArea::updateGPSFile()
+{
+    flGPSHandler = new FlGPSHandler(((MainWindow*)this->parentWidget())->getFilename(),this);
+}
+
 void CentralArea::setRansacParameters(int a_posX, int a_poxY, int a_width, int a_height, bool a_isEnable, int a_ransacRate)
 {
    dataVisualizer->setRansacParameters(a_posX,a_poxY,a_width,a_height,a_isEnable,a_ransacRate);

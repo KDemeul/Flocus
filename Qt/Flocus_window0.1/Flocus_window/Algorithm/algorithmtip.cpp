@@ -34,12 +34,32 @@ void AlgorithmTip::applyAlgorithm(cv::Mat *a_pic, cv::Rect *a_ROI, cv::Mat *a_Hj
     }
     mPic = *a_pic;
 
+//    // DEBUG
+//    if(a_indexFrame == 60){
+//        imwrite("/home/kilian/Documents/Dropbox/LIRMM/WorkReview/December/saved/blob/1PIC.jpg",mPic);
+//        cv::waitKey(0);
+//    }
+
     // Crop image
     cv::Mat picCropped = mPic(*a_ROI);
     picCropped.copyTo(mPicResized);
 
+
+//    // DEBUG
+//    if(a_indexFrame == 60){
+//        imwrite("/home/kilian/Documents/Dropbox/LIRMM/WorkReview/December/saved/blob/2Resized.jpg",mPicResized);
+//        cv::waitKey(0);
+//    }
+
     // Normalize image
     cv::normalize(mPicResized, mPicResized, 0, 255, cv::NORM_MINMAX, CV_8UC1);
+
+//    // DEBUG
+//    if(a_indexFrame == 60){
+//        imwrite("/home/kilian/Documents/Dropbox/LIRMM/WorkReview/December/saved/blob/3Normalized.jpg",mPicResized);
+//        cv::waitKey(0);
+//    }
+
 
     // Count nb point in image
     mPicNbPoint = mPicResized.rows * mPicResized.cols;
@@ -47,8 +67,38 @@ void AlgorithmTip::applyAlgorithm(cv::Mat *a_pic, cv::Rect *a_ROI, cv::Mat *a_Hj
     // Threshold pic
     convertPicToBoolMap();
 
+//    // DEBUG
+//    if(a_indexFrame == 60){
+//        imwrite("/home/kilian/Documents/Dropbox/LIRMM/WorkReview/December/saved/blob/4Binary.jpg",mPicBinary);
+//        cv::waitKey(0);
+//    }
+
+
     // Find the blob in the picture
     findBlobs();
+
+//    // DEBUG
+//    if(a_indexFrame == 60){
+//        cv::Mat output = cv::Mat::zeros(mPicResized.size(), CV_8UC3);
+//        // Randomy color the blobs
+//        for(size_t i=0; i < mBlobs.size(); i++) {
+//            unsigned char r = 255 * (rand()/(1.0 + RAND_MAX));
+//            unsigned char g = 255 * (rand()/(1.0 + RAND_MAX));
+//            unsigned char b = 255 * (rand()/(1.0 + RAND_MAX));
+
+//            for(size_t j=0; j < mBlobs[i].size(); j++) {
+//                int x = mBlobs[i][j].x;
+//                int y = mBlobs[i][j].y;
+
+//                output.at<cv::Vec3b>(y,x)[0] = b;
+//                output.at<cv::Vec3b>(y,x)[1] = g;
+//                output.at<cv::Vec3b>(y,x)[2] = r;
+//            }
+//        }
+
+//        imwrite("/home/kilian/Documents/Dropbox/LIRMM/WorkReview/December/saved/blob/5Blobs.jpg",output);
+//        cv::waitKey(0);
+//    }
 
     // Find the blobs intersecting the curve depicted by Hj
     mBlobsOnLine.clear();
@@ -65,6 +115,38 @@ void AlgorithmTip::applyAlgorithm(cv::Mat *a_pic, cv::Rect *a_ROI, cv::Mat *a_Hj
         }
     }
 
+//    // DEBUG
+//    if(a_indexFrame == 60){
+//        cv::Mat output = cv::Mat::zeros(mPicResized.size(), CV_8UC3);
+//        // Randomy color the blobs
+//        for(size_t i=0; i < mBlobsOnLine.size(); i++) {
+//            unsigned char r = 255 * (rand()/(1.0 + RAND_MAX));
+//            unsigned char g = 255 * (rand()/(1.0 + RAND_MAX));
+//            unsigned char b = 255 * (rand()/(1.0 + RAND_MAX));
+
+//            for(size_t j=0; j < mBlobsOnLine[i].size(); j++) {
+//                int x = mBlobsOnLine[i][j].x;
+//                int y = mBlobsOnLine[i][j].y;
+
+//                output.at<cv::Vec3b>(y,x)[0] = b;
+//                output.at<cv::Vec3b>(y,x)[1] = g;
+//                output.at<cv::Vec3b>(y,x)[2] = r;
+//            }
+//        }
+
+//        // DRAW AXIS
+//        cv::Mat T1 = (cv::Mat_<double>(2,1) << 1, -1000);
+//        cv::Mat T2 = (cv::Mat_<double>(2,1) << 1, 1000);
+//        cv::Mat M1mat = *a_Hj * T1;
+//        cv::Mat M2mat = *a_Hj * T2;
+//        cv::Point M1(M1mat.at<double>(1,0),M1mat.at<double>(0,0));
+//        cv::Point M2(M2mat.at<double>(1,0),M2mat.at<double>(0,0));
+//        cv::line(output,M1,M2,COLOR_AXIS);
+
+//        imwrite("/home/kilian/Documents/Dropbox/LIRMM/WorkReview/December/saved/blob/6BlobOnLine.jpg",output);
+//        cv::waitKey(0);
+//    }
+
     // Find the biggest blob
     size_t sizeBiggestBlob = 0;
     foreach(Blob blob, mBlobsOnLine)
@@ -76,6 +158,36 @@ void AlgorithmTip::applyAlgorithm(cv::Mat *a_pic, cv::Rect *a_ROI, cv::Mat *a_Hj
         }
     }
 
+//    // DEBUG
+//    if(a_indexFrame == 60){
+//        cv::Mat output = cv::Mat::zeros(mPicResized.size(), CV_8UC3);
+//        // Randomy color the blobs
+//        unsigned char r = 255 * (rand()/(1.0 + RAND_MAX));
+//        unsigned char g = 255 * (rand()/(1.0 + RAND_MAX));
+//        unsigned char b = 255 * (rand()/(1.0 + RAND_MAX));
+
+//        for(size_t j=0; j < mBlobWithTip.size(); j++) {
+//            int x = mBlobWithTip[j].x;
+//            int y = mBlobWithTip[j].y;
+
+//            output.at<cv::Vec3b>(y,x)[0] = b;
+//            output.at<cv::Vec3b>(y,x)[1] = g;
+//            output.at<cv::Vec3b>(y,x)[2] = r;
+//        }
+
+//        // DRAW AXIS
+//        cv::Mat T1 = (cv::Mat_<double>(2,1) << 1, -1000);
+//        cv::Mat T2 = (cv::Mat_<double>(2,1) << 1, 1000);
+//        cv::Mat M1mat = *a_Hj * T1;
+//        cv::Mat M2mat = *a_Hj * T2;
+//        cv::Point M1(M1mat.at<double>(1,0),M1mat.at<double>(0,0));
+//        cv::Point M2(M2mat.at<double>(1,0),M2mat.at<double>(0,0));
+//        cv::line(output,M1,M2,COLOR_AXIS);
+
+//        imwrite("/home/kilian/Documents/Dropbox/LIRMM/WorkReview/December/saved/blob/7BiggestBlob.jpg",output);
+//        cv::waitKey(0);
+//    }
+
     // Return the intersection of the biggest blob with the axis
     foreach(cv::Point P, mBlobWithTip)
     {
@@ -84,6 +196,37 @@ void AlgorithmTip::applyAlgorithm(cv::Mat *a_pic, cv::Rect *a_ROI, cv::Mat *a_Hj
             mPointTip = mPointTip.x < P.x ? P : mPointTip;
         }
     }
+
+//    // DEBUG
+//    if(a_indexFrame == 60){
+//        cv::Mat output = cv::Mat::zeros(mPicResized.size(), CV_8UC3);
+//        // Randomy color the blobs
+//        unsigned char r = 255 * (rand()/(1.0 + RAND_MAX));
+//        unsigned char g = 255 * (rand()/(1.0 + RAND_MAX));
+//        unsigned char b = 255 * (rand()/(1.0 + RAND_MAX));
+
+//        for(size_t j=0; j < mBlobWithTip.size(); j++) {
+//            int x = mBlobWithTip[j].x;
+//            int y = mBlobWithTip[j].y;
+
+//            output.at<cv::Vec3b>(y,x)[0] = b;
+//            output.at<cv::Vec3b>(y,x)[1] = g;
+//            output.at<cv::Vec3b>(y,x)[2] = r;
+//        }
+
+//        // DRAW AXIS
+//        cv::Mat T1 = (cv::Mat_<double>(2,1) << 1, -1000);
+//        cv::Mat T2 = (cv::Mat_<double>(2,1) << 1, 1000);
+//        cv::Mat M1mat = *a_Hj * T1;
+//        cv::Mat M2mat = *a_Hj * T2;
+//        cv::Point M1(M1mat.at<double>(1,0),M1mat.at<double>(0,0));
+//        cv::Point M2(M2mat.at<double>(1,0),M2mat.at<double>(0,0));
+//        cv::line(output,M1,M2,COLOR_AXIS);
+//        cv::circle(output,mPointTip,3,COLOR_TIP,-1);
+
+//        imwrite("/home/kilian/Documents/Dropbox/LIRMM/WorkReview/December/saved/blob/8BlobTip.jpg",output);
+//        cv::waitKey(0);
+//    }
 
     mTipComputed = true;
 

@@ -28,6 +28,7 @@ public:
 private slots:
     void openAboutDialogue();
     void openFileDialogue();
+    void openGPSDialogue();
     void saveImageDialogue();
     void saveMovieDialogue();
 

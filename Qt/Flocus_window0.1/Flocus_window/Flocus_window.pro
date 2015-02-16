@@ -30,7 +30,8 @@ SOURCES += \
     Main/extractdialog.cpp \
     Visualizers/kalmanvisualizer.cpp \
     Algorithm/algorithmkalman.cpp \
-    Main/matrixframe.cpp
+    Main/matrixframe.cpp \
+    DataHandling/flgpshandler.cpp
 
 HEADERS  += \
     Algorithm/algorithmransac.h \
@@ -49,7 +50,8 @@ HEADERS  += \
     Main/extractdialog.h \
     Visualizers/kalmanvisualizer.h \
     Algorithm/algorithmkalman.h \
-    Main/matrixframe.h
+    Main/matrixframe.h \
+    DataHandling/flgpshandler.h
 
 #INCLUDEPATH += /usr/include/vtk-5.8
 

@@ -12,7 +12,7 @@ FlDataHandler::FlDataHandler(QString filename,QWidget* parent)
 
     if(rawData)
     {
-                QProgressDialog progress("Parsing file...", "Cancel", 0, 100,parent);
+        QProgressDialog progress("Parsing file...", "Cancel", 0, 100,parent);
         int progressValue = 0;
         progress.setWindowModality(Qt::WindowModal);
         progress.show();
@@ -22,7 +22,9 @@ FlDataHandler::FlDataHandler(QString filename,QWidget* parent)
 
         // Header
         rawData.read((char*)&filetype,sizeof(filetype));
+        cout << "From image file: filetype: " << filetype << endl;
         rawData.read((char*)&nframes,sizeof(filetype));
+        cout << "From image file: nframes: " << nframes << endl;
         rawData.read((char*)&w,sizeof(filetype));
         rawData.read((char*)&h,sizeof(filetype));
         rawData.read((char*)&ss,sizeof(filetype));

@@ -17,6 +17,7 @@
 #include "Main/algorithmarea.h"
 #include "Visualizers/datavisualizer.h"
 #include "DataHandling/fldatahandler.h"
+#include "DataHandling/flgpshandler.h"
 
 
 class CentralArea : public QWidget
@@ -38,6 +39,7 @@ signals:
 
 public slots:
     void updateFile();
+    void updateGPSFile();
 
 private:
     // Left
@@ -64,6 +66,7 @@ private:
 
     // Data Handler
     FlDataHandler *flDataHandler;
+    FlGPSHandler *flGPSHandler;
     bool fileLoaded;
 };
 

@@ -23,6 +23,10 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     menuFile->addAction(actionOpen);
     actionOpen->setIcon(QIcon("../../icons/glyphicons_144_folder_open.png"));
 
+    QAction *actionOpenGPS = new QAction("Open &GPS",this);
+    menuFile->addAction(actionOpenGPS);
+    actionOpenGPS->setIcon(QIcon("../../icons/glyphicons_144_folder_open.png"));
+
     QMenu *menuSave = new QMenu("&Save",this);
     menuFile->addMenu(menuSave);
     menuSave->setIcon(QIcon("../../icons/glyphicons_443_floppy_disk.png"));
@@ -71,6 +75,9 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 
     // Open
     connect(actionOpen,SIGNAL(triggered()),this,SLOT(openFileDialogue()));
+
+    // Open GPS
+    connect(actionOpenGPS,SIGNAL(triggered()),this,SLOT(openGPSDialogue()));
 
     // Save
     connect(actionSaveImage,SIGNAL(triggered()),this,SLOT(saveImageDialogue()));
@@ -141,6 +148,12 @@ void MainWindow::openFileDialogue()
 {
     filename = QFileDialog::getOpenFileName(this, "Open file","/home/kilian/Documents/Flocus/data/10-21-2014-Generic/","US Data (*.b32 *.b8)",0,QFileDialog::DontUseNativeDialog);
     centralArea->updateFile();
+}
+
+void MainWindow::openGPSDialogue()
+{
+    filename = QFileDialog::getOpenFileName(this,"Open GPS file","/home/kilian/Documents/Flocus/data/","GPS DATA (*.gps)",0,QFileDialog::DontUseNativeDialog);
+    centralArea->updateGPSFile();
 }
 
 void MainWindow::saveImageDialogue()
