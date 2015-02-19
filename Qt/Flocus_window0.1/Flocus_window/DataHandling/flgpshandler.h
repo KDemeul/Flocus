@@ -34,14 +34,20 @@ public:
     int ld;
     int extra;
 
-    float *gps_posx;
+    float *gps_posx;   // 8 bytes for double
     float *gps_posy;
     float *gps_posz;
-    float ***gps_s;
+    float *gps_a;
+    float *gps_e;
+    float *gps_r;
+    float ***gps_s;    // position matrix
+    float ***gps_q;
     float *gps_time;
-    float *gps_quality;
+    float *gps_quality; // 2 bytes for unsigned short
 
     bool fileLoaded;
+
+    bool fileIntegrity;
 
 
 private:

@@ -102,7 +102,13 @@ void CentralArea::updateFile()
 
 void CentralArea::updateGPSFile()
 {
-    flGPSHandler = new FlGPSHandler(((MainWindow*)this->parentWidget())->getFilename(),this);
+    flGPSHandler1 = new FlGPSHandler(((MainWindow*)this->parentWidget())->getFilenameGPS(1));
+    flGPSHandler2 = new FlGPSHandler(((MainWindow*)this->parentWidget())->getFilenameGPS(2));
+    if(flGPSHandler1->fileLoaded && flGPSHandler1->fileIntegrity && flGPSHandler2->fileLoaded && flGPSHandler2->fileIntegrity){
+        dataVisualizer->setGPSDataHandler(flGPSHandler1,flGPSHandler2);
+        DEBUG_MSG("GPS HANDLER SET !");
+    }
+
 }
 
 void CentralArea::setRansacParameters(int a_posX, int a_poxY, int a_width, int a_height, bool a_isEnable, int a_ransacRate)

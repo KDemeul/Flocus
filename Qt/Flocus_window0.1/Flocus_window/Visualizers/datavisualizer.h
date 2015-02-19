@@ -12,13 +12,15 @@
 #include <opencv2/highgui/highgui.hpp>
 #include "opencv/cv.h"
 
-// TO REMOVE
 #include "Algorithm/algorithmransac.h"
 #include "Algorithm/algorithmtip.h"
+#include "Algorithm/algorithmroi.h"
 
 #include <time.h>
 #include "common/common.h"
 #include "DataHandling/fldatahandler.h"
+#include "DataHandling/flgpshandler.h"
+#include "Visualizers/roivisualizer.h"
 #include "Visualizers/ransacvisualizer.h"
 #include "Visualizers/tipvisualizer.h"
 #include "Visualizers/kalmanvisualizer.h"
@@ -32,6 +34,7 @@ public:
     void addDrawing();
     void updateImage();
     void setDataHandler(FlDataHandler* a_flDataHandler);
+    void setGPSDataHandler(FlGPSHandler* a_FlGPSHandler1, FlGPSHandler* a_FlGPSHandler2);
     cv::Rect* getROI();
     void setRansacParameters(int a_posX, int a_poxY, int a_width, int a_height, bool a_isEnable, int a_ransacRate);
     void setTipParameters(ORIENTATION_NEEDLE a_dir, bool a_isEnable);
@@ -70,6 +73,8 @@ private:
 
     // Data -- algorithm attributes
     FlDataHandler* mFlDataHandler;
+    FlGPSHandler* mFlGPSHandler1;
+    FlGPSHandler* mFlGPSHandler2;
     RansacVisualizer *mRansacVisualizer;
     cv::Rect *mROI;
     cv::Mat mImgForProcessing;
@@ -77,6 +82,8 @@ private:
     TipVisualizer *mTipVisualizer;
 
     KalmanVisualizer *mKalmanVisualizer;
+
+    ROIVisualizer *mROIVisualizer;
 
     // Player
     void onFrame();

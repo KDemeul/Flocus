@@ -66,7 +66,8 @@ private:
 
     // Data Handler
     FlDataHandler *flDataHandler;
-    FlGPSHandler *flGPSHandler;
+    FlGPSHandler *flGPSHandler1;
+    FlGPSHandler *flGPSHandler2;
     bool fileLoaded;
 };
 

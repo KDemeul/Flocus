@@ -24,6 +24,7 @@ class MainWindow : public QMainWindow {
 public:
     MainWindow(QWidget *parent = 0);
     QString getFilename();
+    QString getFilenameGPS(int a_index);
 
 private slots:
     void openAboutDialogue();
@@ -37,6 +38,8 @@ private slots:
 private:
     CentralArea* centralArea;
     QString filename;
+    QString filenameGPS1;
+    QString filenameGPS2;
     ExtractDialog *mExtractDialog;
 
 };

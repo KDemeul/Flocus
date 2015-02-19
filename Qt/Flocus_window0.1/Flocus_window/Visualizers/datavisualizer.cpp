@@ -2,8 +2,8 @@
 
 DataVisualizer::DataVisualizer(QWidget *parent)
     : QGLWidget(parent)
-    , mWidth(640)
-    , mHeight(480)
+    , mWidth(820)
+    , mHeight(616)
     , mIndexCurrentFrame(0)
     , mPosX(0)
     , mPosY(0)
@@ -14,6 +14,7 @@ DataVisualizer::DataVisualizer(QWidget *parent)
     mFlDataHandler = new FlDataHandler();
 
     // Algorithms
+    mROIVisualizer = new ROIVisualizer();
     mRansacVisualizer = new RansacVisualizer();
     mROI = new cv::Rect(0,0,0,0);
     mTipVisualizer = new TipVisualizer();
@@ -170,6 +171,11 @@ void DataVisualizer::setDataHandler(FlDataHandler* a_FlDataHandler)
     mFlDataHandler = a_FlDataHandler;
 }
 
+void DataVisualizer::setGPSDataHandler(FlGPSHandler* a_FlGPSHandler1, FlGPSHandler* a_FlGPSHandler2){
+    mFlGPSHandler1 = a_FlGPSHandler1;
+    mFlGPSHandler2 = a_FlGPSHandler2;
+}
+
 
 void DataVisualizer::setRansacParameters(int a_posX, int a_poxY, int a_width, int a_height, bool a_isEnable, int a_ransacRate)
 {
@@ -222,6 +228,10 @@ void DataVisualizer::onFrame()
 
     updateImage();
     convertToRGB();
+
+    // Apply ROI DETECTION
+    DEBUG_MSG("APPLYING ROI DETECTION");
+    mROIVisualizer->applyAndDraw(&mImgCV,&mImgForProcessing,mFlGPSHandler1,mFlGPSHandler2,mIndexCurrentFrame);
 
     // Apply RANSAC ALGORITHM
     mRansacVisualizer->applyAndDraw(&mImgCV,&mImgForProcessing,mROI,mIndexCurrentFrame);

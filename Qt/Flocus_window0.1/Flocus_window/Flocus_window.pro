@@ -31,7 +31,9 @@ SOURCES += \
     Visualizers/kalmanvisualizer.cpp \
     Algorithm/algorithmkalman.cpp \
     Main/matrixframe.cpp \
-    DataHandling/flgpshandler.cpp
+    DataHandling/flgpshandler.cpp \
+    Visualizers/roivisualizer.cpp \
+    Algorithm/algorithmroi.cpp
 
 HEADERS  += \
     Algorithm/algorithmransac.h \
@@ -51,7 +53,9 @@ HEADERS  += \
     Visualizers/kalmanvisualizer.h \
     Algorithm/algorithmkalman.h \
     Main/matrixframe.h \
-    DataHandling/flgpshandler.h
+    DataHandling/flgpshandler.h \
+    Visualizers/roivisualizer.h \
+    Algorithm/algorithmroi.h
 
 #INCLUDEPATH += /usr/include/vtk-5.8
 
@@ -67,4 +71,6 @@ INCLUDEPATH += ../../pugixml/src
 OTHER_FILES += \
     stylesheet.qss \
     common/stylesheet.qss
+
+
 

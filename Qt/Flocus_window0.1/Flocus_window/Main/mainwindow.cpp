@@ -152,7 +152,8 @@ void MainWindow::openFileDialogue()
 
 void MainWindow::openGPSDialogue()
 {
-    filename = QFileDialog::getOpenFileName(this,"Open GPS file","/home/kilian/Documents/Flocus/data/","GPS DATA (*.gps)",0,QFileDialog::DontUseNativeDialog);
+    filenameGPS1 = QFileDialog::getOpenFileName(this,"Open GPS file","/home/kilian/Documents/Flocus/data/","GPS DATA (*.gps1)",0,QFileDialog::DontUseNativeDialog);
+    filenameGPS2 = QFileDialog::getOpenFileName(this,"Open GPS file","/home/kilian/Documents/Flocus/data/","GPS DATA (*.gps2)",0,QFileDialog::DontUseNativeDialog);
     centralArea->updateGPSFile();
 }
 
@@ -215,4 +216,16 @@ void MainWindow::saveMovieDialogue()
 
 QString MainWindow::getFilename(){
     return this->filename;
+}
+
+QString MainWindow::getFilenameGPS(int a_index){
+    switch (a_index) {
+    case 1:
+       return this->filenameGPS1;
+        break;
+    case 2:
+        return this->filenameGPS2;
+    default:
+        return this->filenameGPS1;
+    }
 }

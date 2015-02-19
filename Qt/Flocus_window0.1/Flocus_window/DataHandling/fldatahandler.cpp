@@ -26,7 +26,9 @@ FlDataHandler::FlDataHandler(QString filename,QWidget* parent)
         rawData.read((char*)&nframes,sizeof(filetype));
         cout << "From image file: nframes: " << nframes << endl;
         rawData.read((char*)&w,sizeof(filetype));
+        cout << "From image file: w: " << w << endl;
         rawData.read((char*)&h,sizeof(filetype));
+        cout << "From image file: h: " << h << endl;
         rawData.read((char*)&ss,sizeof(filetype));
         rawData.read((char*)&ul[0],sizeof(filetype));
         rawData.read((char*)&ul[1],sizeof(filetype));
